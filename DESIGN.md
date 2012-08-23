@@ -2,7 +2,7 @@
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
 
-[](https://sites.google.com/a/opengeo.org/geonode-ui/home/homepage)
+[Homepage](https://sites.google.com/a/opengeo.org/geonode-ui/home/homepage)
 
 # Layers
 
@@ -12,25 +12,25 @@
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-explore-no-filter.png)
 
-[](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_explore)
+[Layer Explore Page](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_explore)
 
 ## Layer Info
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-info.png)
 
-[](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_info)
+[Layer Info Page](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_info)
 
 ## Layer Comments
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-comment.png)
 
-[](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_comments)
+[Layer Comments](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_comments)
 
 ## Layer Download
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-download.png)
 
-[](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_comments)
+[Layer Download](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_comments)
 
 # Maps
 
