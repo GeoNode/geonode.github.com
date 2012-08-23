@@ -118,7 +118,7 @@ Installation on Other Platforms
    * Solaris
    * BSD
 
-## Template Projects
+# Template Projects
 
 Geonode uses the Django concept of template projects to provide an easy way to deploy geonode sites with a common, pre-defined set of modules. The 4 template projects that GeoNode provides by default are the following:
 
@@ -203,14 +203,14 @@ Currently Translations exist in the following languages.
 
 There are several external third party modules that can be used with GeoNode. 
 
-geonode-documents
-geonode-registry
-geonode-import
-geonode-export
-geonode-cloud
-geonode-themes
-geonode-openshift
-vgimap
+  * geonode-documents
+  * geonode-registry
+  * geonode-import
+  * geonode-export
+  * geonode-cloud
+  * geonode-themes
+  * geonode-openshift
+  * vgimap
 
 
 # Significant Projects Built on top of GeoNode
