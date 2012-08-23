@@ -1,7 +1,5 @@
 # Homepage
 
-![]()
-
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
 
 # Layers
@@ -18,21 +16,25 @@
 
 ## Layer Comments
 
-!(https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-comment.png)
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-comment.png)
 
 ## Layer Download
 
-!(https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-download.png)
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-download.png)
 
 # Maps
 
 ## Maps Explore
 
-![]()
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-explore.png)
 
-## Maps Info
+## Map Info
 
-![]()
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-info.png)
+
+## Map Download
+
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-download-layers.png)
 
 # Search
 
