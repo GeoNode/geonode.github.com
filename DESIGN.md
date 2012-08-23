@@ -8,15 +8,31 @@
 
 ## Layer Explore
 
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-explore.png)
+
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-explore-no-filter.png)
+
 ## Layer Info
 
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-info.png)
+
 ## Layer Comments
+
+!(https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-comment.png)
+
+## Layer Download
+
+!(https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-download.png)
 
 # Maps
 
 ## Maps Explore
 
+![]()
+
 ## Maps Info
+
+![]()
 
 # Search
 
