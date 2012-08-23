@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="About : About GeoNode" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>About</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/GeoNode">View on GitHub</a>
+
+          <h1 id="project_title">About</h1>
+          <h2 id="project_tagline">About GeoNode</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Current Status</p>
+
+<p>geonode:master (updated 4 days ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
+geonode:dev (updated 30 hours ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
+demo.geonode.org (up since 2012-06-02:21:08, Last Checked 2012-08-05:21:09 142 layers, 68 maps)</p>
+
+<p>Overview
+GeoNode is an open source web platform that facilitates the creation, sharing, and collaborative use of geospatial data. It is a powerful and flexible, user facing geospatial content management system that also provides a complete spatial data visualization, rendering and processing system. Built using the Django web framework and on top of GeoServer, GeoNode provides an easily installable, Open Geospatial Consortium (OGC) Compliant, Spatial Data Infrastructure (SDI). It has a simple yet highly extensible architecture that encourages diving in and working on the code and using it to develop sophisticated public facing geospatial website applications. GeoNode is GPL licensed and is supported by a diverse and active community.</p>
+
+<p>Note about OGC Compliance (WMS/WFS/WCS/CSW/GSR/KML)</p>
+
+<p>Features</p>
+
+<p>In addition to the general features provided by Django such as MVC architecture, ORM, templating, caching and an automatic admin interface, GeoNode provides the following functionality:</p>
+
+<ul>
+<li>Spatial data import and management (Using GeoServer) [geonode.layers &amp; geonode.import]</li>
+<li>Metadata Editing and Management (pycsw or any OGC Compliant CSW Server) [geonode.catalogue]</li>
+<li>Geospatial Visualization and Mapping (Using GeoExplorer GIS Tool) [geonode.maps]</li>
+<li>Versioned Editing of Geospatial Data (PostGIS &amp; GeoGit) [geonode.geosync]</li>
+<li>Cartographic Styling and Product Creation (SLD, GeoCSS) [geonode.carto, geonode.print]</li>
+<li>Geospatial Processing (using GeoServer WPS) (sextante??) [geonode.geoprocessing]</li>
+<li>Geospatial REST API (GeoServer Config and GeoServices REST APIs) [geonode.api &amp; geonode.georest]</li>
+<li>Geocoding of tabular data (Using ??) [geonode.geocode]</li>
+<li>Full Text and Spatial Search Engine (Django Haystack and ElasticSearch) [geonode.search]</li>
+<li>Social Functionality (Django Third Party modules &amp; Pinax) [geonode.people, geonode.groups &amp; geonode.social]</li>
+<li>Geospatial Content Portals [geonode.portals]</li>
+<li>Integration with OpenStreetMap (VGIMap)</li>
+<li>Integration with Django Based CMS (Mezzanine)
+The GeoNode Homepage</li>
+</ul><p>The GeoNode Admin Dashboard</p>
+
+<p>GeoExplorer GIS Visualization, Cartography and Processing Tool</p>
+
+<p>Community</p>
+
+<p>GeoNode has active Mailing Lists for its Users and Developers. There is an IRC channel for real-time discussion and a GeoNode blog and twitter stream to provide updates about the project, interesting geonode sites and downstream projects and their users. The GeoNode development team holds regular 'hangouts' on the Google Plus network to discuss the project and its development. GeoNode 'Summits' are held on an approximately bi-annual basis as a forum for major GeoNode stakeholders to discuss their geonode implementations and collaborate on new features. These summits are supplemented by code-sprints where core developers work together in person or remotely for a set length of time, generally in order to accomplish a pre-defined set of goals.</p>
+
+<p>Dependencies</p>
+
+<p>The core of GeoNode is built on top of GeoServer, several key python geospatial modules (gsconfig, owslib and pycsw) and  makes extensive use of third party django apps (modules) to provide further optional functionality. In many key modules (geonode.layers, geonode.catalogue, geonode.search), it is possible to choose from different backend engines to provide specific functionality similar to the way that django itself is able to use various database backends.</p>
+
+<p>It is possible to deploy GeoNode on top of the OpenGeo suite which provides a complete, commercially supported, open source geospatial infrastructure stack built using open standards. GeoNode shares many core modules with the OpenGeo Suite, while adding a user facing website application.</p>
+
+<p>GeoNode does not currently use GeoDjango, gdal, ogr, geos or shapely. Explain!</p>
+
+<p>Core Dependencies:</p>
+
+<ul>
+<li>Python 2.7</li>
+<li>Django 1.4</li>
+<li>GeoServer 2.2</li>
+<li>PostgreSQL &amp; PostGIS</li>
+<li>gsconfig (for interacting with GeoServer)</li>
+<li>owslib (for interacting with OGC services)</li>
+<li>pycsw 1.4.0 (for providing CSW metadata service)</li>
+<li>PIL (for image processing)</li>
+<li>lxml (for xml processing)</li>
+<li>South (for database migrations)</li>
+<li>requests (for internal and external HTTP interaction)</li>
+<li><p>httplib (replaced in favor of requests?)
+Optional Dependencies</p></li>
+<li><p>Markdown</p></li>
+<li><p>beautifulsoup4</p></li>
+<li><p>MultiPartPostHandler</p></li>
+<li><p>Sphinx</p></li>
+<li><p>gisdata</p></li>
+<li><p>mock</p></li>
+<li><p>pyelasticsearch</p></li>
+<li><p>tastypie</p></li>
+<li><p>agon-ratings</p></li>
+<li><p>dialogos</p></li>
+<li><p>idios</p></li>
+<li><p>user_messages</p></li>
+<li><p>django-registration</p></li>
+<li><p>django-profiles</p></li>
+<li><p>django-avatar</p></li>
+<li><p>django-relationships</p></li>
+<li><p>django-announcements</p></li>
+<li><p>django-notification</p></li>
+<li><p>django-activity-stream</p></li>
+<li><p>django-taggit</p></li>
+<li><p>django-extensions</p></li>
+<li><p>django-forms-bootstrap</p></li>
+<li><p>django-crispy-forms</p></li>
+<li><p>django-hosts</p></li>
+<li><p>django-nose</p></li>
+<li><p>django-haystack
+GeoNode is built on top of GeoServer which provides a complete OGC compliant GIS data management, versioned editing, processing and cartographic rendering server which can interface with many different stores of geospatial (shape files and other vector file formats, geotiffs and other raster formats, postgis, oracle spatial, MSSQL server and other geospatial databases) using open standards.</p></li>
+</ul><p>GeoNode's front end is developed with django templates, bootstrap css and jQuery javascript. It is possible to use various bootstrap themes to customize GeoNode's interface, and/or to add jquery code or existing widgets to add additional javascript functionality.</p>
+
+<p>GeoExplorer, the integrated GIS visualization and processing tool is developed using the OpenGeo Suite SDK which is built on top of GXP, GeoExt, ExtJS and OpenLayers.</p>
+
+<p>GeoNode uses paver for setup, building, packaging and running the development server with paste and jetty and for running the tests with nose. jstools is used to assemble the compressed javascript, and fabric is used for deployment to external servers. The preferred deployment stack is apache with mod_wsgi, tomcat, postgres with postgis and celery, rabbitmq and supervisord, but it is possible to deploy in other configurations including on platforms like openshift.</p>
+
+<p>Jenkins is used as a continuous integration, build and testing server.</p>
+
+<p>GeoNode's documentation is developed with sphinx and is hosted by read the docs.</p>
+
+<p>Installation</p>
+
+<p>If you simply want to try GeoNode, it is recommended to use Ubuntu 12.04 and install the latest stable release:
+sudo add-apt-repository ppa:geonode/release
+sudo apt-get update
+sudo apt-get install geonode
+geonode-startproject CentOS or Red Hat Enterprise Linux Installation Instructions
+Windows Installation Instructions:
+Installation on Other Platforms</p>
+
+<ul>
+<li>Other Linux</li>
+<li>Mac OSX</li>
+<li>Solaris</li>
+<li>BSD</li>
+</ul><p>Template Projects
+Geonode uses the Django concept of template projects to provide an easy way to deploy geonode sites with a common, pre-defined set of modules. The 4 template projects that GeoNode provides by default are the following:</p>
+
+<p>minimal - provides a minimal GeoNode site (geonode.layers, geonode.security)
+basic - minimal + import, maps, catalogue and search
+social - basic + profiles, groups, notifications, activity stream
+gis - minimal or basic + geosync, cartography &amp; geoprocessing</p>
+
+<p>While these template projects account for the most common deployment situations, it is completely possible to configure and deploy a geonode site with a custom set of modules based on your specific requirements.</p>
+
+<p>Application Programming Interface (API)</p>
+
+<p>GeoNode's API</p>
+
+<p>GeoServer's REST Configuration API</p>
+
+<p>GeoServer's GeoServices REST API</p>
+
+<p>Contributing</p>
+
+<p>GeoNode is an open source software project, managed using the git distributed version control system. The source code repository, issue tracker and wiki are hosted on GitHub. Contributing is as easy as forking the project and contributing your enhancements as pull requests.</p>
+
+<p>Please note the following guidelines for contributing:</p>
+
+<ul>
+<li>Contributed code must be written in the existing style. This is as simple as following the Django coding style and (most importantly) PEP 8. You should also run your code through pylint to look for signs of bugs or poor code quality.</li>
+<li>Contributions must be made available on a separately named branch based on the latest version of the master or dev branches.</li>
+<li>You must run the existing unit and integration tests before submitting your changes. If your changes cause the tests to break, they won't be accepted.</li>
+<li>If you are adding new functionality, you must include basic tests and documentation.</li>
+<li>Patches that fix bugs should always be paired with an issue filed in the issue tracker, and ideally will provide a new test that demonstrates the existing problem while verifying that the patch fixes it.</li>
+<li>If you intend to make changes which involve major refactoring of existing functionality or which are particularly large or far reaching improvements, you are encouraged to work through the GeoNode Improvement Proposal (GNIP) process.
+You are also encouraged to file bug reports in GeoNode's issue tracker by providing as much information as you possibly can (error messages, stack trace, logfiles or excerpts) about how you encountered the problem and/or what steps can be taken to reproduce it. These details helps the developers as they try to replicate and solve the problem.</li>
+</ul><p>If you have a feature that you would like to request or functionality that you would like to see implemented or a change in how current functionality works, you can also file an issue for this in the issue tracker. It is advisable to provide as much information as you can about the proposed new feature or enhancement so the developers can consider it and act accordingly. If you, or your organization would like to make major contributions to the project, you are encouraged to get involved in the Roadmap and GNIP processes.</p>
+
+<p>You can also contribute to the localization of GeoNode by contributing to an existing translation or starting a new one. See the section below for more information.</p>
+
+<p>Contributors who regularly fix bugs or frequently make enhancements may be invited to become core committers of the GeoNode project. Core contributors are able to vote on GeoNode Improvement Proposals and have other rights and responsibilities as detailed in geonode's documentation.</p>
+
+<p>Setting up a Development Environment</p>
+
+<p>Setting up a development environment generally involves the following 5 steps.</p>
+
+<ol>
+<li>Setup a virtual environment to sandbox GeoNode's python dependencies from the python packages installed systemwide. (mkvirtualenv my-geonode)</li>
+<li>Clone the git repository to your local machine. (git clone git://github.com/GeoNode/geonode.git)</li>
+<li>Run the paver command (paver setup) to install the dependencies and generally configure and setup the project.</li>
+<li>Run the unit and integration test suites to verify that everything is working correctly. (paver test and paver test_integration)</li>
+<li>Start the development server (paver start)
+Full instructions on how to do this on various platforms can be found in geonode's documentation.</li>
+</ol><p>GeoNode Improvement Proposals</p>
+
+<p>GeoNode Improvement Proposals (GNIP) are a formal mechanism used to manage any sort of major change to GeoNode. While the definition of "major" is subject to interpretation, examples of changes which are managed by the GNIP process include:</p>
+
+<ul>
+<li>Major redesign of existing features</li>
+<li>Major new functionality</li>
+<li>Code or build process re-architecture</li>
+<li>Changes to GeoNode process or project policy
+More information about the GNIP Process can be found in geonode's documentation.</li>
+</ul><p>GeoNode's Roadmap Process</p>
+
+<p>The GeoNode Roadmap Process is designed to complement the more technical GeoNode Improvement Proposals and strives to make it easier for the various organizations invested in GeoNode to collaborate on features of common interest. The GeoNode summits are an opportunity for major GeoNode stakeholders to discuss new features and to collaboratively lay out the projects roadmap for the coming months.</p>
+
+<p>Language Translations (Localization)</p>
+
+<p>GeoNode makes full use of translation strings, which allow GeoNode to be translated into multiple languages using Django's internationalization methodology. Translations are managed on the Transifex website, but can also be submitted via GitHub. Consult Django's internationalization methodology for more information on creating translations or using them.</p>
+
+<p>Currently Translations exist in the following languages. </p>
+
+<ul>
+<li>English</li>
+<li>Spanish</li>
+<li>German</li>
+<li>French</li>
+<li>Italian</li>
+<li>Greek</li>
+<li>Arabic</li>
+<li>Indonesian</li>
+<li>Chinese
+Third Party Modules</li>
+</ul><p>There are several external third party modules that can be used with GeoNode. </p>
+
+<p>geonode-documents
+geonode-registry
+geonode-import
+geonode-export
+geonode-cloud
+geonode-themes
+geonode-openshift
+vgimap</p>
+
+<p>Significant Projects Built on top of GeoNode</p>
+
+<p>Several large downstream projects are built on top of GeoNode and provide additional functionality. Among the most significant of these are the following.</p>
+
+<ul>
+<li>Harvard World map</li>
+<li>MapStory</li>
+<li>InaSAFE (Risiko)</li>
+<li>GEM OpenQuake</li>
+<li>OpenDRI
+Commercial Support and Sponsored Development</li>
+</ul><p>OpenGeo offers Enterprise Commercial Support for GeoNode's deployed on top of the OpenGeo suite, either on premises or in the cloud. Consult their website for information and pricing.</p>
+
+<p>Organizations wishing to sponsor the development of new features in GeoNode are encouraged to contact either OpenGeo or one of the following vendors to inquire about such services.</p>
+
+<p>Quotes</p>
+
+<p>Stu Gill
+Chris Holmes (Founder OpenGeo)
+Eddie Pickle (CEO OpenGeo)
+Chris Tucker (MapStory Foundation, OGC, USGIF)
+Robert Soden (GFDRR Labs World Bank)
+Ben Wyss (GEM Community Manager)
+Ben (Harvard WorldMap)
+Trevor Dhu (AusAid AIFDR)
+John Crowley (Harvard Humanitarian Initiative)</p>
+
+<p>GPL License</p>
+
+<p>GeoNode is Copyright 2010 OpenPlans.</p>
+
+<p>GeoNode is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+GeoNode is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p><a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
