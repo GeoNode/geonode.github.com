@@ -1,14 +1,14 @@
 # Current Status
 
-geonode:master (updated 4 days ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
-geonode:dev (updated 30 hours ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
-demo.geonode.org (up since 2012-06-02:21:08, Last Checked 2012-08-05:21:09 142 layers, 68 maps)
+  * geonode:master (updated 4 days ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
+  * geonode:dev (updated 30 hours ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
+  * demo.geonode.org (up since 2012-06-02:21:08, Last Checked 2012-08-05:21:09 142 layers, 68 maps)
 
 # Overview
 
-GeoNode is an open source web platform that facilitates the creation, sharing, and collaborative use of geospatial data. It is a powerful and flexible, user facing geospatial content management system that also provides a complete spatial data visualization, rendering and processing system. Built using the Django web framework and on top of GeoServer, GeoNode provides an easily installable, Open Geospatial Consortium (OGC) Compliant, Spatial Data Infrastructure (SDI). It has a simple yet highly extensible architecture that encourages diving in and working on the code and using it to develop sophisticated public facing geospatial website applications. GeoNode is GPL licensed and is supported by a diverse and active community.
+GeoNode is an open source web platform that facilitates the creation, sharing, and collaborative use of geospatial data. It is a powerful and flexible, user facing geospatial content management system that also provides a complete spatial data visualization and system. Built using the Django web framework and on top of GeoServer, GeoNode provides an easily installable, Open Geospatial Consortium (OGC) Compliant, Spatial Data Infrastructure (SDI). It has a simple yet highly extensible architecture that encourages diving in and working on the code and using it to develop sophisticated public facing geospatial website applications. GeoNode is GPL licensed and is supported by a diverse and active community.
 
-Note about OGC Compliance (WMS/WFS/WCS/CSW/GSR/KML)
+Note about OGC Compliance (WMS/WFS/WCS/CSW/KML)
 
 
 # Features
@@ -18,10 +18,7 @@ In addition to the general features provided by Django such as MVC architecture,
    * Spatial data import and management (Using GeoServer) [geonode.layers & geonode.import]
    * Metadata Editing and Management (pycsw or any OGC Compliant CSW Server) [geonode.catalogue]
    * Geospatial Visualization and Mapping (Using GeoExplorer GIS Tool) [geonode.maps]
-   * Versioned Editing of Geospatial Data (PostGIS & GeoGit) [geonode.geosync]
-   * Cartographic Styling and Product Creation (SLD, GeoCSS) [geonode.carto, geonode.print]
-   * Geospatial Processing (using GeoServer WPS) (sextante??) [geonode.geoprocessing]
-   * Geospatial REST API (GeoServer Config and GeoServices REST APIs) [geonode.api & geonode.georest]
+   * Cartographic Styling and Product Creation (SLD) [geonode.print]
    * Geocoding of tabular data (Using ??) [geonode.geocode]
    * Full Text and Spatial Search Engine (Django Haystack and ElasticSearch) [geonode.search]
    * Social Functionality (Django Third Party modules & Pinax) [geonode.people, geonode.groups & geonode.social]
