@@ -24,7 +24,7 @@
 
 # [Maps](https://sites.google.com/a/opengeo.org/geonode-ui/core/maps)
 
-## Maps Explore
+## [Maps Explore](https://sites.google.com/a/opengeo.org/geonode-ui/core/maps/map_explore)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-explore.png)
 
