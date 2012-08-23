@@ -19,12 +19,9 @@ In addition to the general features provided by Django such as MVC architecture,
    * Metadata Editing and Management (pycsw or any OGC Compliant CSW Server) [geonode.catalogue]
    * Geospatial Visualization and Mapping (Using GeoExplorer GIS Tool) [geonode.maps]
    * Cartographic Styling and Product Creation (SLD) [geonode.print]
-   * Geocoding of tabular data (Using ??) [geonode.geocode]
    * Full Text and Spatial Search Engine (Django Haystack and ElasticSearch) [geonode.search]
    * Social Functionality (Django Third Party modules & Pinax) [geonode.people, geonode.groups & geonode.social]
    * Geospatial Content Portals [geonode.portals]
-   * Integration with OpenStreetMap (VGIMap)
-   * Integration with Django Based CMS (Mezzanine)
 
 ## The GeoNode Homepage
 
