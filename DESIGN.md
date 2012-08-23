@@ -2,7 +2,7 @@
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
 
-# Layers
+# [Layers](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer)
 
 ## [Layer Explore](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_explore)
 
