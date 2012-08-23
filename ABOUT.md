@@ -85,7 +85,7 @@ GeoNode does not currently use GeoDjango, gdal, ogr, geos or shapely. Explain!
    * django-nose
    * django-haystack
 
-GeoNode is built on top of GeoServer which provides a complete OGC compliant GIS data management, versioned editing, processing and cartographic rendering server which can interface with many different stores of geospatial (shape files and other vector file formats, geotiffs and other raster formats, postgis, oracle spatial, MSSQL server and other geospatial databases) using open standards.
+GeoNode is built on top of GeoServer which provides a complete OGC compliant GIS data management, editing, processing and cartographic rendering server which can interface with many different stores of geospatial (shape files and other vector file formats, geotiffs and other raster formats, postgis, oracle spatial, MSSQL server and other geospatial databases) using open standards.
 
 GeoNode's front end is developed with django templates, bootstrap css and jQuery javascript. It is possible to use various bootstrap themes to customize GeoNode's interface, and/or to add jquery code or existing widgets to add additional javascript functionality.
 
@@ -116,10 +116,9 @@ Installation on Other Platforms
 
 Geonode uses the Django concept of template projects to provide an easy way to deploy geonode sites with a common, pre-defined set of modules. The 4 template projects that GeoNode provides by default are the following:
 
-minimal - provides a minimal GeoNode site (geonode.layers, geonode.security)
-basic - minimal + import, maps, catalogue and search
-social - basic + profiles, groups, notifications, activity stream
-gis - minimal or basic + geosync, cartography & geoprocessing
+  * minimal - provides a minimal GeoNode site (geonode.layers, geonode.security)
+  * basic - minimal + import, maps, catalogue and search
+  * social - basic + profiles, groups, notifications, activity stream
 
 While these template projects account for the most common deployment situations, it is completely possible to configure and deploy a geonode site with a custom set of modules based on your specific requirements.
 
@@ -203,9 +202,6 @@ There are several external third party modules that can be used with GeoNode.
   * geonode-export
   * geonode-cloud
   * geonode-themes
-  * geonode-openshift
-  * vgimap
-
 
 # Significant Projects Built on top of GeoNode
 
@@ -215,7 +211,6 @@ Several large downstream projects are built on top of GeoNode and provide additi
    * MapStory
    * InaSAFE (Risiko)
    * GEM OpenQuake
-   * OpenDRI
 
 #Commercial Support and Sponsored Development
 
@@ -223,8 +218,9 @@ OpenGeo offers Enterprise Commercial Support for GeoNode's deployed on top of th
 
 Organizations wishing to sponsor the development of new features in GeoNode are encouraged to contact either OpenGeo or one of the following vendors to inquire about such services.
 
-# GPL License
+  * Your company listed here
 
+# GPL License
 
 GeoNode is Copyright 2010 OpenPlans.
 
