@@ -103,7 +103,7 @@ Jenkins is used as a continuous integration, build and testing server.
 
 GeoNode's documentation is developed with sphinx and is hosted by read the docs.
 
-Installation
+# Installation
 
 If you simply want to try GeoNode, it is recommended to use Ubuntu 12.04 and install the latest stable release:
 sudo add-apt-repository ppa:geonode/release
@@ -118,7 +118,8 @@ Installation on Other Platforms
    * Solaris
    * BSD
 
-Template Projects
+## Template Projects
+
 Geonode uses the Django concept of template projects to provide an easy way to deploy geonode sites with a common, pre-defined set of modules. The 4 template projects that GeoNode provides by default are the following:
 
 minimal - provides a minimal GeoNode site (geonode.layers, geonode.security)
@@ -129,7 +130,7 @@ gis - minimal or basic + geosync, cartography & geoprocessing
 While these template projects account for the most common deployment situations, it is completely possible to configure and deploy a geonode site with a custom set of modules based on your specific requirements.
 
 
-Application Programming Interface (API)
+# Application Programming Interface (API)
 
 GeoNode's API
 
@@ -137,7 +138,7 @@ GeoServer's REST Configuration API
 
 GeoServer's GeoServices REST API
 
-Contributing
+# Contributing
 
 GeoNode is an open source software project, managed using the git distributed version control system. The source code repository, issue tracker and wiki are hosted on GitHub. Contributing is as easy as forking the project and contributing your enhancements as pull requests.
 
@@ -157,7 +158,7 @@ You can also contribute to the localization of GeoNode by contributing to an exi
 
 Contributors who regularly fix bugs or frequently make enhancements may be invited to become core committers of the GeoNode project. Core contributors are able to vote on GeoNode Improvement Proposals and have other rights and responsibilities as detailed in geonode's documentation.
 
-Setting up a Development Environment
+# Setting up a Development Environment
 
 Setting up a development environment generally involves the following 5 steps.
 
@@ -168,7 +169,7 @@ Setting up a development environment generally involves the following 5 steps.
   5. Start the development server (paver start)
 Full instructions on how to do this on various platforms can be found in geonode's documentation.
 
-GeoNode Improvement Proposals
+# GeoNode Improvement Proposals
 
 GeoNode Improvement Proposals (GNIP) are a formal mechanism used to manage any sort of major change to GeoNode. While the definition of "major" is subject to interpretation, examples of changes which are managed by the GNIP process include:
    * Major redesign of existing features
@@ -178,11 +179,11 @@ GeoNode Improvement Proposals (GNIP) are a formal mechanism used to manage any s
 More information about the GNIP Process can be found in geonode's documentation.
 
 
-GeoNode's Roadmap Process
+# GeoNode's Roadmap Process
 
 The GeoNode Roadmap Process is designed to complement the more technical GeoNode Improvement Proposals and strives to make it easier for the various organizations invested in GeoNode to collaborate on features of common interest. The GeoNode summits are an opportunity for major GeoNode stakeholders to discuss new features and to collaboratively lay out the projects roadmap for the coming months.
 
-Language Translations (Localization)
+# Language Translations (Localization)
 
 GeoNode makes full use of translation strings, which allow GeoNode to be translated into multiple languages using Django's internationalization methodology. Translations are managed on the Transifex website, but can also be submitted via GitHub. Consult Django's internationalization methodology for more information on creating translations or using them.
 
@@ -197,7 +198,8 @@ Currently Translations exist in the following languages.
    * Arabic
    * Indonesian
    * Chinese
-Third Party Modules
+
+# Third Party Modules
 
 There are several external third party modules that can be used with GeoNode. 
 
@@ -211,7 +213,7 @@ geonode-openshift
 vgimap
 
 
-Significant Projects Built on top of GeoNode
+# Significant Projects Built on top of GeoNode
 
 Several large downstream projects are built on top of GeoNode and provide additional functionality. Among the most significant of these are the following.
 
@@ -220,13 +222,14 @@ Several large downstream projects are built on top of GeoNode and provide additi
    * InaSAFE (Risiko)
    * GEM OpenQuake
    * OpenDRI
-Commercial Support and Sponsored Development
+
+#Commercial Support and Sponsored Development
 
 OpenGeo offers Enterprise Commercial Support for GeoNode's deployed on top of the OpenGeo suite, either on premises or in the cloud. Consult their website for information and pricing.
 
 Organizations wishing to sponsor the development of new features in GeoNode are encouraged to contact either OpenGeo or one of the following vendors to inquire about such services.
 
-GPL License
+# GPL License
 
 
 GeoNode is Copyright 2010 OpenPlans.
