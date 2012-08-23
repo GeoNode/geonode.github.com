@@ -1,5 +1,9 @@
 # Homepage
 
+![]()
+
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
+
 # Layers
 
 ## Layer Explore
