@@ -1,8 +1,8 @@
 # Current Status
 
-  * geonode:master (updated 4 days ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
-  * geonode:dev (updated 30 hours ago, 17/17 unit tests passing, 34/34 integration tests passing, 88% coverage, last run 2012-08-05:19:34)
-  * demo.geonode.org (up since 2012-06-02:21:08, Last Checked 2012-08-05:21:09 142 layers, 68 maps)
+  * geonode:master
+  * geonode:dev
+  * demo.geonode.org
 
 # Overview
 
