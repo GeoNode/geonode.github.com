@@ -27,7 +27,7 @@ In addition to the general features provided by Django such as MVC architecture,
 
 ## The GeoNode Admin Dashboard
 
-## GeoExplorer GIS Visualization, Cartography and Processing Tool
+## GeoExplorer GIS Visualization and Cartography Tool
 
 # Community
 
