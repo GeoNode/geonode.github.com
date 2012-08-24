@@ -23,13 +23,15 @@ In addition to the general features provided by Django such as MVC architecture,
    * Social Functionality (Django Third Party modules & Pinax) [geonode.people, geonode.groups & geonode.social]
    * Geospatial Content Portals [geonode.portals]
 
-## The GeoNode Homepage
+## GeoNode's User Interface 
+
+### Homepage
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
 
-[GeoNode's User Interface](https://github.com/GeoNode/geonode.github.com/blob/master/DESIGN.md)
+### [Complete User Interface](https://github.com/GeoNode/geonode.github.com/blob/master/DESIGN.md)
 
-[User Interface Development Site](https://sites.google.com/a/opengeo.org/geonode-ui/)
+### [User Interface Development Site](https://sites.google.com/a/opengeo.org/geonode-ui/)
 
 ## The GeoNode Admin Dashboard
 
