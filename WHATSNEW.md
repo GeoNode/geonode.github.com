@@ -39,6 +39,33 @@ platform in the coming months.
 
 ## Codebase Refactor
 
+The GeoNode project repository was reorganized by moving the key modules (GeoNodePy, geoserver-genode-ext and geonode-client) to the top level of the repo per GNIP-29. The core maps app/module was refactored and reorganized per GNIP-30 by splitting it into geonode.layers which provides the core layer/dataset functionality that geonode provides, geonode.maps app/module which stores and manages the configuration of gxp/openlayers based maps consisting of multiple layers (both local and remote), and the geonode.people module with provides the functionality related to storing profiles and layer metadata roles. Additionally, the geonode.core module was renamed to geonode.security per GNIP-20. CSW/Metadata functionality was moved to the geonode.catalogue module and setup using the django backends design pattern allowing GeoNode to work with different CSW backends.
+
+The repo is now organized as below:
+
+<pre>
+
+https://github.com/GeoNode/geonode/tree/dev
+     geonode - top level django ‘project’ with several apps below.
+          layers - core layer/dataset app
+          maps - core maps app
+          security - granular (row level based) auth backend.
+          people - profiles app (also used for organizational entities)
+          catalogue - layers interaction with internal or external CS-W.
+          static - static media (css, javascript, images)
+          templates - base project templates and includes (includes avatar, profiles and registration)
+          tests - integration tests (should eventually include javascript/client tests too)
+     geonode-client - custom GeoExplorer build (the GIS tool component of GeoNode)
+     geoserver-geonode-ext - custom GeoServer build
+     package - packaging scripts and config files (debian, centos and eventually windows)
+     docs - existing docs and build/make config
+
+We have also moved to more complete and consistent usage of the django signals framework / design pattern (layers, maps, catalogue). It is now possible to run a GeoNode without a CSW catalogue at all (this current default configuration in dev mode), all data is stored in GeoNode’s internal database, synced with external systems (GeoServer, GeoNetwork, ElasticSearch etc) via the layers and catalogue modules with pre and post_save signals. I will ask Ariel Nunez from GFDRR to follow up on this thread and explain this a bit more and the rationale behind it.
+
+Additionally, the Link Class and Manager were introduced in the layers module to store the links available for each layer in Django’s own database rather than accessing this via gsconfig.py calls each time the layer page was loaded. I’ll also ask Ariel to follow up and explain this a bit more.
+
+</pre>
+
 ## Refactor of Setup/Build/Package/Deploy
 
 ## Testing
