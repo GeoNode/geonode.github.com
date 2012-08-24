@@ -1,134 +1,131 @@
-# Homepage
+# [Homepage](https://sites.google.com/a/opengeo.org/geonode-ui/home/homepage)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
 
-# Layers
+# [Layers](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer)
 
-## Layer Explore
+## [Layer Explore](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_explore)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-explore.png)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-explore-no-filter.png)
 
-## Layer Info
+## [Layer Info](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_info)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-info.png)
 
-## Layer Comments
+## [Layer Comments](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_comments)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-comment.png)
 
-## Layer Download
+## [Layer Download](https://sites.google.com/a/opengeo.org/geonode-ui/core/layer/layer_comments)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-layers-download.png)
 
-# Maps
+# [Maps](https://sites.google.com/a/opengeo.org/geonode-ui/core/maps)
 
-## Maps Explore
+## [Maps Explore](https://sites.google.com/a/opengeo.org/geonode-ui/core/maps/map_explore)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-explore.png)
 
-## Map Info
+## [Map Info](https://sites.google.com/a/opengeo.org/geonode-ui/core/map_detail)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-info.png)
 
-## Map Download
+## [Map Download](https://sites.google.com/a/opengeo.org/geonode-ui/core/map_download)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-maps-download-layers.png)
 
-# Search
+# [Search](https://sites.google.com/a/opengeo.org/geonode-ui/core/search)
 
-## Search Basic
+## [Search Basic](https://sites.google.com/a/opengeo.org/geonode-ui/core/search_basic)
 
 ![](https://sites.google.com/a/opengeo.org/geonode-ui/_/rsrc/1345482527775/core/search/search_basic/Basic%20Search.png)
 
-## Search Results
+## [Search Results](https://sites.google.com/a/opengeo.org/geonode-ui/core/search_results)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-search-results.png)
 
-## Search Advanced
+## [Search Advanced](https://sites.google.com/a/opengeo.org/geonode-ui/core/search_advanced)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-search-advanced.png)
 
-## Search Map
+## [Search Map](https://sites.google.com/a/opengeo.org/geonode-ui/core/search_map)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-search-spatial.png)
 
-# Profiles
+# [Profiles](https://sites.google.com/a/opengeo.org/geonode-ui/social/profiles)
 
-## Profile List
+## [Profile List](https://sites.google.com/a/opengeo.org/geonode-ui/social/profiles/profile_list)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-profiles-list.png)
 
-## Profile Info
+## [Profile Info](https://sites.google.com/a/opengeo.org/geonode-ui/social/profiles/profile_detail)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-profiles-info.png)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-profiles-info-group.png)
 
-## Profile Manage
+## [Profile Manage](https://sites.google.com/a/opengeo.org/geonode-ui/social/profiles/profile_manage)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-profiles-manage.png)
 
-# Groups
+# [Groups](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups)
 
-## Group List
+## [Group List](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups/group_list)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-groups.png)
 
-## Create Group
+## [Create Group](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups/group_create)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-groups-create.png)
 
-## Group Info
+## [Group Info](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups/group_detail)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-groups-info.png)
 
-## Group Manage
+## [Group Manage](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups/group_manage)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-groups-manage.png)
 
-## Group Manage Content
+## [Group Manage Content](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups/group_manage_content)
 
-## Group Manage Members
+## [Group Manage Members](https://sites.google.com/a/opengeo.org/geonode-ui/social/groups/groups_manage_members)
 
+# [Portals](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/portal)
 
-# Portals
-
-## Portals List
+## [Portals List](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/portal/portals_list)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-portals.png)
 
-## Portal Info
+## [Portal Info](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/portal/portal_detail)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-portals-info.png)
 
-## Portal Manage
+## [Portal Manage](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/portal/portal_manage)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-portals-manage.png)
 
-## Portal Manage Theme
+## [Portal Manage Theme](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/portal/portal_manage_theme)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-portals-manage-theme.png)
 
-## Portal Manage Content
+## [Portal Manage Content](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/portal/portal_manage_content)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-portals-manage-content.png)
 
-# Print
+# [Print](https://sites.google.com/a/opengeo.org/geonode-ui/xtra/printing/print_new)
 
 ![](https://lh4.googleusercontent.com/YLbg7CrxKO4Yq0X7MRMF46RwYnbRthIInIkbMStdliw5o2JXs_skEXgmlYdQ2VqOf4YbRqx0UF1U63k7DoYBCVwHOFuqpnzUbL8JtczTyf61kEX1Y28)
 
 ![](https://lh6.googleusercontent.com/J9Fp57aXVsR-MRjPeWwV9-5b8MXxpZwvA5X9joh0ZJppLszLIUrjyJhGHgqaYCKam4D1AB3gIBeeTrTt7qUWbiYRd7h0fMwYFphyW_pDCWvLx-3Jzig)
 
-# Announcements
+# [Announcements](https://sites.google.com/a/opengeo.org/geonode-ui/social/announcements)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-announcement-on-page.png)
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-announcement.png)
 
-# Notifications
+# [Notifications](https://sites.google.com/a/opengeo.org/geonode-ui/social/notifications)
 
-# Activity Stream
-
-# Messages
+# [Activity Stream](https://sites.google.com/a/opengeo.org/geonode-ui/social/activity)
