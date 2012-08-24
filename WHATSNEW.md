@@ -24,7 +24,7 @@ GeoNode deployments
 Significant focus has been placed on re-working various internal and back-end components of the GeoNode
 platform in order to ensure stability and ease of use. These include refactoring the code structure, reworking
 the metadata catalogue to abstract the need for GeoNetwork – which has been identified as a common point of
-failure - to any CSW implementation and a switch to default usage of PyCSW which has shown significant benefits.
+failure - to any CSW implementation and a switch to default usage of pycsw which has shown significant benefits.
 These combined with the comprehensive unit and integration test suite, which is under ongoing development, will
 ensure significant improvements to stability of the GeoNode platform with the 2.0 release.
 
