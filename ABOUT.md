@@ -106,6 +106,9 @@ GeoNode's documentation is developed with sphinx and is hosted by read the docs.
 # Installation
 
 If you simply want to try GeoNode, it is recommended to use Ubuntu 12.04 and install the latest stable release:
+
+## Ubuntu Installation Instructions
+
   * sudo add-apt-repository ppa:geonode/release
   * sudo apt-get update
   * sudo apt-get install geonode
