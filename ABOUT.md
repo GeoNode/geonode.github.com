@@ -41,6 +41,8 @@ In addition to the general features provided by Django such as MVC architecture,
 
 ![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-geoexplorer.png)
 
+### [Complete GeoExplorer Interface](https://sites.google.com/a/opengeo.org/geonode-ui/core/geoexplorer)
+
 # Community
 
 GeoNode has active Mailing Lists for its Users and Developers. There is an IRC channel for real-time discussion and a GeoNode blog and twitter stream to provide updates about the project, interesting geonode sites and downstream projects and their users. The GeoNode development team holds regular 'hangouts' on the Google Plus network to discuss the project and its development. GeoNode 'Summits' are held on an approximately bi-annual basis as a forum for major GeoNode stakeholders to discuss their geonode implementations and collaborate on new features. These summits are supplemented by code-sprints where core developers work together in person or remotely for a set length of time, generally in order to accomplish a pre-defined set of goals.
