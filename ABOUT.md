@@ -99,6 +99,11 @@ GeoNode does not currently use GeoDjango, gdal, ogr, geos or shapely. Explain!
    * django-nose
    * django-haystack
 
+## Javascript Dependencies
+
+   * jquery
+   * jquery-ui
+
 GeoNode is built on top of GeoServer which provides a complete OGC compliant GIS data management, editing, processing and cartographic rendering server which can interface with many different stores of geospatial (shape files and other vector file formats, geotiffs and other raster formats, postgis, oracle spatial, MSSQL server and other geospatial databases) using open standards.
 
 GeoNode's front end is developed with django templates, bootstrap css and jQuery javascript. It is possible to use various bootstrap themes to customize GeoNode's interface, and/or to add jquery code or existing widgets to add additional javascript functionality.
