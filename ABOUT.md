@@ -25,9 +25,15 @@ In addition to the general features provided by Django such as MVC architecture,
 
 ## The GeoNode Homepage
 
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-homepage.png)
+
 ## The GeoNode Admin Dashboard
 
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-admin.png)
+
 ## GeoExplorer GIS Visualization and Cartography Tool
+
+![](https://raw.github.com/GeoNode/geonode.github.com/master/ui_design/gn-geoexplorer.png)
 
 # Community
 
