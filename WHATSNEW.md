@@ -80,6 +80,32 @@ Additionally, the Link Class and Manager were introduced in the layers module to
 
 ## UI/UX
 
+Significant effort has gone into completely reworking GeoNode’s User Interface and the User experience and interactions around it. Based on feedback from the initial GeoNode User Survey and input from key stakeholders, an initial set of wireframes developed by our colleagues at SpatialDev. These were circulated on the geonode-dev list a few months back, and based on feedback received on them and from interim reviews of the designs developed, further work was done to produce a set of designs that reflects the current functionality and some functionality that is intended to be merged in before the 2.0 release. 
+
+After implementing this set of designs, both in person and remote user tests are planned to evaluate how they work for our various sets of users. There were a large number of people to asked to be included in user testing when we originally circulated the GeoNode User Survey, and anyone else who is interested is welcome to participate in this process.
+
+Some initial refactoring of the organization and structure templates was done per GNIP-2. The repository now has a set of top level templates, a set of includes. The templates for layers & maps are located in their own app directories so as to make these apps more reusable in the normal django project structure of reusable apps. Additional renaming of templates and inclusion and use of template tags/snippets is being currently worked on in the design branch (layers and maps) These changes will be merged from the design branch into the dev branch in the next few weeks.
+
+A critical part of the UI refactoring process has been the switch to using twitter’s Bootstrap css library per GNIP-28, and the use of Jquery for most javascript functionality in the template pages. Ext and GeoExt are now used primarily in the Map Composer although there are a few pages still using Ext as the switch to jquery is complete. More about the Map Composer, geonode-client and GeoExplorer in a subsequent mail.
+
+A Design Review Site has been setup that is to be used for implementers of geonode and other stakeholders to review the design and user interaction of the site. The site is broken down granularly per page of functionality and each page will be annotated with information about the expected interactions on each page and how these work in different browsers or in different states on the site. You can request access to collaborate (comment, edit, update) with the development on this site by posting to the geonode-dev list initially.
+
+The design branch is where current is where current work is being done in the implementation of the designs. It is partially useable now, and anyone is certainly welcome to pull it and give it a spin. It may make sense to start filing tickets against this implementation in the issue tracker, but it may be better to just discuss on the list for now.
+
+OpenGeo has a UI development site setup that will be used for both remote and in person User Testing in the coming months. It will keep up to date with changes with the design branch, but the data will be reset on a regular basis.
+
+A user testing group has been setup which will be used as a mailing list designed to coordinate with participants in the user testing process. You welcome to join. For now it is setup as broadcast only, it may be a good idea to setup a separate list for discussion, but geonode-dev can also be used for that purpose.
+
+The longer term goal is to build this into a collaborative community process that is iterative:
+  * review designs on design site, discuss there with other implementers and stakeholders
+  * rework designs based on consensus among comments in the review site
+  * update the design review site with modified wireframes, mockups, design, annotation and screenshots
+  * implement the revised designs in a branch
+  * send pull requests with revised implementation
+  * test with user participants (remote and in person)
+  * collect user participant feedback and summarize on design review site
+  * rinse and repeat
+
 ## GeoExplorer (GeoNode Client)
 
 ## Workspaces/Portals/Virtual Services
