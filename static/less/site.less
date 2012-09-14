@@ -1,1 +1,209 @@
 @import "bootstrap/bootstrap";
+
+@darkBlue: #03424c;
+@beige: #edeae3;
+@beigeDark: #e3dfd7;
+@green: #9eb343;
+@orange: #e1a01f;
+@footerBg: #3a5161;
+
+@fs: @baseFontSize;
+@baseFontFamily: 'Lato', sans-serif;
+@textColor: #4d4e50;
+@linkColor: #0076a0;
+
+.bg (@img, @repeat: no-repeat, @x: 0, @y: 0) {
+  background:url("../img/@{img}") @repeat @x @y;
+}
+
+.bg-clr (@clr, @img, @repeat: no-repeat, @x: 0, @y: 0) {
+  background:@clr url("../img/@{img}") @repeat @x @y;
+}
+
+// bst overwrite
+.btn {
+  border:0;
+  .box-shadow(none);
+  text-shadow:none;
+  .border-radius(3px);
+}
+
+.btn-success {
+  background:@green;
+
+  &:hover {
+    background:lighten(@green, 3%);
+  }
+}
+
+.btn-warning {
+  background:@orange;
+
+  &:hover {
+    background:lighten(@orange, 4%);
+  }
+}
+
+.container {
+  position:relative;
+}
+
+// generic
+header.main {
+  background:@darkBlue;
+  padding:10px 0;
+
+  a.brand {
+    display:block;
+    width:138px;
+    height:35px;
+    text-indent:-9999px;
+    .bg("geonode_logo.png");
+  }
+
+  .btn {
+    font-weight:400;
+    margin:10px 0 0 20px;
+    padding:5px 24px 6px;
+    font-size:15px;
+  }
+}
+
+section.banner {
+  .bg-clr(@beige, "banner_bg.png", repeat-x);
+  height:404px;
+  color:@white;
+  padding:30px 0 20px;
+
+  h1 {
+    font-weight:300;
+    font-size:43px;
+    line-height:50px;
+  }
+
+  p {
+    line-height:25px;
+    font-weight:300;
+    margin:0 80px 25px 0;
+  }
+
+  .btn-large {
+    font-size:29px;
+    padding:10px 43px;
+  }
+
+  img.hero-img {
+    position:absolute;
+    top:20px;
+    right:-5px;
+  }
+}
+
+section.body {
+  background: @beige;
+  padding-bottom:20px;
+
+  .box {
+    background: @beigeDark;
+    padding:15px 0;
+    text-align:center;
+    overflow:visible;
+    margin:93px 20px 30px;
+    height:280px;
+
+    header.box-header {
+      width:243px;
+      height:130px;
+      color:@white;
+      position:relative;
+      margin:-94px auto 20px;
+
+      h2 {
+        font-size:@fs + 6;
+        padding-top:78px;
+        font-weight: 400;
+      }
+    }
+
+    &.box-users header.box-header { .bg("hd_users.png"); }
+    &.box-devs header.box-header { .bg("hd_devs.png"); }
+    &.box-admins header.box-header { .bg("hd_admins.png"); }
+
+    ul.unstyled {
+      font-weight:700;
+      margin:0 20px;
+
+      li {
+        margin-bottom:14px;
+      }
+    }
+  }
+}
+
+footer.footer {
+  .bg("footer_bg.png", repeat-x);
+  padding-top:40px;
+  color:@white;
+
+  a {
+    color:@white;
+    text-decoration:underline;
+
+    &:hover {
+      text-decoration:none;
+    }
+  }
+
+  article {
+    padding-left:100px;
+    width:194px;
+    margin:0 0 55px 80px;
+
+    &.documentation { .bg("icons/documentation.png"); }
+    &.mailing-list { .bg("icons/mailing_list.png"); }
+    &.issue-tracker { .bg("icons/issue_tracker.png", no-repeat, 10px, 0); }
+    &.faqs { .bg("icons/faqs.png", no-repeat, 20px, 0); }
+    &.irc { .bg("icons/irc.png"); }
+    &.sites-gallery { .bg("icons/sites_gallery.png", no-repeat, 10px, 0); }
+
+    h3 {
+      font-size:21px;
+    }
+
+    p {
+      line-height:24px;
+    }
+  }
+
+  .quick-start {
+    width:88px;
+    height:295px;
+    .bg("quick_start.png");
+    text-indent:-9999px;
+    margin-top:-46px;
+  }
+
+  section.btm {
+    border-top:1px solid @white;
+    padding:19px 0;
+    font-size:11px;
+    font-weight:700;
+
+    .social {
+      a {
+        display:block;
+        width:26px;
+        height:26px;
+        text-indent:-9999px;
+        float:left;
+        margin-left:15px;
+        .bg("social.png");
+
+        &.fb { background-position: 0 0; }
+        &.tw { background-position: -40px 0; }
+        &.in { background-position: -79px 0; }
+        &.bl { background-position: -119px 0; }
+      }
+    }
+  }
+}
