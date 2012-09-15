@@ -62,7 +62,7 @@ https://github.com/GeoNode/geonode/tree/dev
 
 </pre>
 
-We have also moved to more complete and consistent usage of the django signals framework / design pattern (layers, maps, catalogue). It is now possible to run a GeoNode without a CSW catalogue at all (this current default configuration in dev mode), all data is stored in GeoNode’s internal database, synced with external systems (GeoServer, GeoNetwork, ElasticSearch etc) via the layers and catalogue modules with pre and post_save signals. 
+We have also moved to more complete and consistent usage of the django signals framework / design pattern (layers, maps, catalogue). It is now possible to run a GeoNode without a CSW catalogue at all (the current default configuration in dev mode is enabled with pycsw), all data is stored in GeoNode’s internal database, synced with external systems (GeoServer, GeoNetwork, ElasticSearch etc) via the layers and catalogue modules with pre and post_save signals. 
 
 Additionally, the Link Class and Manager were introduced in the layers module to store the links available for each layer in Django’s own database rather than accessing this via gsconfig.py calls each time the layer page was loaded. 
 
