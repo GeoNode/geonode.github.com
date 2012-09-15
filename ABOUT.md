@@ -6,7 +6,7 @@
 
 # Overview
 
-GeoNode is an open source web platform that facilitates the creation, sharing, and collaborative use of geospatial data. It is a powerful and flexible, user facing geospatial content management system that also provides a complete spatial data visualization and system. Built using the Django web framework and on top of GeoServer, GeoNode provides an easily installable, Open Geospatial Consortium (OGC) Compliant, Spatial Data Infrastructure (SDI). It has a simple yet highly extensible architecture that encourages diving in and working on the code and using it to develop sophisticated public facing geospatial website applications. GeoNode is GPL licensed and is supported by a diverse and active community.
+GeoNode is an open source web platform that facilitates the creation, sharing, and collaborative use of geospatial data. It is a powerful and flexible, user facing geospatial content management system that also provides a complete spatial data visualization and system. Built using the Django web framework and on top of GeoServer, GeoNode provides an easily installable, Open Geospatial Consortium (OGC) Compliant Spatial Data Infrastructure (SDI). It has a simple yet highly extensible architecture that encourages diving in and working on the code and using it to develop sophisticated public facing geospatial website applications. GeoNode is GPL licensed and is supported by a diverse and active community.
 
 Note about OGC Compliance (WMS/WFS/WCS/CSW/KML)
 
@@ -53,7 +53,7 @@ The core of GeoNode is built on top of GeoServer, several key python geospatial 
 
 It is possible to deploy GeoNode on top of the OpenGeo suite which provides a complete, commercially supported, open source geospatial infrastructure stack built using open standards. GeoNode shares many core modules with the OpenGeo Suite, while adding a user facing website application.
 
-GeoNode does not currently use GeoDjango, gdal, ogr, geos or shapely. Explain!
+GeoNode does not currently use GeoDjango, gdal, ogr. Explain!
 
 ## Core Dependencies:
 
@@ -62,7 +62,7 @@ GeoNode does not currently use GeoDjango, gdal, ogr, geos or shapely. Explain!
    * GeoServer 2.2
    * PostgreSQL & PostGIS
    * gsconfig (for interacting with GeoServer)
-   * owslib (for interacting with OGC services)
+   * OWSLib (for interacting with OGC services)
    * pycsw 1.4.0 (for providing CSW metadata service)
    * PIL (for image processing)
    * lxml (for xml processing)
@@ -106,7 +106,7 @@ GeoNode does not currently use GeoDjango, gdal, ogr, geos or shapely. Explain!
 
 GeoNode is built on top of GeoServer which provides a complete OGC compliant GIS data management, editing, processing and cartographic rendering server which can interface with many different stores of geospatial (shape files and other vector file formats, geotiffs and other raster formats, postgis, oracle spatial, MSSQL server and other geospatial databases) using open standards.
 
-GeoNode's front end is developed with django templates, bootstrap css and jQuery javascript. It is possible to use various bootstrap themes to customize GeoNode's interface, and/or to add jquery code or existing widgets to add additional javascript functionality.
+GeoNode's front end is developed with django templates, bootstrap css and jQuery javascript. It is possible to use various bootstrap themes to customize GeoNode's interface, and/or to add jQuery code or existing widgets to add additional javascript functionality.
 
 GeoExplorer, the integrated GIS visualization and processing tool is developed using the OpenGeo Suite SDK which is built on top of GXP, GeoExt, ExtJS and OpenLayers.
 
