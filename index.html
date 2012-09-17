@@ -112,24 +112,16 @@
                                         <ul class="unstyled steps">
                                             <li>
                                                 <div class="num">1</div>
-                                                <h6>Install from PyPI</h6>
-                                                <span>$ pip install geonode</span>
-                                            </li>
-                                            <li>
-                                                <div class="num">2</div>
-                                                <h6>Create a project</h6>
-                                                <span>$ geonode-project myproject<br />
-                                                    $ cd myproject</span>
-                                            </li>
-                                            <li>
-                                                <div class="num">3</div>
-                                                <h6>Setup the environment</h6>
-                                                <span>$ paver setup</span>
+                                                <h6>Install from PPA in Ubuntu 12.04</h6>
+                                                <span>$ sudo add-apt-repository ppa:geonode/snapshots</span>
+                                                <span>$ sudo apt-get update</span>
+                                                <span>$ sudo apt-get install geonode</span>
                                             </li>
                                             <li class="last">
-                                                <div class="num">4</div>
-                                                <h6>Run the dev server</h6>
-                                                <span>$ paver start</span>
+                                                <div class="num">2</div>
+                                                <h6>Set the IP address and create a superuser</h6>
+                                                <span>$ sudo geonode-updateip 127.0.0.1</span>
+                                                <span>$ geonode createsuperuser</span>
                                             </li>
                                         </ul>
                                     </div>
