@@ -70,6 +70,34 @@ Additionally, the Link Class and Manager were introduced in the layers module to
 
 ## Testing
 
+*****THIS NEEDS TO BE REWORDED FROM AN EMAIL TO THE GEONODE-DEV LIST*****
+
+After some struggles getting the new csw tests to run, we've finally got jenkins back happily building and testing the dev branch. You can see that here. http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/ I realize that some of you cant get to that port at your place of employ (thinking of you Ariel).
+
+So, a quick summary, in the dev branch we now have about 90 tests spread across the smoke, unit, integration and csw suites. We are at ~75% line coverage (combined), and unfortunately in _very_ bad shape on the pep8 and pylint violations. The unit tests results for the geoserver-geonode-ext module and the javascript tests are not included yet, this is strictly the python part of the codebase. You can see the newest set of javascript tests (not yet in dev) here http://opendri.dev.opengeo.org/static/script/test.html
+
+Should note that the original work to merge the integration tests into the main repo was done originally as part of GNIP-3
+
+Nathan Wang (who is interning at OpenGeo while working on his dissertation this fall) is going to be continuing his excellent work on adding tests in our core modules focusing on geonode.catalogue.backends.generic and geonode.layers.management.commands in the short term and on other places lacking coverage in the medium term. We should hope to get up over 85% in the next several weeks and towards essentially full coverage before we put out a 2.0 beta this fall (which starts today in fact).
+
+For new devs, its a really useful and beneficial to you and the project to spend time on the pylint and pep8 violations and fix them while reading through the code. There are some violations that are more difficult to tackle than others, but many that are very easy. Seems like submitting a pull request for one file of improvements at a time might work best. You can run pep8 and pylint locally before you push and send a PR. The Jenkins interface makes it really easy to switch between a terminal and a browser while you are fixing things. 
+
+We want to bend the curve downward in the violations graph and upward in the coverage graph.
+
+For more experienced devs, we already recognize that some of the existing tests are not as optimal as they should be and may not test every corner or edge case. If any of you want to take the time to review an existing test, amend it in anyway or simply verify that it is indeed a quality and complete test and denote that somehow, that is also super useful. 
+
+Maybe if we did a 1 week testing challenge in October, where we challenged new devs to take on doing a bit of pylint and pep8 cleanup each day and more experienced devs taking on one existing test each day for a week. We could probably dramatically improve the test suites, our coverage, and our code quality. If that sounds interesting to you. I setup a poll on doodle where you can indicate which 5 day week might work for you. http://doodle.com/zy25tsc7dvep4983 (fwiw, I would like to do these kind of challenge weeks through the fall, focusing on things like documentation [user, dev, admin] and of course bug fixing).
+
+There has been discussion about submitting incoming commits and pull requests to automated testing to see if they reduce (or improve!) aggregate test coverage and if they introduce new violations. Before we setup a policy to reject those outright, lets at least get the infrastructure in place such that we can see readily see that. Travis-CI apparently has a really nice interface for doing this, there has been some discussion about setting up a secondary test server there which could also be another externally hosted community resource.
+
+There has also been discussion about setting up continuous deployments from this jenkins such that we leave an instance running after a successful build and redeploy it nightly to wipe out any new data and reload the sample data from the gisdata repo. The current setup already does leave a geonode running, but its currently against master, and appears to be pretty broken (there is a todo list item for this, see below). The goal here would be to setup a deployment for both the dev and master branches, and leave the demo server for actual releases (looks like it needs to be updated with 1.2b2).
+
+In this vein, we have also long discussed setting up a set of black-box api tests that can test a site _only_ using HTTP (the current integration tests partially do this, but also use the internal methods). Ivan Willig has started on this, and there is certainly more work to be done as we eventually work to formalize what is now the ad-hoc API. The goal would be to be able to deploy a geonode site from packages (onto amazon or other virtual infrastructure) then run these kinds of black-box tests against that to be sure that its working well. People who deploy geonode sites would be able to use this same suite of tests to test their own deployments in a systematic way. I know this is near and dear to Ariel's heart since he has deployed more geonode sites than anyone else.
+
+So, to that end, I've setup a trello board with a whole bunch of new tasks on this front. You can see it here.https://trello.com/board/geonode-ci/505cdc32557d2c4f49517d88  It's open for public read, but let me know if you want to comment or add/modify items and I can add you with your email address.
+
+One quick semi-related note, I have my own opendri-branch deployed to http://opendri.dev.opengeo.org that is an integration branch that includes _all_ the current work that is going on in geonode land, including recent work that Eldarion is doing on the UI/UX, work on the new uploader/importer, work on portals, work on search and various other tidbits. I will be keeping it up to date over the next weeks and months as we continue all this work, and its _the_ place to go if you want to see whats 'next' in geonode. There are certainly many things that are broken here, some due to the integration of branches, some are still broken and being worked on in their own branches that are not ready yet for pull requests. But its a basically functional site you can check out. Let me know privately if you want credentials so you can play with it.
+
 ## GeoServer Integration
 
 ## Importer/Uploader
