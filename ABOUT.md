@@ -3,6 +3,7 @@
   * geonode:master - built Aug 23, 2012 7:09:11 PM - [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-server/)
   * geonode:dev - built Aug 23, 2012 7:16:28 PM [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/)
   * demo.geonode.org - [148 Layers](http://demo.geonode.org/data/search) [77 Maps](http://demo.geonode.org/maps/search)
+  * [![Build Status](https://secure.travis-ci.org/GeoNode/geonode.png)](http://travis-ci.org/GeoNode/geonode)
 
 # Overview
 
