@@ -1,7 +1,7 @@
 # Current Status
 
-  * geonode:master - built Aug 23, 2012 7:09:11 PM - [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-server/)
-  * geonode:dev - built Aug 23, 2012 7:16:28 PM [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/)
+  * geonode:master - [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-server/)
+  * geonode:dev - [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/) 
   * demo.geonode.org - [148 Layers](http://demo.geonode.org/data/search) [77 Maps](http://demo.geonode.org/maps/search)
   * [![Build Status](https://secure.travis-ci.org/GeoNode/geonode.png)](http://travis-ci.org/GeoNode/geonode)
 
@@ -204,6 +204,9 @@ More information about the GNIP Process can be found in geonode's documentation.
 The GeoNode Roadmap Process is designed to complement the more technical GeoNode Improvement Proposals and strives to make it easier for the various organizations invested in GeoNode to collaborate on features of common interest. The GeoNode summits are an opportunity for major GeoNode stakeholders to discuss new features and to collaboratively lay out the projects roadmap for the coming months.
 
 # Language Translations (Localization)
+
+[![Localization Status](https://www.transifex.com/projects/p/geonode/resource/master/chart/image_png)](https://www.transifex.com/projects/p/geonode/)
+
 
 GeoNode makes full use of translation strings, which allow GeoNode to be translated into multiple languages using Django's internationalization methodology. Translations are managed on the Transifex website, but can also be submitted via GitHub. Consult Django's internationalization methodology for more information on creating translations or using them.
 
