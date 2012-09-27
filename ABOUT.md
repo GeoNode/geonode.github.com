@@ -1,11 +1,11 @@
 # Current Status
 
+  * [![Build Status](https://secure.travis-ci.org/GeoNode/geonode.png)](http://travis-ci.org/GeoNode/geonode)
   * geonode:master - [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-server/)
     * [![Test Result Trend](http://geonode-testing.dev.opengeo.org:8090/job/geonode-server/test/trend)](http://geonode-testing.dev.opengeo.org:8090/job/geonode-server/)
   * geonode:dev - [Test Results](http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/)
     * [![Test Result Trend](http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/test/trend)](http://geonode-testing.dev.opengeo.org:8090/job/geonode-dev/)
   * demo.geonode.org - [148 Layers](http://demo.geonode.org/data/search) [77 Maps](http://demo.geonode.org/maps/search)
-  * [![Build Status](https://secure.travis-ci.org/GeoNode/geonode.png)](http://travis-ci.org/GeoNode/geonode)
 
 # Overview
 
