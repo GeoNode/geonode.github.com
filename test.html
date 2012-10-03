@@ -13,9 +13,50 @@
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-
+        <link rel="stylesheet" type="text/css" media="screen" href="static/css/sequencejs-theme.modern-slide-in.css" />
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="screen" href="static/css/sequencejs-theme.modern-slide-in.ie.css" /><![endif]-->
         <script type="text/javascript" src="static/js/jquery.js"></script>
         <script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
+        <script type="text/javascript"> 
+
+            /mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+              if (!pageYOffset) window.scrollTo(0, 1);
+            }, 1000);
+
+            $(document).ready(function(){
+                var options = {
+                    nextButton: false,
+                    prevButton: false,
+                    autoPlay: true,
+                    animateStartingFrameIn: true,
+                    transitionThreshold: 250,
+                    preloadTheseFrames: [1]// ,
+                    //                     preloadTheseImages: [
+                    //                         "images/dot.png"
+                    //                     ]
+                };
+
+                var sequence = $("#sequence").sequence(options).data("sequence");
+
+                sequence.afterLoaded = function(){
+                    $("#nav").fadeIn(100);
+                    $("#nav li:nth-child("+(sequence.settings.startingFrameID)+") img").addClass("active");
+                }
+
+                sequence.beforeNextFrameAnimatesIn = function(){
+                    $("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) img").removeClass("active");
+                    $("#nav li:nth-child("+(sequence.nextFrameID)+") img").addClass("active");
+                }
+
+                // $("#nav li").click(function(){
+                //     if(!sequence.active){
+                //         $(this).children("img").removeClass("active").children("img").addClass("active");
+                //         sequence.nextFrameID = $(this).index()+1;
+                //         sequence.goTo(sequence.nextFrameID);
+                //     }
+                // });
+            });
+        </script>
     </head>
     <body>
         <header class="main">
@@ -35,26 +76,61 @@
         </header>
         <section class="banner">
             <div class="container">
-                <div class="row">
-                    <div class="span6">
-                        <h1>Open Source Geospatial Content Management System</h1>
-                        <p>GeoNode is an easy to use application and platform
-                            for developing web based Geospatial Information
-                            Systems and for deploying interoperable Spatial
-                            Data Infrastructure.
-                        </p>
-                        <p>
-                            It is also designed to be a flexible platform that software
-                            developers can extend, modify or integrate against to meet
-                            requirements in their own applications.
-                        </p>
-                        <!-- <a href="#" class="btn btn-large btn-success">GeoNode Now</a> -->
-                    </div>
-                    <div class="span6">
-                        <img src="static/img/hero_img.png" width="560" height="325" alt="" class="hero-img" />
-                    </div>
-                </div>
+            
+            <div id="header-container">
+                <div id="header">
+                    
+                    
+            
+            <div id="sequence">
+                <ul class="unstyled">
+                    <li id="intro">
+                        <h1 class="title animate-in">Open Source Geospatial Content Management System</h1>
+                        <div class="subtitle animate-in">
+                            <p>GeoNode is an easy to use application and platform
+                                for developing web based Geospatial Information
+                                Systems and for deploying interoperable Spatial
+                                Data Infrastructure.
+                            </p>
+                            <!-- <a href="#" class="btn btn-large btn-success">GeoNode Now</a> -->
+                        </div>
+                        <img src="static/img/hero_img.png" width="560" height="325" alt="" class="model animate-in" />
+                    </li>
+                    <li id="creative">
+                        <h1 class="title animate-in">Open Source Geospatial Content Management System</h1>
+                        <div class="subtitle animate-in">
+                            <p>
+                                It is also designed to be a flexible platform that software
+                                developers can extend, modify or integrate against to meet
+                                requirements in their own applications.
+                            </p>
+                            <!-- <a href="#" class="btn btn-large btn-success">GeoNode Now</a> -->
+                        </div>
+                        <img src="static/img/hero_img.png" width="560" height="325" alt="" class="model animate-in" />
+                    </li>
+                    <li id="support" class="frame3">
+                        <h1 class="title animate-in">Open Source Geospatial Content Management System</h1>
+                        <div class="subtitle animate-in">
+                            <p>GeoNode is an easy to use application and platform
+                                for developing web based Geospatial Information
+                                Systems and for deploying interoperable Spatial
+                                Data Infrastructure.
+                            </p>
+                            <!-- <a href="#" class="btn btn-large btn-success">GeoNode Now</a> -->
+                        </div>
+                        <img src="static/img/hero_img.png" width="560" height="325" alt="" class="model animate-in" />
+                    </li>
+                </ul>
             </div>
+            <!-- <ul id="nav">
+                <li><img src="images/dot.png" alt="" /></li>
+                <li><img src="images/dot.png" alt="" /></li>
+                <li><img src="images/dot.png" alt="" /></li>
+            </ul> -->
+
+            </div>
+            
+            </div></div>
         </section>
         <section class="body">
             <div class="container">
