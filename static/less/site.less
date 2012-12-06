@@ -28,6 +28,10 @@
   background: @orange; /* Firefox */
 }
 
+strong {
+  font-weight: 400;
+}
+
 // bst overwrite
 .btn {
   border:0;
@@ -45,10 +49,10 @@
 }
 
 .btn-warning {
-  background:@orange;
+  background:#f6911e;
 
   &:hover {
-    background:lighten(@orange, 4%);
+    background:lighten(#f6911e, 4%);
   }
 }
 
@@ -442,6 +446,63 @@ body.geonode-features {
       &:hover {
         text-decoration: none;
         color: @orange;
+      }
+    }
+  }
+
+  // Feature detail page
+  section.feature-detail {
+    #gradient > .vertical-three-colors(@beige, @white, @colorStop: 75%, @endColor: #f2efea);
+    padding-top: 30px;
+
+    h1 {
+      font-weight: 300;
+      color: @darkBlue;
+      font-size: 43px;
+      margin-bottom: 17px;
+
+      strong {
+        font-weight: 400;
+      }
+    }
+
+    article {
+      &.article2 {
+        margin-top: 50px;
+
+        h5 {
+          margin-bottom: 25px;
+        }
+
+        ul.unstyled {
+          font-style: italic;
+          margin: 30px 0 30px 12px;
+        }
+      }
+    }
+
+    .box2 {
+      .bg("box2.png");
+      .size(335px, 350px);
+      margin: -200px 0 0 -18px;
+
+      h4 {
+        color: @white;
+        font-weight: 400;
+        padding:222px 0 0 19px;
+        font-size: 14px;
+      }
+    }
+
+    .btn-next {
+      .border-radius(0);
+      margin: 20px 10px 40px 0;
+      padding: 6px 17px;
+
+      .arrow-right {
+        .bg("arrow_right.png", no-repeat, right, center);
+        display: block;
+        padding-right: 25px;
       }
     }
   }

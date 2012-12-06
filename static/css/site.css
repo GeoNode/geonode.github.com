@@ -4889,6 +4889,9 @@ a.badge:hover {
   /* Firefox */
 
 }
+strong {
+  font-weight: 400;
+}
 .btn {
   border: 0;
   -webkit-box-shadow: none;
@@ -4906,10 +4909,10 @@ a.badge:hover {
   background: #a6bb4a;
 }
 .btn-warning {
-  background: #e1a01f;
+  background: #f6911e;
 }
 .btn-warning:hover {
-  background: #e3a831;
+  background: #f79b32;
 }
 .container {
   position: relative;
@@ -5274,4 +5277,58 @@ body.geonode-features section.continue a {
 body.geonode-features section.continue a:hover {
   text-decoration: none;
   color: #e1a01f;
+}
+body.geonode-features section.feature-detail {
+  background-color: #fcfcfb;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#edeae3), color-stop(75%, #ffffff), to(#f2efea));
+  background-image: -webkit-linear-gradient(#edeae3, #ffffff 75%, #f2efea);
+  background-image: -moz-linear-gradient(top, #edeae3, #ffffff 75%, #f2efea);
+  background-image: -o-linear-gradient(#edeae3, #ffffff 75%, #f2efea);
+  background-image: linear-gradient(#edeae3, #ffffff 75%, #f2efea);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffedeae3', endColorstr='#fff2efea', GradientType=0);
+  padding-top: 30px;
+}
+body.geonode-features section.feature-detail h1 {
+  font-weight: 300;
+  color: #03424c;
+  font-size: 43px;
+  margin-bottom: 17px;
+}
+body.geonode-features section.feature-detail h1 strong {
+  font-weight: 400;
+}
+body.geonode-features section.feature-detail article.article2 {
+  margin-top: 50px;
+}
+body.geonode-features section.feature-detail article.article2 h5 {
+  margin-bottom: 25px;
+}
+body.geonode-features section.feature-detail article.article2 ul.unstyled {
+  font-style: italic;
+  margin: 30px 0 30px 12px;
+}
+body.geonode-features section.feature-detail .box2 {
+  background: url("../img/box2.png") no-repeat 0 0;
+  width: 350px;
+  height: 335px;
+  margin: -200px 0 0 -18px;
+}
+body.geonode-features section.feature-detail .box2 h4 {
+  color: #ffffff;
+  font-weight: 400;
+  padding: 222px 0 0 19px;
+  font-size: 14px;
+}
+body.geonode-features section.feature-detail .btn-next {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 20px 10px 40px 0;
+  padding: 6px 17px;
+}
+body.geonode-features section.feature-detail .btn-next .arrow-right {
+  background: url("../img/arrow_right.png") no-repeat right center;
+  display: block;
+  padding-right: 25px;
 }
