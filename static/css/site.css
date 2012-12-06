@@ -5315,10 +5315,15 @@ body.geonode-features section.feature-detail .box2 {
   margin: -200px 0 0 -18px;
 }
 body.geonode-features section.feature-detail .box2 h4 {
-  color: #ffffff;
-  font-weight: 400;
   padding: 222px 0 0 19px;
   font-size: 14px;
+}
+body.geonode-features section.feature-detail .box2 h4 a {
+  color: #ffffff;
+  font-weight: 400;
+}
+body.geonode-features section.feature-detail .box2 h4 a:hover {
+  text-decoration: none;
 }
 body.geonode-features section.feature-detail .btn-next {
   -webkit-border-radius: 0;
