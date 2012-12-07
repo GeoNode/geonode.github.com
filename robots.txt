@@ -1,5 +1,7 @@
+admin_features.html
 dev.html
+dev_features.html
 
 feature_detail.html
-features.html
 index.html
+user_features.html

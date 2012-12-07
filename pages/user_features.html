@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block body_class %}geonode-features{% endblock %}
+
+{% block content %}
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h1>
+                            <strong>Hello</strong>,<br />
+                            <span>Let us introduce you to the features of <strong>GeoNode</strong>.</span>
+                        </h1>
+                        <p>
+                            This tour will introduce you to the features of GeoNode, a complete web mapping solution.
+                        </p>
+                    </div>
+                    <div class="span6">
+                        <img src="static/img/features_hero_img.png" width="489" height="216" alt="" class="pull-right hero-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="body">
+            <div class="container">
+                <div class="row">
+                    <div class="span10">
+                        <nav class="subnav">
+                            <h5>Features:</h5>
+                            <ul class="unstyled">
+                                <li><a href="#explore"><strong>Explore and Discover</strong></a></li>
+                                <li><a href="#upload"><strong>Upload and Manage</strong></a></li>
+                                <li><a href="#maps"><strong>Create Maps</strong></a></li>
+                                <li><a href="#collaborate"><strong>Collaborate</strong></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="span2">
+                        <div class="pull-right link-extra">
+                            <a href="#">Try our <strong>Workshop</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-details" id="postgis">
+            <div class="container">
+                <div class="row">
+                    <div class="span5">
+                        <img src="static/img/iphone_explore_maps.png" width="309" height="700" alt="Explore Maps" class="feature-img" />
+                    </div>
+                    <div class="span7 number one">
+                        <div class="highlighted-box">
+                            <h2>Explore</h2>
+                            <h4>Browse and search for geospatial data layers and services</h4>
+                            <ul class="unstyled">
+                                <li>Spatial database overview</li>
+                                <li>Create a spatial database</li>
+                                <li>Load shapefiles into database tables</li>
+                                <li>Introduce some basic functions and operations</li>
+                            </ul>
+                            <a href="feature_detail.html" class="btn btn-success">Learn about GeoNode's Discovery Features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-details feature2" id="geoserver">
+            <div class="container">
+                <div class="row">
+                    <div class="span7 number two">
+                        <div class="highlighted-box">
+                            <h2>Manage</strong></h2>
+                            <h4>Securely upload, manage and share your geospatial data</h4>
+                            <ul class="unstyled">
+                                <li>Spatial database overview</li>
+                                <li>Create a spatial database</li>
+                                <li>Load shapefiles into database tables</li>
+                                <li>Introduce some basic functions and operations</li>
+                            </ul>
+                            <a href="#" class="btn btn-success">Learn about GeoNode's Data Management Features</a>
+                        </div>
+                    </div>
+                    <div class="span5">
+                        <img src="static/img/globe.png" width="347" height="469" alt="Globe" class="feature-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-details feature3" id="webcache">
+            <div class="container">
+                <div class="row">
+                    <div class="span5">
+                        <img src="static/img/iphone_geonode.png" width="309" height="700" alt="Iphone Geonode" class="feature-img" />
+                    </div>
+                    <div class="span7 number three">
+                        <div class="highlighted-box">
+                            <h2>Maps</strong></h2>
+                            <h4>Create and Share Interactive Web Maps</h4>
+                            <ul class="unstyled">
+                                <li>Spatial database overview</li>
+                                <li>Create a spatial database</li>
+                                <li>Load shapefiles into database tables</li>
+                                <li>Introduce some basic functions and operations</li>
+                            </ul>
+                            <a href="#" class="btn btn-success">Learn about GeoNode's Mapping Features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="continue">
+            <div class="container">
+                <a href="#">Continue</a>
+            </div>
+        </section>
+{% endblock content %}

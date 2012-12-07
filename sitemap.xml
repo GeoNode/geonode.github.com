@@ -3,7 +3,23 @@
 
 	
 	<url>
+		<loc>admin_features.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>dev.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>dev_features.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -21,7 +37,7 @@
 
 	
 	<url>
-		<loc>features.html</loc>
+		<loc>index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -29,7 +45,7 @@
 
 	
 	<url>
-		<loc>index.html</loc>
+		<loc>user_features.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
