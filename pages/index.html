@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <title>GeoNode</title>
+        <link rel="shortcut icon" href="static/img/favicon.ico" />
+        <meta name='description' content='GeoNode'/>
+        <meta name='keywords' content='GeoNode'/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='static/css/site.css' type='text/css' media='all' />
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <script type="text/javascript" src="static/js/jquery.js"></script>
+        <script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
+    </head>
+    <body>
+        <header class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h1><a class="brand" href="#">GeoNode</a></h1>
+                    </div>
+                    <div class="span6">
+                        <div>
+                            <a href="https://github.com/GeoNode/geonode/blob/dev/README" class="btn btn-success">Install GeoNode Now</a>
+                            <a target="_blank" href="http://ui.dev.geonode.org/" class="btn btn-warning">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h1>Open Source Geospatial Content Management System</h1>
+                        <p>GeoNode is an easy to use application and platform
+                            for developing web based Geospatial Information
+                            Systems and for deploying interoperable Spatial
+                            Data Infrastructure.
+                        </p>
+                        <p>
+                            It is also designed to be a flexible platform that software
+                            developers can extend, modify or integrate against to meet
+                            requirements in their own applications.
+                        </p>
+                        <!-- <a href="#" class="btn btn-large btn-success">GeoNode Now</a> -->
+                    </div>
+                    <div class="span6">
+                        <img src="static/img/hero_img.png" width="560" height="325" alt="" class="hero-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="body">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <div class="box box-users">
+                            <header class="box-header">
+                                <h2><a href="http://docs.geonode.org/en/latest/index.html#for-users">For Users</a></h2>
+                            </header>
+                            <ul class="unstyled">
+                                <li>Browse and search for geospatial data layers and web services</li>
+                                <li>Upload, manage and share your own geospatial data</li>
+                                <li>Create and share interactive maps</li>
+                                <li>Collaborate with others using layers and maps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="box box-devs">
+                            <header class="box-header">
+                                <h2><a href="dev.html">For Developers</a></h2>
+                            </header>
+                            <ul class="unstyled">
+                                <li>Developed with Django</li>
+                                <li>Built on stable, mature open source geospatial projects</li>
+                                <li>Twitter Bootstrap and jQuery client implementation</li>
+                                <li>Multiple APIs for customization and integration</li>
+                                <li>Seamless integration with third-party Django apps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="box box-admins">
+                            <header class="box-header">
+                                <h2><a href="http://docs.geonode.org/en/latest/index.html#for-administrators">For Admins</a></h2>
+                            </header>
+                            <ul class="unstyled">
+                                <li>Complete framework for OGC compliant geospatial web services</li>
+                                <li>Interoperable metadata managment and aggregation platform</li>
+                                <li>Comprehensive security model and framework</li>
+                                <li>Reliable and scalable platform for deploying spatial data infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <section class="important-links">
+                    <div class="row">
+                        <div class="span1">
+                            <h2 class="quick-start">Quick Start</h2>
+                        </div>
+                        <div class="span11">
+                                    <div class="get-started">
+                                        <h2>Get Started Now</h2>
+                                        <ul class="unstyled steps">
+                                            <li>
+                                                <div class="num">1</div>
+                                                <h6>Install from PPA in Ubuntu 12.04</h6>
+                                                <span>
+                                                <p>$ sudo add-apt-repository ppa:geonode/snapshots</p>
+                                                <p>$ sudo apt-get update</p>
+                                                <p>$ sudo apt-get install geonode</p>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <div class="num">2</div>
+                                                <h6>Set the IP address and create a superuser</h6>
+                                                <span>
+                                                <p>$ sudo geonode-updateip 127.0.0.1</p>
+                                                <p>$ geonode createsuperuser</p>
+                                                </span>
+                                            </li>
+                                            <li class="last">
+                                                <div class="num">3</div>
+                                                <h6>Import your data</h6>
+                                                <span>
+                                                <p><a href='http://docs.geonode.org/#for-administrators'>Read the admin docs</a></p>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                            <div class="row">
+                                <div class="span5">
+                                    <article class="documentation">
+                                        <h3><a href="http://docs.geonode.org/en/latest/index.html">Documentation</a></h3>
+                                        <p>User, Developer and Administrator Guides.</p>
+                                    </article>
+                                    <article class="mailing-list">
+                                        <h3><a href="http://geonode.org/communication/">Mailing Lists</a></h3>
+                                        <p>User, Developer and Regional lists and archives.</p>
+                                    </article>
+                                    <article class="issue-tracker">
+                                        <h3><a href="https://github.com/GeoNode/geonode/issues">Issue Tracker</a></h3>
+                                        <p>Bugs, Feature Requests, Milestones and Roadmap.</p>
+                                    </article>
+                                </div>
+                                <div class="span5">
+                                    <article class="faqs">
+                                        <h3><a href="https://github.com/geonode/geonode/wiki">FAQs</a></h3>
+                                        <p>Frequently Asked Questions about GeoNode.</p>
+                                    </article>
+                                    <article class="irc">
+                                        <h3><a href="http://webchat.freenode.net/?channels=#geonode">IRC</a></h3>
+                                        <p>#geonode on freenode.net Real-time discussion and help.</p>
+                                    </article>
+                                    <article class="sites-gallery">
+                                        <h3><a href="http://geonode.org/gallery/">Sites Gallery</a></h3>
+                                        <p>A collection of sites implemented using GeoNode</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="btm">
+                    <div class="row">
+                        <div class="span6">
+                          <p>This <a href="http://github.com/geonode/geonode.github.com/">Website</a> is <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC by SA 2012.</a> - <a href='https://github.com/GeoNode/geonode/blob/master/AUTHORS'>GeoNode Contributors.</a> Designed by <a href="http://www.spatialdev.com/">Spatial Dev</a></p>
+                        </div>
+                        <div class="span6">
+                            <div class="pull-right social">
+                                <a href="http://github.com/geonode/" class="gh" target="_blank">GitHub</a>
+                                <a href="https://twitter.com/GeoNode" class="tw" target="_blank">Twitter</a>
+                                <a href="https://plus.google.com/u/1/b/100587124776656797019/" class="gp" target="_blank">Google+</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+<a href="https://github.com/GeoNode/geonode/tree/dev"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    </body>
+</html>
+{% endblock %}
