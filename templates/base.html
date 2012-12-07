@@ -14,8 +14,11 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
+	{% block scripts %}
         <script type="text/javascript" src="static/js/jquery.js"></script>
         <script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
+		<script src="{{ STATIC_URL }}/js/main.js"></script>
+	{% endblock %}
     </head>
     <body>
 		{% block header %}
@@ -39,7 +42,6 @@
 	{% block content %}
 	{% endblock %}
 
-	
 	{% block footer %}
 		 <footer class="footer">
 			<div class="container">
@@ -61,9 +63,5 @@
         </footer>
 		{% endblock footer %}
 <a href="https://github.com/GeoNode/geonode/tree/dev"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-	{% block scripts %}
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="{{ STATIC_URL }}/js/main.js"></script>
-	{% endblock %}
     </body>
 </html>
