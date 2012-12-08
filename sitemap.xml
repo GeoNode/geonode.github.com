@@ -3,6 +3,14 @@
 
 	
 	<url>
+		<loc>about.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>admin_console.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
@@ -51,6 +59,22 @@
 
 	
 	<url>
+		<loc>communication.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>contributors.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>dev.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
@@ -60,6 +84,14 @@
 	
 	<url>
 		<loc>dev_features.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>developers.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -78,6 +110,22 @@
 	
 	<url>
 		<loc>explore_discover.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>faqs.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>gallery.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -109,6 +157,14 @@
 
 	
 	<url>
+		<loc>license.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>mapping.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
@@ -133,6 +189,14 @@
 
 	
 	<url>
+		<loc>resources.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>scale.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
@@ -150,6 +214,14 @@
 	
 	<url>
 		<loc>user_features.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>whatsnew.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
