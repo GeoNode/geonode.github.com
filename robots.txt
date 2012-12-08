@@ -1,3 +1,4 @@
+admin_console.html
 admin_features.html
 apis.html
 bootstrap_jquery.html
@@ -8,7 +9,6 @@ dev_features.html
 django.html
 
 explore_discover.html
-feature_detail.html
 import_manage.html
 index.html
 interoperability.html

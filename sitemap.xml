@@ -3,6 +3,14 @@
 
 	
 	<url>
+		<loc>admin_console.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>admin_features.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
@@ -70,14 +78,6 @@
 	
 	<url>
 		<loc>explore_discover.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>feature_detail.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
