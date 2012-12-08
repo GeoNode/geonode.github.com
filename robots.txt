@@ -15,6 +15,6 @@ interoperability.html
 mapping.html
 ogc_sdi.html
 opensource_geospatial.html
-scalable_sdi.html
+scale.html
 security.html
 user_features.html
