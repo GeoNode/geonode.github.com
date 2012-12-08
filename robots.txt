@@ -1,7 +1,19 @@
 admin_features.html
+apis.html
+bootstrap_jquery.html
+catalog_metadata.html
+collaboration.html
 dev.html
 dev_features.html
+django.html
 
+explore_discover.html
 feature_detail.html
+import_manage.html
 index.html
+mapping.html
+ogc_sdi.html
+opensource_geospatial.html
+scalable_sdi.html
+security.html
 user_features.html

@@ -29,21 +29,21 @@
                             <h5>Features:</h5>
                             <ul class="unstyled">
                                 <li><a href="#explore"><strong>Explore and Discover</strong></a></li>
-                                <li><a href="#upload"><strong>Upload and Manage</strong></a></li>
-                                <li><a href="#maps"><strong>Create Maps</strong></a></li>
-                                <li><a href="#collaborate"><strong>Collaborate</strong></a></li>
+                                <li><a href="#import"><strong>Import and Manage</strong></a></li>
+                                <li><a href="#mapping"><strong>Interactive Mapping</strong></a></li>
+                                <li><a href="#collaboration"><strong>Collaboration</strong></a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="span2">
                         <div class="pull-right link-extra">
-                            <a href="#">Try our <strong>Workshop</strong></a>
+                            <a href="http://docs.geonode.org/en/latest/users/register.html" target="_blank">Follow our <strong>Users Tutorial</strong></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="feature-details" id="postgis">
+        <section class="feature-details" id="explore">
             <div class="container">
                 <div class="row">
                     <div class="span5">
@@ -54,31 +54,32 @@
                             <h2>Spatial Data Discovery</h2>
                             <h4>Browse and search for geospatial data layers and services</h4>
                             <ul class="unstyled">
-                                <li>Spatial database overview</li>
-                                <li>Create a spatial database</li>
-                                <li>Load shapefiles into database tables</li>
-                                <li>Introduce some basic functions and operations</li>
+                                <li>Powerful Spatial Search Engine</li>
+                                <li>Federated OGC Servers</li>
+                                <li>Metadata Catalog</li>
+                                <li>Something else</li>
                             </ul>
-                            <a href="feature_detail.html" class="btn btn-success">Learn about GeoNode's Discovery Features</a>
+                            <a href="explore_discover.html" class="btn btn-success">Learn about GeoNode's Discovery Features</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="feature-details feature2" id="geoserver">
+        <section class="feature-details feature2" id="import">
             <div class="container">
                 <div class="row">
                     <div class="span7 number two">
                         <div class="highlighted-box">
-                            <h2>Manage</strong></h2>
-                            <h4>Securely upload, manage and share your geospatial data</h4>
+                            <h2>Import & Manage</strong></h2>
+                            <h4>upload and securely share your geospatial data</h4>
                             <ul class="unstyled">
-                                <li>Spatial database overview</li>
-                                <li>Create a spatial database</li>
-                                <li>Load shapefiles into database tables</li>
-                                <li>Introduce some basic functions and operations</li>
+                                <li>Import and publish raster, vector and tabular data</li>
+                                <li>Manage your layers Metadata and associated Documents</li>
+                                <li>Securely or Publicly Share your data</li>
+                                <li>GIS Data Editor (versioning)</li>
+                                <li>Something else</li>
                             </ul>
-                            <a href="#" class="btn btn-success">Learn about GeoNode's Data Management Features</a>
+                            <a href="import_manage.html" class="btn btn-success">Learn about GeoNode's Data Management Features</a>
                         </div>
                     </div>
                     <div class="span5">
@@ -87,31 +88,55 @@
                 </div>
             </div>
         </section>
-        <section class="feature-details feature3" id="webcache">
+        <section class="feature-details feature3" id="mapping">
             <div class="container">
                 <div class="row">
                     <div class="span5">
-                        <img src="static/img/iphone_geonode.png" width="309" height="700" alt="Iphone Geonode" class="feature-img" />
+                        <img src="static/img/gxp-OSM.jpg" width="468" height="277" alt="GeoExplorer" class="feature-img" />
                     </div>
                     <div class="span7 number three">
                         <div class="highlighted-box">
-                            <h2>Maps</strong></h2>
+                            <h2>Interactive Mapping</strong></h2>
                             <h4>Create and Share Interactive Web Maps</h4>
                             <ul class="unstyled">
-                                <li>Spatial database overview</li>
-                                <li>Create a spatial database</li>
-                                <li>Load shapefiles into database tables</li>
-                                <li>Introduce some basic functions and operations</li>
+                                <li>GeoExplorer GIS Client</li>
+                                <li>Interactively Style Editor</li>
+                                <li>Create Multi Layer and Service Maps</li>
+                                <li>Share and embed interactive maps</li>
                             </ul>
-                            <a href="#" class="btn btn-success">Learn about GeoNode's Mapping Features</a>
+                            <a href="mapping.html" class="btn btn-success">Learn about GeoNode's Mapping Features</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="feature-details feature2" id="collaboration">
+            <div class="container">
+                <div class="row">
+                    <div class="span7 number four">
+                        <div class="highlighted-box">
+                            <h2>Collaboration</strong></h2>
+                            <h4>Social & Collaborative features</h4>
+                            <ul class="unstyled">
+                                <li>Review, Rate, Comment</li>
+                                <li>Groups</li>
+                                <li>Activity Stream</li>Y
+                                <li>Announcements and Notifications</li>
+                            </ul>
+                            <a href="collaboration.html" class="btn btn-success">Learn about GeoNode's Collaboration Features</a>
+                        </div>
+                    </div>
+                    <div class="span5">
+                        <img src="static/img/globe.png" width="347" height="469" alt="Globe" class="feature-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+		{% comment %}
         <section class="continue">
             <div class="container">
                 <a href="#">Continue</a>
             </div>
         </section>
+		{% endcomment %}
 {% endblock content %}
