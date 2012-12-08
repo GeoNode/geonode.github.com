@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <title>GeoNode</title>
+        <link rel="shortcut icon" href="static/img/favicon.ico" />
+        <meta name='description' content='GeoNode'/>
+        <meta name='keywords' content='GeoNode'/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='static/css/site.css' type='text/css' media='all' />
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+	
+        <script type="text/javascript" src="static/js/jquery.js"></script>
+        <script type="text/javascript" src="static/js/sequence.jquery-min.js"></script>
+		<script src="./static/js/main.js"></script>
+	
+    </head>
+    <body class="geonode-features">
+		
+        <header class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <h1><a class="brand" href="/">GeoNode</a></h1>
+                    </div>
+                    <div class="span6">
+                        <div>
+                            <a href="https://github.com/GeoNode/geonode/blob/dev/README" class="btn btn-success">Install GeoNode Now</a>
+                            <a target="_blank" href="http://ui.dev.geonode.org/" class="btn btn-warning">Try the Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		
+
+	
+        <section class="body">
+            <div class="container">
+                <div class="row">
+                    <div class="span10">
+                        <nav class="subnav">
+                            <h5>Features:</h5>
+                            <ul class="unstyled">
+                                <li><a href="#postgis">Post<strong>GIS</strong></a></li>
+                                <li><a href="#geoserver">Geo<strong>Server</strong></a></li>
+                                <li><a href="#webcache">Geo<strong>WebCache</strong></a></li>
+                                <li><a href="#openlayers">Open<strong>Layers</strong></a></li>
+                                <li><a href="#geoext">Geo<strong>Ext</strong></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="span2">
+                        <div class="pull-right link-extra">
+                            <a href="#">Try our <strong>Workshop</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="span7">
+                        <h1>Post <strong>GIS</strong></h1>
+                        <article class="article1">
+                            <h5>PostGIS is a spatial database.</h5>
+                            <p>More accurately, PostGIS is an extension that
+                            turns the PostgreSQL database system into a spatial database. PostGIS is very
+                            similar in functionality to spatial support in SQL Server 2008, Oracle Spatial,
+                            and DB2 Spatial Extender.</p>
+
+                            <p>Providing optimized access to large amounts of spatial data, PostGIS is a fundamental
+                            component of the OpenGeo Suite. To reinforce this notion, we’ll put it down
+                            near the bottom of our architecture diagram, and build the rest of the stack
+                            out on top of it.</p>
+                        </article>
+
+                        <article class="article2">
+                            <h5>Why not just use Shapefiles?</h5>
+
+                            <p>The shapefile (and other file formats) have been the standard way of storing and i
+                            interacting with spatial data since GIS software was first written. However, these
+                            "flat" files have the following disadvantages:</p>
+
+                            <ul class="unstyled">
+                                <li>Files require special software to read and write</li>
+                                <li>Concurrent users can cause corruption</li>
+                                <li>Complicated questions require complicated software to answer</li>
+                            </ul>
+
+                            <p>In summation, the combination of support for multiple users, complex ad hoc
+                            queries, and performance on large data sets are what sets spatial databases
+                            apart from file-based systems.</p>
+                        </article>
+
+                        <div class="box2">
+                            <h4><a href="#">Don't take our word for it, see yourself.</a></h4>
+                        </div>
+                    </div>
+                    <div class="span4 offset1">
+                        <img src="static/img/iphone_explore_maps.png" width="309" height="700" alt="Explore Maps" class="pull-right" />
+                        <a href="#" class="btn btn-warning btn-next pull-right">
+                            <span class="arrow-right">Next: Geo<strong>Server</strong></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+	
+		 <footer class="footer">
+			<div class="container">
+                <section class="btm">
+                    <div class="row">
+                        <div class="span6">
+                          <p>This <a href="http://github.com/geonode/geonode.github.com/">Website</a> is <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC by SA 2012.</a> - <a href='https://github.com/GeoNode/geonode/blob/master/AUTHORS'>GeoNode Contributors.</a> Designed by <a href="http://www.spatialdev.com/">Spatial Dev</a></p>
+                        </div>
+                        <div class="span6">
+                            <div class="pull-right social">
+                                <a href="http://github.com/geonode/" class="gh" target="_blank">GitHub</a>
+                                <a href="https://twitter.com/GeoNode" class="tw" target="_blank">Twitter</a>
+                                <a href="https://plus.google.com/u/1/b/100587124776656797019/" class="gp" target="_blank">Google+</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+		
+<a href="https://github.com/GeoNode/geonode/tree/dev"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    </body>
+</html>

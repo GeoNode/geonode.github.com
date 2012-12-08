@@ -11,6 +11,7 @@ explore_discover.html
 feature_detail.html
 import_manage.html
 index.html
+interoperability.html
 mapping.html
 ogc_sdi.html
 opensource_geospatial.html
