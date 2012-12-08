@@ -17,6 +17,7 @@ faqs.html
 gallery.html
 import_manage.html
 index.html
+install.html
 interoperability.html
 license.html
 mapping.html

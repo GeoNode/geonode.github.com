@@ -149,6 +149,14 @@
 
 	
 	<url>
+		<loc>install.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>interoperability.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
