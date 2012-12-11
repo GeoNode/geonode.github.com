@@ -43,7 +43,7 @@
 
 	
 	<url>
-		<loc>catalog_metadata.html</loc>
+		<loc>catalogue_metadata.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>

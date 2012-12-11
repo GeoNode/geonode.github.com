@@ -51,7 +51,7 @@ https://github.com/GeoNode/geonode/tree/dev
           maps - core maps app
           security - granular (row level based) auth backend.
           people - profiles app (also used for organizational entities)
-          catalogue - layers interaction with internal or external CS-W.
+          catalogue - layers interaction with internal or external CSW.
           static - static media (css, javascript, images)
           templates - base project templates and includes (includes avatar, profiles and registration)
           tests - integration tests (should eventually include javascript/client tests too)
@@ -102,7 +102,7 @@ One quick semi-related note, I have my own opendri-branch deployed to http://ope
 
 ## Importer/Uploader
 
-## Catalogue (CS-W)
+## Catalogue (CSW)
 
 ## Search
 

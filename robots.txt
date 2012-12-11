@@ -3,7 +3,7 @@ admin_console.html
 admin_features.html
 apis.html
 bootstrap_jquery.html
-catalog_metadata.html
+catalogue_metadata.html
 collaboration.html
 communication.html
 contributors.html
