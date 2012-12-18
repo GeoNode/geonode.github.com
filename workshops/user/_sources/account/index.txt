@@ -1,6 +1,0 @@
-.. _accounts:
-
-Accounts
-========
-
-This is the Accounts Section
