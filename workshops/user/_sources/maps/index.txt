@@ -1,15 +1,14 @@
 .. _maps:
 
-Maps
-====
+Managing maps
+=============
 
-This is the Maps Section
+The next primary component of GeoNode is the **map**.
+
+.. todo:: Maps are comprised of various layers and...
 
 .. toctree::
    :maxdepth: 2
 
-   explore 
-   search 
-   info 
    create
    share

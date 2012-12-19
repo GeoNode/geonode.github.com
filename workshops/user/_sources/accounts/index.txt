@@ -1,13 +1,13 @@
 .. _accounts:
 
-Accounts
-========
+Accounts and users
+==================
 
-This is the Accounts Section
+GeoNode is primarily a *social* platform, and thus a primary component of any GeoNode instance is the user account. This section will guide you through account registration, updating your account information, and viewing other user accounts.
 
 .. toctree::
    :maxdepth: 2
 
    registration
-   profile 
-   settings
+   profile
+   users

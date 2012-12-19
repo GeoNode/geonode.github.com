@@ -7,9 +7,7 @@ Welcome to the GeoNode Users Workshop! This workshop will teach how to use the `
    :maxdepth: 2
 
    intro/index
+   accounts/index
    layers/index
    maps/index
-   search/index
-   accounts/index
-   social/index
-   help/index
+   moreinfo/index

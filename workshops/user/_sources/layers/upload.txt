@@ -48,3 +48,5 @@ In your data pack is a directory called :file:`data`. Inside that directory is a
   * In the :guilabel:`Title` field, enter ``airports``.
 
   * Next to the :guilabel:`Data` field, click the :guilabel:`Browse...` button. This will bring up a local file dialog. Navigate to your data folder and select the :file:`airports.shp` shapefile.
+
+.. todo:: Continue on...

@@ -3,10 +3,11 @@
 Introduction
 ============
 
-This is the Intro Section.
+This section will give a brief introduction to GeoNode.
 
-.. toctree::
-   :maxdepth: 2
+.. todo:: This info should be written somewhere already. Repurpose?
 
-   whatis 
-   homepage
+.. todo:: Topics: What is GeoNode? Why is it important? How is it different/better?
+
+.. todo:: How-to-contribute language will go at the end, "for more information".
+

@@ -1,12 +1,18 @@
-Layer Information
+.. _layers.info:
+
+Layer information
 =================
 
-Lets look at the Layer Info page
+.. todo:: Metadata? Layer info? Both?
 
-#. Visit the Layer Info Page.
+.. todo:: 
 
-    .. figure:: img/layerinfo.png
-        :width: 80%
-        :align: center
+    Lets look at the Layer Info page
+
+    #. Visit the Layer Info Page.
+
+        .. figure:: img/layerinfo.png
+            :width: 80%
+            :align: center
 
 
