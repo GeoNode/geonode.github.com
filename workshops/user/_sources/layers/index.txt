@@ -5,7 +5,7 @@ Managing layers
 
 After user accounts, the next primary component of GeoNode is the **layer**.
 
-.. todo:: Layers are...
+.. todo:: Layers are... (pull from some existing docs?)
 
 In this section, you will learn how to create a new layer by uploading a local data set, add layer info, change the style of the layer, and share the results.
 

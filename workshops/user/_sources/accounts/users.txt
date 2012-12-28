@@ -3,47 +3,45 @@
 Viewing other user accounts
 ===========================
 
-Now that your account is created, you can view other accounts on the system. Note on the main profile page there are options for following (and blocking) other users.
+Now that your account is created, you can view other accounts on the system. Note that on the main profile page there are options for following (and blocking) other users.
 
-#. To see information about other users on the system, click the :guilabel:`People` link on the top toolbar.
+   .. figure:: img/profilepage.png
 
-#. You will see a list of users registered on this system. Click on the user name for a particular user. 
+      *Profile page*
 
-   .. figure:: img/people.png
-      :width: 50%
-      :align: center
+#. To see information about other users on the system, click the :guilabel:`People` link on the top toolbar. You will see a list of users registered on this system.
+
+   .. figure:: img/peoplepage.png
 
       *List of users*
 
-#. You will see the layers owned by this user. You can also click :guilabel:`Activities` to see the activity feed.
+#.  Click on the user name for a particular user. You will see the layers owned by this user.
 
    .. figure:: img/adminlayers.png
-      :width: 50%
-      :align: center
 
       *List of layers owned by a user*
 
+#. You can also click :guilabel:`Activities` to see the activity feed.
+
    .. figure:: img/adminactivities.png
-      :width: 50%
-      :align: center
 
       *List of users*
 
-#. If you are interested in keeping track of what this user does, click the :guilabel:`Follow` button. A confirmation page will display. Click :guilabel:`Confirm`.
+   .. todo:: There is no navigational aides on the Activites page, so no way to move back without using browser Back button.
+
+#. If you are interested in keeping track of what this user does, go back to the previous page and click the :guilabel:`Follow` button.
+
+#. A confirmation page will display. Click :guilabel:`Confirm`.
 
    .. figure:: img/followconfirm.png
-      :width: 50%
-      :align: center
 
       *Confirming following a user*
 
 #. You will now be following this user, and your profile page will note this.
 
    .. figure:: img/followconfirm.png
-      :width: 50%
-      :align: center
 
       *Success following a user*
 
-.. todo:: How will the user get notified?
+   .. todo:: On user's profile page, only shows the avatar of the people you're following, with no names.
 

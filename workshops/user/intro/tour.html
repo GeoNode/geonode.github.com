@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>A tour of GeoNode &mdash; GeoNode Users Workshop 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-2.2.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-responsive-2.2.1.min.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="GeoNode Users Workshop 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Introduction" href="index.html" />
+    <link rel="next" title="Accounts and users" href="../accounts/index.html" />
+    <link rel="prev" title="What is GeoNode?" href="whatis.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+<div class="container">
+  
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="brand" href="../index.html">GeoNode Users Workshop</a>
+      <span class="navbar-text pull-left"><b>2.0</b></span>
+
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          
+            <li class="dropdown">
+  <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts and users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Managing layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Managing maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../moreinfo/index.html">For more information</a></li>
+</ul>
+</ul>
+</li>
+            <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">A tour of GeoNode</a></li>
+</ul>
+</ul>
+</li>
+          
+          
+            
+  <li><a href="whatis.html"
+         title="previous chapter">&laquo; What is GeoNode?</a></li>
+  <li><a href="../accounts/index.html"
+         title="next chapter">Accounts and users &raquo;</a></li>
+          
+          
+            <li>
+  <a href="../_sources/intro/tour.txt"
+     rel="nofollow">Source</a></li>
+          
+        </ul>
+
+        
+          
+<form class="navbar-search pull-right" style="margin-bottom:-3px;" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section" id="a-tour-of-geonode">
+<span id="tour"></span><h1>A tour of GeoNode<a class="headerlink" href="#a-tour-of-geonode" title="Permalink to this headline">¶</a></h1>
+<p>In order to get started, let&#8217;s look at the GeoNode interface and get a feel for how to navigate around it.</p>
+<p>The GeoNode web interface is the primary method of interacting with GeoNode as a user. From this interface, one can view and modify existing spatial layers and maps, as well as find information on other GeoNode users.</p>
+<p>Without being logged in, you are limited to read-only access of public layers.</p>
+<ol class="arabic">
+<li><p class="first">Navigate to you your GeoNode instance, available here:</p>
+<div class="figure">
+<img alt="../_images/welcome.png" src="../_images/welcome.png" />
+<p class="caption"><em>Welcome page</em></p>
+</div>
+<p>This page shows a variety of information about the current GeoNode instance. At the top of the page, a toolbar exists showing quick links to view <a class="reference internal" href="../layers/index.html#layers"><em>layers</em></a>, <a class="reference internal" href="../maps/index.html#maps"><em>maps</em></a>, documents (metadata), people ADD LINK, and a search field.  Below this is a listing of recently updated layers, including abstract, owner, rating, and download button (if available).</p>
+</li>
+<li><p class="first">Click the <em class="guilabel">Layers</em> link in the toolbar to go to the <em class="guilabel">Explore Layers</em> page.</p>
+<div class="figure">
+<img alt="../_images/layers.png" src="../_images/layers.png" />
+<p class="caption"><em>Explore Layers page</em></p>
+</div>
+<p>This page shows all layers known to GeoNode, available in either List or Grid viewing. Layers can be sorted by <em class="guilabel">Most Recent</em>, <em class="guilabel">Most Popular</em>, or <em class="guilabel">Most Shared</em>. Also available are a list of categories, with which layers can be connected with.</p>
+</li>
+<li><p class="first">Find a layer and click on its name.</p>
+<div class="figure">
+<img alt="../_images/coastline.png" src="../_images/coastline.png" />
+<p class="caption"><em>Viewing a layer</em></p>
+</div>
+</li>
+<li><p class="first">A layer viewing page will display, with the layer itself superimposed on a hosted base layer (in this case <a class="reference external" href="http://open.mapquest.com/">MapQuest OpenStreetMap</a>). Explore this page, noting the various options available to you.</p>
+</li>
+<li><p class="first">Now click the <em class="guilabel">Maps</em> link in the tool bar to go to the <em class="guilabel">Explore Maps</em> page.</p>
+<div class="figure">
+<img alt="../_images/maps.png" src="../_images/maps.png" />
+<p class="caption"><em>Explore Maps page</em></p>
+</div>
+<p>This page shows all maps known to GeoNode, available with similar viewing options as with the layers. Currently, there are no maps here, but we will create one later on in the workshop.</p>
+</li>
+<li><p class="first">Click the <em class="guilabel">Search</em> link in the toolbar to bring up the <em class="guilabel">Search</em> page.</p>
+<div class="figure">
+<img alt="../_images/search.png" src="../_images/search.png" />
+<p class="caption"><em>Search page</em></p>
+</div>
+<p>This page contains a wealth of options for customizing a search for various information on this GeoNode instance. While a simple search box is available at the top of every page, this search from allows for much more fine-tuned searches.</p>
+</li>
+</ol>
+<p>Now that you are familiar with the basic interface, the next step is to create your own account so you manage some GeoNode resources of your own.</p>
+</div>
+
+
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2012, GeoNode.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
