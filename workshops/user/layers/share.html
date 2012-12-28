@@ -31,7 +31,7 @@
     <link rel="top" title="GeoNode Users Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Managing layers" href="index.html" />
     <link rel="next" title="Adding more layers" href="more.html" />
-    <link rel="prev" title="Styling layers" href="style.html" />
+    <link rel="prev" title="Layer information" href="info.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -71,15 +71,19 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Sharing layers</a></li>
+<li><a class="reference internal" href="#">Sharing layers</a><ul>
+<li><a class="reference internal" href="#anonymous-access-denied">Anonymous access denied</a></li>
+<li><a class="reference internal" href="#sharing-with-other-users">Sharing with other users</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
           
           
             
-  <li><a href="style.html"
-         title="previous chapter">&laquo; Styling layers</a></li>
+  <li><a href="info.html"
+         title="previous chapter">&laquo; Layer information</a></li>
   <li><a href="more.html"
          title="next chapter">Adding more layers &raquo;</a></li>
           
@@ -105,6 +109,41 @@
   
   <div class="section" id="sharing-layers">
 <span id="layers-share"></span><h1>Sharing layers<a class="headerlink" href="#sharing-layers" title="Permalink to this headline">¶</a></h1>
+<p>GeoNode has the ability to restrict or allow other users to access a layer.</p>
+<div class="section" id="anonymous-access-denied">
+<h2>Anonymous access denied<a class="headerlink" href="#anonymous-access-denied" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Go to the layer preview of the first layer uploaded, and copy the URL to that preview page.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The URL should be something like: <tt class="docutils literal"><span class="pre">http://GEONODE/layers/geonode:san_andres_y_providencia_administrative</span></tt></p>
+</div>
+</li>
+<li><p class="first">Now log out of GeoNode by clicking on your profile name and selecting <em class="guilabel">Log out</em>.</p>
+<div class="figure">
+<img alt="../_images/logoutlink.png" src="../_images/logoutlink.png" />
+<p class="caption"><em>Log out</em></p>
+</div>
+</li>
+<li><p class="first">When asked for confirmation, click the <em class="guilabel">Log out</em> button.</p>
+<div class="figure">
+<img alt="../_images/logoutconfirm.png" src="../_images/logoutconfirm.png" />
+<p class="caption"><em>Confirming log out</em></p>
+</div>
+</li>
+<li><p class="first">Now paste the URL copied about into your browser address bar and navigate to that location.</p>
+</li>
+<li><p class="first">You should receive a 403 error in your browser. This is because when this layer was first uploaded, we set the view properties to be any registered user. Once logged out, we are no logner a registered user and so are not able to see or interact with the layer.</p>
+<div class="figure">
+<img alt="../_images/forbidden.png" src="../_images/forbidden.png" />
+<p class="caption"><em>Unable to view this protected layer</em></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="sharing-with-other-users">
+<h2>Sharing with other users<a class="headerlink" href="#sharing-with-other-users" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 

@@ -1,2 +1,0 @@
-GeoNode's Homepage
-==================

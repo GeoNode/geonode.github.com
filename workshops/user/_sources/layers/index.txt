@@ -14,6 +14,6 @@ In this section, you will learn how to create a new layer by uploading a local d
 
    upload 
    info
-   style
    share
    more
+   style

@@ -19,7 +19,7 @@ In your data pack is a directory called :file:`data`. Inside that directory is a
 
       *Main toolbar for GeoNode*
 
-   .. figure:: ../tour/img/layers.png
+   .. figure:: ../intro/img/layers.png
 
       *Layers menu*
 
@@ -49,7 +49,6 @@ In your data pack is a directory called :file:`data`. Inside that directory is a
 
       *Files ready for upload*
       
-
 #. GeoNode has the ability to restrict who can view, edit, and manage layers. On the right side of the page, under :guilabel:`Who can view and download this data`, select :guilabel:`Any registered user`. This will ensure that anonymous view access is disabled.
 
 #. In the same area, under :guilabel:`Who can edit this data`, select your username. This will ensure that only you are able to edit the data in the layer.

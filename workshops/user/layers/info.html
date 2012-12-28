@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Users Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Managing layers" href="index.html" />
-    <link rel="next" title="Styling layers" href="style.html" />
+    <link rel="next" title="Sharing layers" href="share.html" />
     <link rel="prev" title="Uploading a layer" href="upload.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -71,7 +71,11 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Layer information</a></li>
+<li><a class="reference internal" href="#">Layer information</a><ul>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#metadata">Metadata</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -80,8 +84,8 @@
             
   <li><a href="upload.html"
          title="previous chapter">&laquo; Uploading a layer</a></li>
-  <li><a href="style.html"
-         title="next chapter">Styling layers &raquo;</a></li>
+  <li><a href="share.html"
+         title="next chapter">Sharing layers &raquo;</a></li>
           
           
             <li>
@@ -105,6 +109,71 @@
   
   <div class="section" id="layer-information">
 <span id="layers-info"></span><h1>Layer information<a class="headerlink" href="#layer-information" title="Permalink to this headline">¶</a></h1>
+<p>After upload, another form will displaying, containing metadata about the layer. Change any information as desired, and then click <em class="guilabel">Update</em> at the very bottom of the form.</p>
+<div class="figure">
+<img alt="../_images/layermetadata.png" src="../_images/layermetadata.png" />
+<p class="caption"><em>Layer metadata</em></p>
+</div>
+<p>After the update, the layer will display in a preview window.</p>
+<div class="figure">
+<img alt="../_images/layerpreview.png" src="../_images/layerpreview.png" />
+<p class="caption"><em>Layer preview</em></p>
+</div>
+<p>This page contains lots of options for managing this layer. Let&#8217;s look at a few of them:</p>
+<div class="section" id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Permalink to this headline">¶</a></h2>
+<p>At the top of the page there are two buttons titled <em class="guilabel">Download Layer</em> and <em class="guilabel">Download Metadata</em>. These buttons provide access to the ability to extract geospatial data and metadata from within GeoNode. In this way, GeoNode allows for two way data access; one can import as well as export data.</p>
+<ol class="arabic simple">
+<li>Click the <em class="guilabel">Download Layer</em> button. You will see a list of options of the supported export formats.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/downloadformats.png" src="../_images/downloadformats.png" />
+<p class="caption"><em>Available export formats</em></p>
+</div>
+<ol class="arabic simple">
+<li>Click the option for <em class="guilabel">Zipped Shapefile</em>.</li>
+<li>GeoNode will process the request and bring up a Save As dialog. Save this file to your computer, and note how it is the same content as was uploaded.</li>
+</ol>
+</div>
+<div class="section" id="metadata">
+<h2>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Scroll down the page toward the bottom. Five tabs are available: <em class="guilabel">Info</em>, <em class="guilabel">Attributes</em>, <em class="guilabel">Share</em>, <em class="guilabel">Ratings</em>, and <em class="guilabel">Comments</em>. The info tab is already highlighted, and presents basic information about the layer, of the kind that was seen on the layer list page.</p>
+<div class="figure">
+<img alt="../_images/infotab.png" src="../_images/infotab.png" />
+<p class="caption"><em>Layer Info tab</em></p>
+</div>
+</li>
+<li><p class="first">Click the <em class="guilabel">Attributes</em> tab. This lists the attributes of the layer, including statistics such as mean and standard deviation (where applicable).</p>
+</li>
+<li><p class="first">Click the <em class="guilabel">Ratings</em> tab. This tab allows you (and others viewing this page) to rate this layer. Ratings can be based on quality, accuracy, or any other metric. Click on the appropriate star to rate this layer.</p>
+<div class="figure">
+<img alt="../_images/layerrating.png" src="../_images/layerrating.png" />
+<p class="caption"><em>Layer Ratings tab</em></p>
+</div>
+</li>
+<li><p class="first">Click the <em class="guilabel">Comments</em> tab. This tab allows you to leave a comment for other viewing this layer.</p>
+<div class="figure">
+<img alt="../_images/layercomment.png" src="../_images/layercomment.png" />
+<p class="caption"><em>Layer Comments tab</em></p>
+</div>
+</li>
+<li><p class="first">Click the <em class="guilabel">Add Comment</em> button and enter a comment.</p>
+<div class="figure">
+<img alt="../_images/commentadd.png" src="../_images/commentadd.png" />
+<p class="caption"><em>Adding a new comment</em></p>
+</div>
+</li>
+<li><p class="first">When finished, click <em class="guilabel">Submit Comments</em></p>
+</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/commentadded.png" src="../_images/commentadded.png" />
+<p class="caption"><em>New comment posted</em></p>
+</div>
+</div></blockquote>
+</div>
 </div>
 
 
