@@ -5,8 +5,8 @@ Sharing layers
 
 GeoNode has the ability to restrict or allow other users to access a layer.
 
-Anonymous access denied
------------------------
+Anonymous access
+----------------
 
 #. Go to the layer preview of the first layer uploaded, and copy the URL to that preview page.
 
@@ -31,6 +31,8 @@ Anonymous access denied
    .. figure:: img/forbidden.png
 
       *Unable to view this protected layer*
+
+.. todo:: How to change this?
 
 Sharing with other users
 ------------------------

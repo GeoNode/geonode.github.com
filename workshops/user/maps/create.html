@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Users Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Managing maps" href="index.html" />
-    <link rel="next" title="Share your map" href="share.html" />
+    <link rel="next" title="Styling layers" href="style.html" />
     <link rel="prev" title="Managing maps" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -71,7 +71,11 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Creating a map</a></li>
+<li><a class="reference internal" href="#">Creating a map</a><ul>
+<li><a class="reference internal" href="#adding-layers">Adding layers</a></li>
+<li><a class="reference internal" href="#saving-the-map">Saving the map</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -80,8 +84,8 @@
             
   <li><a href="index.html"
          title="previous chapter">&laquo; Managing maps</a></li>
-  <li><a href="share.html"
-         title="next chapter">Share your map &raquo;</a></li>
+  <li><a href="style.html"
+         title="next chapter">Styling layers &raquo;</a></li>
           
           
             <li>
@@ -105,6 +109,72 @@
   
   <div class="section" id="creating-a-map">
 <span id="maps-create"></span><h1>Creating a map<a class="headerlink" href="#creating-a-map" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-layers">
+<h2>Adding layers<a class="headerlink" href="#adding-layers" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Click the <em class="guilabel">Maps</em> link on the top toolbar. This will bring up the list of maps.</p>
+<div class="figure">
+<img alt="../_images/maps1.png" src="../_images/maps1.png" />
+<p class="caption"><em>Maps page</em></p>
+</div>
+</li>
+<li><p class="first">Currently, there aren&#8217;t any maps here, so let&#8217;s add one. Click the <em class="guilabel">Create a New Map</em> button.</p>
+</li>
+<li><p class="first">A map composition interface will display.</p>
+<div class="figure">
+<img alt="../_images/createmap.png" src="../_images/createmap.png" />
+<p class="caption"><em>Create maps interface</em></p>
+</div>
+<p>In this interface there is a toolbar, layer list, and map window. The map window contains the MapQuest OpenStreetMap layer by default. There are other service layers available here as well:  Blue Marble, Bing Aerial With Labels, MapQuest, and OpenStreetMap.</p>
+</li>
+<li><p class="first">Click on the New Layers button and select Add Layers.</p>
+<div class="figure">
+<img alt="../_images/addlayerslink.png" src="../_images/addlayerslink.png" />
+<p class="caption"><em>Add layers link</em></p>
+</div>
+</li>
+<li><p class="first">Select all of the San Andreas layers by clicking the top entry and Shift-clicking the bottom one. Click <em class="guilabel">Add Layers</em> to add them all to the map.</p>
+<div class="figure">
+<img alt="../_images/addlayersselect.png" src="../_images/addlayersselect.png" />
+<p class="caption"><em>Selecting layers</em></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This selection includes not only the two layers uploaded in the previous section, but also the layers that were already hosted on GeoNode at the beginning of the workshop.</p>
+</div>
+</li>
+<li><p class="first">The layers will be added to the map. Click <em class="guilabel">Done</em> (right next to <em class="guilabel">Add Layers</em> at the bottom) to return to the main layers list.</p>
+<div class="figure">
+<img alt="../_images/layersadded.png" src="../_images/layersadded.png" />
+<p class="caption"><em>Layers added to the map</em></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="saving-the-map">
+<h2>Saving the map<a class="headerlink" href="#saving-the-map" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">While we still have some work to do on our map, let&#8217;s save it so that we can come back to it later. Click on the <em class="guilabel">Map</em> button in the toolbar, and select <em class="guilabel">Save Map</em>.</p>
+<div class="figure">
+<img alt="../_images/savemaplink.png" src="../_images/savemaplink.png" />
+<p class="caption"><em>Save map link</em></p>
+</div>
+</li>
+<li><p class="first">Enter a title and abstract for your map.</p>
+<div class="figure">
+<img alt="../_images/savemapdialog.png" src="../_images/savemapdialog.png" />
+<p class="caption"><em>Save map dialog</em></p>
+</div>
+</li>
+<li><p class="first">Click <em class="guilabel">Save</em>. Notice that the link on the top right of the page changed to reflect the map&#8217;s name.</p>
+<div class="figure">
+<img alt="../_images/mapname.png" src="../_images/mapname.png" />
+<p class="caption"><em>Saved map name</em></p>
+</div>
+<p>This link contains a permalink to your map. If you open this link in a new window, your map will appear exactly as it was saved.</p>
+</li>
+</ol>
+</div>
 </div>
 
 

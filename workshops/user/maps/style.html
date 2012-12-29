@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Managing layers &mdash; GeoNode Users Workshop 2.0 documentation</title>
+    <title>Styling layers &mdash; GeoNode Users Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -29,8 +29,9 @@
     <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Users Workshop 2.0 documentation" href="../index.html" />
-    <link rel="next" title="Uploading a layer" href="upload.html" />
-    <link rel="prev" title="Viewing other user accounts" href="../accounts/users.html" />
+    <link rel="up" title="Managing maps" href="index.html" />
+    <link rel="next" title="Share your map" href="share.html" />
+    <link rel="prev" title="Creating a map" href="create.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -58,11 +59,11 @@
           
             <li class="dropdown">
   <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"><ul class="current">
+  <ul class="dropdown-menu globaltoc"><ul>
 <li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../accounts/index.html">Accounts and users</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Managing layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../maps/index.html">Managing maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../layers/index.html">Managing layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Managing maps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../moreinfo/index.html">For more information</a></li>
 </ul>
 </ul>
@@ -70,23 +71,21 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Managing layers</a><ul>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Styling layers</a></li>
 </ul>
 </ul>
 </li>
           
           
             
-  <li><a href="../accounts/users.html"
-         title="previous chapter">&laquo; Viewing other user accounts</a></li>
-  <li><a href="upload.html"
-         title="next chapter">Uploading a layer &raquo;</a></li>
+  <li><a href="create.html"
+         title="previous chapter">&laquo; Creating a map</a></li>
+  <li><a href="share.html"
+         title="next chapter">Share your map &raquo;</a></li>
           
           
             <li>
-  <a href="../_sources/layers/index.txt"
+  <a href="../_sources/maps/style.txt"
      rel="nofollow">Source</a></li>
           
         </ul>
@@ -104,26 +103,52 @@
   </div>
 
   
-  <div class="section" id="managing-layers">
-<span id="layers"></span><h1>Managing layers<a class="headerlink" href="#managing-layers" title="Permalink to this headline">¶</a></h1>
-<p>After user accounts, the next primary component of GeoNode is the <strong>layer</strong>. Layers are a published resource representing a raster or vector spatial data source. Layers also can be associated with metadata, ratings, and comments.</p>
-<p>In this section, you will learn how to create a new layer by uploading a local data set, add layer info, change the style of the layer, and share the results.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="upload.html">Uploading a layer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="info.html">Layer information</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="info.html#downloads">Downloads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="info.html#metadata">Metadata</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing layers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="share.html#anonymous-access">Anonymous access</a></li>
-<li class="toctree-l2"><a class="reference internal" href="share.html#sharing-with-other-users">Sharing with other users</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="more.html">Adding more layers</a></li>
-</ul>
+  <div class="section" id="styling-layers">
+<h1>Styling layers<a class="headerlink" href="#styling-layers" title="Permalink to this headline">¶</a></h1>
+<p>In this interface, we can pause in our map creation and change the style of one of our uploaded layers. GeoNode allows you to edit layer styles graphically, without the need to resort to programming or requiring a technical background.</p>
+<p>We&#8217;ll be editing the <tt class="file docutils literal"><span class="pre">san_andres_y_providencia_poi</span></tt> layer.</p>
+<ol class="arabic">
+<li><p class="first">In the layer list, uncheck all of the layers except the above, so that only this one is visible (not including the base layer).</p>
+<div class="figure">
+<img alt="../_images/layersunchecked.png" src="../_images/layersunchecked.png" />
+<p class="caption"><em>Only one layer visible</em></p>
 </div>
+</li>
+<li><p class="first">Zoom in closer using the toolbar or the mouse.</p>
+<div class="figure">
+<img alt="../_images/zoomedin.png" src="../_images/zoomedin.png" />
+<p class="caption"><em>Zoomed in to see the layer better</em></p>
+</div>
+</li>
+<li><p class="first">In the layer list, click to select the remaining layer and then click the palette icon (<em class="guilabel">Layer Styles</em>). This will bring up the style manager.</p>
+<div class="figure">
+<img alt="../_images/styles.png" src="../_images/styles.png" />
+<p class="caption"><em>Styles manager</em></p>
+</div>
+</li>
+<li><p class="first">This layer has one style (named the same as the layer) and one rule in that style. Click the rule (<em class="guilabel">Untitled 1</em>) to select it, and then click on <em class="guilabel">Edit</em> below it.</p>
+<div class="figure">
+<img alt="../_images/editrulelink.png" src="../_images/editrulelink.png" />
+<p class="caption"><em>Edit style rule link</em></p>
+</div>
+</li>
+<li><p class="first">Edit the style. You can choose from simple shapes, add labels, and even adjust the look of the points based on attribute values and scale.</p>
+<div class="figure">
+<img alt="../_images/editrulebasic.png" src="../_images/editrulebasic.png" />
+<p class="caption"><em>Editing basic style rules</em></p>
+</div>
+<div class="figure">
+<img alt="../_images/editrulelink.png" src="../_images/editrulelink.png" />
+<p class="caption"><em>Editing style labels</em></p>
+</div>
+</li>
+<li><p class="first">When done, click <em class="guilabel">Save</em>, then click on the word <em class="guilabel">Layers</em> to return to the layer list.</p>
+<div class="figure">
+<img alt="../_images/styledlayer.png" src="../_images/styledlayer.png" />
+<p class="caption"><em>Styled layer</em></p>
+</div>
+</li>
+</ol>
 </div>
 
 
