@@ -22,8 +22,8 @@ Welcome to the GeoNode Administrators Workshop! This workshop will teach how to 
    manage/index
    theme/index
    data/index
-   monitor/index
    debug/index
+   monitor/index
    backup/index
    deploy/index
 
@@ -50,6 +50,9 @@ Welcome to the GeoNode Administrators Workshop! This workshop will teach how to 
 
 :ref:`debug`
   Learn how to debug and troubleshoot a GeoNode Installation
+
+:ref:`monitor`
+  Learn how to monitor usage and other activity in a GeoNode Installation 
 
 :ref:`backup`
   Learn how to backup and restore GeoNode configuration and datas
