@@ -4970,7 +4970,7 @@ section.body .box {
   text-align: center;
   overflow: visible;
   margin: 93px 20px 30px;
-  height: 312px;
+  /* height: 312px; */
 }
 section.body .box header.box-header {
   width: 243px;
