@@ -5237,7 +5237,7 @@ body.geonode-features section.feature-details .number.three {
   background: url("../img/numbers/three.png") no-repeat right 150px;
 }
 body.geonode-features section.feature-details.feature2 {
-  padding-top: 200px;
+  /* padding-top: 200px; */
   background-color: #fbfbf9;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0ede7), color-stop(75%, #ffffff), to(#edeae3));
   background-image: -webkit-linear-gradient(#f0ede7, #ffffff 75%, #edeae3);
@@ -5251,7 +5251,7 @@ body.geonode-features section.feature-details.feature2 .highlighted-box {
   margin-left: 147px;
 }
 body.geonode-features section.feature-details.feature3 {
-  padding: 96px 0 25px;
+  /* padding: 96px 0 25px; */
   background-color: #fdfcfb;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#edeae3), color-stop(75%, #ffffff), to(#f3f1ec));
   background-image: -webkit-linear-gradient(#edeae3, #ffffff 75%, #f3f1ec);
