@@ -4936,7 +4936,7 @@ header.main .btn {
 }
 section.banner {
   background: #edeae3 url("../img/banner_bg.png") repeat-x 0 0;
-  height: 404px;
+  /* height: 404px; */
   color: #ffffff;
   padding: 30px 0 20px;
   /*  img.hero-img {
@@ -5131,7 +5131,7 @@ footer.footer section.btm .social a.gp {
 } */
 body.geonode-features section.banner {
   background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
-  height: 254px;
+  /* height: 254px; */
 }
 body.geonode-features section.banner h1 strong {
   font-weight: 400;
