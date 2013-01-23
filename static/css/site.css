@@ -5189,7 +5189,7 @@ body.geonode-features section.feature-details {
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffedeae3', endColorstr='#fff2efea', GradientType=0);
   border-bottom: 1px solid #cddcde;
-  height: 500px;
+  /* height: 500px; */
   padding-top: 17px;
 }
 body.geonode-features section.feature-details img.feature-img {
