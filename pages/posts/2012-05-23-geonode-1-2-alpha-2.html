@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<!--
+comments: true
+date: 2012-05-23 17:29:28
+layout: post
+slug: geonode-1-2-alpha-2
+title: GeoNode 1.2 Alpha 2
+wordpress_id: 672
+categories:
+- Status Update
+-->
+
+<p>The GeoNode team is proud to release GeoNode 1.2a2, a preview release for GeoNode 1.2. This is <strong>not recommended for production sites</strong>, but the final release of GeoNode 1.2 will include instructions on how to update from older versions.</p>
+
+<p>To install the alpha release on an Ubuntu system (assuming Ubuntu 12.04) please use the following commands:</p>
+
+<p><code>
+sudo add-apt-repository ppa:geonode/testing
+sudo apt-get update
+sudo apt-get install geonode
+</code></p>
+
+<p>For other systems or custom installations download the <a href="http://dev.geonode.org/release/GeoNode-1.2a2.tar.gz">GeoNode-1.2a2.tar.gz</a> tarball and use the included install script.</p>
+
+<p>GeoNode 1.2 will be the first release compatible with Ubuntu 11.10 and 12.04 (while maintaining compatibility with Ubuntu releases after 10.04). Please note that this alpha in particular has only been tested in 12.04, we appreciate your feedback in identifying potential issues in other distributions.  Issue reports may be filed on the GeoNode <a href="http://github.com/geonode/geonode">Github project</a> or reported on the GeoNode <a href="https://groups.google.com/forum/#!forum/geonode-users">users forum</a>.</p>
+
+<h3>Changes for GeoNode 1.2</h3>
+
+<ul>
+<li><p>Upgrade to Django 1.4 (Thanks David)</p></li>
+<li><p>Addition of South for database migrations (Thanks Luke)</p></li>
+<li><p>Improved keywords handling with django-taggit and adding keywords to Maps. (Thanks Luke)</p></li>
+<li><p>Comments on layer detail pages (Thanks Patrick Altman, David, Jeff and the Mapstory Project)</p></li>
+<li><p>Ratings on layers (Thanks Patrick Altman, David, Jeff and the Mapstory Project)</p></li>
+<li><p>Facebook Like and Google+ +1 functionality (Thanks Patrick Altman, David, Jeff and the Mapstory Project)</p></li>
+<li><p>Switched to lxml for all our xml parsing needs (Thanks Tom Kralidis)</p></li>
+<li><p>Use of url tags instead of referencing urls by view path (Thanks Matthew Hanson)</p></li>
+<li><p>Cleaner urls.py and settings.py (Thanks Matthew Hanson)</p></li>
+<li><p>Support for Ubuntu 11.10 and 12.04 (Thanks Alex Mandel)</p></li>
+<li><p>Documentation improvements on backups, ssl, localization. (Thanks Andrew Ross)</p></li>
+<li><p>Improved legends in map composer (Thanks Bart)</p></li>
+<li><p>Support for Chinese, German, Greek and Indonesian (Thanks 李英本, Michael Diener, Sergios Stamatis, firnasnadirman).</p></li>
+<li><p>Updated French, Spanish and Italian translations (Thanks numahell, Mauricio Miranda, and Luca Casagrande)</p></li>
+</ul>
+
+<h3>Known Issues</h3>
+
+<ul>
+<li><p><a href="https://github.com/GeoNode/geonode/issues/246">#246</a> Keywords are not optional. </p></li>
+<li><p>See <a href="https://github.com/GeoNode/geonode/issues">list of all open issues</a>.</p></li>
+</ul>
+
+<p>If you find any issues, you can post them to the <a href="https://groups.google.com/forum/#!forum/geonode-users">GeoNode mailing list</a> or directly in the <a href="https://github.com/geonode/geonode/issues">issue tracker.</a> or in IRC #geonode  FreeNet.</p>
+{% endblock content %}

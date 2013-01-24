@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<!--
+comments: true
+date: 2010-10-11 10:00:18
+layout: post
+slug: geonode-1-0-rc1-release
+title: GeoNode 1.0-RC1 Release
+wordpress_id: 203
+categories:
+- Development
+-->
+
+<p>After two months of bugfixes and user interface tweaks, the GeoNode team is proud to present the first release candidate for GeoNode 1.0.  This release improves on the ﻿user management, data upload, metadata management, GeoNetwork-powered data search, and an integrated styling and map composing tools from 1.0-beta with many bugfixes and user interface improvements.</p>
+
+<p>Notable changes include a new header background, the beginnings of a <a href="http://sphinx.pocoo.org/">Sphinx</a>-based user manual, inclusion of an <a href="http://www.openstreetmap.org/">OpenStreetMap</a> baselayer in the default configuration, and the correction of a <a href="http://projects.opengeo.org/CAPRA/ticket/805">bug</a> characterized by GeoServer's WMS being disabled after certain types of style editing.  You can see the full <a href="http://github.com/GeoNode/geonode/compare/1.0-beta...1.0-RC1">list of changes</a> on the GeoNode Github project, or the <a href="http://projects.opengeo.org/CAPRA/query?status=accepted&amp;status=assigned&amp;status=closed&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;col=milestone&amp;milestone=1.0+Release">list of closed tickets for 1.0</a> on the GeoNode issue tracker.</p>
+
+<p>Site administrators should note that with this release, GeoNode has adopted the <a href="http://djangosnippets.org/snippets/922/">local_settings.py</a> convention for separating defaults from site-specific settings.  Other than this, the 1.0-RC1 release is a drop-in replacement for 1.0-beta.</p>
+
+<p>As usual, the demo site at <a href="http://demo.geonode.org/">http://demo.geonode.org/</a> is updated with the latest release, and the <a href="http://dev.geonode.org/GeoNode-1.0-RC1.tar.gz">release bundle for deployment</a> is available for download.  We welcome bug reports and feature requests at <a href="http://projects.opengeo.org/CAPRA/">http://projects.opengeo.org/CAPRA/</a>, and any questions are welcome at the project mailing list (<em>geonode@librelist.com</em>).</p>
+{% endblock content %}

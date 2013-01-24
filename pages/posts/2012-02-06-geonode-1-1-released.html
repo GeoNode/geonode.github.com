@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<!--
+comments: true
+date: 2012-02-06 09:44:48
+layout: post
+slug: geonode-1-1-released
+title: GeoNode 1.1 Released
+wordpress_id: 527
+categories:
+- Development
+- Status Update
+-->
+
+<p>We are happy to announce the release of GeoNode 1.1, an open source platform that facilitates the creation, sharing, and collaborative use of geospatial data and maps.</p>
+
+<p>This release is an important milestone for us. It represents additional commitment by the developers to the stability of the project. It is also the culmination of over a year of hard work and collaboration on the part of developers, designers, domain experts, and users. Thank you to everyone who has been involved in this effort. Major contributions from <a href="http://opengeo.org/">OpenGeo</a>, the <a href="http://www.worldbank.org/">World Bank</a>, <a href="http://www.gfdrr.org/">GFDRR</a>, <a href="http://www.aifdr.org/">AIFDR</a>, and others in the community made this release possible.</p>
+
+<p>Spread the word about GeoNode 1.1 and please give us your feedback as you use it. Your comments will steer the project's future.</p>
+
+<h3>New Features</h3>
+
+<p>New features included in this release include:</p>
+
+<ul>
+<li><p><a href="http://readthedocs.org/docs/geonode/en/latest/">Improved documentation</a></p></li>
+<li><p>Support for GeoServer 2.1, including:</p>
+
+<ul>
+<li><p>GeoWebCache integration</p></li>
+<li><p>direct Shapefile-to-PostGIS import from the GeoNode upload form (thanks to <a href="http://www.iq.harvard.edu/people/matt_bertrand">Matt Bertrand</a>)</p></li>
+<li><p>speed improvements to the way GeoNode manages GeoServer configuration</p></li>
+</ul></li>
+
+
+
+<li><p>Support for GeoNetwork 2.6</p></li>
+<li><p>Various UI improvements, including:</p>
+
+<ul>
+<li><p>a new user profile page listing the user’s layers and maps</p></li>
+<li><p>a “Get feature info” tool to identify feature attributes when viewing maps</p></li>
+<li><p>improved map transitions and performance</p></li>
+</ul></li>
+
+
+
+<li><p>Increased coverage in GeoNode's automated test suite</p></li>
+<li><p>Better feedback from admin tools (thanks to <a href="http://www.gfdrr.org/gfdrr/node/11">Ariel Núñez</a>)</p></li>
+<li><p><a href="http://readthedocs.org/docs/geonode/en/latest/intro/install.html#ubuntu">Installer for Ubuntu</a> (thanks to <a href="http://www.gfdrr.org/gfdrr/node/11">Ariel Núñez</a>)</p></li>
+<li><p>Numerous bug fixes thanks to support from partners at last year's <a href="http://geonode.org/2011/05/roadmapping-summit/">roadmapping summit</a></p></li>
+<li><p>Translations in...</p></li>
+</ul>
+
+<h3>Notes for Upgraders</h3>
+
+<p>Some migration steps are required for this update. Users of the GeoNode packages for Ubuntu will have these applied automatically. However, if you are manually managing your installation, you will need to use the following SQL commands:
+<code>
+ALTER TABLE maps_maplayer
+ALTER COLUMN layer_params TYPE text,
+ALTER COLUMN source_params TYPE text;</code></p>
+
+<h3><!-- more --></h3>
+
+<h3>Installing GeoNode</h3>
+
+<p>To find out how to install, check out the <a href="http://docs.geonode.org/en/latest/intro/install.html">installation guide</a> or try this <a href="http://vimeo.com/29495092">video</a>.</p>
+{% endblock content %}
