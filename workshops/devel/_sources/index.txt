@@ -19,7 +19,6 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
    :hidden:
 
    intro/index
-   install/index
    envsetup/index
    core/index
    api/index
@@ -28,10 +27,7 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
    debug/index
 
 :ref:`intro`
-  Learn about the GeoNode development process and software requirements
-
-:ref:`install`
-  Learn how to install a basic GeoNode instance
+  Learn about the GeoNode's Architecture, the tools it is developed with and the standards it supports.
 
 :ref:`envsetup`
   Learn how to set up a GeoNode development environment

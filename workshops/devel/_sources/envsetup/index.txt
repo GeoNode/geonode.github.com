@@ -1,6 +1,6 @@
 .. _envsetup:
 
-Creating a GeoNode development environment
+Setting up a GeoNode development environment
 ==========================================
 
 .. todo::

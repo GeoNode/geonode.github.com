@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Standards &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-2.2.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-responsive-2.2.1.min.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Introduction to GeoNode development" href="index.html" />
+    <link rel="next" title="GeoNode Architecture" href="architecture.html" />
+    <link rel="prev" title="GeoNode Components" href="components.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+<div class="container">
+  
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="brand" href="../index.html">GeoNode Developers Workshop</a>
+      <span class="navbar-text pull-left"><b>2.0</b></span>
+
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          
+            <li class="dropdown">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="simple">
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">GeoNode dependencies and integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git/index.html">Managing the GeoNode code with git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">GeoNode projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode development and debugging</a></li>
+</ul>
+</ul>
+</li>
+            <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Standards</a><ul>
+<li><a class="reference internal" href="#web-mapping-service-wms">Web Mapping Service (WMS)</a></li>
+<li><a class="reference internal" href="#web-feature-service-wfs">Web Feature Service (WFS)</a></li>
+<li><a class="reference internal" href="#web-coverage-service-wcs">Web Coverage Service (WCS)</a></li>
+<li><a class="reference internal" href="#catalogue-services-for-web-csw">Catalogue Services for Web (CSW)</a></li>
+<li><a class="reference internal" href="#tile-mapping-service-tms-wmts">Tile Mapping Service (TMS/WMTS)</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          
+          
+            
+  <li><a href="components.html"
+         title="previous chapter">&laquo; GeoNode Components</a></li>
+  <li><a href="architecture.html"
+         title="next chapter">GeoNode Architecture &raquo;</a></li>
+          
+          
+            <li>
+  <a href="../_sources/intro/standards.txt"
+     rel="nofollow">Source</a></li>
+          
+        </ul>
+
+        
+          
+<form class="navbar-search pull-right" style="margin-bottom:-3px;" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section" id="standards">
+<span id="id1"></span><h1>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h1>
+<p>GeoNode is based on a set of Open Geospatial Consortium (OGC) standards. These standards enable GeoNode installations to be interoperable with a wide variety of tools that support these OGC standards and enable federation with other OGC compliant services and infrastructure. Reference links about these standards are also included at the end of this module.</p>
+<div class="section" id="web-mapping-service-wms">
+<h2>Web Mapping Service (WMS)<a class="headerlink" href="#web-mapping-service-wms" title="Permalink to this headline">¶</a></h2>
+<p>The Web Map Service (WMS) specification defines an interface for requesting rendered map images across the web. It is used within GeoNode to display maps in the pages of the site and in the GeoExplorer application to display rendered layers based on default or custom styles.</p>
+</div>
+<div class="section" id="web-feature-service-wfs">
+<h2>Web Feature Service (WFS)<a class="headerlink" href="#web-feature-service-wfs" title="Permalink to this headline">¶</a></h2>
+<p>The Web Feature Service (WFS) specification defines an interface for reading and writing geographic features across the web. It is used within GeoNode to enable downloading of vector layers in various formats and within GeoExplorer to enable editing of Vector Layers that are stored in a GeoNode.</p>
+</div>
+<div class="section" id="web-coverage-service-wcs">
+<h2>Web Coverage Service (WCS)<a class="headerlink" href="#web-coverage-service-wcs" title="Permalink to this headline">¶</a></h2>
+<p>The Web Coverage Service (WCS) specification defines an interface for reading and writing geospatial raster data as &#8220;coverages&#8221; across the web. It is used within GeoNode to enable downloading of raster layers in various formats.</p>
+</div>
+<div class="section" id="catalogue-services-for-web-csw">
+<h2>Catalogue Services for Web (CSW)<a class="headerlink" href="#catalogue-services-for-web-csw" title="Permalink to this headline">¶</a></h2>
+<p>The Catalogue Services for Web (CSW) specification defines an interface for exposing a catalogue of geospatial records across the web. It is used within geonode to enable external applications to search GeoNode&#8217;s layer catalogue or to provide federated search that includes a set of GeoNode layers within another application.</p>
+</div>
+<div class="section" id="tile-mapping-service-tms-wmts">
+<h2>Tile Mapping Service (TMS/WMTS)<a class="headerlink" href="#tile-mapping-service-tms-wmts" title="Permalink to this headline">¶</a></h2>
+<p>The Tile Mapping Service (TMS) specification defines and interface for retrieving rendered map tiles over the web. It is used within geonode to enable serving of a cache of rendered layers to be included in GeoNode&#8217;s web pages or within the GeoExplorer mapping application. Its purpose is to improve performance on the client vs asking the WMS for rendered images directly.</p>
+</div>
+</div>
+
+
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright GeoNode.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Introduction GeoNode development &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    <title>Introduction to GeoNode development &mdash; GeoNode Developers Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
-    <link rel="next" title="Installing GeoNode" href="../install/index.html" />
+    <link rel="next" title="GeoNode Components" href="components.html" />
     <link rel="prev" title="GeoNode Developers Workshop" href="../index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -64,9 +64,8 @@
     ><ul class="simple">
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Introduction GeoNode development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../install/index.html">Installing GeoNode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Creating a GeoNode development environment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">GeoNode dependencies and integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../git/index.html">Managing the GeoNode code with git</a></li>
@@ -78,7 +77,9 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Introduction GeoNode development</a></li>
+<li><a class="reference internal" href="#">Introduction to GeoNode development</a><ul>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -87,8 +88,8 @@
             
   <li><a href="../index.html"
          title="previous chapter">&laquo; GeoNode Developers Workshop</a></li>
-  <li><a href="../install/index.html"
-         title="next chapter">Installing GeoNode &raquo;</a></li>
+  <li><a href="components.html"
+         title="next chapter">GeoNode Components &raquo;</a></li>
           
           
             <li>
@@ -110,8 +111,46 @@
   </div>
 
   
-  <div class="section" id="introduction-geonode-development">
-<span id="intro"></span><h1>Introduction GeoNode development<a class="headerlink" href="#introduction-geonode-development" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="introduction-to-geonode-development">
+<span id="intro"></span><h1>Introduction to GeoNode development<a class="headerlink" href="#introduction-to-geonode-development" title="Permalink to this headline">¶</a></h1>
+<p>This module will introduce you to the components that the GeoNode is built with, the standards that it supports and the services it provides based on those standards, and an overview its architecture.</p>
+<p>GeoNode is a web based GIS tool, and as such, in order to do development on GeoNode itself or to integrate it into your own application, you should be familiar with basic web development concepts as well as with general GIS concepts.</p>
+<p>A set of reference links on these topics is included at the end of this module.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="components.html">GeoNode Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="components.html#django">Django</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#geoserver">GeoServer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#geoexplorer">GeoExplorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#postgresql-and-postgis">PostgreSQL and PostGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#geopython-libraries">geopython libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#django-pluggables">Django Pluggables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#jquery">jQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#bootstrap">Bootstrap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standards.html">Standards</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#web-mapping-service-wms">Web Mapping Service (WMS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#web-feature-service-wfs">Web Feature Service (WFS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#web-coverage-service-wcs">Web Coverage Service (WCS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#catalogue-services-for-web-csw">Catalogue Services for Web (CSW)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#tile-mapping-service-tms-wmts">Tile Mapping Service (TMS/WMTS)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">GeoNode Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-and-geoserver">GeoNode and GeoServer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-and-postgresql-postgis">GeoNode and PostgreSQL/PostGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-s-catalogue">GeoNode&#8217;s Catalogue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html#javascript-in-geonode">Javascript in GeoNode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">GeoNode Development References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference.html#basic-web-based-gis-concepts-and-background">Basic Web based GIS Concepts and Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reference.html#core-development-tools-and-libraries">Core development tools and libraries</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 
 
