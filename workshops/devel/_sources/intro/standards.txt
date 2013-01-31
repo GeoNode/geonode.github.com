@@ -5,7 +5,7 @@ Standards
 
 GeoNode is based on a set of Open Geospatial Consortium (OGC) standards. These standards enable GeoNode installations to be interoperable with a wide variety of tools that support these OGC standards and enable federation with other OGC compliant services and infrastructure. Reference links about these standards are also included at the end of this module.
 
-Web Mapping Service (WMS)
+Web Map Service (WMS)
 -------------------------
 
 The Web Map Service (WMS) specification defines an interface for requesting rendered map images across the web. It is used within GeoNode to display maps in the pages of the site and in the GeoExplorer application to display rendered layers based on default or custom styles.
@@ -20,10 +20,10 @@ Web Coverage Service (WCS)
 
 The Web Coverage Service (WCS) specification defines an interface for reading and writing geospatial raster data as "coverages" across the web. It is used within GeoNode to enable downloading of raster layers in various formats.
 
-Catalogue Services for Web (CSW)
+Catalogue Service for Web (CSW)
 --------------------------------
 
-The Catalogue Services for Web (CSW) specification defines an interface for exposing a catalogue of geospatial records across the web. It is used within geonode to enable external applications to search GeoNode's layer catalogue or to provide federated search that includes a set of GeoNode layers within another application.
+The Catalogue Service for Web (CSW) specification defines an interface for exposing a catalogue of geospatial metadata across the web. It is used within GeoNode to enable any application to search GeoNode's catalogue or to provide federated search that includes a set of GeoNode layers within another application.
 
 Tile Mapping Service (TMS/WMTS)
 -------------------------------

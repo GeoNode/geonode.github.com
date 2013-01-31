@@ -77,7 +77,9 @@ Core development tools and libraries
 
   - http://pycsw.org/docs/documentation.html
   - http://geopython.github.com/OWSLib/
+  - https://github.com/toblerity/shapely
   - https://github.com/sgillies/Fiona
+  - http://pypi.python.org/pypi/pyproj
 
 - gdal/ogr
 

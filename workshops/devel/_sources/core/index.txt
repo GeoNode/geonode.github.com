@@ -11,7 +11,7 @@ GeoNode dependencies and integration
 
         GeoNode Project Layout Review
         GeoNode Core Python Dependencies Review
-            owslib
+            OWSLib
             pycsw
             gsconfig
         GeoNode Core Python Module Review

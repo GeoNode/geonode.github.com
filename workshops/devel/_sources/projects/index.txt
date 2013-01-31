@@ -19,7 +19,7 @@ GeoNode projects
               social
           Version Control (github)
           Deploying your Project
-              Amazon, OpenShift and Heroku (For very Advanced Developers)
+              Amazon, OpenShift and Heroku (For Very Advanced Developers)
           Staying in Synch with Mainline geonode
       Avenues for Customizing and extending with a downstream project
           CSS (bootswatch)
@@ -29,8 +29,8 @@ GeoNode projects
           Custom GeoExplorer
               Suite SDK
               Deploying
-      Avenues for Integration with External Services (For very Advanced Developers)
-          External OGC Services (owslib and pycsw)
+      Avenues for Integration with External Services (For Very Advanced Developers)
+          External OGC Services (OWSLib and pycsw)
           Google Earth
           ArcGIS
           qGIS

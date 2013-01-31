@@ -32,20 +32,25 @@ GeoExplorer_ is a web application, based on the GeoExt_ framework, for composing
 .. _GeoExplorer: http://suite.opengeo.org/opengeo-docs/geoexplorer/
 .. _GeoExt: http://geoext.org/
 
-
 PostgreSQL and PostGIS
 ----------------------
 
 PostgreSQL_ and PostGIS_ are the database components that store and manage spatial data and information for GeoNode and the django modules that it is composed of, pycsw and GeoServer. All of these tables and data are stored within a geonode database in PostgreSQL. GeoServer uses PostGIS to store and manage spatial vector data for each layer which are stored as a separate table in the database.
 
-geopython libraries
--------------------
+pycsw
+-----
 
-GeoNode leverages several geospatial python libraries including gsconfig_, owslib_ and pycsw_. gsconfig is used to communicates with GeoServer's REST Configuration API to configure GeoNode layers in GeoServer. owslib is used to communicate with GeoServer's OGC services and can be used to communicate with other OGC services. pycsw is used to provide the Metadata catalogue service (CSW) within GeoNode. 
+pycsw_ is an OGC CSW server implementation written in Python.  pycsw provides a standards-based CSW metadata and catalogue component of spatial data infrastructures, supporting popular geospatial metadata standards such as Dublin Core, ISO 19115, FGDC and DIF.
+
+.. _pycsw: http://pycsw.org
+
+Geospatial Python Libraries
+---------------------------
+
+GeoNode leverages several geospatial python libraries including gsconfig_ and OWSLib_. gsconfig is used to communicates with GeoServer's REST Configuration API to configure GeoNode layers in GeoServer. OWSLib is used to communicate with GeoServer's OGC services and can be used to communicate with other OGC services.
 
 .. _gsconfig: https://github.com/dwins/gsconfig.py
-.. _owslib: http://geopython.github.com/OWSLib/
-.. _pycsw: http://pycsw.org/
+.. _OWSLib: http://geopython.github.com/OWSLib/
 
 Django Pluggables
 -----------------

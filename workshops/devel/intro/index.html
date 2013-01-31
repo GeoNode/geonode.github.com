@@ -113,7 +113,7 @@
   
   <div class="section" id="introduction-to-geonode-development">
 <span id="intro"></span><h1>Introduction to GeoNode development<a class="headerlink" href="#introduction-to-geonode-development" title="Permalink to this headline">¶</a></h1>
-<p>This module will introduce you to the components that the GeoNode is built with, the standards that it supports and the services it provides based on those standards, and an overview its architecture.</p>
+<p>This module will introduce you to the components that GeoNode is built with, the standards that it supports and the services it provides based on those standards, and an overview its architecture.</p>
 <p>GeoNode is a web based GIS tool, and as such, in order to do development on GeoNode itself or to integrate it into your own application, you should be familiar with basic web development concepts as well as with general GIS concepts.</p>
 <p>A set of reference links on these topics is included at the end of this module.</p>
 <div class="toctree-wrapper compound">
@@ -123,24 +123,25 @@
 <li class="toctree-l2"><a class="reference internal" href="components.html#geoserver">GeoServer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="components.html#geoexplorer">GeoExplorer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="components.html#postgresql-and-postgis">PostgreSQL and PostGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="components.html#geopython-libraries">geopython libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#pycsw">pycsw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="components.html#geospatial-python-libraries">Geospatial Python Libraries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="components.html#django-pluggables">Django Pluggables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="components.html#jquery">jQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="components.html#bootstrap">Bootstrap</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="standards.html">Standards</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="standards.html#web-mapping-service-wms">Web Mapping Service (WMS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#web-map-service-wms">Web Map Service (WMS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standards.html#web-feature-service-wfs">Web Feature Service (WFS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standards.html#web-coverage-service-wcs">Web Coverage Service (WCS)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standards.html#catalogue-services-for-web-csw">Catalogue Services for Web (CSW)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#catalogue-service-for-web-csw">Catalogue Service for Web (CSW)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standards.html#tile-mapping-service-tms-wmts">Tile Mapping Service (TMS/WMTS)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="architecture.html">GeoNode Architecture</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-and-geoserver">GeoNode and GeoServer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-and-postgresql-postgis">GeoNode and PostgreSQL/PostGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-s-catalogue">GeoNode&#8217;s Catalogue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html#geonode-and-pycsw">GeoNode and pycsw</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture.html#javascript-in-geonode">Javascript in GeoNode</a></li>
 </ul>
 </li>
@@ -162,7 +163,7 @@
       
     </p>
     <p>
-        &copy; Copyright GeoNode.<br/>
+        &copy; Copyright GeoNode Development Community.<br/>
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.<br/>
     </p>
   </div>

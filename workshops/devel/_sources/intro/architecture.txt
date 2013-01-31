@@ -17,13 +17,18 @@ GeoNode and PostgreSQL/PostGIS
 
 - Vector Data Layer Storage
 
-GeoNode's Catalogue
--------------------
+GeoNode and pycsw
+-----------------
 
+- Configuration
+
+- Publishing
+
+- Discovery 
 
 Javascript in GeoNode
 ---------------------
 
 - GeoExplorer
 
-- jQuery Functionalitu
+- jQuery Functionality
