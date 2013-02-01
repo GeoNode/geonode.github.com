@@ -81,7 +81,12 @@
 <li><a class="reference internal" href="#">GeoNode Architecture</a><ul>
 <li><a class="reference internal" href="#geonode-and-geoserver">GeoNode and GeoServer</a></li>
 <li><a class="reference internal" href="#geonode-and-postgresql-postgis">GeoNode and PostgreSQL/PostGIS</a></li>
-<li><a class="reference internal" href="#geonode-and-pycsw">GeoNode and pycsw</a></li>
+<li><a class="reference internal" href="#geonode-and-pycsw">GeoNode and pycsw</a><ul>
+<li><a class="reference internal" href="#configuration">Configuration</a></li>
+<li><a class="reference internal" href="#publishing">Publishing</a></li>
+<li><a class="reference internal" href="#discovery">Discovery</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#javascript-in-geonode">Javascript in GeoNode</a></li>
 </ul>
 </li>
@@ -134,11 +139,32 @@
 </div>
 <div class="section" id="geonode-and-pycsw">
 <h2>GeoNode and pycsw<a class="headerlink" href="#geonode-and-pycsw" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Configuration</li>
-<li>Publishing</li>
-<li>Discovery</li>
-</ul>
+<p>GeoNode is built with pycsw embedded as the default CSW server component.</p>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>pycsw configuration in managed in <tt class="docutils literal"><span class="pre">geonode/settings.py</span></tt>, in the <tt class="docutils literal"><span class="pre">PYCSW</span></tt> dictionary.</p>
+<p>To adjust pycsw configuration settings, edit/update the <tt class="docutils literal"><span class="pre">PYCSW</span></tt> dictionary values as required.
+GeoNode&#8217;s integration of pycsw has made CSW configuration very lightweight and user-friendly,
+and as a result there is minimal configuration of the pycsw endpoint in GeoNode.</p>
+<p>pycsw also includes INSPIRE Discovery Services 3.0 support, which is enabled by default.
+If you would like your GeoNode CSW INSPIRE support turned off, set the <tt class="docutils literal"><span class="pre">metadata:inspire/enabled</span></tt> key to <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Make sure that <tt class="docutils literal"><span class="pre">settings.SITEURL</span></tt> is correctly set and run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">updatelayers</span></tt> whenever this value changes, as this affects pycsw&#8217;s Capabilities XML and metadata download links</p>
+</div>
+</div>
+<div class="section" id="publishing">
+<h3>Publishing<a class="headerlink" href="#publishing" title="Permalink to this headline">¶</a></h3>
+<p>Since pycsw is embedded in GeoNode, layers published within GeoNode are automatically published
+to pycsw and discoverable via CSW.  No additional configuration or actions are required to publish
+layers, maps or documents to pycsw.</p>
+</div>
+<div class="section" id="discovery">
+<h3>Discovery<a class="headerlink" href="#discovery" title="Permalink to this headline">¶</a></h3>
+<p>GeoNode&#8217;s CSW endpoint is deployed available at <tt class="docutils literal"><span class="pre">http://localhost:8000/catalogue/csw</span></tt> and is
+available for clients to use for standards-based discovery.  See <a class="reference external" href="http://pycsw.org/docs/tools.html">http://pycsw.org/docs/tools.html</a>
+for a list of CSW clients and tools.</p>
+</div>
 </div>
 <div class="section" id="javascript-in-geonode">
 <h2>Javascript in GeoNode<a class="headerlink" href="#javascript-in-geonode" title="Permalink to this headline">¶</a></h2>
