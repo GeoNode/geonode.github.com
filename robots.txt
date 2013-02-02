@@ -61,3 +61,4 @@ scale.html
 security.html
 user_features.html
 whatsnew.html
+workshops.html

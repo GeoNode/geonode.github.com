@@ -499,4 +499,12 @@
 	</url>
 	
 
+	
+	<url>
+		<loc>workshops.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
 </urlset>
