@@ -2,6 +2,17 @@
 
 {% block body_class %}geonode-features{% endblock %}
 
-<section class="feature-detail">
-{% block body %}{% endblock %}
-</section>
+    {% block contentwrap %}
+     <section class="feature-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="span7">
+                        <h1>{% block blogtitle %}{% endblock %}</h1> 
+                        <article class="article1">
+    {% block content %}
+    {% endblock %}
+                        </article>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
