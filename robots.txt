@@ -56,6 +56,7 @@ posts/2012-05-23-geonode-1-2-alpha-2.html
 posts/2012-07-03-geonode-1-2-beta1.html
 posts/2012-09-17-help-the-world-bank-build-a-geonode-to-qgis-bridge.html
 posts/2012-10-23-geonode-1-2.html
+posts/index.html
 resources.html
 scale.html
 security.html
