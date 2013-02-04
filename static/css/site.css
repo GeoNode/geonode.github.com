@@ -5196,7 +5196,7 @@ body.geonode-features section.feature-details img.feature-img {
   margin-left: 60px;
 }
 body.geonode-features section.feature-details .highlighted-box {
-  margin: 70px 0 0 60px;
+  margin: 0 0 0 60px;
   background: url("../img/box.png") no-repeat 0 0;
   padding-left: 36px;
   min-height: 368px;
