@@ -103,4 +103,4 @@ One of the primary reasons that we setup your own GeoNode project using this met
 
     $ python manage.py runserver
 
-    Visit http://localhost:8000/
+   Visit http://localhost:8000/
