@@ -31,10 +31,16 @@ If you are working remotely, You should first connect to the machine that has yo
 
     $ python manage.py runserver
 
+#. Visit your new GeoNode Site.
+  
+    http://localhost:8000
+
 Source Code Revision Control
 ----------------------------
 
 It is recommended that you immediately put your new project under source code revision control. The GeoNode development team uses Git and GitHub purpose and recommends that you do the same. If you do not already have a GitHub account, it is recommended that you set one up. A full review of Git and distributed Source Code Revision Control systems is beyond the scope of this tutorial, but you may find the `Git Book`_ useful if you are not already familiar with these concepts.
+
+.. _Git Book: http://git-scm.com/book
 
 #. Create a new Repository in GitHub:
 
