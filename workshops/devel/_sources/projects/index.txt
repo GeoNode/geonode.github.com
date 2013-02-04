@@ -9,7 +9,7 @@ This module will teach you about how to setup your own GeoNode based project and
 .. toctree::
    :maxdepth: 2
 
-   intro 
+   projectsintro 
    setup
    theme
    modules

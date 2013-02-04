@@ -1,4 +1,4 @@
-.. _intro:
+.. _projectsintro:
 
 Introduction to GeoNode Projects
 ================================
