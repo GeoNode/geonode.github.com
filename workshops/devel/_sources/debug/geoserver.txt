@@ -1,0 +1,4 @@
+.. _geoserver:
+
+Debugging GeoServer
+===================
