@@ -27,16 +27,16 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
    process/index
 
 :ref:`intro`
-  Learn about GeoNode's Architecture, the tools it is developed with and the standards it supports.
+  Learn about GeoNode's core components, its Architecture, the tools it is developed with and the standards it supports.
 
 :ref:`core`
-  Learn about GeoNode Development Prerequisites, its core modules and how they work together to provide a complete web mapping tool. 
+  Learn about the pre-requisites you will need in order to develop with GeoNode. Take a look at its core modules and how they work together to provide a complete web mapping tool. 
 
 :ref:`projects`
-  Learn how existing projects leverage GeoNode and create your own
+  Learn how existing projects leverage GeoNode and create your own GeoNode based project.
 
 :ref:`envsetup`
-  Learn how to set up a GeoNode development environment
+  Learn how to set up a GeoNode development environment so you can contribute to GeoNode's core.
 
 :ref:`api`
   Learn about the APIs GeoNode leverages and provides.
