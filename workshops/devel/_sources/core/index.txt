@@ -1,27 +1,12 @@
 .. _core:
 
-GeoNode's Core Modules
-======================
+GeoNode Development Prerequsites and Core Modules
+=================================================
 
-layers
-------
+This module will introduce you to the 
 
-maps
-----
+.. toctree::
+   :maxdepth: 2
 
-security
---------
-
-search
-------
-
-catalogue
----------
-
-geoserver
----------
-
-geoexplorer
------------
-
-
+   prerequisites
+   coremodules 

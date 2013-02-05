@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>GeoNode’s Development Prerequisites &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-2.2.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-responsive-2.2.1.min.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
+    <link rel="up" title="GeoNode Development Prerequsites and Core Modules" href="index.html" />
+    <link rel="next" title="GeoNode’s Core Modules" href="coremodules.html" />
+    <link rel="prev" title="GeoNode Development Prerequsites and Core Modules" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+<div class="container">
+  
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="brand" href="../index.html">GeoNode Developers Workshop</a>
+      <span class="navbar-text pull-left"><b>2.0</b></span>
+
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          
+            <li class="dropdown">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="simple">
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">GeoNode Development Prerequsites and Core Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Downstream GeoNode Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode development and debugging</a></li>
+</ul>
+</ul>
+</li>
+            <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">GeoNode&#8217;s Development Prerequisites</a><ul>
+<li><a class="reference internal" href="#basic-shell-tools">Basic Shell Tools</a><ul>
+<li><a class="reference internal" href="#ssh">ssh</a></li>
+<li><a class="reference internal" href="#sudo">sudo</a></li>
+<li><a class="reference internal" href="#apt">apt</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#python-development-tools">Python Development Tools</a><ul>
+<li><a class="reference internal" href="#virtualenv">virtualenv</a></li>
+<li><a class="reference internal" href="#pip">pip</a></li>
+<li><a class="reference internal" href="#miscellaneous">miscellaneous</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#django">Django</a><ul>
+<li><a class="reference internal" href="#http-request-response">HTTP Request Response</a></li>
+<li><a class="reference internal" href="#management-commands">Management Commands</a></li>
+<li><a class="reference internal" href="#django-admin-interface">Django Admin Interface</a></li>
+<li><a class="reference internal" href="#template-tags">Template Tags</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          
+          
+            
+  <li><a href="index.html"
+         title="previous chapter">&laquo; GeoNode Development Prerequsites and Core Modules</a></li>
+  <li><a href="coremodules.html"
+         title="next chapter">GeoNode&#8217;s Core Modules &raquo;</a></li>
+          
+          
+            <li>
+  <a href="../_sources/core/prerequisites.txt"
+     rel="nofollow">Source</a></li>
+          
+        </ul>
+
+        
+          
+<form class="navbar-search pull-right" style="margin-bottom:-3px;" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section" id="geonode-s-development-prerequisites">
+<span id="core"></span><h1>GeoNode&#8217;s Development Prerequisites<a class="headerlink" href="#geonode-s-development-prerequisites" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-shell-tools">
+<h2>Basic Shell Tools<a class="headerlink" href="#basic-shell-tools" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ssh">
+<h3>ssh<a class="headerlink" href="#ssh" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="sudo">
+<h3>sudo<a class="headerlink" href="#sudo" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="apt">
+<h3>apt<a class="headerlink" href="#apt" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="python-development-tools">
+<h2>Python Development Tools<a class="headerlink" href="#python-development-tools" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="virtualenv">
+<h3>virtualenv<a class="headerlink" href="#virtualenv" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pip">
+<h3>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="miscellaneous">
+<h3>miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>shell</li>
+<li>ipython</li>
+<li>pdb</li>
+</ul>
+</div>
+</div>
+<div class="section" id="django">
+<h2>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="http-request-response">
+<h3>HTTP Request Response<a class="headerlink" href="#http-request-response" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="management-commands">
+<h3>Management Commands<a class="headerlink" href="#management-commands" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="django-admin-interface">
+<h3>Django Admin Interface<a class="headerlink" href="#django-admin-interface" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="template-tags">
+<h3>Template Tags<a class="headerlink" href="#template-tags" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright GeoNode Development Community.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

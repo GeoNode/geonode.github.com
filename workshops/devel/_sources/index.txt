@@ -29,7 +29,7 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
   Learn about GeoNode's Architecture, the tools it is developed with and the standards it supports.
 
 :ref:`core`
-  Learn about GeoNode's core modules and how they work together to provide a complete web mapping tool. 
+  Learn about GeoNode Development Prerequisites, its core modules and how they work together to provide a complete web mapping tool. 
 
 :ref:`projects`
   Learn how existing projects leverage GeoNode and create your own
