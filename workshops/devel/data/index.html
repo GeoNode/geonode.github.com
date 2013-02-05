@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>GeoNode’s Ad-Hoc API &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    <title>Loading Data into a GeoNode &mdash; GeoNode Developers Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -29,9 +29,8 @@
     <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
-    <link rel="up" title="GeoNode APIs" href="index.html" />
-    <link rel="next" title="GeoNode debugging techniques" href="../debug/index.html" />
-    <link rel="prev" title="GeoServers Import and Print APIs" href="geoserver.html" />
+    <link rel="next" title="GeoServer Data Configuration" href="geoserver.html" />
+    <link rel="prev" title="Manually Deploying your Development Environment" href="../envsetup/deploy.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -64,13 +63,13 @@
   <ul class="dropdown-menu globaltoc"
     ><ul class="simple">
 </ul>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction to GeoNode development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../core/index.html">Development Prerequsites and Core Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Customized GeoNode Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/index.html">Loading Data into a GeoNode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">GeoNode APIs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Loading Data into a GeoNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode debugging techniques</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../process/index.html">GeoNode&#8217;s development process</a></li>
 </ul>
@@ -79,21 +78,23 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">GeoNode&#8217;s Ad-Hoc API</a></li>
+<li><a class="reference internal" href="#">Loading Data into a GeoNode</a><ul>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
           
           
             
+  <li><a href="../envsetup/deploy.html"
+         title="previous chapter">&laquo; Manually Deploying your Development Environment</a></li>
   <li><a href="geoserver.html"
-         title="previous chapter">&laquo; GeoServers Import and Print APIs</a></li>
-  <li><a href="../debug/index.html"
-         title="next chapter">GeoNode debugging techniques &raquo;</a></li>
+         title="next chapter">GeoServer Data Configuration &raquo;</a></li>
           
           
             <li>
-  <a href="../_sources/api/geonode.txt"
+  <a href="../_sources/data/index.txt"
      rel="nofollow">Source</a></li>
           
         </ul>
@@ -111,8 +112,16 @@
   </div>
 
   
-  <div class="section" id="geonode-s-ad-hoc-api">
-<span id="geonode"></span><h1>GeoNode&#8217;s Ad-Hoc API<a class="headerlink" href="#geonode-s-ad-hoc-api" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="loading-data-into-a-geonode">
+<span id="data"></span><h1>Loading Data into a GeoNode<a class="headerlink" href="#loading-data-into-a-geonode" title="Permalink to this headline">¶</a></h1>
+<p>This module will walk you through the various options available to load data into your GeoNode from GeoServer, on the command-line or programatically. You can choose from among these techniques depending on what kind of data you have and how you have your geonode setup.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="geoserver.html">GeoServer Data Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ogr2ogr.html">Using ogr2ogr to load data into GeoNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osm2pgsql.html">Loading OSM Data into GeoNode</a></li>
+</ul>
+</div>
 </div>
 
 

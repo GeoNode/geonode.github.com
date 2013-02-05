@@ -22,6 +22,7 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
    core/index
    projects/index
    envsetup/index
+   data/index
    api/index
    debug/index
    process/index
@@ -37,6 +38,9 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
 
 :ref:`envsetup`
   Learn how to set up a GeoNode development environment so you can contribute to GeoNode's core.
+
+:ref:`data`
+  Learn how to load data into a GeoNode with GeoServer, on the command line or programatically with scripts. 
 
 :ref:`api`
   Learn about the APIs GeoNode leverages and provides.
