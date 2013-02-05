@@ -1,4 +1,4 @@
-.. _core:
+.. _prerequisites:
 
 GeoNode's Development Prerequisites 
 ===================================

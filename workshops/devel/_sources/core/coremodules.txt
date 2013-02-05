@@ -1,4 +1,4 @@
-.. _core:
+.. _coremodules:
 
 GeoNode's Core Modules
 ======================
