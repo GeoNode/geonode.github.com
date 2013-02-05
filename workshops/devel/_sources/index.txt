@@ -24,6 +24,7 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
    envsetup/index
    api/index
    debug/index
+   process/index
 
 :ref:`intro`
   Learn about GeoNode's Architecture, the tools it is developed with and the standards it supports.
@@ -41,4 +42,7 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
   Learn about the APIs GeoNode leverages and provides.
 
 :ref:`debug`
-  Learn how to develop and debug GeoNode instances and work with the GeoNode developer community
+  Learn how to debug GeoNode instances and projects.
+
+:ref:`process`
+  Learn about GeoNode's development process and how to work with the GeoNode community.
