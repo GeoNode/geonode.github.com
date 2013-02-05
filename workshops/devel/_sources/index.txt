@@ -29,9 +29,6 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
 :ref:`intro`
   Learn about the GeoNode's Architecture, the tools it is developed with and the standards it supports.
 
-:ref:`core`
-  Learn about the GeoNode core dependencies and integration with GeoServer
-
 :ref:`projects`
   Learn how existing projects leverage GeoNode and create your own
 
