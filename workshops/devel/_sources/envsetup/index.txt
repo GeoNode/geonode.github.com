@@ -3,22 +3,13 @@
 Setting up a GeoNode development environment
 ==========================================
 
-.. todo::
+This module will lead you through the steps necessary to install a GeoNode development environment.
 
-    From the notes::
+.. toctree::
+   :maxdepth: 2
 
-        Manual GeoNode Development Environment Setup (For more advanced Students)
-            Basic tools installation
-                apt-get update and install
-                git
-                python
-                virtualenv tools/wrapper
-            git clone
-            pip install geonode
-            paver setup
-            paver start
-            Manual Deployment
-                Apache
-                Tomcat
-                PostgreSQL and PostGIS
-                mod_wsgi
+   tools
+   git
+   install 
+   paver 
+   deploy 
