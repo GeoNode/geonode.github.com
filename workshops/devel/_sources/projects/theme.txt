@@ -9,9 +9,12 @@ Logos and Graphics
 Templates
 ---------
 
-Cascading Style Shets
----------------------
+Cascading Style Sheets
+----------------------
 
 Other Theming Options
-------------------------------
+---------------------
+
+Bootswatch
+~~~~~~~~~~
 
