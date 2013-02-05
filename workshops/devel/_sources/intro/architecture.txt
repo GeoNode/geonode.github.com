@@ -3,6 +3,12 @@
 GeoNode Architecture
 ====================
 
+Django Architecture
+-------------------
+
+- MVC
+- WSGI
+
 GeoNode and GeoServer
 ---------------------
 
