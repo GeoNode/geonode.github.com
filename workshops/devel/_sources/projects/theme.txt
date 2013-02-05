@@ -1,7 +1,7 @@
 .. _theme:
 
-Customizing the Theme of your GeoNode Project
-=============================================
+Theming your GeoNode Project
+============================
 
 Logos and Graphics
 ------------------

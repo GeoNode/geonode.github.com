@@ -1,7 +1,7 @@
 .. _core:
 
-GeoNode Development Prerequsites and Core Modules
-=================================================
+Development Prerequsites and Core Modules
+=========================================
 
 This module will introduce you to the 
 

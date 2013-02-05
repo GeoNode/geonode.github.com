@@ -1,7 +1,7 @@
 .. _reference:
 
-GeoNode Development References 
-==============================
+Development References 
+======================
 
 Basic Web based GIS Concepts and Background
 -------------------------------------------
