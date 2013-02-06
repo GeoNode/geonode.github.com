@@ -6,33 +6,73 @@ GeoNode's Development Prerequisites
 Basic Shell Tools
 -----------------
 
-ssh
-~~~
+ssh and sudo
+~~~~~~~~~~~~
 
-sudo
+ssh and sudo are very basic terminal skills which you will need to 
+
+- ssh is the network protocol used to connect to a remote server where you run your GeoNode instance whether on your own network or on the cloud. You will need to know how to use an the ssh command from the terminal on your unix machine or how to use a ssh client like putty or winscp on windows. You may need to use pki certificates to connect to your remove server, and should be familiar with the steps and options necessary to connect this way. More information about ssh can be found in the links below.
+   - http://winscp.net/eng/docs/ssh
+- sudo is the command used to execute a terminal command as the superuser when you are logged in with a normal user. You will to use sudo in order to start, stop and restart key services on your GeoNode instance. If you are not able to grant yourself these privileges on the machine you are using for your GeoNode instance, you may need to consult with your network administrator to arrange for your user to be granted sudo permissions. More information about sudo can be found in the links below.
+   - http://en.wikipedia.org/wiki/Sudo
+
+bash
 ~~~~
+
+- Bash is the most common unix shell which will usually be the default on servers where you will be deploying your GeoNode instance. You should be familiar with the most common bash commands in order to be able to deploy, maintain and modify a geonode instance. More information about Bash and common bash commands can be found in the links below.
+  - http://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
 apt
 ~~~
 
+- apt is the packaging tool that is used to install GeoNode on ubuntu and other debian based systems. You will need to be familiar with adding Personal Package Archives to your list of install sources, and will need to be familiar with basic apt commands. More information about apt can be found in the links below.
+  - http://en.wikipedia.org/wiki/Advanced_Packaging_Tool
+
 Python Development Tools
 ------------------------
+
+The GeoNode development process relies on several widely used python development tools in order to make things easier for developers and other users of the systems that GeoNode developers work on or where GeoNodes are deployed. They are considered best practices for modern python development, and you should become familiar with these basic tools and be comfortable using them on your own projects and systems.
 
 virtualenv
 ~~~~~~~~~~
 
+- virtualenv is a tool used to create isolated python development environments such that the the versions of project dependencies are sandboxed from the system-wide python packages. This eliminates the commonly encountered problem of different projects on the same system using different versions of the same library. You should be familiar with how to create and activate virtual environments for the projects you work on. More information about virtualenv can be found in the links below.
+   - http://pypi.python.org/pypi/virtualenv
+   - http://www.virtualenv.org/en/latest/
+- virtualenvwrapper is a wrapper around the virtualenv package that makes it easier to create and switch between virtual environments as you do development. Using it will make your life much easier, so its recommended that you install and configure it and use its commands as part of your virtualenv workflow. More info about virtualenvwrapper can be found in the links below.
+   - http://www.doughellmann.com/projects/virtualenvwrapper/
+
 pip
 ~~~
+
+- pip is a tool for installing and managing python packages. Specifically it is used to install and upgrade packages found in the Python Pacakge Index. GeoNode uses pip to install itself, and to manage all of the python dependencies that are needed as part of a GeoNode instance. As you learn to add new modules to your geonode, you will need to become familiar with the use of pip and about basic python packaging usage. More information about pip can be found in the links below.
+   - http://www.pip-installer.org/en/latest/
+   - http://pypi.python.org/pypi/pip
+   - http://en.wikipedia.org/wiki/Pip_(Python)  
 
 miscellaneous
 ~~~~~~~~~~~~~
 
-- shell
-- ipython
-- pdb
+- ipython is a set of tools to make your python development and debugging experience easier. The primary tool you want to use is an interactive shell that adds introspection, integrated help and command completion and more. While not strictly required to do GeoNode development, learning how to use ipython will make your development more productive and pleasant. More information about ipython can be found in the links below.
+   - http://ipython.org/
+   - http://pypi.python.org/pypi/ipython
+   - https://github.com/ipython/ipython
+   - http://en.wikipedia.org/wiki/IPython
+- pdb is a standard python module that is used to interactively debug your python code. It supports setting conditional breakpoints so you can step through the code line by line and inspect your variables and perform arbitrary execution of statements. Learning how to effectively use pdb will make the process of debugging your application code significantly easier. More information about pdb can be found in the links below.
+   - http://docs.python.org/2/library/pdb.html
 
 Django
 ------
+
+GeoNode is built on top of the Django web framework, and as such, you will need to become generally familiar with Django itself in order to become a productive GeoNode developer. Django has excellent documentation, and you should familiarize yourself with Django by following the Django workshop and reading through its documentation as required. 
+
+Model Template View
+~~~~~~~~~~~~~~~~~~~
+
+Django is based on the Model Template View paradigm (more commonly called Model View Controller). Models are used to define objects that you use in your application and Django's ORM is used to map these models to a database. Views are used to implement the business logic of your application and provide objects and other context for the templates. Templates are used to render the context from views into a page for display to the user. You should become familiar with this common paradigm used in most modern web frameworks, and how it is specifically implemented and used in Django. The Django tutorial itself is a great place to start. More information about MTV in Django can be found in the links below.
+ - http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+ - http://www.codinghorror.com/blog/2008/05/understanding-model-view-controller.html
+ - https://docs.djangoproject.com/en/1.4/
 
 HTTP Request Response
 ~~~~~~~~~~~~~~~~~~~~~
