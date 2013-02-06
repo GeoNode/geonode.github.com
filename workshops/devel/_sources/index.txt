@@ -6,27 +6,6 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
 .. toctree::
    :maxdepth: 2
 
-.. todo::
-
-      These workshop materials should be accompanied by a data package containing the following files:
-
-      * :file:`/doc`—These workshop materials in HTML format
-      * :file:`/data`—
-
-.. todo:: Create script to generate this bundle.
-
-.. toctree::
-   :hidden:
-
-   intro/index
-   core/index
-   projects/index
-   envsetup/index
-   data/index
-   api/index
-   debug/index
-   process/index
-
 :ref:`intro`
   Learn about GeoNode's core components, its Architecture, the tools it is developed with and the standards it supports.
 
@@ -50,3 +29,15 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
 
 :ref:`process`
   Learn about GeoNode's development process and how to work with the GeoNode community.
+
+.. toctree::
+   :hidden:
+
+   intro/index
+   core/index
+   projects/index
+   envsetup/index
+   data/index
+   api/index
+   debug/index
+   process/index
