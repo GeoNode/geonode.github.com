@@ -9,23 +9,25 @@ Basic Shell Tools
 ssh and sudo
 ~~~~~~~~~~~~
 
-ssh and sudo are very basic terminal skills which you will need to 
+ssh and sudo are very basic terminal skills which you will need to deploy, maintain and develop with GeoNode. If you are not already familiar with their usage, you should review the basic descriptions below and follow the external links to learn more about how to use them effectively as part of your development workflow.
 
-- ssh is the network protocol used to connect to a remote server where you run your GeoNode instance whether on your own network or on the cloud. You will need to know how to use an the ssh command from the terminal on your unix machine or how to use a ssh client like putty or winscp on windows. You may need to use pki certificates to connect to your remove server, and should be familiar with the steps and options necessary to connect this way. More information about ssh can be found in the links below.
-   - http://winscp.net/eng/docs/ssh
-- sudo is the command used to execute a terminal command as the superuser when you are logged in with a normal user. You will to use sudo in order to start, stop and restart key services on your GeoNode instance. If you are not able to grant yourself these privileges on the machine you are using for your GeoNode instance, you may need to consult with your network administrator to arrange for your user to be granted sudo permissions. More information about sudo can be found in the links below.
-   - http://en.wikipedia.org/wiki/Sudo
+ssh:
+    ssh is the network protocol used to connect to a remote server where you run your GeoNode instance whether on your own network or on the cloud. You will need to know how to use an the ssh command from the terminal on your unix machine or how to use a ssh client like putty or winscp on windows. You may need to use pki certificates to connect to your remove server, and should be familiar with the steps and options necessary to connect this way. More information about ssh can be found in the links below.
+    - http://winscp.net/eng/docs/ssh
+sudo:
+    sudo is the command used to execute a terminal command as the superuser when you are logged in with a normal user. You will to use sudo in order to start, stop and restart key services on your GeoNode instance. If you are not able to grant yourself these privileges on the machine you are using for your GeoNode instance, you may need to consult with your network administrator to arrange for your user to be granted sudo permissions. More information about sudo can be found in the links below.
+    - http://en.wikipedia.org/wiki/Sudo
 
 bash
 ~~~~
 
-- Bash is the most common unix shell which will usually be the default on servers where you will be deploying your GeoNode instance. You should be familiar with the most common bash commands in order to be able to deploy, maintain and modify a geonode instance. More information about Bash and common bash commands can be found in the links below.
+Bash is the most common unix shell which will usually be the default on servers where you will be deploying your GeoNode instance. You should be familiar with the most common bash commands in order to be able to deploy, maintain and modify a geonode instance. More information about Bash and common bash commands can be found in the links below.
   - http://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
 apt
 ~~~
 
-- apt is the packaging tool that is used to install GeoNode on ubuntu and other debian based systems. You will need to be familiar with adding Personal Package Archives to your list of install sources, and will need to be familiar with basic apt commands. More information about apt can be found in the links below.
+apt is the packaging tool that is used to install GeoNode on ubuntu and other debian based systems. You will need to be familiar with adding Personal Package Archives to your list of install sources, and will need to be familiar with basic apt commands. More information about apt can be found in the links below.
   - http://en.wikipedia.org/wiki/Advanced_Packaging_Tool
 
 Python Development Tools
@@ -77,11 +79,25 @@ Django is based on the Model Template View paradigm (more commonly called Model 
 HTTP Request Response
 ~~~~~~~~~~~~~~~~~~~~~
 
+Django and all other web frameworks are based on the HTTP Request Response cycle. Requests come in to the server from remote clients which are primarily web browsers, but also can be api clients, and the server returns with a Response. You should be familiar with these very basic HTTP principles and become familiar with the way that Django implements them. More information about HTTP, Requests and Responses and Djangos implementation in the links below.
+ - http://devhub.fm/http-requestresponse-basics/
+ - http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+ - https://docs.djangoproject.com/en/dev/ref/request-response/
+
 Management Commands
 ~~~~~~~~~~~~~~~~~~~
+
+Django projects have access to a set of management commands that are used to manage your project. Django itself provides a set of these commands, and django apps (including GeoNode) can provide their own. Management commands are used to do things like synchronize your models with your database, load data from fixtures or back up your database with fixtures, start the development server, initiate the debugger and many other things. GeoNode provides management commands for synchronizing with a GeoServer or updating the layers already in your GeoNode. You should become familiar with the basic management commands that come with Django, and specifically with the commands that are part of GeoNode. The GeoNode specific commands are covered in section. More information about management commands can be found in the links below.
+  - https://docs.djangoproject.com/en/dev/ref/django-admin/
 
 Django Admin Interface
 ~~~~~~~~~~~~~~~~~~~~~~
 
+Django provides a build-in management console that administrators and developers can use to look at the data in the database that is part of the  installed applications. Administrators can use this console to perform many common administration tasks that are a necessary part of running a GeoNode instance, and as a developer, you will use this interface during your development process to inspect the database and the data stored in your models. More information about the django admin interface can be found in the links below.
+ - https://docs.djangoproject.com/en/dev/ref/contrib/admin/
+
 Template Tags
 ~~~~~~~~~~~~~
+
+Django templates make use of a set of tags to inject, filte and format content into a rendered HTML page. Django itself includes a set of built-in template tags and filters that you will use in your own templates, and GeoNode provides a geonode specific set of tags that are used in the GeoNode templates. You should become familiar with the built-in tag set and with GeoNode's specific tags as you work on developing your own templates or extending from GeoNode's. More information about Django template tags can be found in the links below.
+ - https://docs.djangoproject.com/en/dev/ref/templates/builtins/
