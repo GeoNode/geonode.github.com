@@ -81,8 +81,8 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Theming your GeoNode Project</a><ul>
 <li><a class="reference internal" href="#logos-and-graphics">Logos and Graphics</a></li>
-<li><a class="reference internal" href="#templates-and-static-pages">Templates and Static Pages</a></li>
 <li><a class="reference internal" href="#cascading-style-sheets">Cascading Style Sheets</a></li>
+<li><a class="reference internal" href="#templates-and-static-pages">Templates and Static Pages</a></li>
 <li><a class="reference internal" href="#other-theming-options">Other Theming Options</a><ul>
 <li><a class="reference internal" href="#bootswatch">Bootswatch</a></li>
 </ul>
@@ -122,14 +122,69 @@
   
   <div class="section" id="theming-your-geonode-project">
 <span id="theme"></span><h1>Theming your GeoNode Project<a class="headerlink" href="#theming-your-geonode-project" title="Permalink to this headline">¶</a></h1>
+<p>There are a range of options available to you if you want to change the default look and feel or theme of GeoNode. Since GeoNode&#8217;s style is based on bootstrap you will be able to make use of all that bootstrap has to offer as you customize the theme of your GeoNode. You should consult bootstrap&#8217;s documentation as your primary guide once you are familiar with how Geonode implements bootstrap and how you can override GeoNode&#8217;s theme in your own project.</p>
 <div class="section" id="logos-and-graphics">
 <h2>Logos and Graphics<a class="headerlink" href="#logos-and-graphics" title="Permalink to this headline">¶</a></h2>
+<p>GeoNode intentionally does not include a large number of graphics files to drive its interface. this keeps browser loading times to a minimum and makes for a more responsive interface. That said, you are free to customize your GeoNode&#8217;s interface by simply changing the default logo, or by adding your own images and graphics to deliver a GeoNode experience the way you envision int.</p>
+<p>Your GeoNode project has a directory already setup for you to store your own images at my_geonode/static/img You should place any image files that you intend to use for your project in this directory.</p>
+<p>Lets walk through an example of the steps necessary to change the default logo.</p>
+<ol class="arabic">
+<li><p class="first">Change directories into the img directory:</p>
+<div class="highlight-python"><pre>$ cd my_geonode/static/img</pre>
 </div>
-<div class="section" id="templates-and-static-pages">
-<h2>Templates and Static Pages<a class="headerlink" href="#templates-and-static-pages" title="Permalink to this headline">¶</a></h2>
+</li>
+<li><p class="first">Grab your logo image from the web using wget. This is just an example, you will need to Change this URL to match the location of your file or copy it to this location from somewhere else on disk or your network:</p>
+<div class="highlight-python"><pre>$ wget http://www2.sta.uwi.edu/~anikov/UWI-logo.JPG
+$ cd ../../..</pre>
+</div>
+</li>
+<li><p class="first">Override the css that displays the logo by editing my_geonode/static/css/site_base.css with your favorite editor and adding the following lines:</p>
+<div class="highlight-python"><pre>.nav-logo {
+    width: 373px;
+    height: 79px;
+    background: url(../img/UWI-logo.JPG) no-repeat;
+}</pre>
+</div>
+</li>
+</ol>
+<p>You will need to update the width, height and url to match the specifications of your own image.</p>
+<ol class="arabic">
+<li><p class="first">Restart your GeoNode project and look at the page in your browser:</p>
+<div class="highlight-python"><pre>$ python manage.py runserver</pre>
+</div>
+</li>
+</ol>
+<p>Visit your site at <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> or the remote URL for your site.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/logo_override.png" src="../_images/logo_override.png" />
+</div>
+</div></blockquote>
+<p>You can see that the header has been expanded to fit you graphic. In the following sections you will learn how to customize this header to make it look and work the way you want.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You should commit these changes to your git repository as you progress through this section, and get in the habit of committing early and often so that you and others can track your project on github. Making many atomic commits and staying in sync with a remote repository (i.e. on GitHub) makes it easier to collaborate with others on your project.</p>
+</div>
 </div>
 <div class="section" id="cascading-style-sheets">
 <h2>Cascading Style Sheets<a class="headerlink" href="#cascading-style-sheets" title="Permalink to this headline">¶</a></h2>
+<p>In the last section you already learned how to override GeoNode&#8217;s default css rules to include your own logo. You are able to customize any aspect of GeoNode&#8217;s appearance this way. In the last screenshot, you saw that the main Hero are in the homepage is now covered up by the expanded header.</p>
+<p>First, Lets walk through the steps necessary to displace it downward so it is no longer hidden.</p>
+<ol class="arabic">
+<li><p class="first">Reopen my_geonode/static/css/site_base.css in your editor and add the following rule after the one we added in the previous step:</p>
+<div class="highlight-python"><pre>.content-wrap {
+    margin: 75px 75px;
+}</pre>
+</div>
+</li>
+<li><p class="first">Restart the development server and reload the page:</p>
+<div class="highlight-python"><pre>.. figure:: img/content_wrap_fixed.png</pre>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="templates-and-static-pages">
+<h2>Templates and Static Pages<a class="headerlink" href="#templates-and-static-pages" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="other-theming-options">
 <h2>Other Theming Options<a class="headerlink" href="#other-theming-options" title="Permalink to this headline">¶</a></h2>

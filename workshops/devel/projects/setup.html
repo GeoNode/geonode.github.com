@@ -82,6 +82,16 @@
 <li><a class="reference internal" href="#">Setting up your GeoNode Project</a><ul>
 <li><a class="reference internal" href="#setup-steps">Setup Steps</a></li>
 <li><a class="reference internal" href="#source-code-revision-control">Source Code Revision Control</a></li>
+<li><a class="reference internal" href="#your-geonode-project-s-struture">Your GeoNode Project&#8217;s Struture</a><ul>
+<li><a class="reference internal" href="#manage-py">manage.py</a></li>
+<li><a class="reference internal" href="#settings-py">settings.py</a></li>
+<li><a class="reference internal" href="#urls-py">urls.py</a></li>
+<li><a class="reference internal" href="#wsgi-py">wsgi.py</a></li>
+<li><a class="reference internal" href="#setup-py">setup.py</a></li>
+<li><a class="reference internal" href="#static">static</a></li>
+<li><a class="reference internal" href="#templates">templates</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#deploying-your-geonode-project">Deploying your GeoNode Project</a></li>
 <li><a class="reference internal" href="#staying-in-sync-with-mainline-geonode">Staying in Sync with Mainline GeoNode</a></li>
 </ul>
@@ -191,6 +201,58 @@ $ cd my_geonode</pre>
 </div>
 </li>
 </ol>
+</div>
+<div class="section" id="your-geonode-project-s-struture">
+<h2>Your GeoNode Project&#8217;s Struture<a class="headerlink" href="#your-geonode-project-s-struture" title="Permalink to this headline">¶</a></h2>
+<p>Your GeoNode project will now be structured as depicted below:</p>
+<div class="highlight-python"><pre>├── README.rst
+├── manage.py
+├── my_geonode
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── static
+│   │   ├── README
+│   │   ├── css
+│   │   │   └── site_base.css
+│   │   ├── img
+│   │   │   └── README
+│   │   └── js
+│   │       └── README
+│   ├── templates
+│   │   ├── site_base.html
+│   │   └── site_index.html
+│   ├── urls.py
+│   └── wsgi.py
+└── setup.py</pre>
+</div>
+<p>You can also view your project on github.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/github_project.png" src="../_images/github_project.png" />
+</div>
+</div></blockquote>
+<p>Each of the key files in your project are described below.</p>
+<div class="section" id="manage-py">
+<h3>manage.py<a class="headerlink" href="#manage-py" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="settings-py">
+<h3>settings.py<a class="headerlink" href="#settings-py" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="urls-py">
+<h3>urls.py<a class="headerlink" href="#urls-py" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="wsgi-py">
+<h3>wsgi.py<a class="headerlink" href="#wsgi-py" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="setup-py">
+<h3>setup.py<a class="headerlink" href="#setup-py" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="static">
+<h3>static<a class="headerlink" href="#static" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="templates">
+<h3>templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 <div class="section" id="deploying-your-geonode-project">
 <h2>Deploying your GeoNode Project<a class="headerlink" href="#deploying-your-geonode-project" title="Permalink to this headline">¶</a></h2>
