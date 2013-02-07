@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Introduction to GeoNode development" href="index.html" />
-    <link rel="next" title="GeoNode Development References" href="reference.html" />
+    <link rel="next" title="Development References" href="reference.html" />
     <link rel="prev" title="Standards" href="standards.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -66,12 +66,13 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">Development Prerequsites and Core Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Customized GeoNode Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/index.html">GeoNode dependencies and integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/index.html">Loading Data into a GeoNode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git/index.html">Managing the GeoNode code with git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">GeoNode projects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode development and debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode debugging techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../process/index.html">GeoNode&#8217;s development process</a></li>
 </ul>
 </ul>
 </li>
@@ -79,10 +80,10 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">GeoNode Architecture</a><ul>
+<li><a class="reference internal" href="#django-architecture">Django Architecture</a></li>
 <li><a class="reference internal" href="#geonode-and-geoserver">GeoNode and GeoServer</a></li>
 <li><a class="reference internal" href="#geonode-and-postgresql-postgis">GeoNode and PostgreSQL/PostGIS</a></li>
 <li><a class="reference internal" href="#geonode-and-pycsw">GeoNode and pycsw</a><ul>
-<li><a class="reference internal" href="#configuration">Configuration</a></li>
 <li><a class="reference internal" href="#publishing">Publishing</a></li>
 <li><a class="reference internal" href="#discovery">Discovery</a></li>
 </ul>
@@ -99,7 +100,7 @@
   <li><a href="standards.html"
          title="previous chapter">&laquo; Standards</a></li>
   <li><a href="reference.html"
-         title="next chapter">GeoNode Development References &raquo;</a></li>
+         title="next chapter">Development References &raquo;</a></li>
           
           
             <li>
@@ -123,6 +124,13 @@
   
   <div class="section" id="geonode-architecture">
 <span id="architecture"></span><h1>GeoNode Architecture<a class="headerlink" href="#geonode-architecture" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="django-architecture">
+<h2>Django Architecture<a class="headerlink" href="#django-architecture" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>MVC</li>
+<li>WSGI</li>
+</ul>
+</div>
 <div class="section" id="geonode-and-geoserver">
 <h2>GeoNode and GeoServer<a class="headerlink" href="#geonode-and-geoserver" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -140,19 +148,6 @@
 <div class="section" id="geonode-and-pycsw">
 <h2>GeoNode and pycsw<a class="headerlink" href="#geonode-and-pycsw" title="Permalink to this headline">¶</a></h2>
 <p>GeoNode is built with pycsw embedded as the default CSW server component.</p>
-<div class="section" id="configuration">
-<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
-<p>pycsw configuration in managed in <tt class="docutils literal"><span class="pre">geonode/settings.py</span></tt>, in the <tt class="docutils literal"><span class="pre">PYCSW</span></tt> dictionary.</p>
-<p>To adjust pycsw configuration settings, edit/update the <tt class="docutils literal"><span class="pre">PYCSW</span></tt> dictionary values as required.
-GeoNode&#8217;s integration of pycsw has made CSW configuration very lightweight and user-friendly,
-and as a result there is minimal configuration of the pycsw endpoint in GeoNode.</p>
-<p>pycsw also includes INSPIRE Discovery Services 3.0 support, which is enabled by default.
-If you would like your GeoNode CSW INSPIRE support turned off, set the <tt class="docutils literal"><span class="pre">metadata:inspire/enabled</span></tt> key to <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Make sure that <tt class="docutils literal"><span class="pre">settings.SITEURL</span></tt> is correctly set and run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">updatelayers</span></tt> whenever this value changes, as this affects pycsw&#8217;s Capabilities XML and metadata download links</p>
-</div>
-</div>
 <div class="section" id="publishing">
 <h3>Publishing<a class="headerlink" href="#publishing" title="Permalink to this headline">¶</a></h3>
 <p>Since pycsw is embedded in GeoNode, layers published within GeoNode are automatically published

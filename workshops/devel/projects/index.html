@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>GeoNode projects &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    <title>Customized GeoNode Projects &mdash; GeoNode Developers Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -29,8 +29,8 @@
     <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
-    <link rel="next" title="GeoNode development and debugging" href="../debug/index.html" />
-    <link rel="prev" title="Managing the GeoNode code with git" href="../git/index.html" />
+    <link rel="next" title="Introduction to GeoNode Projects" href="projectsintro.html" />
+    <link rel="prev" title="GeoNode’s Core Modules" href="../core/coremodules.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -65,29 +65,32 @@
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">Development Prerequsites and Core Modules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Customized GeoNode Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../core/index.html">GeoNode dependencies and integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/index.html">Loading Data into a GeoNode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../git/index.html">Managing the GeoNode code with git</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">GeoNode projects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode development and debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode debugging techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../process/index.html">GeoNode&#8217;s development process</a></li>
 </ul>
 </ul>
 </li>
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">GeoNode projects</a></li>
+<li><a class="reference internal" href="#">Customized GeoNode Projects</a><ul>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
           
           
             
-  <li><a href="../git/index.html"
-         title="previous chapter">&laquo; Managing the GeoNode code with git</a></li>
-  <li><a href="../debug/index.html"
-         title="next chapter">GeoNode development and debugging &raquo;</a></li>
+  <li><a href="../core/coremodules.html"
+         title="previous chapter">&laquo; GeoNode&#8217;s Core Modules</a></li>
+  <li><a href="projectsintro.html"
+         title="next chapter">Introduction to GeoNode Projects &raquo;</a></li>
           
           
             <li>
@@ -109,8 +112,50 @@
   </div>
 
   
-  <div class="section" id="geonode-projects">
-<span id="projects"></span><h1>GeoNode projects<a class="headerlink" href="#geonode-projects" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="customized-geonode-projects">
+<span id="projects"></span><h1>Customized GeoNode Projects<a class="headerlink" href="#customized-geonode-projects" title="Permalink to this headline">¶</a></h1>
+<p>This module will teach you about how to setup your own GeoNode based project and how to customize your project by changing the theme, adding additional modules and how to integrate your project with other systems. When complete, you should understand how Downstream GeoNode projects work, and how to setup your own for your own use cases and needs.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="projectsintro.html">Introduction to GeoNode Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projectsintro.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projectsintro.html#existing-downstream-geonode-projects">Existing Downstream GeoNode Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projectsintro.html#django-template-projects">Django Template Projects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setting up your GeoNode Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#setup-steps">Setup Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#source-code-revision-control">Source Code Revision Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#deploying-your-geonode-project">Deploying your GeoNode Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html#staying-in-sync-with-mainline-geonode">Staying in Sync with Mainline GeoNode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Theming your GeoNode Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#logos-and-graphics">Logos and Graphics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#templates-and-static-pages">Templates and Static Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#cascading-style-sheets">Cascading Style Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html#other-theming-options">Other Theming Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Adding Additional Modules to your GeoNode Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#intro-to-django-pluggables">Intro to Django Pluggables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#adding-your-own-django-module">Adding your own Django Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#adding-a-3rd-party-blog-module">Adding a 3rd Party Blog Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#adding-other-modules">Adding Other Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integrating your Project with other Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#third-party-integration-overview">Third Party Integration Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#ogc-services">OGC Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#google-earth">Google Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#qgis">qGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#openstreetmap">OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#wordpress">Wordpress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integration.html#mapbox">MapBox</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 
 

@@ -19,7 +19,7 @@
 
 	
 	<url>
-		<loc>admin_features.html</loc>
+		<loc>scale.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -27,7 +27,7 @@
 
 	
 	<url>
-		<loc>apis.html</loc>
+		<loc>opensource_geospatial.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -35,7 +35,7 @@
 
 	
 	<url>
-		<loc>bootstrap_jquery.html</loc>
+		<loc>user_features.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -43,81 +43,7 @@
 
 	
 	<url>
-		<loc>catalogue_metadata.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>collaboration.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>communication.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>contributors.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>dev.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>dev_features.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>developers.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>django.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-
-	
-	<url>
-		<loc>explore_discover.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>faqs.html</loc>
+		<loc>install.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -141,7 +67,7 @@
 
 	
 	<url>
-		<loc>index.html</loc>
+		<loc>whatsnew.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -149,7 +75,7 @@
 
 	
 	<url>
-		<loc>install.html</loc>
+		<loc>collaboration.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -157,7 +83,31 @@
 
 	
 	<url>
-		<loc>interoperability.html</loc>
+		<loc>dev.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>resources.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>explore_discover.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>bootstrap_jquery.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -172,6 +122,8 @@
 	
 
 	
+
+	
 	<url>
 		<loc>mapping.html</loc>
 		<changefreq>daily</changefreq>
@@ -181,7 +133,7 @@
 
 	
 	<url>
-		<loc>ogc_sdi.html</loc>
+		<loc>dev_features.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -189,15 +141,7 @@
 
 	
 	<url>
-		<loc>opensource_geospatial.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2010-01-12-hello-world.html</loc>
+		<loc>workshops/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -213,39 +157,7 @@
 
 	
 	<url>
-		<loc>posts/2010-03-24-looking-for-partners.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2010-08-06-geonode-1-0-beta-release.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2010-10-11-geonode-1-0-rc1-release.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2010-10-25-geonode-1-0-rc2.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2010-11-09-geonode-1-0-rc3.html</loc>
+		<loc>posts/2011-09-07-geonode-1-1-rc1.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -261,63 +173,7 @@
 
 	
 	<url>
-		<loc>posts/2010-11-22-geonode-presentation.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2010-12-13-geonode-1-0-released.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-02-07-worldmap.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-03-30-geonode-since-1-0.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-04-04-data-gov-is-dead-long-live-open-data.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-05-10-geonode-announcement-list.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-05-13-week-in-review-9-13-may-2011.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-05-25-roadmapping-summit.html</loc>
+		<loc>posts/2011-10-12-geonode-in-the-eastern-caribbean.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -341,95 +197,7 @@
 
 	
 	<url>
-		<loc>posts/2011-06-14-become-a-geonode-developer.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-07-11-seeking-partners.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-07-21-another-way-to-become-a-geonode-developer.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-08-18-geonode-at-foss4g.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-09-07-geonode-1-1-rc1.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2011-10-12-geonode-in-the-eastern-caribbean.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2012-02-06-geonode-1-1-released.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2012-02-13-sprint.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2012-02-27-geonode-user-survey.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2012-03-21-geonode-user-survey-results.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
 		<loc>posts/2012-05-06-geonode-1-1-1.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>posts/2012-05-23-geonode-1-2-alpha-2.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -445,7 +213,7 @@
 
 	
 	<url>
-		<loc>posts/2012-09-17-help-the-world-bank-build-a-geonode-to-qgis-bridge.html</loc>
+		<loc>posts/2010-11-22-geonode-presentation.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -453,7 +221,79 @@
 
 	
 	<url>
-		<loc>posts/2012-10-23-geonode-1-2.html</loc>
+		<loc>posts/2012-05-23-geonode-1-2-alpha-2.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-08-18-geonode-at-foss4g.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-05-10-geonode-announcement-list.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-05-25-roadmapping-summit.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-04-04-data-gov-is-dead-long-live-open-data.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012-02-13-sprint.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-03-30-geonode-since-1-0.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012-02-06-geonode-1-1-released.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-07-21-another-way-to-become-a-geonode-developer.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-05-13-week-in-review-9-13-may-2011.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -469,7 +309,7 @@
 
 	
 	<url>
-		<loc>resources.html</loc>
+		<loc>posts/2010-01-12-hello-world.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -477,7 +317,127 @@
 
 	
 	<url>
-		<loc>scale.html</loc>
+		<loc>posts/2010-11-09-geonode-1-0-rc3.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012-03-21-geonode-user-survey-results.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010-03-24-looking-for-partners.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010-10-11-geonode-1-0-rc1-release.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012-10-23-geonode-1-2.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-06-14-become-a-geonode-developer.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012-09-17-help-the-world-bank-build-a-geonode-to-qgis-bridge.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012-02-27-geonode-user-survey.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010-10-25-geonode-1-0-rc2.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-02-07-worldmap.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010-12-13-geonode-1-0-released.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010-08-06-geonode-1-0-beta-release.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011-07-11-seeking-partners.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>apis.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>interoperability.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -493,7 +453,7 @@
 
 	
 	<url>
-		<loc>user_features.html</loc>
+		<loc>django.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -501,7 +461,7 @@
 
 	
 	<url>
-		<loc>whatsnew.html</loc>
+		<loc>ogc_sdi.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -509,7 +469,47 @@
 
 	
 	<url>
-		<loc>workshops/index.html</loc>
+		<loc>faqs.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>admin_features.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>communication.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>contributors.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>catalogue_metadata.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>developers.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>

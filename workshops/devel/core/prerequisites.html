@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>GeoNode’s Development Prerequisites &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-2.2.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-responsive-2.2.1.min.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Development Prerequsites and Core Modules" href="index.html" />
+    <link rel="next" title="GeoNode’s Core Modules" href="coremodules.html" />
+    <link rel="prev" title="Development Prerequsites and Core Modules" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+<div class="container">
+  
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="brand" href="../index.html">GeoNode Developers Workshop</a>
+      <span class="navbar-text pull-left"><b>2.0</b></span>
+
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          
+            <li class="dropdown">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="simple">
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Development Prerequsites and Core Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Customized GeoNode Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/index.html">Loading Data into a GeoNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode debugging techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../process/index.html">GeoNode&#8217;s development process</a></li>
+</ul>
+</ul>
+</li>
+            <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">GeoNode&#8217;s Development Prerequisites</a><ul>
+<li><a class="reference internal" href="#basic-shell-tools">Basic Shell Tools</a><ul>
+<li><a class="reference internal" href="#ssh-and-sudo">ssh and sudo</a></li>
+<li><a class="reference internal" href="#bash">bash</a></li>
+<li><a class="reference internal" href="#apt">apt</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#python-development-tools">Python Development Tools</a><ul>
+<li><a class="reference internal" href="#virtualenv">virtualenv</a></li>
+<li><a class="reference internal" href="#pip">pip</a></li>
+<li><a class="reference internal" href="#miscellaneous">miscellaneous</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#django">Django</a><ul>
+<li><a class="reference internal" href="#model-template-view">Model Template View</a></li>
+<li><a class="reference internal" href="#http-request-response">HTTP Request Response</a></li>
+<li><a class="reference internal" href="#management-commands">Management Commands</a></li>
+<li><a class="reference internal" href="#django-admin-interface">Django Admin Interface</a></li>
+<li><a class="reference internal" href="#template-tags">Template Tags</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+          
+          
+            
+  <li><a href="index.html"
+         title="previous chapter">&laquo; Development Prerequsites and Core Modules</a></li>
+  <li><a href="coremodules.html"
+         title="next chapter">GeoNode&#8217;s Core Modules &raquo;</a></li>
+          
+          
+            <li>
+  <a href="../_sources/core/prerequisites.txt"
+     rel="nofollow">Source</a></li>
+          
+        </ul>
+
+        
+          
+<form class="navbar-search pull-right" style="margin-bottom:-3px;" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section" id="geonode-s-development-prerequisites">
+<span id="prerequisites"></span><h1>GeoNode&#8217;s Development Prerequisites<a class="headerlink" href="#geonode-s-development-prerequisites" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="basic-shell-tools">
+<h2>Basic Shell Tools<a class="headerlink" href="#basic-shell-tools" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ssh-and-sudo">
+<h3>ssh and sudo<a class="headerlink" href="#ssh-and-sudo" title="Permalink to this headline">¶</a></h3>
+<p>ssh and sudo are very basic terminal skills which you will need to deploy, maintain and develop with GeoNode. If you are not already familiar with their usage, you should review the basic descriptions below and follow the external links to learn more about how to use them effectively as part of your development workflow.</p>
+<p><em>ssh</em> is the network protocol used to connect to a remote server where you run your GeoNode instance whether on your own network or on the cloud. You will need to know how to use an the ssh command from the terminal on your unix machine or how to use a ssh client like putty or winscp on windows. You may need to use pki certificates to connect to your remove server, and should be familiar with the steps and options necessary to connect this way. More information about ssh can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://winscp.net/eng/docs/ssh">http://winscp.net/eng/docs/ssh</a></li>
+</ul>
+<p><em>sudo</em> is the command used to execute a terminal command as the superuser when you are logged in with a normal user. You will to use sudo in order to start, stop and restart key services on your GeoNode instance. If you are not able to grant yourself these privileges on the machine you are using for your GeoNode instance, you may need to consult with your network administrator to arrange for your user to be granted sudo permissions. More information about sudo can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Sudo">http://en.wikipedia.org/wiki/Sudo</a></li>
+</ul>
+</div>
+<div class="section" id="bash">
+<h3>bash<a class="headerlink" href="#bash" title="Permalink to this headline">¶</a></h3>
+<p><em>Bash</em> is the most common unix shell which will usually be the default on servers where you will be deploying your GeoNode instance. You should be familiar with the most common bash commands in order to be able to deploy, maintain and modify a geonode instance. More information about Bash and common bash commands can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Bash_(Unix_shell">http://en.wikipedia.org/wiki/Bash_(Unix_shell</a>)</li>
+</ul>
+</div>
+<div class="section" id="apt">
+<h3>apt<a class="headerlink" href="#apt" title="Permalink to this headline">¶</a></h3>
+<p><em>apt</em> is the packaging tool that is used to install GeoNode on ubuntu and other debian based systems. You will need to be familiar with adding Personal Package Archives to your list of install sources, and will need to be familiar with basic apt commands. More information about apt can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Advanced_Packaging_Tool">http://en.wikipedia.org/wiki/Advanced_Packaging_Tool</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="python-development-tools">
+<h2>Python Development Tools<a class="headerlink" href="#python-development-tools" title="Permalink to this headline">¶</a></h2>
+<p>The GeoNode development process relies on several widely used python development tools in order to make things easier for developers and other users of the systems that GeoNode developers work on or where GeoNodes are deployed. They are considered best practices for modern python development, and you should become familiar with these basic tools and be comfortable using them on your own projects and systems.</p>
+<div class="section" id="virtualenv">
+<h3>virtualenv<a class="headerlink" href="#virtualenv" title="Permalink to this headline">¶</a></h3>
+<p><em>virtualenv</em> is a tool used to create isolated python development environments such that the the versions of project dependencies are sandboxed from the system-wide python packages. This eliminates the commonly encountered problem of different projects on the same system using different versions of the same library. You should be familiar with how to create and activate virtual environments for the projects you work on. More information about virtualenv can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://pypi.python.org/pypi/virtualenv">http://pypi.python.org/pypi/virtualenv</a></li>
+<li><a class="reference external" href="http://www.virtualenv.org/en/latest/">http://www.virtualenv.org/en/latest/</a></li>
+</ul>
+<p><em>virtualenvwrapper</em> is a wrapper around the virtualenv package that makes it easier to create and switch between virtual environments as you do development. Using it will make your life much easier, so its recommended that you install and configure it and use its commands as part of your virtualenv workflow. More info about virtualenvwrapper can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.doughellmann.com/projects/virtualenvwrapper/">http://www.doughellmann.com/projects/virtualenvwrapper/</a></li>
+</ul>
+</div>
+<div class="section" id="pip">
+<h3>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
+<p><em>pip</em> is a tool for installing and managing python packages. Specifically it is used to install and upgrade packages found in the Python Pacakge Index. GeoNode uses pip to install itself, and to manage all of the python dependencies that are needed as part of a GeoNode instance. As you learn to add new modules to your geonode, you will need to become familiar with the use of pip and about basic python packaging usage. More information about pip can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.pip-installer.org/en/latest/">http://www.pip-installer.org/en/latest/</a></li>
+<li><a class="reference external" href="http://pypi.python.org/pypi/pip">http://pypi.python.org/pypi/pip</a></li>
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Pip_(Python">http://en.wikipedia.org/wiki/Pip_(Python</a>)</li>
+</ul>
+</div>
+<div class="section" id="miscellaneous">
+<h3>miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h3>
+<p><em>ipython</em> is a set of tools to make your python development and debugging experience easier. The primary tool you want to use is an interactive shell that adds introspection, integrated help and command completion and more. While not strictly required to do GeoNode development, learning how to use ipython will make your development more productive and pleasant. More information about ipython can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://ipython.org/">http://ipython.org/</a></li>
+<li><a class="reference external" href="http://pypi.python.org/pypi/ipython">http://pypi.python.org/pypi/ipython</a></li>
+<li><a class="reference external" href="https://github.com/ipython/ipython">https://github.com/ipython/ipython</a></li>
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/IPython">http://en.wikipedia.org/wiki/IPython</a></li>
+</ul>
+<p><em>pdb</em> is a standard python module that is used to interactively debug your python code. It supports setting conditional breakpoints so you can step through the code line by line and inspect your variables and perform arbitrary execution of statements. Learning how to effectively use pdb will make the process of debugging your application code significantly easier. More information about pdb can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.python.org/2/library/pdb.html">http://docs.python.org/2/library/pdb.html</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="django">
+<h2>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h2>
+<p>GeoNode is built on top of the <em>Django web framework</em>, and as such, you will need to become generally familiar with Django itself in order to become a productive GeoNode developer. Django has excellent documentation, and you should familiarize yourself with Django by following the Django workshop and reading through its documentation as required.</p>
+<div class="section" id="model-template-view">
+<h3>Model Template View<a class="headerlink" href="#model-template-view" title="Permalink to this headline">¶</a></h3>
+<p>Django is based on the Model Template View paradigm (more commonly called Model View Controller). Models are used to define objects that you use in your application and Django&#8217;s ORM is used to map these models to a database. Views are used to implement the business logic of your application and provide objects and other context for the templates. Templates are used to render the context from views into a page for display to the user. You should become familiar with this common paradigm used in most modern web frameworks, and how it is specifically implemented and used in Django. The Django tutorial itself is a great place to start. More information about MTV in Django can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller</a></li>
+<li><a class="reference external" href="http://www.codinghorror.com/blog/2008/05/understanding-model-view-controller.html">http://www.codinghorror.com/blog/2008/05/understanding-model-view-controller.html</a></li>
+<li><a class="reference external" href="https://docs.djangoproject.com/en/1.4/">https://docs.djangoproject.com/en/1.4/</a></li>
+</ul>
+</div>
+<div class="section" id="http-request-response">
+<h3>HTTP Request Response<a class="headerlink" href="#http-request-response" title="Permalink to this headline">¶</a></h3>
+<p>Django and all other web frameworks are based on the HTTP Request Response cycle. Requests come in to the server from remote clients which are primarily web browsers, but also can be api clients, and the server returns with a Response. You should be familiar with these very basic HTTP principles and become familiar with the way that Django implements them. More information about HTTP, Requests and Responses and Djangos implementation in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://devhub.fm/http-requestresponse-basics/">http://devhub.fm/http-requestresponse-basics/</a></li>
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</a></li>
+<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/request-response/">https://docs.djangoproject.com/en/dev/ref/request-response/</a></li>
+</ul>
+</div>
+<div class="section" id="management-commands">
+<h3>Management Commands<a class="headerlink" href="#management-commands" title="Permalink to this headline">¶</a></h3>
+<p>Django projects have access to a set of management commands that are used to manage your project. Django itself provides a set of these commands, and django apps (including GeoNode) can provide their own. Management commands are used to do things like synchronize your models with your database, load data from fixtures or back up your database with fixtures, start the development server, initiate the debugger and many other things. GeoNode provides management commands for synchronizing with a GeoServer or updating the layers already in your GeoNode. You should become familiar with the basic management commands that come with Django, and specifically with the commands that are part of GeoNode. The GeoNode specific commands are covered in section. More information about management commands can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/django-admin/">https://docs.djangoproject.com/en/dev/ref/django-admin/</a></li>
+</ul>
+</div>
+<div class="section" id="django-admin-interface">
+<h3>Django Admin Interface<a class="headerlink" href="#django-admin-interface" title="Permalink to this headline">¶</a></h3>
+<p>Django provides a build-in management console that administrators and developers can use to look at the data in the database that is part of the  installed applications. Administrators can use this console to perform many common administration tasks that are a necessary part of running a GeoNode instance, and as a developer, you will use this interface during your development process to inspect the database and the data stored in your models. More information about the django admin interface can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">https://docs.djangoproject.com/en/dev/ref/contrib/admin/</a></li>
+</ul>
+</div>
+<div class="section" id="template-tags">
+<h3>Template Tags<a class="headerlink" href="#template-tags" title="Permalink to this headline">¶</a></h3>
+<p>Django templates make use of a set of tags to inject, filte and format content into a rendered HTML page. Django itself includes a set of built-in template tags and filters that you will use in your own templates, and GeoNode provides a geonode specific set of tags that are used in the GeoNode templates. You should become familiar with the built-in tag set and with GeoNode&#8217;s specific tags as you work on developing your own templates or extending from GeoNode&#8217;s. More information about Django template tags can be found in the links below.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.djangoproject.com/en/dev/ref/templates/builtins/">https://docs.djangoproject.com/en/dev/ref/templates/builtins/</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright GeoNode Development Community.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
