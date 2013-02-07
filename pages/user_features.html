@@ -29,7 +29,7 @@
                     <div class="span10">
                         <nav class="subnav">
                             <h5>Features:</h5>
-                            <ul class="unstyled">
+                            <ul class="unstyled" id="subnav">
                                 <li><a href="#explore"><strong>Explore and Discover</strong></a></li>
                                 <li><a href="#import"><strong>Import and Manage</strong></a></li>
                                 <li><a href="#mapping"><strong>Interactive Mapping</strong></a></li>
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="span5">
                         <!--img src="static/img/iphone_explore_maps.png" width="309" height="700" alt="Explore Maps" class="feature-img" /-->
-                        <iframe src="http://www.screenr.com/embed/Wfn7" width="325" height="198" frameborder="0"></iframe>
+                        <iframe src="http://www.screenr.com/embed/Wfn7" width="325" height="198" frameborder="0" class="feature-block"></iframe>
                     </div>
                     <div class="span7 number one">
                         <div class="highlighted-box">
@@ -96,7 +96,7 @@
                     </div>
                     <div class="span5">
                         <!--img src="static/img/globe.png" width="347" height="469" alt="Globe" class="feature-img" /-->
-                        <iframe src="http://www.screenr.com/embed/0fn7" width="325" height="198" frameborder="0"></iframe>
+                        <iframe src="http://www.screenr.com/embed/0fn7" width="325" height="198" frameborder="0" class="feature-block"></iframe>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
             <div class="container">
                 <div class="row">
                     <div class="span5">
-                        <img src="static/img/gxp-OSM.jpg" width="468" height="277" alt="GeoExplorer" class="feature-img" />
+                        <img src="static/img/gxp-OSM.jpg" width="468" height="277" alt="GeoExplorer" class="feature-block" />
                     </div>
                     <div class="span7 number three">
                         <div class="highlighted-box">
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                     <div class="span5">
-                        <img src="static/img/globe.png" width="347" height="469" alt="Globe" class="feature-img" />
+                        <img src="static/img/globe.png" width="347" height="469" alt="Globe" class="feature-block" />
                     </div>
                 </div>
             </div>
@@ -165,3 +165,8 @@
         </section>
 		{% endcomment %}
 {% endblock content %}
+
+{% block extra_body %}
+    <script type="text/javascript" src="/static/js/scroll.js"></script>
+{% endblock extra_body %}
+

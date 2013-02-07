@@ -9,6 +9,7 @@
 
 @fs: @baseFontSize;
 @baseFontFamily: 'Lato', sans-serif;
+@monoFontFamily: 'Inconsolata', sans-serif;
 @textColor: #4d4e50;
 @linkColor: #0076a0;
 
@@ -71,6 +72,7 @@ header.main {
     height:35px;
     text-indent:-9999px;
     .bg("geonode_logo.png");
+    float:left;
   }
 
   .btn {
@@ -82,21 +84,20 @@ header.main {
 }
 
 section.banner {
-  .bg-clr(@beige, "banner_bg.png", repeat-x);
-  height:404px;
+  .bg-clr(@beige, "banner_bg.png", repeat-x, left, bottom);
   color:@white;
-  padding:30px 0 20px;
+  padding:30px 0 40px;
 
   h1 {
     font-weight:300;
-    font-size:38px;
+    font-size:36px;
     line-height:50px;
   }
 
   p {
     line-height:25px;
     font-weight:300;
-    margin:0 80px 25px 0;
+    margin:0 40px 25px 0;
   }
 
   .btn-large {
@@ -104,11 +105,9 @@ section.banner {
     padding:10px 43px;
   }
 
-/*  img.hero-img {
-    position:absolute;
-    top:20px;
-    right:-5px;
-  }*/
+  img.hero-img {
+    margin-top:20px;
+  }
 }
 
 section.body {
@@ -121,28 +120,33 @@ section.body {
     text-align:center;
     overflow:visible;
     margin:93px 20px 30px;
-    height:312px;
+    min-height:360px;
 
-    header.box-header {
-      width:243px;
-      height:130px;
+    a.header-link {
       color:@white;
-      position:relative;
-      margin:-94px auto 20px;
 
-      h2 {
-        font-size:@fs + 6;
-        padding-top:78px;
-        font-weight: 400;
+      header.box-header {
+        width:243px;
+        height:130px;
+        color:@white;
+        position:relative;
+        margin:-94px auto 20px;
 
-        a {
+        h2 {
+          font-size:@fs + 6;
+          padding-top:78px;
+          font-weight: 400;
           color:@white;
 
           &:hover {
             color:@orange;
-            text-decoration:none;
           }
         }
+      }
+
+      &:hover {
+        color:@orange;
+        text-decoration:none;
       }
     }
 
@@ -175,6 +179,12 @@ footer.footer {
     }
   }
 
+  .important-links a:hover {
+    p {
+    color:@white;
+    }
+  }
+
   .quick-start {
     width:88px;
     height:295px;
@@ -198,9 +208,9 @@ footer.footer {
     ul.steps {
       li {
         float:left;
-        width:18%;
+        width:208px;
         position:relative;
-        margin:0 30px 0 30px;
+        margin:0 30px;
 
         &.last { margin-right:0; }
 
@@ -225,6 +235,12 @@ footer.footer {
           font-size:12px;
           line-height:14px;
         }
+
+        span.mono {
+            color:@grayLight;
+            font-size:16px;
+            line-height:16px;
+          }
       }
     }
   }
@@ -276,6 +292,65 @@ footer.footer {
   }
 }
 
+.mono {
+  font-family: @monoFontFamily;
+}
+
+.nav-coll {
+  .btn-nav-coll {
+    padding: 7px 10px;
+    margin: 2px 0 0;
+    background: #055f6d;
+    height: 40px;
+    border: none;
+
+    .icon-bar {
+      display: block;
+      width: 28px;
+      height: 5px;
+      background: #900;
+      background: rgba(1, 17, 19, 0.33);
+      border: none;
+      .box-shadow(none);
+    }
+
+    .icon-bar + .icon-bar {
+      margin-top: 5px;
+    }
+  }
+
+  .dropdown-menu {
+    background: #01262c;
+    background: rgba(1,38,44,0.9);
+    .border-radius(0);
+    margin-top:10px;
+    border: none;
+
+    &::before {
+      position: absolute;
+      top: -7px;
+      left: 9px;
+      display: inline-block;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid #01262c;
+      border-left: 7px solid transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.3);
+      content: '';
+    }
+
+    a {
+      color:@white;
+      text-transform:uppercase;
+      font-weight: 300;
+      margin-bottom: 6px;
+
+      &:hover {
+        background:#011418;
+      }
+    }
+  }
+}
+
 /*#sequence {
     height: 370px;
     margin: 40px auto;
@@ -288,7 +363,6 @@ footer.footer {
 body.geonode-features {
   section.banner {
     .bg-clr(@beige, "banner_bg.png", repeat-x, left, bottom);
-    height: 254px;
 
     h1 {
       strong {
@@ -354,15 +428,14 @@ body.geonode-features {
   section.feature-details {
     #gradient > .vertical-three-colors(@beige, @white, @colorStop: 75%, @endColor: #f2efea);
     border-bottom: 1px solid #cddcde;
-    height:500px;
-    padding-top: 17px;
+    padding-bottom: 20px;
 
-    img.feature-img {
-      margin-left: 60px;
+    .feature-block {
+      margin: 129px 0 0 50px;
     }
 
     .highlighted-box {
-      margin: 70px 0 0 60px;
+      margin: 80px 0 0 60px;
       .bg("box.png");
       padding-left: 36px;
       min-height:368px;
@@ -411,21 +484,25 @@ body.geonode-features {
       }
 
       &.three {
-        .bg("numbers/three.png", no-repeat, right, 150px);
+        .bg("numbers/three.png", no-repeat, right, top);
+      }
+
+      &.four {
+        .bg("numbers/four.png", no-repeat, left, top);
       }
     }
 
     &.feature2 {
-      padding-top: 200px;
+      padding-top: 40px;
       #gradient > .vertical-three-colors(#f0ede7, @white, @colorStop: 75%, @endColor: #edeae3);
 
       .highlighted-box {
-        margin-left: 147px;
+        margin-left: 97px;
       }
     }
 
     &.feature3 {
-      padding: 96px 0 25px;
+      padding-top: 40px;
       #gradient > .vertical-three-colors(#edeae3, @white, @colorStop: 75%, @endColor: #f3f1ec);
     }
   }
@@ -450,8 +527,7 @@ body.geonode-features {
     }
   }
 
-  // Feature detail page
-  section.feature-detail {
+  section.feature-details {
     #gradient > .vertical-three-colors(@beige, @white, @colorStop: 75%, @endColor: #f2efea);
     padding-top: 30px;
 
@@ -514,4 +590,3 @@ body.geonode-features {
     }
   }
 }
-
