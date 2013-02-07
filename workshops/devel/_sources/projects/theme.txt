@@ -59,7 +59,7 @@ First, Lets walk through the steps necessary to displace it downward so it is no
         margin: 75px 75px;
     }
 
-#. Restart the development server and reload the page::
+#. Restart the development server and reload the page.
 
     .. figure:: img/content_wrap_fixed.png
 
