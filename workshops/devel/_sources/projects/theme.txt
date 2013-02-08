@@ -3,7 +3,7 @@
 Theming your GeoNode Project
 ============================
 
-There are a range of options available to you if you want to change the default look and feel or theme of GeoNode. Since GeoNode's style is based on bootstrap you will be able to make use of all that bootstrap has to offer as you customize the theme of your GeoNode. You should consult bootstrap's documentation as your primary guide once you are familiar with how Geonode implements bootstrap and how you can override GeoNode's theme in your own project.
+There are a range of options available to you if you want to change the default look and feel or theme of your GeoNode project. Since GeoNode's style is based on bootstrap you will be able to make use of all that bootstrap has to offer as you customize the theme of your GeoNode. You should consult bootstrap's documentation as your primary guide once you are familiar with how Geonode implements bootstrap and how you can override GeoNode's theme and templates in your own project.
 
 Logos and Graphics
 ------------------
@@ -92,9 +92,9 @@ First, Lets walk through the steps necessary to displace it downward so it is no
 .. note:: You can continue adding rules to this file to override the styles that are in geonodes base css file which is built from base.less. https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less You may find it helpful to use your browsers development tools to inspect elements of your site that you want to override to determine which rules are already applied. You can see an example of that in the screenshot below. Another section of this workshop covers this topic in much more detail.
 
 
-   .. figure:: img/inspect_element.png
+.. figure:: img/inspect_element.png
 
-   Screenshot of using Chrome's debugger to inspect the css overrides added in the previous steps.
+Screenshot of using Chrome's debugger to inspect the css overrides added in the previous steps.
 
 
 Templates and Static Pages
@@ -196,7 +196,7 @@ Visit your site at http://localhost:8000/ or the remote URL for your site.
 
     You can see that the homepage now includes our changes.
 
-From here you can continue to customize your site_index.html template to suit your needs.
+From here you can continue to customize your site_index.html template to suit your needs. This workshop will also cover how you can add new pages to your GeoNode project site.
 
 Other Theming Options
 ---------------------

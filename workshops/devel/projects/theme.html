@@ -122,7 +122,7 @@
   
   <div class="section" id="theming-your-geonode-project">
 <span id="theme"></span><h1>Theming your GeoNode Project<a class="headerlink" href="#theming-your-geonode-project" title="Permalink to this headline">¶</a></h1>
-<p>There are a range of options available to you if you want to change the default look and feel or theme of GeoNode. Since GeoNode&#8217;s style is based on bootstrap you will be able to make use of all that bootstrap has to offer as you customize the theme of your GeoNode. You should consult bootstrap&#8217;s documentation as your primary guide once you are familiar with how Geonode implements bootstrap and how you can override GeoNode&#8217;s theme in your own project.</p>
+<p>There are a range of options available to you if you want to change the default look and feel or theme of your GeoNode project. Since GeoNode&#8217;s style is based on bootstrap you will be able to make use of all that bootstrap has to offer as you customize the theme of your GeoNode. You should consult bootstrap&#8217;s documentation as your primary guide once you are familiar with how Geonode implements bootstrap and how you can override GeoNode&#8217;s theme and templates in your own project.</p>
 <div class="section" id="logos-and-graphics">
 <h2>Logos and Graphics<a class="headerlink" href="#logos-and-graphics" title="Permalink to this headline">¶</a></h2>
 <p>GeoNode intentionally does not include a large number of graphics files to drive its interface. this keeps browser loading times to a minimum and makes for a more responsive interface. That said, you are free to customize your GeoNode&#8217;s interface by simply changing the default logo, or by adding your own images and graphics to deliver a GeoNode experience the way you envision int.</p>
@@ -207,12 +207,12 @@ $ cd ../../..</pre>
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>You can continue adding rules to this file to override the styles that are in geonodes base css file which is built from base.less. <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less">https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less</a> You may find it helpful to use your browsers development tools to inspect elements of your site that you want to override to determine which rules are already applied. You can see an example of that in the screenshot below. Another section of this workshop covers this topic in much more detail.</p>
+<p class="last">You can continue adding rules to this file to override the styles that are in geonodes base css file which is built from base.less. <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less">https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less</a> You may find it helpful to use your browsers development tools to inspect elements of your site that you want to override to determine which rules are already applied. You can see an example of that in the screenshot below. Another section of this workshop covers this topic in much more detail.</p>
+</div>
 <div class="figure">
 <img alt="../_images/inspect_element.png" src="../_images/inspect_element.png" />
 </div>
-<p class="last">Screenshot of using Chrome&#8217;s debugger to inspect the css overrides added in the previous steps.</p>
-</div>
+<p>Screenshot of using Chrome&#8217;s debugger to inspect the css overrides added in the previous steps.</p>
 </div>
 <div class="section" id="templates-and-static-pages">
 <h2>Templates and Static Pages<a class="headerlink" href="#templates-and-static-pages" title="Permalink to this headline">¶</a></h2>
@@ -309,7 +309,7 @@ This is where you can override the hero area block. You can simply modify the co
 </div>
 <p>You can see that the homepage now includes our changes.</p>
 </div></blockquote>
-<p>From here you can continue to customize your site_index.html template to suit your needs.</p>
+<p>From here you can continue to customize your site_index.html template to suit your needs. This workshop will also cover how you can add new pages to your GeoNode project site.</p>
 </div>
 <div class="section" id="other-theming-options">
 <h2>Other Theming Options<a class="headerlink" href="#other-theming-options" title="Permalink to this headline">¶</a></h2>
