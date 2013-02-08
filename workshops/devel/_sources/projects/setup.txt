@@ -83,25 +83,25 @@ Your GeoNode Project's Struture
 
 Your GeoNode project will now be structured as depicted below::
 
-    ├── README.rst
-    ├── manage.py
-    ├── my_geonode
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── static
-    │   │   ├── README
-    │   │   ├── css
-    │   │   │   └── site_base.css
-    │   │   ├── img
-    │   │   │   └── README
-    │   │   └── js
-    │   │       └── README
-    │   ├── templates
-    │   │   ├── site_base.html
-    │   │   └── site_index.html
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── setup.py
+    |-- README.rst
+    |-- manage.py
+    |-- my_geonode
+    |   |-- __init__.py
+    |   |-- settings.py
+    |   |-- static
+    |   |   |-- README
+    |   |   |-- css
+    |   |   |   |-- site_base.css
+    |   |   |-- img
+    |   |   |   |-- README
+    |   |   |-- js
+    |   |       |-- README
+    |   |-- templates
+    |   |   |-- site_base.html
+    |   |   |-- site_index.html
+    |   |-- urls.py
+    |   |-- wsgi.py
+    |-- setup.py
 
 You can also view your project on github.
 
