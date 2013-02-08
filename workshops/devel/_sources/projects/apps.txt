@@ -260,5 +260,102 @@ Again, its strongly recommended that you spend as much time as you need with the
 Adding a 3rd Party Blog App 
 ---------------------------
 
+Now that we have created our own app and added it to our GeoNode project, the next thing we will work through is adding a 3rd party Blog app. There are a large number of blog apps that you can use, but for purposes of this workshop, we will use a relatively simple, yet extensible app called Zinnia. You can find out more information about Zinnia on its website http://django-blog-zinnia.com/blog/ or on its GitHub project page https://github.com/Fantomas42/django-blog-zinnia or by following its documentation http://django-blog-zinnia.com/documentation/. This section will walk you through the minimal set of steps necessary to add Zinnia to your GeoNode project.
+
+The first thing you need to do is to install Zinnia into the virtualenv that you are working in. Make sure your virtualenv is activated and execute the following command::
+
+    $ pip install django-blog-zinnia
+
+This will install Zinnia and all of the libraries that it depends on. 
+
+Next add Zinna to the INSTALLED_APPS section of your GeoNode projects settings.py file by editing my_geonode/settings.py and adding 'django.contrib.comments' to the section labeled "Apps Bundled with Django" so that it looks like the following::
+
+    # Apps bundled with Django
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.admin',
+    'django.contrib.sitemaps',
+    'django.contrib.staticfiles',
+    'django.contrib.messages',
+    'django.contrib.humanize',
+    'django.contrib.comments',
+
+And then add the tagging, mptt and zinnia apps to the end of the INSTALLED_APPS where we previously added a section labeled "My GeoNode apps" in the previous part of this workshop section. It should like like the following::
+
+    # My GeoNode apps
+    'polls',
+    'tagging',
+    'mptt',
+    'zinnia',
+
+Next you will need to run syncdb again to synchronize the models for the apps we have just added to our project's database. This time we want to pass the --all flag to syncdb so it ignores the schema migrations. Schema migrations are discussed further in GeoNode's documentation, but its safe to ignore them here.
+
+   $ python manage.py syncdb --all
+
+You can now restart the development server and visit the Admin interface and scroll to the very bottom of the list to find a section for Zinnia that allows you to manage database records for Categories and Blog Entries. 
+
+.. figure:: img/zinnia_admin.png 
+
+Next we need to configure our project to add Zinnia's URL configurations. Add the following 2 url config entries to the end of my_geonode/urls.py::
+
+    url(r'^blog/', include('zinnia.urls')),
+    url(r'^djcomments/', include('django.contrib.comments.urls')),
+
+If you visit the main blog page in your browser at http://localhost:8000/blog/ you will find that the blog displays with Zinnia's default theme as shown below.
+
+.. figure:: img/zinnia_default.png 
+
+This page includes some guidance for us on how to change the default theme. The first thing we need to do is to copy zinnia's base.html template into our own project so we can modify it. When you pip installed Zinnia, its templates were installed to /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/. You can copy the base template by executing the following commands::
+
+    $ mkdir my_geonode/templates/zinnia
+    $ cp /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/base.html my_geonode/templates/zinnia/
+
+Then you need to edit this file and change the topmost line to read as below such that this template extends from our projects site_base.html rather than the zinnia skeleton.html::
+
+    {% extends "site_base.html" %}
+
+Since Zinnia uses a bit different block naming scheme than GeoNode does, you need to add the following line to the bottom of your site_base.html file so that the content block gets rendered properl::
+
+    {% block body %}{% block content %}{% endblock %}{% endblock %}
+
+.. figure:: img/zinnia_geonode.png 
+
+You can see that there are currently no blog entries, so lets add one. Scroll to the bottom of the interface and click the "Post an Entry" link to go to the form in the Admin interface that lets you create a blog post. Go ahead and fill out the form with some information for testing purposes. Make sure that you change the Status dropdown to "published" so the post shows up right away.
+
+.. figure:: img/zinnia_create_post.png 
+
+You can explore all of the options available to you as you create your post, and when you are done, click the Save button. You will be taken to the page that shows the list of all your blog posts.  
+
+.. figure:: img/zinnia_post_list.png
+
+You can then visit your blog post/entry at http://localhost:8000/blog/
+
+.. figure:: img/zinnia_blog.png
+
+And if you click on the blog post title, you will be taken to the page for the complete blog post. You and your users can leave comments on this post and various other blog features from this page.  
+
+.. figure:: img/zinnia_post.png
+
+The last thing we need to do to fully integrate this blog app (and our polls app) into our site is to add it to the options on the navbar. To do so, we need to add the following block override to our Projects site_base.html::
+
+    {% block extra-nav %}
+    <li id="nav_polls">
+        <a href="/polls/">Polls</a>
+    </li>
+    <li id="nav_blog">
+        <a href="{% url zinnia_entry_archive_index %}">Blog</a>
+    </li>
+    {% endblock %}
+
+.. figure:: img/navbar_add.png
+
+At this point, you could explore options for tighter integration between your GeoNode project and Zinnia. Integrating blog posts from Zinnia into your overall search could be useful, as well as including the blog posts a user has written on their Profile Page. You could also explore the additional plugins that go with Zinnia.  
+
 Adding Other Apps 
 -----------------
+
+Now that you have both written your own app and plugged in a 3rd party one, you can explore sites like Django Packages to look for other modules that you could plug into your GeoNode project to meet your needs and requirements. For many types of apps, there are several options and Django Packages is a nice way to compare them. You may find that some apps require significantly more work to integrate into your app than others, but reaching out to the app's author and/or developers should help you get over any difficulties you may encounter.
+
+.. figure:: img/django_packages.png
