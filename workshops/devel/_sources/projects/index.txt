@@ -12,5 +12,5 @@ This module will teach you about how to setup your own GeoNode based project and
    projectsintro 
    setup
    theme
-   modules
+   apps 
    integration 
