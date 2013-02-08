@@ -313,8 +313,38 @@ This is where you can override the hero area block. You can simply modify the co
 </div>
 <div class="section" id="other-theming-options">
 <h2>Other Theming Options<a class="headerlink" href="#other-theming-options" title="Permalink to this headline">¶</a></h2>
+<p>You are able to change any specific piece of your GeoNode project&#8217;s style by adding css rules to your site_base.css, but since GeoNode is based on Bootstrap, there are many pre-defined themes that you can simply drop into your project to get a whole new look. This is very similar to wordpress themes and is a powerful and easy way to change the look of your site without much effort.</p>
 <div class="section" id="bootswatch">
 <h3>Bootswatch<a class="headerlink" href="#bootswatch" title="Permalink to this headline">¶</a></h3>
+<p>bootswatch.com is a site where you can download ready to use themes for your GeoNode project site. The following steps will show you how to use a theme from bootswatch in your own geonode site.</p>
+<ol class="arabic simple">
+<li>Visit bootswatch.com and select a theme (we will use Amelia for this example). Select the download bootstrap.css option in the menu:</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/bootswatch.png" src="../_images/bootswatch.png" />
+</div>
+</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Put this file in my_geonode/static/css</p>
+</li>
+<li><p class="first">Update the site_base.html template to include this file. It should now look like this:</p>
+<div class="highlight-python"><pre>{% extends "base.html" %}
+{% block extra_head %}
+    &lt;link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/&gt;
+    &lt;link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet"/&gt;
+{% endblock %}</pre>
+</div>
+</li>
+<li><p class="first">Restart the development server and visit your site:</p>
+</li>
+</ol>
+<blockquote>
+<div><div class="figure">
+<img alt="../_images/bootswatch_geonode.png" src="../_images/bootswatch_geonode.png" />
+</div>
+</div></blockquote>
+<p>Your GeoNode project site is now using the Amelia theme in addition to the changes you have made.</p>
 </div>
 </div>
 </div>

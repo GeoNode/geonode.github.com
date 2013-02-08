@@ -201,6 +201,33 @@ From here you can continue to customize your site_index.html template to suit yo
 Other Theming Options
 ---------------------
 
+You are able to change any specific piece of your GeoNode project's style by adding css rules to your site_base.css, but since GeoNode is based on Bootstrap, there are many pre-defined themes that you can simply drop into your project to get a whole new look. This is very similar to wordpress themes and is a powerful and easy way to change the look of your site without much effort.
+
 Bootswatch
 ~~~~~~~~~~
+
+bootswatch.com is a site where you can download ready to use themes for your GeoNode project site. The following steps will show you how to use a theme from bootswatch in your own geonode site.
+
+#. Visit bootswatch.com and select a theme (we will use Amelia for this example). Select the download bootstrap.css option in the menu::
+
+  .. figure:: img/bootswatch.png
+
+#. Put this file in my_geonode/static/css
+
+#. Update the site_base.html template to include this file. It should now look like this::
+
+    {% extends "base.html" %}
+    {% block extra_head %}
+        <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
+        <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet"/>
+    {% endblock %}
+
+#. Restart the development server and visit your site::
+
+  .. figure:: img/bootswatch_geonode.png
+
+Your GeoNode project site is now using the Amelia theme in addition to the changes you have made.
+
+.. todo: Squeeze up the header and update this doc!
+
 
