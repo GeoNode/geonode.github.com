@@ -85,8 +85,6 @@
 <li><a class="reference internal" href="#qgis">QGIS</a></li>
 <li><a class="reference internal" href="#google-earth">Google Earth</a></li>
 <li><a class="reference internal" href="#openstreetmap">OpenStreetMap</a></li>
-<li><a class="reference internal" href="#wordpress">WordPress</a></li>
-<li><a class="reference internal" href="#mapbox">MapBox</a></li>
 </ul>
 </li>
 </ul>
@@ -218,18 +216,82 @@
 </div>
 <div class="section" id="qgis">
 <h2>QGIS<a class="headerlink" href="#qgis" title="Permalink to this headline">¶</a></h2>
+<p>Quantum GIS or qGIS is an open source, cross platform desktop GIS app. It can also be used to add layers from your GeoNode instance as WMS or WFS. The process is very similar to how we add these same layers to ArcMap, and we will walk through the steps necessary in the following section.</p>
+<p>First, select &#8220;Add WMS Layer&#8221; from the Layer menu.</p>
+<div class="figure">
+<img alt="../_images/qgis_add_wms_layer.jpg" src="../_images/qgis_add_wms_layer.jpg" />
+</div>
+<p>The Add WMS Layer Dialog will be displayed where you are able to specify the parameters to connect to your WMS server.</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_add_1.jpg" src="../_images/qgis_wms_add_1.jpg" />
+</div>
+<p>Next, you need to fill in the parameters to connect to your GeoNode instance. The URL for your GeoNode&#8217;s WMS is the base URL + /geoserver/wms</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_add_2.jpg" src="../_images/qgis_wms_add_2.jpg" />
+</div>
+<p>After clicking the OK button, your server will show up in the list of servers. Make sure its selected, then, click the connect button to have QGIS retrieve the list of layers from your GeoNode.</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_add_7.jpg" src="../_images/qgis_wms_add_7.jpg" />
+</div>
+<p>Select the layers you want to add to your QGIS project and click &#8220;Add&#8221;.</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_add_6.jpg" src="../_images/qgis_wms_add_6.jpg" />
+</div>
+<p>Your layer will be displayed in the map panel.</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_layer.jpg" src="../_images/qgis_wms_layer.jpg" />
+</div>
+<p>You can then zoom into your features in the Map.</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_layer_zoom.jpg" src="../_images/qgis_wms_layer_zoom.jpg" />
+</div>
+<p>From there, you can use the identify tool to inspect the attributes of one of the features on the map.</p>
+<div class="figure">
+<img alt="../_images/qgis_identify_wfs.jpg" src="../_images/qgis_identify_wfs.jpg" />
+</div>
+<p>Or, you can look at the layer metadata by right clicking on the layer and selecting Layer Properties and selecting the metadata tab.</p>
+<div class="figure">
+<img alt="../_images/qgis_wms_metadata.jpg" src="../_images/qgis_wms_metadata.jpg" />
+</div>
+<p>Adding WFS servers and layers to your QGIS project is very similar to adding WMS. Depending on your version of QGIS, you may need to add the WFS plugin. You can use the Plugin manager to add it.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_installer.jpg" src="../_images/qgis_wfs_installer.jpg" />
+</div>
+<p>Once the plugin is installed, you can select the &#8220;Add WFS Layer&#8221; option from the Layer menu.</p>
+<div class="figure">
+<img alt="../_images/qgis_add_wfs.jpg" src="../_images/qgis_add_wfs.jpg" />
+</div>
+<p>Step through the same process you did for WMS to create a new WFS connection. First specify server parameters and click OK.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_add_2.jpg" src="../_images/qgis_wfs_add_2.jpg" />
+</div>
+<p>Then click Connect to retrieve the list of layers on the server and select the layers you want to add and click Apply.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_add_3.jpg" src="../_images/qgis_wfs_add_3.jpg" />
+</div>
+<p>The layer(s) you selected will be displayed in the map panel.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_layer.jpg" src="../_images/qgis_wfs_layer.jpg" />
+</div>
+<p>You can use the same identify tool to inspect features in the map panel.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_identify.jpg" src="../_images/qgis_wfs_identify.jpg" />
+</div>
+<p>To look at more information about your layer, right click the layer in the Table of Contents and select Layer Properties. You can look at the list of fields.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_fields.jpg" src="../_images/qgis_wfs_fields.jpg" />
+</div>
+<p>... or set a style to match how you want your data to be displayed.</p>
+<div class="figure">
+<img alt="../_images/qgis_wfs_style.jpg" src="../_images/qgis_wfs_style.jpg" />
+</div>
+<p>You now know how to add layers from your GeoNode instance to a QGIS project. You can explore all of the other options available to you in QGIS by consulting its documentation.</p>
 </div>
 <div class="section" id="google-earth">
 <h2>Google Earth<a class="headerlink" href="#google-earth" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="openstreetmap">
 <h2>OpenStreetMap<a class="headerlink" href="#openstreetmap" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="wordpress">
-<h2>WordPress<a class="headerlink" href="#wordpress" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="mapbox">
-<h2>MapBox<a class="headerlink" href="#mapbox" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
