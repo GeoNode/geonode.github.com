@@ -80,10 +80,10 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Integrating your project with other systems</a><ul>
-<li><a class="reference internal" href="#third-party-integration">Third-party integration</a></li>
 <li><a class="reference internal" href="#ogc-services">OGC services</a></li>
-<li><a class="reference internal" href="#google-earth">Google Earth</a></li>
+<li><a class="reference internal" href="#arcgis">ArcGIS</a></li>
 <li><a class="reference internal" href="#qgis">QGIS</a></li>
+<li><a class="reference internal" href="#google-earth">Google Earth</a></li>
 <li><a class="reference internal" href="#openstreetmap">OpenStreetMap</a></li>
 <li><a class="reference internal" href="#wordpress">WordPress</a></li>
 <li><a class="reference internal" href="#mapbox">MapBox</a></li>
@@ -122,17 +122,105 @@
   
   <div class="section" id="integrating-your-project-with-other-systems">
 <span id="projects-integration"></span><h1>Integrating your project with other systems<a class="headerlink" href="#integrating-your-project-with-other-systems" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="third-party-integration">
-<h2>Third-party integration<a class="headerlink" href="#third-party-integration" title="Permalink to this headline">¶</a></h2>
-</div>
+<p>Your GeoNode project is based on core components which are interoperable and as such, it is straightforward for you to integrate with external applications and services. This section will walk you through how to connect to your GeoNode instance from other applications and how to integrate other services into your GeoNode project. When complete, you should have a good idea about the possibilities for integration, and have basic knowledge about how to accomplish it. You may find it necessary to dive deeper into how to do more complex integration in order to accomplish your goals, but you should feel comfortable with the basics, and feel confident reaching out to the wider GeoNode community for help.</p>
 <div class="section" id="ogc-services">
 <h2>OGC services<a class="headerlink" href="#ogc-services" title="Permalink to this headline">¶</a></h2>
+<p>Since GeoNode is built on GeoServer which is heavily based on OGC services, the main path for integration with external services is via OGC Standards. A large number of systems, applications and services support adding WMS layers to them, but only a few key ones are covered below. WFS and WCS are also supported in a wide variety of clients and platforms and give you access to the actual data for use in GeoProcessing or to manipulate it to meet your requirements. GeoServer also bundles GeoWebCache which produces map tiles that can be added as layers in many popular web mapping tools including Google Maps, Leaflet, OpenLayers and others. You should review the reference material included in the first chapter to learn more about OGC Services and when evaluating external systems make sure that they are also OGC Compliant in order to integrate as seamlessly as possible.</p>
 </div>
-<div class="section" id="google-earth">
-<h2>Google Earth<a class="headerlink" href="#google-earth" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="arcgis">
+<h2>ArcGIS<a class="headerlink" href="#arcgis" title="Permalink to this headline">¶</a></h2>
+<p>ArcGIS Desktop (ArcMap) supports adding WMS layers to your map project. The following set of steps will walk you through how to configure a WMS Layer from your GeoNode within ArcMap.</p>
+<p>First, you can start with a new empty project or add these layers to your existing project.</p>
+<div class="figure">
+<img alt="../_images/arcmap_empty.png" src="../_images/arcmap_empty.png" />
+</div>
+<p>Next click the ArcCatalog button on the toolbar to bring up its interface.</p>
+<div class="figure">
+<img alt="../_images/arccatalog.png" src="../_images/arccatalog.png" />
+</div>
+<p>From there, double click the &#8220;Add WMS Server&#8221; item in the tree to bring up the dialog that lets you enter the details for your WMS.</p>
+<div class="figure">
+<img alt="../_images/arc_add_wms.png" src="../_images/arc_add_wms.png" />
+</div>
+<p>Next, enter the URL for your GeoNode&#8217;s WMS endpoint which is the base url with /geoserver/wms appended to the end of the URL. You can also enter your credentials into the optional Account section of this dialog to gain access to non-public layers that your user may have access to.</p>
+<div class="figure">
+<img alt="../_images/arc_enter_wms_url.png" src="../_images/arc_enter_wms_url.png" />
+</div>
+<p>Click the &#8220;Get Layers&#8221; button to ask ArcMap to query your WMS&#8217;s GetCapabilities document to get the list of available layers.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wms_layers.png" src="../_images/arcmap_wms_layers.png" />
+</div>
+<p>After you click the OK button, your GeoNode layers will appear in the ArcCatalog Interface.</p>
+<div class="figure">
+<img alt="../_images/arcmap_layers_catalog.png" src="../_images/arcmap_layers_catalog.png" />
+</div>
+<p>Once your server is configured in ArcMap, you can right click on one of the layers and investigate its properties.</p>
+<div class="figure">
+<img alt="../_images/arcmap_layer_properties.png" src="../_images/arcmap_layer_properties.png" />
+</div>
+<p>In order to actually add the layer to your project, you can drag and drop it into the Table of Contents, or right click and select &#8220;Create Layer&#8221;. Your Layer will now be displayed in the map panel of your project.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wms_layer_drag.png" src="../_images/arcmap_wms_layer_drag.png" />
+</div>
+<div class="figure">
+<img alt="../_images/arcmap_wms_layer_map.png" src="../_images/arcmap_wms_layer_map.png" />
+</div>
+<p>Once the layer is in your projects Table of Contents, you can right click on it and select the Layer Properties option and select the Styles Tab to choose from the available styles for that layer.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wms_styles.png" src="../_images/arcmap_wms_styles.png" />
+</div>
+<p>Now that we have seen how to add a WMS layer to our ArcMap project, lets walk through how to add the same layers as a WFS which retrieves the actual feature data from your GeoNode rather than a rendered map as you get with WMS. Adding layers as a WFS gives you more control over how the layers are styled within ArcMap and makes them available for you to use with other ArcGIS tools like the Geoprocessing toolbox.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Adding WFS layers to ArcMap requires that you have the Data Interoperability Extension installed. This extension is not included in ArcMap by default and is licensed and installed separately.</p>
+</div>
+<p>Start by opening up the ArcCatalog Interface within ArcMap and make sure that you have the &#8220;Interoperability Connections&#8221; option listed in the list.</p>
+<div class="figure">
+<img alt="../_images/arcmap_interoperability.png" src="../_images/arcmap_interoperability.png" />
+</div>
+<p>Next select &#8220;Add Interoperability Connection&#8221; to bring up the dialog that lets you add the WFS endpoint from your GeoNode.</p>
+<div class="figure">
+<img alt="../_images/arcmap_interop_add.png" src="../_images/arcmap_interop_add.png" />
+</div>
+<p>Select &#8220;WFS (Web Feature Service)&#8221; in the Format dropdown and enter the URL to the WFS endpoint for your GeoNode in the Dataset field. The WFS endpoint is your base URL + /geoserver/wfs</p>
+<div class="figure">
+<img alt="../_images/arcmap_interop_wfs.png" src="../_images/arcmap_interop_wfs.png" />
+</div>
+<p>You will need to click the &#8220;Parameters&#8221; button to supply more connection information including your credentials which will give you the ability to use private layers that you have access to.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_params.png" src="../_images/arcmap_wfs_params.png" />
+</div>
+<p>Select the Feature Types button to have ArcMap get a list of layers from the WFS Service of your GeoNode.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_layers.png" src="../_images/arcmap_wfs_layers.png" />
+</div>
+<p>Select the layers that you want to add and click OK and ArcMap will import the features from your GeoNode into the system.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_import.png" src="../_images/arcmap_wfs_import.png" />
+</div>
+<p>Depending on the projection of your data, you may receive a warning about Alignment and Accuracy of data transformations. You can specify the transformation manually or simply hit close to ignore this dialog. If you dont want to be warned again, use the checkboxes in this dialog to hide these warnings temporarily or permanently.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_transformations.png" src="../_images/arcmap_wfs_transformations.png" />
+</div>
+<p>Your WFS Layer will be added to your map and you can view it in the Map Panel. If you need to, use the &#8220;Zoom to Layer Extent&#8221; or other zoom tools to zoom to the bounds of your layer.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_layer_view.png" src="../_images/arcmap_wfs_layer_view.png" />
+</div>
+<p>You can now use the identify tool to inspect a feature in your layer, or perform any other function that you can normally use to work with Vector Layers in ArcMap.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_identify.png" src="../_images/arcmap_wfs_identify.png" />
+</div>
+<p>Since your layer was imported as actual vector features, you can use normal ArcMap styling tools to style the layer to match how you want it to be displayed.</p>
+<div class="figure">
+<img alt="../_images/arcmap_wfs_style.png" src="../_images/arcmap_wfs_style.png" />
+</div>
+<p>Now that you have added layers from your GeoNode as both WMS and WFS, you can explore the other options available to you with these layers within ArcMap.</p>
 </div>
 <div class="section" id="qgis">
 <h2>QGIS<a class="headerlink" href="#qgis" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="google-earth">
+<h2>Google Earth<a class="headerlink" href="#google-earth" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="openstreetmap">
 <h2>OpenStreetMap<a class="headerlink" href="#openstreetmap" title="Permalink to this headline">¶</a></h2>
