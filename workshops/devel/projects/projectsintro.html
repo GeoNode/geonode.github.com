@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Customized GeoNode Projects" href="index.html" />
-    <link rel="next" title="Setting up your GeoNode Project" href="setup.html" />
+    <link rel="next" title="Setting up your GeoNode project" href="setup.html" />
     <link rel="prev" title="Customized GeoNode Projects" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -81,8 +81,8 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Introduction to GeoNode Projects</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
-<li><a class="reference internal" href="#existing-downstream-geonode-projects">Existing Downstream GeoNode Projects</a></li>
-<li><a class="reference internal" href="#django-template-projects">Django Template Projects</a></li>
+<li><a class="reference internal" href="#existing-downstream-geonode-projects">Existing downstream GeoNode projects</a></li>
+<li><a class="reference internal" href="#django-template-projects">Django template projects</a></li>
 </ul>
 </li>
 </ul>
@@ -94,7 +94,7 @@
   <li><a href="index.html"
          title="previous chapter">&laquo; Customized GeoNode Projects</a></li>
   <li><a href="setup.html"
-         title="next chapter">Setting up your GeoNode Project &raquo;</a></li>
+         title="next chapter">Setting up your GeoNode project &raquo;</a></li>
           
           
             <li>
@@ -117,15 +117,16 @@
 
   
   <div class="section" id="introduction-to-geonode-projects">
-<span id="projectsintro"></span><h1>Introduction to GeoNode Projects<a class="headerlink" href="#introduction-to-geonode-projects" title="Permalink to this headline">¶</a></h1>
-<p>GeoNode enables you to setup a complete site by simply by installing the packages and adding your data. If instead you want to create your own project based on GeoNode, there are a several options available to you that enable you to customize the look and feel of your GeoNode site, to add additional modules that are necessary for your own use case and to integrate your GeoNode project with other external sites and services.</p>
-<p>This module assumes that you have installed a GeoNode site with the Ubuntu Packages and that you have a working GeoNode based on that setup. If you want to follow this same methodology on a different platform or setup, you should follow this module and adapt as necessary for your desired deployment environment.</p>
+<span id="projects-intro"></span><h1>Introduction to GeoNode Projects<a class="headerlink" href="#introduction-to-geonode-projects" title="Permalink to this headline">¶</a></h1>
+<p>GeoNode enables you to set up a complete site simply by installing the packages and adding your data. If you want to create your own project based on GeoNode, there are a several options available that enable you to customize the look and feel of your GeoNode site. You can add additional modules that are necessary for your own use case and to integrate your GeoNode project with other external sites and services.</p>
+<p>This module assumes that you have installed a GeoNode site with the Ubuntu Packages and that you have a working GeoNode based on that setup. If you want to follow this same methodology on a different platform, you can follow this module and adapt as necessary for your environment.</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>GeoNode by itself is an out of the box, full featured Spatial Data Infrastructure Solution, but many GeoNode implementations require either customization of the default site, or the use of additional modules whether they be third-party Django Pluggables or modules developed by a GeoNode implementor himself. There are quite a few existing Downstream GeoNode projects some of which follow the methology described in this module. You should familiarize yourself with these projects and how and why they extend GeoNode. You should also carefully think about what customization and additional modules you need for your own GeoNode based project and research the options that are available to you. The <a class="reference external" href="http://www.djangopackages.com/">Django Packages</a> site is a great place to start looking for existing modules that may meet your needs.</p>
+<p>GeoNode is an out-of-the-box, full-featured Spatial Data Infrastructure solution, but many GeoNode implementations require either customization of the default site or the use of additional modules, whether they be third-party Django Pluggables or modules developed by a GeoNode implementer.</p>
+<p>There are quite a few existing Downstream GeoNode projects some of which follow the methodology described in this module. You should familiarize yourself with these projects and how and why they extend GeoNode. You should also carefully think about what customization and additional modules you need for your own GeoNode-based project and research the options that are available to you. The <a class="reference external" href="http://www.djangopackages.com/">Django Packages</a> site is a great place to start looking for existing modules that may meet your needs.</p>
 </div>
 <div class="section" id="existing-downstream-geonode-projects">
-<h2>Existing Downstream GeoNode Projects<a class="headerlink" href="#existing-downstream-geonode-projects" title="Permalink to this headline">¶</a></h2>
+<h2>Existing downstream GeoNode projects<a class="headerlink" href="#existing-downstream-geonode-projects" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Harvard Worldmap</li>
 <li>MapStory</li>
@@ -133,8 +134,8 @@
 </ul>
 </div>
 <div class="section" id="django-template-projects">
-<h2>Django Template Projects<a class="headerlink" href="#django-template-projects" title="Permalink to this headline">¶</a></h2>
-<p>GeoNode follows the django template projects paradigm introduced in Django 1.4. At a minimum, a django project consists of a settings.py file and a urls.py file and django apps are used to add specific pieces of functionality. The GeoNode development team has created a template project which contains these required files with all the GeoNode configuration you need to get up and running with your own GeoNode project. If you would like learn more about Django projects and Apps, you should consult the <a class="reference external" href="https://docs.djangoproject.com/en/1.4/">Django Documentation</a></p>
+<h2>Django template projects<a class="headerlink" href="#django-template-projects" title="Permalink to this headline">¶</a></h2>
+<p>GeoNode follows the Django template projects paradigm introduced in Django 1.4. At a minimum, a Django project consists of a <tt class="file docutils literal"><span class="pre">settings.py</span></tt> file and a <tt class="file docutils literal"><span class="pre">urls.py</span></tt> file; Django apps are used to add specific pieces of functionality. The GeoNode development team has created a template project which contains these required files with all the GeoNode configuration you need to get up and running with your own GeoNode project. If you would like learn more about Django projects and apps, you should consult the <a class="reference external" href="https://docs.djangoproject.com/en/1.4/">Django Documentation</a></p>
 </div>
 </div>
 

@@ -1,24 +1,24 @@
-.. _integration:
+.. _projects.integration:
 
-Integrating your Project with other Systems
+Integrating your project with other systems
 ===========================================
 
-Third Party Integration Overview
---------------------------------
+Third-party integration
+-----------------------
 
-OGC Services
+OGC services
 ------------
 
 Google Earth
 ------------
 
-qGIS
+QGIS
 ----
 
 OpenStreetMap
 -------------
 
-Wordpress
+WordPress
 ---------
 
 MapBox

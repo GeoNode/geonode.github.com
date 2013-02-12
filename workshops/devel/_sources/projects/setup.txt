@@ -1,85 +1,97 @@
-.. _setup:
+.. _projects.setup:
 
-Setting up your GeoNode Project
+Setting up your GeoNode project
 ===============================
 
-This section will walk you through the steps necessary to setup your own GeoNode project. It assumes that you have installed GeoNode from the ubuntu packages and that you have a working GeoNode site.
+This section will walk you through the steps necessary to set up your own GeoNode project. It assumes that you have installed GeoNode from the Ubuntu packages and that you have a working GeoNode site.
 
-Setup Steps
+Setup steps
 -----------
 
-If you are working remotely, You should first connect to the machine that has your GeoNode installed on it. You will need to perform the following steps in a directory where you intend to keep your newly created project.
+If you are working remotely, you should first connect to the machine that has your GeoNode installation. You will need to perform the following steps in a directory where you intend to keep your newly created project.
 
-#. Activate GeoNode's Virtual Environment::
+#. Activate GeoNode's Virtual Environment:
 
-    $ source /var/lib/geonode/bin/activate
+   .. code-block:: console
 
-#. Create your GeoNode project from the Template::
+      $ source /var/lib/geonode/bin/activate
 
-    $ django-admin.py startproject --template=https://github.com/GeoNode/geonode-project/zipball/master my_geonode
-    $ cd my_geonode
+#. Create your GeoNode project from the template:
 
-#. Update your local_settings.py:
+   .. code-block:: console
 
-   You will need to check the local_settings.py that is included with the template project and be sure that it reflects your own local environment. You should pay particular attention to the Database settings especially if you intend to reuse the database that was setup with your base GeoNode installation.
+      $ django-admin.py startproject --template=https://github.com/GeoNode/geonode-project/zipball/master my_geonode
+      $ cd my_geonode
 
-#. Synchronize your Database::
+#. Update your :file:`local_settings.py`. You will need to check the :file:`local_settings.py` that is included with the template project and be sure that it reflects your own local environment. You should pay particular attention to the Database settings especially if you intend to reuse the database that was set up with your base GeoNode installation.
 
-    $ python manage.py syncdb --all
+#. Synchronize your database:
 
-#. Run the test server::
+   .. code-block:: console
 
-    $ python manage.py runserver
+      $ python manage.py syncdb --all
 
-#. Visit your new GeoNode Site.
-  
-    http://localhost:8000
+#. Run the test server:
 
-Source Code Revision Control
+   .. code-block:: console
+
+      $ python manage.py runserver
+
+#. Visit your new GeoNode site at http://localhost:8000.
+
+Source code revision control
 ----------------------------
 
-It is recommended that you immediately put your new project under source code revision control. The GeoNode development team uses Git and GitHub purpose and recommends that you do the same. If you do not already have a GitHub account, it is recommended that you set one up. A full review of Git and distributed Source Code Revision Control systems is beyond the scope of this tutorial, but you may find the `Git Book`_ useful if you are not already familiar with these concepts.
+It is recommended that you immediately put your new project under source code revision control. The GeoNode development team uses Git and GitHub and recommends that you do the same. If you do not already have a GitHub account, you can easily set one up. A full review of Git and distributed source code revision control systems is beyond the scope of this tutorial, but you may find the `Git Book`_ useful if you are not already familiar with these concepts.
 
 .. _Git Book: http://git-scm.com/book
 
-#. Create a new Repository in GitHub:
-
-   You should use the GitHub user interface to create a new repository for your new project.
+#. Create a new repository in GitHub. You should use the GitHub user interface to create a new repository for your new project.
 
    .. figure:: img/github_home.jpg
 
-   *Creating a new GitHub Repository From GitHub's Homepage*
+      *Creating a new GitHub Repository From GitHub's Homepage*
 
    .. figure:: img/create_repo.jpg
 
-   *Specifying new GitHub Repository Parameters*
+      *Specifying new GitHub Repository Parameters*
 
    .. figure:: img/new_repo.jpg
 
-   *Your new Empty GitHub Repository*
+      *Your new Empty GitHub Repository*
 
-#. Initialize your own repository::
+#. Initialize your own repository:
 
-    $ git init
+   .. code-block:: console
 
-#. Add the remote repository reference to your local git configuration::
+      $ git init
 
-    $ git remote add 
+#. Add the remote repository reference to your local git configuration:
 
-#. Add your project files to the repository::
+   .. code-block:: console
 
-    $ git add .
+      $ git remote add 
 
-#. Commit your changes::
+#. Add your project files to the repository:
 
-   $ git commit -am "Initial commit"
+   .. code-block:: console
 
-#. Push to the remote repository::
+      $ git add .
 
-   $ git push origin master
+#. Commit your changes:
 
-Your GeoNode Project's Struture
--------------------------------
+   .. code-block:: console
+
+      $ git commit -am "Initial commit"
+
+#. Push to the remote repository:
+
+   .. code-block:: console
+
+      $ git push origin master
+
+Project structure
+-----------------
 
 Your GeoNode project will now be structured as depicted below::
 
@@ -103,12 +115,15 @@ Your GeoNode project will now be structured as depicted below::
     |   |-- wsgi.py
     |-- setup.py
 
-You can also view your project on github.
+You can also view your project on GitHub.
 
    .. figure:: img/github_project.png
 
+      *Viewing your project on GitHub*
 
 Each of the key files in your project are described below.
+
+.. todo:: Intentionally blank or just not written yet?
 
 manage.py
 ~~~~~~~~~
@@ -134,26 +149,32 @@ templates
 Deploying your GeoNode Project
 ------------------------------
 
-Now that your own project is setup, you will need to replace the existing default configuration with configuration for your own project in order to visit your new project site.
+Now that your own project is set up, you will need to replace the existing default configuration with configuration for your own project in order to visit your new project site.
 
-#. Update Apache Configuration
+.. todo:: Needs details.
 
-#. Check GeoServer Configuration
+#. Update Apache configuration
 
-#. Check Database Configuration
+#. Check GeoServer configuration
 
-Staying in Sync with Mainline GeoNode
+#. Check database configuration
+
+Staying in sync with mainline GeoNode
 -------------------------------------
 
-One of the primary reasons that we setup your own GeoNode project using this method is so that you can stay in sync with mainline geonode as the core GeoNode development team makes new releases. Your own project should not be adversely affected by these upstream changes, but you will receive bug fixes and other improvements by staying in sync.
+One of the primary reasons to set up your own GeoNode project using this method is so that you can stay in sync with the mainline GeoNode as the core development team makes new releases. Your own project should not be adversely affected by these changes, but you will receive bug fixes and other improvements by staying in sync.
 
-#. Upgrade GeoNode::
+#. Upgrade GeoNode:
 
-    $ apt-get update
-    $ apt-get install geonode
+   .. code-block:: console
 
-#. Verify that your new project works with the upgraded GeoNode::
+      $ apt-get update
+      $ apt-get install geonode
 
-    $ python manage.py runserver
+#. Verify that your new project works with the upgraded GeoNode:
 
-   Visit http://localhost:8000/
+   .. code-block:: console
+
+      $ python manage.py runserver
+
+#. Navigate to http://localhost:8000.

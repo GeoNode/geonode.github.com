@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Setting up your GeoNode Project &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    <title>Setting up your GeoNode project &mdash; GeoNode Developers Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Customized GeoNode Projects" href="index.html" />
-    <link rel="next" title="Theming your GeoNode Project" href="theme.html" />
+    <link rel="next" title="Theming your GeoNode project" href="theme.html" />
     <link rel="prev" title="Introduction to GeoNode Projects" href="projectsintro.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -79,10 +79,10 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Setting up your GeoNode Project</a><ul>
-<li><a class="reference internal" href="#setup-steps">Setup Steps</a></li>
-<li><a class="reference internal" href="#source-code-revision-control">Source Code Revision Control</a></li>
-<li><a class="reference internal" href="#your-geonode-project-s-struture">Your GeoNode Project&#8217;s Struture</a><ul>
+<li><a class="reference internal" href="#">Setting up your GeoNode project</a><ul>
+<li><a class="reference internal" href="#setup-steps">Setup steps</a></li>
+<li><a class="reference internal" href="#source-code-revision-control">Source code revision control</a></li>
+<li><a class="reference internal" href="#project-structure">Project structure</a><ul>
 <li><a class="reference internal" href="#manage-py">manage.py</a></li>
 <li><a class="reference internal" href="#settings-py">settings.py</a></li>
 <li><a class="reference internal" href="#urls-py">urls.py</a></li>
@@ -93,7 +93,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#deploying-your-geonode-project">Deploying your GeoNode Project</a></li>
-<li><a class="reference internal" href="#staying-in-sync-with-mainline-geonode">Staying in Sync with Mainline GeoNode</a></li>
+<li><a class="reference internal" href="#staying-in-sync-with-mainline-geonode">Staying in sync with mainline GeoNode</a></li>
 </ul>
 </li>
 </ul>
@@ -105,7 +105,7 @@
   <li><a href="projectsintro.html"
          title="previous chapter">&laquo; Introduction to GeoNode Projects</a></li>
   <li><a href="theme.html"
-         title="next chapter">Theming your GeoNode Project &raquo;</a></li>
+         title="next chapter">Theming your GeoNode project &raquo;</a></li>
           
           
             <li>
@@ -128,82 +128,86 @@
 
   
   <div class="section" id="setting-up-your-geonode-project">
-<span id="setup"></span><h1>Setting up your GeoNode Project<a class="headerlink" href="#setting-up-your-geonode-project" title="Permalink to this headline">¶</a></h1>
-<p>This section will walk you through the steps necessary to setup your own GeoNode project. It assumes that you have installed GeoNode from the ubuntu packages and that you have a working GeoNode site.</p>
+<span id="projects-setup"></span><h1>Setting up your GeoNode project<a class="headerlink" href="#setting-up-your-geonode-project" title="Permalink to this headline">¶</a></h1>
+<p>This section will walk you through the steps necessary to set up your own GeoNode project. It assumes that you have installed GeoNode from the Ubuntu packages and that you have a working GeoNode site.</p>
 <div class="section" id="setup-steps">
-<h2>Setup Steps<a class="headerlink" href="#setup-steps" title="Permalink to this headline">¶</a></h2>
-<p>If you are working remotely, You should first connect to the machine that has your GeoNode installed on it. You will need to perform the following steps in a directory where you intend to keep your newly created project.</p>
+<h2>Setup steps<a class="headerlink" href="#setup-steps" title="Permalink to this headline">¶</a></h2>
+<p>If you are working remotely, you should first connect to the machine that has your GeoNode installation. You will need to perform the following steps in a directory where you intend to keep your newly created project.</p>
 <ol class="arabic">
 <li><p class="first">Activate GeoNode&#8217;s Virtual Environment:</p>
-<div class="highlight-python"><pre>$ source /var/lib/geonode/bin/activate</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">source</span> /var/lib/geonode/bin/activate
+</pre></div>
 </div>
 </li>
-<li><p class="first">Create your GeoNode project from the Template:</p>
-<div class="highlight-python"><pre>$ django-admin.py startproject --template=https://github.com/GeoNode/geonode-project/zipball/master my_geonode
-$ cd my_geonode</pre>
+<li><p class="first">Create your GeoNode project from the template:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> django-admin.py startproject --template<span class="o">=</span>https://github.com/GeoNode/geonode-project/zipball/master my_geonode
+<span class="gp">$</span> <span class="nb">cd </span>my_geonode
+</pre></div>
 </div>
 </li>
-<li><p class="first">Update your local_settings.py:</p>
-<p>You will need to check the local_settings.py that is included with the template project and be sure that it reflects your own local environment. You should pay particular attention to the Database settings especially if you intend to reuse the database that was setup with your base GeoNode installation.</p>
+<li><p class="first">Update your <tt class="file docutils literal"><span class="pre">local_settings.py</span></tt>. You will need to check the <tt class="file docutils literal"><span class="pre">local_settings.py</span></tt> that is included with the template project and be sure that it reflects your own local environment. You should pay particular attention to the Database settings especially if you intend to reuse the database that was set up with your base GeoNode installation.</p>
 </li>
-<li><p class="first">Synchronize your Database:</p>
-<div class="highlight-python"><pre>$ python manage.py syncdb --all</pre>
+<li><p class="first">Synchronize your database:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py syncdb --all
+</pre></div>
 </div>
 </li>
 <li><p class="first">Run the test server:</p>
-<div class="highlight-python"><pre>$ python manage.py runserver</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py runserver
+</pre></div>
 </div>
 </li>
-<li><p class="first">Visit your new GeoNode Site.</p>
-<blockquote>
-<div><p><a class="reference external" href="http://localhost:8000">http://localhost:8000</a></p>
-</div></blockquote>
+<li><p class="first">Visit your new GeoNode site at <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>.</p>
 </li>
 </ol>
 </div>
 <div class="section" id="source-code-revision-control">
-<h2>Source Code Revision Control<a class="headerlink" href="#source-code-revision-control" title="Permalink to this headline">¶</a></h2>
-<p>It is recommended that you immediately put your new project under source code revision control. The GeoNode development team uses Git and GitHub purpose and recommends that you do the same. If you do not already have a GitHub account, it is recommended that you set one up. A full review of Git and distributed Source Code Revision Control systems is beyond the scope of this tutorial, but you may find the <a class="reference external" href="http://git-scm.com/book">Git Book</a> useful if you are not already familiar with these concepts.</p>
+<h2>Source code revision control<a class="headerlink" href="#source-code-revision-control" title="Permalink to this headline">¶</a></h2>
+<p>It is recommended that you immediately put your new project under source code revision control. The GeoNode development team uses Git and GitHub and recommends that you do the same. If you do not already have a GitHub account, you can easily set one up. A full review of Git and distributed source code revision control systems is beyond the scope of this tutorial, but you may find the <a class="reference external" href="http://git-scm.com/book">Git Book</a> useful if you are not already familiar with these concepts.</p>
 <ol class="arabic">
-<li><p class="first">Create a new Repository in GitHub:</p>
-<p>You should use the GitHub user interface to create a new repository for your new project.</p>
+<li><p class="first">Create a new repository in GitHub. You should use the GitHub user interface to create a new repository for your new project.</p>
 <div class="figure">
 <img alt="../_images/github_home.jpg" src="../_images/github_home.jpg" />
+<p class="caption"><em>Creating a new GitHub Repository From GitHub&#8217;s Homepage</em></p>
 </div>
-<p><em>Creating a new GitHub Repository From GitHub&#8217;s Homepage</em></p>
 <div class="figure">
 <img alt="../_images/create_repo.jpg" src="../_images/create_repo.jpg" />
+<p class="caption"><em>Specifying new GitHub Repository Parameters</em></p>
 </div>
-<p><em>Specifying new GitHub Repository Parameters</em></p>
 <div class="figure">
 <img alt="../_images/new_repo.jpg" src="../_images/new_repo.jpg" />
+<p class="caption"><em>Your new Empty GitHub Repository</em></p>
 </div>
-<p><em>Your new Empty GitHub Repository</em></p>
 </li>
 <li><p class="first">Initialize your own repository:</p>
-<div class="highlight-python"><pre>$ git init</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git init
+</pre></div>
 </div>
 </li>
 <li><p class="first">Add the remote repository reference to your local git configuration:</p>
-<div class="highlight-python"><pre>$ git remote add</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git remote add
+</pre></div>
 </div>
 </li>
 <li><p class="first">Add your project files to the repository:</p>
-<div class="highlight-python"><pre>$ git add .</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git add .
+</pre></div>
 </div>
 </li>
 <li><p class="first">Commit your changes:</p>
-<div class="highlight-python"><pre>$ git commit -am "Initial commit"</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git commit -am <span class="s2">&quot;Initial commit&quot;</span>
+</pre></div>
 </div>
 </li>
 <li><p class="first">Push to the remote repository:</p>
-<div class="highlight-python"><pre>$ git push origin master</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> git push origin master
+</pre></div>
 </div>
 </li>
 </ol>
 </div>
-<div class="section" id="your-geonode-project-s-struture">
-<h2>Your GeoNode Project&#8217;s Struture<a class="headerlink" href="#your-geonode-project-s-struture" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="project-structure">
+<h2>Project structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
 <p>Your GeoNode project will now be structured as depicted below:</p>
 <div class="highlight-python"><pre>|-- README.rst
 |-- manage.py
@@ -225,10 +229,11 @@ $ cd my_geonode</pre>
 |   |-- wsgi.py
 |-- setup.py</pre>
 </div>
-<p>You can also view your project on github.</p>
+<p>You can also view your project on GitHub.</p>
 <blockquote>
 <div><div class="figure">
 <img alt="../_images/github_project.png" src="../_images/github_project.png" />
+<p class="caption"><em>Viewing your project on GitHub</em></p>
 </div>
 </div></blockquote>
 <p>Each of the key files in your project are described below.</p>
@@ -256,26 +261,29 @@ $ cd my_geonode</pre>
 </div>
 <div class="section" id="deploying-your-geonode-project">
 <h2>Deploying your GeoNode Project<a class="headerlink" href="#deploying-your-geonode-project" title="Permalink to this headline">¶</a></h2>
-<p>Now that your own project is setup, you will need to replace the existing default configuration with configuration for your own project in order to visit your new project site.</p>
+<p>Now that your own project is set up, you will need to replace the existing default configuration with configuration for your own project in order to visit your new project site.</p>
 <ol class="arabic simple">
-<li>Update Apache Configuration</li>
-<li>Check GeoServer Configuration</li>
-<li>Check Database Configuration</li>
+<li>Update Apache configuration</li>
+<li>Check GeoServer configuration</li>
+<li>Check database configuration</li>
 </ol>
 </div>
 <div class="section" id="staying-in-sync-with-mainline-geonode">
-<h2>Staying in Sync with Mainline GeoNode<a class="headerlink" href="#staying-in-sync-with-mainline-geonode" title="Permalink to this headline">¶</a></h2>
-<p>One of the primary reasons that we setup your own GeoNode project using this method is so that you can stay in sync with mainline geonode as the core GeoNode development team makes new releases. Your own project should not be adversely affected by these upstream changes, but you will receive bug fixes and other improvements by staying in sync.</p>
+<h2>Staying in sync with mainline GeoNode<a class="headerlink" href="#staying-in-sync-with-mainline-geonode" title="Permalink to this headline">¶</a></h2>
+<p>One of the primary reasons to set up your own GeoNode project using this method is so that you can stay in sync with the mainline GeoNode as the core development team makes new releases. Your own project should not be adversely affected by these changes, but you will receive bug fixes and other improvements by staying in sync.</p>
 <ol class="arabic">
 <li><p class="first">Upgrade GeoNode:</p>
-<div class="highlight-python"><pre>$ apt-get update
-$ apt-get install geonode</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> apt-get update
+<span class="gp">$</span> apt-get install geonode
+</pre></div>
 </div>
 </li>
 <li><p class="first">Verify that your new project works with the upgraded GeoNode:</p>
-<div class="highlight-python"><pre>$ python manage.py runserver</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py runserver
+</pre></div>
 </div>
-<p>Visit <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a></p>
+</li>
+<li><p class="first">Navigate to <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>.</p>
 </li>
 </ol>
 </div>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Theming your GeoNode Project &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    <title>Theming your GeoNode project &mdash; GeoNode Developers Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -30,8 +30,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Customized GeoNode Projects" href="index.html" />
-    <link rel="next" title="Adding Additional Django apps to your GeoNode Project" href="apps.html" />
-    <link rel="prev" title="Setting up your GeoNode Project" href="setup.html" />
+    <link rel="next" title="Adding additional Django apps to your GeoNode Project" href="apps.html" />
+    <link rel="prev" title="Setting up your GeoNode project" href="setup.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -79,11 +79,11 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Theming your GeoNode Project</a><ul>
-<li><a class="reference internal" href="#logos-and-graphics">Logos and Graphics</a></li>
+<li><a class="reference internal" href="#">Theming your GeoNode project</a><ul>
+<li><a class="reference internal" href="#logos-and-graphics">Logos and graphics</a></li>
 <li><a class="reference internal" href="#cascading-style-sheets">Cascading Style Sheets</a></li>
-<li><a class="reference internal" href="#templates-and-static-pages">Templates and Static Pages</a></li>
-<li><a class="reference internal" href="#other-theming-options">Other Theming Options</a><ul>
+<li><a class="reference internal" href="#templates-and-static-pages">Templates and static pages</a></li>
+<li><a class="reference internal" href="#other-theming-options">Other theming options</a><ul>
 <li><a class="reference internal" href="#bootswatch">Bootswatch</a></li>
 </ul>
 </li>
@@ -96,9 +96,9 @@
           
             
   <li><a href="setup.html"
-         title="previous chapter">&laquo; Setting up your GeoNode Project</a></li>
+         title="previous chapter">&laquo; Setting up your GeoNode project</a></li>
   <li><a href="apps.html"
-         title="next chapter">Adding Additional Django apps to your GeoNode Project &raquo;</a></li>
+         title="next chapter">Adding additional Django apps to your GeoNode Project &raquo;</a></li>
           
           
             <li>
@@ -121,142 +121,153 @@
 
   
   <div class="section" id="theming-your-geonode-project">
-<span id="theme"></span><h1>Theming your GeoNode Project<a class="headerlink" href="#theming-your-geonode-project" title="Permalink to this headline">¶</a></h1>
-<p>There are a range of options available to you if you want to change the default look and feel or theme of your GeoNode project. Since GeoNode&#8217;s style is based on bootstrap you will be able to make use of all that bootstrap has to offer as you customize the theme of your GeoNode. You should consult bootstrap&#8217;s documentation as your primary guide once you are familiar with how Geonode implements bootstrap and how you can override GeoNode&#8217;s theme and templates in your own project.</p>
+<span id="theme"></span><h1>Theming your GeoNode project<a class="headerlink" href="#theming-your-geonode-project" title="Permalink to this headline">¶</a></h1>
+<p>There are a range of options available to you if you want to change the default look and feel of your GeoNode project. Since GeoNode&#8217;s style is based on <a class="reference external" href="http://twitter.github.com/bootstrap/">Bootstrap</a> you will be able to make use of all that Bootstrap has to offer in terms of theme customization. You should consult Bootstrap&#8217;s documentation as your primary guide once you are familiar with how GeoNode implements Bootstrap and how you can override GeoNode&#8217;s theme and templates in your own project.</p>
 <div class="section" id="logos-and-graphics">
-<h2>Logos and Graphics<a class="headerlink" href="#logos-and-graphics" title="Permalink to this headline">¶</a></h2>
-<p>GeoNode intentionally does not include a large number of graphics files to drive its interface. this keeps browser loading times to a minimum and makes for a more responsive interface. That said, you are free to customize your GeoNode&#8217;s interface by simply changing the default logo, or by adding your own images and graphics to deliver a GeoNode experience the way you envision int.</p>
-<p>Your GeoNode project has a directory already setup for you to store your own images at my_geonode/static/img You should place any image files that you intend to use for your project in this directory.</p>
-<p>Lets walk through an example of the steps necessary to change the default logo.</p>
+<h2>Logos and graphics<a class="headerlink" href="#logos-and-graphics" title="Permalink to this headline">¶</a></h2>
+<p>GeoNode intentionally does not include a large number of graphics files in its interface. This keeps page loading time to a minimum and makes for a more responsive interface. That said, you are free to customize your GeoNode&#8217;s interface by simply changing the default logo, or by adding your own images and graphics to deliver a GeoNode experience the way you envision int.</p>
+<p>Your GeoNode project has a directory already set up for storing your own images at <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/static/img</span></tt>. You should place any image files that you intend to use for your project in this directory.</p>
+<p>Let&#8217;s walk through an example of the steps necessary to change the default logo.</p>
 <ol class="arabic">
-<li><p class="first">Change directories into the img directory:</p>
-<div class="highlight-python"><pre>$ cd my_geonode/static/img</pre>
+<li><p class="first">Change into the <tt class="file docutils literal"><span class="pre">img</span></tt> directory:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> <span class="nb">cd</span> &lt;my_geonode&gt;/static/img
+</pre></div>
 </div>
 </li>
-<li><p class="first">Grab your logo image from the web using wget. This is just an example, you will need to Change this URL to match the location of your file or copy it to this location from somewhere else on disk or your network:</p>
-<div class="highlight-python"><pre>$ wget http://www2.sta.uwi.edu/~anikov/UWI-logo.JPG
-$ cd ../../..</pre>
+<li><p class="first">If you haven&#8217;t already, obtain your logo image. The URL below is just an example, so you will need to change this URL to match the location of your file or copy it to this location:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> wget http://www2.sta.uwi.edu/~anikov/UWI-logo.JPG
+<span class="gp">$</span> <span class="nb">cd</span> ../../..
+</pre></div>
 </div>
 </li>
-<li><p class="first">Override the css that displays the logo by editing my_geonode/static/css/site_base.css with your favorite editor and adding the following lines:</p>
-<div class="highlight-python"><pre>.nav-logo {
-    width: 373px;
-    height: 79px;
-    background: url(../img/UWI-logo.JPG) no-repeat;
-}</pre>
+<li><p class="first">Override the CSS that displays the logo by editing <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/static/css/site_base.css</span></tt> with your favorite editor and adding the following lines, making sure to update the width, height, and URL to match the specifications of your image.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.nav-logo</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">373px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">79px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../img/UWI-logo.JPG)</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 </li>
 <li><p class="first">Restart your GeoNode project and look at the page in your browser:</p>
-<div class="highlight-python"><pre>$ python manage.py runserver</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py runserver
+</pre></div>
 </div>
 </li>
 </ol>
 <p>Visit your site at <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> or the remote URL for your site.</p>
-<blockquote>
-<div><div class="figure">
+<div class="figure">
 <img alt="../_images/logo_override.png" src="../_images/logo_override.png" />
+<p class="caption"><em>Custom logo</em></p>
 </div>
-</div></blockquote>
-<p>You can see that the header has been expanded to fit you graphic. In the following sections you will learn how to customize this header to make it look and work the way you want.</p>
+<p>You can see that the header has been expanded to fit your graphic. In the following sections you will learn how to customize this header to make it look and function the way you want.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You should commit these changes to your git repository as you progress through this section, and get in the habit of committing early and often so that you and others can track your project on github. Making many atomic commits and staying in sync with a remote repository (i.e. on GitHub) makes it easier to collaborate with others on your project.</p>
+<p class="last">You should commit these changes to your repository as you progress through this section, and get in the habit of committing early and often so that you and others can track your project on GitHub. Making many atomic commits and staying in sync with a remote repository makes it easier to collaborate with others on your project.</p>
 </div>
 </div>
 <div class="section" id="cascading-style-sheets">
 <h2>Cascading Style Sheets<a class="headerlink" href="#cascading-style-sheets" title="Permalink to this headline">¶</a></h2>
-<p>In the last section you already learned how to override GeoNode&#8217;s default css rules to include your own logo. You are able to customize any aspect of GeoNode&#8217;s appearance this way. In the last screenshot, you saw that the main Hero are in the homepage is now covered up by the expanded header.</p>
-<p>First, Lets walk through the steps necessary to displace it downward so it is no longer hidden, then lets change the background color of the header to match the color in our logo graphic.</p>
+<p>In the last section you already learned how to override GeoNode&#8217;s default CSS rules to include your own logo. You are able to customize any aspect of GeoNode&#8217;s appearance this way. In the last screenshot, you saw that the main area in the homepage is covered up by the expanded header.</p>
+<p>First, we&#8217;ll walk through the steps necessary to displace it downward so it is no longer hidden, then change the background color of the header to match the color in our logo graphic.</p>
 <ol class="arabic">
-<li><p class="first">Reopen my_geonode/static/css/site_base.css in your editor and add the following rule after the one we added in the previous step:</p>
-<div class="highlight-python"><pre>.content-wrap {
-    margin: 75px 75px;
-}</pre>
+<li><p class="first">Reopen <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/static/css/site_base.css</span></tt> in your editor and add the following rule after the one added in the previous step:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.content-wrap</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">75px</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 </li>
 <li><p class="first">Add a rule to change the background color of the header to match the logo graphic we used:</p>
-<div class="highlight-python"><pre>.navbar .navbar-inner {
-    background: #0e60c3;
-}</pre>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.navbar</span> <span class="nc">.navbar-inner</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#0e60c3</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 </li>
-<li><p class="first">Your projects css file should now look like this:</p>
-<div class="highlight-python"><pre>.nav-logo {
-    width: 373px;
-    height: 79px;
-    background: url(../img/UWI-logo.JPG) no-repeat;
-}
+<li><p class="first">Your project CSS file should now look like this:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.nav-logo</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">373px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">79px</span><span class="p">;</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(../img/UWI-logo.JPG)</span> <span class="k">no-repeat</span><span class="p">;</span>
+<span class="p">}</span>
 
-.content-wrap {
-    margin: 75px 75px;
-}
+<span class="nc">.content-wrap</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">75px</span> <span class="m">75px</span><span class="p">;</span>
+<span class="p">}</span>
 
-.navbar .navbar-inner {
-    background: #0e60c3;
-}</pre>
+<span class="nc">.navbar</span> <span class="nc">.navbar-inner</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#0e60c3</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
 </li>
 <li><p class="first">Restart the development server and reload the page:</p>
-<div class="highlight-python"><pre>$ python manage.py runserver</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py runserver
+</pre></div>
 </div>
 <div class="figure">
 <img alt="../_images/css_overrides.png" src="../_images/css_overrides.png" />
+<p class="caption"><em>CSS overrides</em></p>
 </div>
-<p>Your GeoNode projects homepage should now look like this</p>
 </li>
 </ol>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You can continue adding rules to this file to override the styles that are in geonodes base css file which is built from base.less. <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less">https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less</a> You may find it helpful to use your browsers development tools to inspect elements of your site that you want to override to determine which rules are already applied. You can see an example of that in the screenshot below. Another section of this workshop covers this topic in much more detail.</p>
-</div>
-<div class="figure">
+<p>You can continue adding rules to this file to override the styles that are in the GeoNode base CSS file which is built from <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/static/geonode/less/base.less">base.less</a>. You may find it helpful to use your browser&#8217;s development tools to inspect elements of your site that you want to override to determine which rules are already applied. See the screenshot below. Another section of this workshop covers this topic in much more detail.</p>
+<div class="last figure">
 <img alt="../_images/inspect_element.png" src="../_images/inspect_element.png" />
+<p class="caption"><em>Screenshot of using Chrome&#8217;s debugger to inspect the CSS overrides</em></p>
 </div>
-<p>Screenshot of using Chrome&#8217;s debugger to inspect the css overrides added in the previous steps.</p>
+</div>
 </div>
 <div class="section" id="templates-and-static-pages">
-<h2>Templates and Static Pages<a class="headerlink" href="#templates-and-static-pages" title="Permalink to this headline">¶</a></h2>
-<p>Now that we have changed the default logo and adjusted our main content area to fit the expanded header, its time to update the content of the homepage itself. Your GeoNode project includes 2 basic templates that you will use to change the content of your pages.</p>
-<p>site_base.html is the basic template that all other templates inherit from and you will use it to update things like the header and navbar, site wide announcement, the footer and also to include your own javascript or other static things that are included in every page in your site. Its worth taking a look at GeoNode&#8217;s base file for this on the GitHub site here. <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html">https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html</a> You have several blocks available to you to for overriding, but since we will be revisiting this file in future sections of this workshop lets just look at it for now and leave it unmodified.</p>
-<p>Open my_geonode/templates/site_base.html in your editor:</p>
-<div class="highlight-python"><pre>{% extends "base.html" %}
+<h2>Templates and static pages<a class="headerlink" href="#templates-and-static-pages" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have changed the default logo and adjusted our main content area to fit the expanded header, the next step is to update the content of the homepage itself. Your GeoNode project includes two basic templates that you will use to change the content of your pages.</p>
+<p>The file <tt class="file docutils literal"><span class="pre">site_base.html</span></tt> (in <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/templates/</span></tt>) is the basic template that all other templates inherit from and you will use it to update things like the header, navbar, site-wide announcement, footer, and also to include your own JavaScript or other static content included in every page in your site. It&#8217;s worth taking a look at <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html">GeoNode&#8217;s base file on GitHub</a>. You have several blocks available to you to for overriding, but since we will be revisiting this file in future sections of this workshop, let&#8217;s just look at it for now and leave it unmodified.</p>
+<p>Open <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/templates/site_base.html</span></tt> in your editor:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% extends &quot;base.html&quot; %}
 {% block extra_head %}
-    &lt;link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/&gt;
-{% endblock %}</pre>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;{{ STATIC_URL }}css/site_base.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">/&gt;</span>
+{% endblock %}
+</pre></div>
 </div>
-<p>You will see that it extends from base.html which is the GeoNode template referenced above and it currently only overrides the extra_head block to include our projects site_base.css which we modified in the previous section. You can see on line 14 of GeoNodes base.html (<a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html#L14">https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html#L14</a>) template that this block is included in an empty state and is setup specifically for you to include extra css files as your project is already setup to do.</p>
-<p>Now that we have looked at site_base.html, lets actually override a different template.</p>
-<p>site_index.html is the template used to define for your GeoNode projects homepage. It extends GeoNode&#8217;s default index.html template and gives you the option to override specific areas of the homepage like the hero area, but also allows you leave things like the Latest Layers and Maps and the Contribute section as they are if you want to keep them. You are of course free to override these sections if you choose and this section shows you the steps necessaryto do that below.</p>
+<p>You will see that it extends from <tt class="file docutils literal"><span class="pre">base.html</span></tt>, which is the GeoNode template referenced above and it currently only overrides the <tt class="docutils literal"><span class="pre">extra_head</span></tt> block to include our project&#8217;s <tt class="file docutils literal"><span class="pre">site_base.css</span></tt> which we modified in the previous section. You can see on <a class="reference external" href="https://github.com/GeoNode/geonode/blob/master/geonode/templates/base.html#L14">line 14 of the GeoNode base.html template</a> that this block is included in an empty state and is set up specifically for you to include extra CSS files as your project is already set up to do.</p>
+<p>Now that we have looked at <tt class="file docutils literal"><span class="pre">site_base.html</span></tt>, let&#8217;s actually override a different template.</p>
+<p>The file <tt class="file docutils literal"><span class="pre">site_index.html</span></tt> is the template used to define your GeoNode project&#8217;s homepage. It extends GeoNode&#8217;s default <tt class="file docutils literal"><span class="pre">index.html</span></tt> template and gives you the option to override specific areas of the homepage like the hero area, but also allows you leave area like the &#8220;Latest Layers&#8221; and &#8220;Maps&#8221; and the &#8220;Contribute&#8221; section as they are. You are of course free to override these sections if you choose and this section shows you the steps necessary to do that below.</p>
 <ol class="arabic">
-<li><p class="first">Open my_geonode/templates/site_index.html in your editor</p>
+<li><p class="first">Open <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/templates/site_index.html</span></tt> in your editor.</p>
 </li>
-<li><p class="first">Edit the h1 element on line 13 to say something other than &#8220;Welcome&#8221;:</p>
-<div class="highlight-python"><pre>&lt;h1&gt;{% trans "UWI GeoNode" %}&lt;/h1&gt;</pre>
+<li><p class="first">Edit the <tt class="docutils literal"><span class="pre">&lt;h1&gt;</span></tt> element on line 13 to say something other than &#8220;Welcome&#8221;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>{% trans &quot;UWI GeoNode&quot; %}<span class="nt">&lt;/h1&gt;</span>
+</pre></div>
 </div>
 </li>
-<li><p class="first">Edit the intro paragraph to include something specific about your GeoNode project:</p>
-<div class="highlight-python"><pre>&lt;p&gt;
+<li><p class="first">Edit the introductory paragraph to include something specific about your GeoNode project:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;p&gt;</span>
     {% blocktrans %}
-    UWI's GeoNode is setup for students and faculty to collaboratively
+    UWI&#39;s GeoNode is setup for students and faculty to collaboratively
     create and share maps for their class projects. It is maintained by the
     UWI Geographical Society.
     {% endblocktrans %}
-&lt;/p&gt;</pre>
+<span class="nt">&lt;/p&gt;</span>
+</pre></div>
 </div>
 </li>
-<li><p class="first">Change the Getting Started link to point to another website::</p>
-<div class="highlight-python"><pre>&lt;span&gt;
+<li><p class="first">Change the <em class="guilabel">Getting Started</em> link to point to another website:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;span&gt;</span>
     For more information about the UWI Geographical society,
-    &lt;a href="http://uwigsmona.weebly.com/"&gt;visit our website&lt;/a&gt;
-&lt;/span&gt;</pre>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://uwigsmona.weebly.com/&quot;</span><span class="nt">&gt;</span>visit our website<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/span&gt;</span>
+</pre></div>
 </div>
 </li>
-<li><p class="first">Add a Graphic to the hero area above the paragraph we replaced in step 3:</p>
-<div class="highlight-python"><pre>&lt;img src = 'http://uwigsmona.weebly.com/uploads/1/3/2/4/13241997/1345164334.png'&gt;</pre>
+<li><p class="first">Add a graphic to the hero area above the paragraph replaced in step 3:</p>
+<div class="highlight-html"><pre>&lt;img src = 'http://uwigsmona.weebly.com/uploads/1/3/2/4/13241997/1345164334.png'&gt;</pre>
 </div>
 </li>
-<li><p class="first">Your edited site_index.html file should now look like this:</p>
-<div class="highlight-python"><pre>{% extends 'index.html' %}
+<li><p class="first">Your edited <tt class="file docutils literal"><span class="pre">site_index.html</span></tt> file should now look like this:</p>
+<div class="highlight-html"><pre>{% extends 'index.html' %}
 {% load i18n %}
 {% load maps_tags %}
 {% load layers_tags %}
@@ -292,58 +303,50 @@ This is where you can override the hero area block. You can simply modify the co
         {% trans "Explore Maps" %}
         &lt;/a&gt;
     &lt;/div&gt;
-    &lt;/div&gt;
 &lt;/div&gt;
 {% endblock %}</pre>
 </div>
 </li>
-<li><p class="first">Restart your GeoNode project and look at the page in your browser:</p>
-<div class="highlight-python"><pre>$ python manage.py runserver</pre>
+<li><p class="first">Restart your GeoNode project and view the changes in your browser at <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> or the remote URL for your site:</p>
+<div class="highlight-html"><div class="highlight"><pre>$ python manage.py runserver
+</pre></div>
 </div>
-</li>
-</ol>
-<p>Visit your site at <a class="reference external" href="http://localhost:8000/">http://localhost:8000/</a> or the remote URL for your site.</p>
-<blockquote>
-<div><div class="figure">
+<div class="figure">
 <img alt="../_images/homepage.png" src="../_images/homepage.png" />
 </div>
-<p>You can see that the homepage now includes our changes.</p>
-</div></blockquote>
-<p>From here you can continue to customize your site_index.html template to suit your needs. This workshop will also cover how you can add new pages to your GeoNode project site.</p>
+</li>
+</ol>
+<p>From here you can continue to customize your <tt class="file docutils literal"><span class="pre">site_index.html</span></tt> template to suit your needs. This workshop will also cover how you can add new pages to your GeoNode project site.</p>
 </div>
 <div class="section" id="other-theming-options">
-<h2>Other Theming Options<a class="headerlink" href="#other-theming-options" title="Permalink to this headline">¶</a></h2>
-<p>You are able to change any specific piece of your GeoNode project&#8217;s style by adding css rules to your site_base.css, but since GeoNode is based on Bootstrap, there are many pre-defined themes that you can simply drop into your project to get a whole new look. This is very similar to wordpress themes and is a powerful and easy way to change the look of your site without much effort.</p>
+<h2>Other theming options<a class="headerlink" href="#other-theming-options" title="Permalink to this headline">¶</a></h2>
+<p>You are able to change any specific piece of your GeoNode project&#8217;s style by adding CSS rules to <tt class="file docutils literal"><span class="pre">site_base.css</span></tt>, but since GeoNode is based on Bootstrap, there are many pre-defined themes that you can simply drop into your project to get a whole new look. This is very similar to <a class="reference external" href="http://wordpress.com">WordPress</a> themes and is a powerful and easy way to change the look of your site without much effort.</p>
 <div class="section" id="bootswatch">
 <h3>Bootswatch<a class="headerlink" href="#bootswatch" title="Permalink to this headline">¶</a></h3>
-<p>bootswatch.com is a site where you can download ready to use themes for your GeoNode project site. The following steps will show you how to use a theme from bootswatch in your own geonode site.</p>
-<ol class="arabic simple">
-<li>Visit bootswatch.com and select a theme (we will use Amelia for this example). Select the download bootstrap.css option in the menu:</li>
-</ol>
-<blockquote>
-<div><div class="figure">
+<p><a class="reference external" href="http://bootswatch.com">Bootswatch</a> is a site where you can download ready-to-use themes for your GeoNode project site. The following steps will show you how to use a theme from Bootswatch in your own GeoNode site.</p>
+<ol class="arabic">
+<li><p class="first">Visit <a class="reference external" href="http://bootswatch.com">http://bootswatch.com</a> and select a theme (we will use Amelia for this example). Select the <em class="guilabel">download bootstrap.css option</em> in the menu:</p>
+<div class="figure">
 <img alt="../_images/bootswatch.png" src="../_images/bootswatch.png" />
 </div>
-</div></blockquote>
-<ol class="arabic">
-<li><p class="first">Put this file in my_geonode/static/css</p>
 </li>
-<li><p class="first">Update the site_base.html template to include this file. It should now look like this:</p>
-<div class="highlight-python"><pre>{% extends "base.html" %}
+<li><p class="first">Put this file in <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/static/css</span></tt>.</p>
+</li>
+<li><p class="first">Update the <tt class="file docutils literal"><span class="pre">site_base.html</span></tt> template to include this file. It should now look like this:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% extends &quot;base.html&quot; %}
 {% block extra_head %}
-    &lt;link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/&gt;
-    &lt;link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet"/&gt;
-{% endblock %}</pre>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;{{ STATIC_URL }}css/site_base.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;{{ STATIC_URL }}css/bootstrap.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">/&gt;</span>
+{% endblock %}
+</pre></div>
 </div>
 </li>
 <li><p class="first">Restart the development server and visit your site:</p>
-</li>
-</ol>
-<blockquote>
-<div><div class="figure">
+<div class="figure">
 <img alt="../_images/bootswatch_geonode.png" src="../_images/bootswatch_geonode.png" />
 </div>
-</div></blockquote>
+</li>
+</ol>
 <p>Your GeoNode project site is now using the Amelia theme in addition to the changes you have made.</p>
 </div>
 </div>

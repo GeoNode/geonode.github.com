@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Adding Additional Django apps to your GeoNode Project &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    <title>Adding additional Django apps to your GeoNode Project &mdash; GeoNode Developers Workshop 2.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -30,8 +30,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="Customized GeoNode Projects" href="index.html" />
-    <link rel="next" title="Integrating your Project with other Systems" href="integration.html" />
-    <link rel="prev" title="Theming your GeoNode Project" href="theme.html" />
+    <link rel="next" title="Integrating your project with other systems" href="integration.html" />
+    <link rel="prev" title="Theming your GeoNode project" href="theme.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -79,11 +79,11 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Adding Additional Django apps to your GeoNode Project</a><ul>
-<li><a class="reference internal" href="#intro-to-django-pluggable-apps">Intro to Django Pluggable Apps</a></li>
-<li><a class="reference internal" href="#adding-your-own-django-app">Adding your own Django App</a></li>
-<li><a class="reference internal" href="#adding-a-3rd-party-blog-app">Adding a 3rd Party Blog App</a></li>
-<li><a class="reference internal" href="#adding-other-apps">Adding Other Apps</a></li>
+<li><a class="reference internal" href="#">Adding additional Django apps to your GeoNode Project</a><ul>
+<li><a class="reference internal" href="#django-pluggable-apps">Django pluggable apps</a></li>
+<li><a class="reference internal" href="#adding-your-own-django-app">Adding your own Django app</a></li>
+<li><a class="reference internal" href="#adding-a-3rd-party-blog-app">Adding a 3rd party blog app</a></li>
+<li><a class="reference internal" href="#adding-other-apps">Adding other apps</a></li>
 </ul>
 </li>
 </ul>
@@ -93,9 +93,9 @@
           
             
   <li><a href="theme.html"
-         title="previous chapter">&laquo; Theming your GeoNode Project</a></li>
+         title="previous chapter">&laquo; Theming your GeoNode project</a></li>
   <li><a href="integration.html"
-         title="next chapter">Integrating your Project with other Systems &raquo;</a></li>
+         title="next chapter">Integrating your project with other systems &raquo;</a></li>
           
           
             <li>
@@ -118,26 +118,27 @@
 
   
   <div class="section" id="adding-additional-django-apps-to-your-geonode-project">
-<span id="apps"></span><h1>Adding Additional Django apps to your GeoNode Project<a class="headerlink" href="#adding-additional-django-apps-to-your-geonode-project" title="Permalink to this headline">¶</a></h1>
+<span id="projects-apps"></span><h1>Adding additional Django apps to your GeoNode Project<a class="headerlink" href="#adding-additional-django-apps-to-your-geonode-project" title="Permalink to this headline">¶</a></h1>
 <p>Since GeoNode is based on Django, your GeoNode project can be augmented and enhanced by adding additional third-party pluggable Django apps or by writing an app of your own.</p>
 <p>This section of the workshop will introduce you to the Django pluggable app ecosystem, and walk you through the process of writing your own app and adding a blog app to your project.</p>
-<div class="section" id="intro-to-django-pluggable-apps">
-<h2>Intro to Django Pluggable Apps<a class="headerlink" href="#intro-to-django-pluggable-apps" title="Permalink to this headline">¶</a></h2>
-<p>The Django app ecosystem provides a large number of apps that can be added to your project. Many are mature and used in many existing projects and sites, while others are under active early-stage development. Websites such as Django Packages provide an interface for discovering and comparing all the apps that can plugged in to your Django project. You will find that some can be used with very little effort on your part, and some will take more effort to integrate.</p>
-<p><a class="reference external" href="http://www.djangopackages.com/">http://www.djangopackages.com/</a></p>
+<div class="section" id="django-pluggable-apps">
+<h2>Django pluggable apps<a class="headerlink" href="#django-pluggable-apps" title="Permalink to this headline">¶</a></h2>
+<p>The Django app ecosystem provides a large number of apps that can be added to your project. Many are mature and used in many existing projects and sites, while others are under active early-stage development. Websites such as <a class="reference external" href="http://www.djangopackages.com/">Django Packages</a> provide an interface for discovering and comparing all the apps that can plugged in to your Django project. You will find that some can be used with very little effort on your part, and some will take more effort to integrate.</p>
 </div>
 <div class="section" id="adding-your-own-django-app">
-<h2>Adding your own Django App<a class="headerlink" href="#adding-your-own-django-app" title="Permalink to this headline">¶</a></h2>
-<p>Lets walk through the an example of the set of steps necessary to create a very basic django polling app to and add it to your GeoNode project. This section is an abridged version of the Django tutorial itself and it is strongly recommended that you go through this external tutorial along with this section as it provides much more background material and a signficantly higher level of detail. You should become familiar with all of the information in the Django Tutorial as it is critical to your success as a GeoNode project developer.</p>
-<p>Throughout this section, we will walk  through the creation of a basic poll application.</p>
-<p>It’ll consist of two parts:</p>
+<h2>Adding your own Django app<a class="headerlink" href="#adding-your-own-django-app" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s walk through the an example of the steps necessary to create a very basic Django polling app to and add it to your GeoNode project. This section is an abridged version of the Django tutorial itself and it is strongly recommended that you go through this external tutorial along with this section as it provides much more background material and a signficantly higher level of detail. You should become familiar with all of the information in the Django tutorial as it is critical to your success as a GeoNode project developer.</p>
+<p>Throughout this section, we will walk through the creation of a basic poll application. It will consist of two parts:</p>
 <ul class="simple">
 <li>A public site that lets people view polls and vote in them.</li>
-<li>An admin site that lets you add, change and delete polls.</li>
+<li>An admin site that lets you add, change, and delete polls.</li>
 </ul>
 <p>Since we have already created our GeoNode project from a template project, we will start by creating our app structure and then adding models:</p>
-<div class="highlight-python"><pre>$ python manage.py startapp polls</pre>
+<blockquote>
+<div><div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py startapp polls
+</pre></div>
 </div>
+</div></blockquote>
 <p>That&#8217;ll create a directory polls, which is laid out like this:</p>
 <div class="highlight-python"><pre>polls/
     __init__.py
@@ -146,10 +147,10 @@
     views.py</pre>
 </div>
 <p>This directory structure will house the poll application.</p>
-<p>The first step in writing a database Web app in Django is to define your models &#8211; essentially, your database layout, with additional metadata.</p>
+<p>The first step in writing a database web app in Django is to define your models—essentially, your database layout with additional metadata.</p>
 <p>In our simple poll app, we&#8217;ll create two models: polls and choices. A poll has a question and a publication date. A choice has two fields: the text of the choice and a vote tally. Each choice is associated with a poll.</p>
 <p>These concepts are represented by simple Python classes.</p>
-<p>Edit the polls/models.py file so it looks like this:</p>
+<p>Edit the <tt class="file docutils literal"><span class="pre">polls/models.py</span></tt> file so it looks like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
 
 <span class="k">class</span> <span class="nc">Poll</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
@@ -170,9 +171,9 @@
 <ul class="simple">
 <li>Create a database schema (CREATE TABLE statements) for this app.</li>
 <li>Create a Python database-access API for accessing Poll and Choice objects.</li>
-<li>But first we need to tell our project that the polls app is installed.</li>
 </ul>
-<p>Edit the my_geonode/settings.py file, and update the INSTALLED_APPS setting to include the string &#8216;polls&#8217;. So it&#8217;ll look like this:</p>
+<p>But first we need to tell our project that the polls app is installed.</p>
+<p>Edit the <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/settings.py</span></tt> file, and update the INSTALLED_APPS setting to include the string &#8220;polls&#8221;. So it will look like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
 
     <span class="c"># Apps bundled with Django</span>
@@ -207,22 +208,23 @@
 </pre></div>
 </div>
 <p>Now Django knows to include the polls app. Let&#8217;s run another command:</p>
-<div class="highlight-python"><pre>$ python manage.py syncdb</pre>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py syncdb
+</pre></div>
 </div>
-<p>The syncdb command runs the SQL from sqlall on your database for all apps in INSTALLED_APPS that don&#8217;t already exist in your database. This creates all the tables, initial data and indexes for any apps you&#8217;ve added to your project since the last time you ran syncdb. syncdb can be called as often as you like, and it will only ever create the tables that don&#8217;t exist.</p>
+<p>The <tt class="docutils literal"><span class="pre">syncdb</span></tt> command runs the SQL from <tt class="docutils literal"><span class="pre">sqlall</span></tt> on your database for all apps in INSTALLED_APPS that don&#8217;t already exist in your database. This creates all the tables, initial data, and indexes for any apps you&#8217;ve added to your project since the last time you ran <tt class="docutils literal"><span class="pre">syncdb</span></tt>. <tt class="docutils literal"><span class="pre">syncdb</span></tt> can be called as often as you like, and it will only ever create the tables that don&#8217;t exist.</p>
 <p>GeoNode uses south for migrations ...</p>
-<p>Next, lets add the Django admin configuration for our polls app so that we can use the Django Admin to manage the records in our database. Edit a new file called polls/admin.py and make it look like the this:</p>
+<p>Next, let&#8217;s add the Django admin configuration for our polls app so that we can use the Django Admin to manage the records in our database. Create and edit a new file called <tt class="file docutils literal"><span class="pre">polls/admin.py</span></tt> and make it look like the this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">polls.models</span> <span class="kn">import</span> <span class="n">Poll</span>
 <span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
 
 <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Poll</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Run the development server and explore the polls app in the Django Admin by pointing your browser to <a class="reference external" href="http://localhost:8000/admin/">http://localhost:8000/admin/</a> and logging in with the credentials you specified when you first ran syncdb.</p>
+<p>Run the development server and explore the polls app in the Django Admin by pointing your browser to <a class="reference external" href="http://localhost:8000/admin/">http://localhost:8000/admin/</a> and logging in with the credentials you specified when you first ran <tt class="docutils literal"><span class="pre">syncdb</span></tt>.</p>
 <div class="figure">
 <img alt="../_images/admin_top.png" src="../_images/admin_top.png" />
 </div>
-<p>You can see all of the other apps that are installed as part of your GeoNode project, but we are specifically interested in our Polls app for now.</p>
+<p>You can see all of the other apps that are installed as part of your GeoNode project, but we are specifically interested in the Polls app for now.</p>
 <div class="figure">
 <img alt="../_images/admin_polls.png" src="../_images/admin_polls.png" />
 </div>
@@ -234,7 +236,7 @@
 <div class="figure">
 <img alt="../_images/add_poll.png" src="../_images/add_poll.png" />
 </div>
-<p>The next step is to configure the Choice model in the admin, but we will configure the choices to be editable inline with the Poll objects they are attached to. Edit the same polls/admin.py so it now looks like the following:</p>
+<p>The next step is to configure the Choice model in the admin, but we will configure the choices to be editable in-line with the Poll objects they are attached to. Edit the same <tt class="file docutils literal"><span class="pre">polls/admin.py</span></tt> so it now looks like the following:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">polls.models</span> <span class="kn">import</span> <span class="n">Poll</span><span class="p">,</span> <span class="n">Choice</span>
 <span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
 
@@ -252,20 +254,20 @@
 <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Poll</span><span class="p">,</span> <span class="n">PollAdmin</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This tells Django: &#8220;Choice objects are edited on the Poll admin page. By default, provide enough fields for 3 choices.&#8221;</p>
-<p>You can now return to the Poll admin and either add a new poll or edit the one you already created and see that you can now specify the poll choices inline with the poll itself..</p>
+<p>This tells Django that Choice objects are edited on the Poll admin page, and by default, provide enough fields for 3 choices.</p>
+<p>You can now return to the Poll admin and either add a new poll or edit the one you already created and see that you can now specify the poll choices inline with the poll itself.</p>
 <div class="figure">
 <img alt="../_images/choice_admin.png" src="../_images/choice_admin.png" />
 </div>
-<p>From here, we want to create views to display the polls inside our GeoNode project.A view is a “type” of Web page in your Django application that generally serves a specific function and has a specific template. In our poll application, we’ll have the following four views:</p>
+<p>From here, we want to create views to display the polls inside our GeoNode project. A view is a &#8220;type&#8221; of Web page in your Django application that generally serves a specific function and has a specific template. In our poll application, there will be the following four views:</p>
 <ul class="simple">
-<li>Poll “index” page – displays the latest few polls.</li>
-<li>Poll “detail” page – displays a poll question, with no results but with a form to vote.</li>
-<li>Poll “results” page – displays results for a particular poll.</li>
-<li>Vote action – handles voting for a particular choice in a particular poll.</li>
+<li>Poll &#8220;index&#8221; page—displays the latest few polls.</li>
+<li>Poll &#8220;detail&#8221; page—displays a poll question, with no results but with a form to vote.</li>
+<li>Poll &#8220;results&#8221; page—displays results for a particular poll.</li>
+<li>Vote action—handles voting for a particular choice in a particular poll.</li>
 </ul>
-<p>The first step of writing views is to design your URL structure. You do this by creating a Python module, called a URLconf. URLconfs are how Django associates a given URL with given Python code.</p>
-<p>Lets start by adding our url configuration directly to the urls.py that already exists in your project my_geonode/urls.py. Edit this file and add the following lines after the rest of the existing imports around line 80:</p>
+<p>The first step of writing views is to design your URL structure. You do this by creating a Python module called a URLconf. URLconfs are how Django associates a given URL with given Python code.</p>
+<p>Let&#8217;s start by adding our URL configuration directly to the <tt class="file docutils literal"><span class="pre">urls.py</span></tt> that already exists in your project at <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/urls.py</span></tt>. Edit this file and add the following lines after the rest of the existing imports around line 80:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">url</span><span class="p">(</span><span class="s">r&#39;^polls/$&#39;</span><span class="p">,</span> <span class="s">&#39;polls.views.index&#39;</span><span class="p">),</span>
 <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^polls/(?P&lt;poll_id&gt;\d+)/$&#39;</span><span class="p">,</span> <span class="s">&#39;polls.views.detail&#39;</span><span class="p">),</span>
 <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^polls/(?P&lt;poll_id&gt;\d+)/results/$&#39;</span><span class="p">,</span> <span class="s">&#39;polls.views.results&#39;</span><span class="p">),</span>
@@ -274,9 +276,9 @@
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Eventually we will want to move this set of url configurations inside the urls app itself, but for the sake of brevity in this workshop, we will put them in the main urls.py for now. You can consult the Django tutorial for more information on this topic.</p>
+<p class="last">Eventually we will want to move this set of URL configurations inside the URLs app itself, but for the sake of brevity in this workshop, we will put them in the main <tt class="file docutils literal"><span class="pre">urls.py</span></tt> for now. You can consult the Django tutorial for more information on this topic.</p>
 </div>
-<p>Next lets write the views to drive the url patterns we configured above. Edit polls/views.py to that it looks like the following:</p>
+<p>Next write the views to drive the URL patterns we configured above. Edit polls/views.py to that it looks like the following:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.template</span> <span class="kn">import</span> <span class="n">Context</span><span class="p">,</span> <span class="n">loader</span>
 <span class="kn">from</span> <span class="nn">polls.models</span> <span class="kn">import</span> <span class="n">Poll</span>
 <span class="kn">from</span> <span class="nn">django.http</span> <span class="kn">import</span> <span class="n">HttpResponse</span>
@@ -304,40 +306,44 @@
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">We have only stubbed in the views for the results and vote pages and they are not very useful as is. We will revisit these later.</p>
+<p class="last">We have only stubbed in the views for the results and vote pages. They are not very useful as-is. We will revisit these later.</p>
 </div>
-<p>Now we have views in place, but we are referencing templates that do not yet exist. Lets add them by first creating a template directory in your polls app as polls/templates/polls and creating polls/templates/polls/index.html to look like the following:</p>
-<div class="highlight-python"><pre>{% if latest_poll_list %}
-    &lt;ul&gt;
+<p>Now we have views in place, but we are referencing templates that do not yet exist. Let&#8217;s add them by first creating a template directory in your polls app at <tt class="file docutils literal"><span class="pre">polls/templates/polls</span></tt> and creating <tt class="file docutils literal"><span class="pre">polls/templates/polls/index.html</span></tt> to look like the following:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% if latest_poll_list %}
+    <span class="nt">&lt;ul&gt;</span>
     {% for poll in latest_poll_list %}
-        &lt;li&gt;&lt;a href="/polls/{{ poll.id }}/"&gt;{{ poll.question }}&lt;/a&gt;&lt;/li&gt;
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/polls/{{ poll.id }}/&quot;</span><span class="nt">&gt;</span>{{ poll.question }}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
     {% endfor %}
-    &lt;/ul&gt;
+    <span class="nt">&lt;/ul&gt;</span>
 {% else %}
-    &lt;p&gt;No polls are available.&lt;/p&gt;
-{% endif %}</pre>
+    <span class="nt">&lt;p&gt;</span>No polls are available.<span class="nt">&lt;/p&gt;</span>
+{% endif %}
+</pre></div>
 </div>
-<p>Next we need to create the template for the poll detail page. Create a new file at polls/templates/polls/detail.html to look like the following:</p>
-<div class="highlight-python"><pre>&lt;h1&gt;{{ poll.question }}&lt;/h1&gt;
-&lt;ul&gt;
+<p>Next we need to create the template for the poll detail page. Create a new file at <tt class="file docutils literal"><span class="pre">polls/templates/polls/detail.html</span></tt> to look like the following:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;h1&gt;</span>{{ poll.question }}<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
 {% for choice in poll.choice_set.all %}
-    &lt;li&gt;{{ choice.choice }}&lt;/li&gt;
+    <span class="nt">&lt;li&gt;</span>{{ choice.choice }}<span class="nt">&lt;/li&gt;</span>
 {% endfor %}
-&lt;/ul&gt;</pre>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></div>
 </div>
 <p>You can now visit <a class="reference external" href="http://localhost:8000/polls/">http://localhost:8000/polls/</a> in your browser and you should see the the poll question you created in the admin presented like this.</p>
 <div class="figure">
 <img alt="../_images/polls_plain.png" src="../_images/polls_plain.png" />
 </div>
-<p>We actually really want our polls app to display as part of our GeoNode project with the same theme, so lets update the 2 templates we created above to make them extend from the site_base.html template we looked at in the last section. You will need to add the following 2 lines to the top of each file:</p>
-<div class="highlight-python"><pre>{% extends 'site_base.html' %}
-{% block body %}</pre>
+<p>We actually want our polls app to display as part of our GeoNode project with the same theme, so let&#8217;s update the two templates we created above to make them extend from the <tt class="file docutils literal"><span class="pre">site_base.html</span></tt> template we looked at in the last section. You will need to add the following two lines to the top of each file:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% extends &#39;site_base.html&#39; %}
+{% block body %}
+</pre></div>
 </div>
 <p>And close the block at the bottom of each file with:</p>
-<div class="highlight-python"><pre>{% endblock %}</pre>
+<div class="highlight-html"><div class="highlight"><pre>{% endblock %}
+</pre></div>
 </div>
-<p>This tells Django to extend from the site_base.html template so your polls app has the same style as the rest of your GeoNode, and it specifies that the content in these templates should be rendered to the body block defined in GeoNode&#8217;s base.html template that your site_base.html extends from.</p>
-<p>You can now visit the index page of your polls app and see that it is now wrapped in the same style as the rest of your geonode site.</p>
+<p>This tells Django to extend from the <tt class="file docutils literal"><span class="pre">site_base.html</span></tt> template so your polls app has the same style as the rest of your GeoNode, and it specifies that the content in these templates should be rendered to the body block defined in GeoNode&#8217;s <tt class="file docutils literal"><span class="pre">base.html</span></tt> template that your <tt class="file docutils literal"><span class="pre">site_base.html</span></tt> extends from.</p>
+<p>You can now visit the index page of your polls app and see that it is now wrapped in the same style as the rest of your GeoNode site.</p>
 <div class="figure">
 <img alt="../_images/polls_geonode.png" src="../_images/polls_geonode.png" />
 </div>
@@ -345,21 +351,22 @@
 <div class="figure">
 <img alt="../_images/poll_geonode_hidden.png" src="../_images/poll_geonode_hidden.png" />
 </div>
-<p>Looks like its empty, but in fact the text is there, but its been styled to white by the bootswatch theme we added in the last section. If you highlight the area where the text is, you will see that it is in fact there.</p>
+<p>It looks like it is empty, but in fact the text is there, but styled to be white by the Bootswatch theme we added in the last section. If you highlight the area where the text is, you will see that it is there.</p>
 <div class="figure">
 <img alt="../_images/poll_geonode_highlight.png" src="../_images/poll_geonode_highlight.png" />
 </div>
-<p>Now that you have walked through the basic steps to create a very minimal (and currently mostly useless) Django app and integrate it with your GeoNode project, you should pick up the Django tutorial at part 4 and follow it to add the form for actually accepting responses to your poll questions.</p>
-<p>Again, its strongly recommended that you spend as much time as you need with the Django tutorial itself until you feel comfortable with all of the concepts it coveres. They are the essential building blocks you will need to extend your GeoNode project by adding your own apps.</p>
+<p>Now that you have walked through the basic steps to create a very minimal (though not very useful) Django app and integrated it with your GeoNode project, you should pick up the Django tutorial at part 4 and follow it to add the form for actually accepting responses to your poll questions.</p>
+<p>We strongly recommend that you spend as much time as you need with the Django tutorial itself until you feel comfortable with all of the concepts. They are the essential building blocks you will need to extend your GeoNode project by adding your own apps.</p>
 </div>
 <div class="section" id="adding-a-3rd-party-blog-app">
-<h2>Adding a 3rd Party Blog App<a class="headerlink" href="#adding-a-3rd-party-blog-app" title="Permalink to this headline">¶</a></h2>
-<p>Now that we have created our own app and added it to our GeoNode project, the next thing we will work through is adding a 3rd party Blog app. There are a large number of blog apps that you can use, but for purposes of this workshop, we will use a relatively simple, yet extensible app called Zinnia. You can find out more information about Zinnia on its website <a class="reference external" href="http://django-blog-zinnia.com/blog/">http://django-blog-zinnia.com/blog/</a> or on its GitHub project page <a class="reference external" href="https://github.com/Fantomas42/django-blog-zinnia">https://github.com/Fantomas42/django-blog-zinnia</a> or by following its documentation <a class="reference external" href="http://django-blog-zinnia.com/documentation/">http://django-blog-zinnia.com/documentation/</a>. This section will walk you through the minimal set of steps necessary to add Zinnia to your GeoNode project.</p>
-<p>The first thing you need to do is to install Zinnia into the virtualenv that you are working in. Make sure your virtualenv is activated and execute the following command:</p>
-<div class="highlight-python"><pre>$ pip install django-blog-zinnia</pre>
+<h2>Adding a 3rd party blog app<a class="headerlink" href="#adding-a-3rd-party-blog-app" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have created our own app and added it to our GeoNode project, the next thing we will work through is adding a 3rd party blog app. There are a number of blog apps that you can use, but for purposes of this workshop, we will use a relatively simple, yet extensible app called <a class="reference external" href="http://django-blog-zinnia.com/blog/">Zinnia</a>. You can find out more information about Zinnia on its website or on its <a class="reference external" href="https://github.com/Fantomas42/django-blog-zinnia">GitHub project page</a> or by following its <a class="reference external" href="http://django-blog-zinnia.com/documentation/">documentation</a>. This section will walk you through the minimal set of steps necessary to add Zinnia to your GeoNode project.</p>
+<p>The first thing to do is to install Zinnia into the virtualenv that you are working in. Make sure your virtualenv is activated and execute the following command:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> pip install django-blog-zinnia
+</pre></div>
 </div>
 <p>This will install Zinnia and all of the libraries that it depends on.</p>
-<p>Next add Zinna to the INSTALLED_APPS section of your GeoNode projects settings.py file by editing my_geonode/settings.py and adding &#8216;django.contrib.comments&#8217; to the section labeled &#8220;Apps Bundled with Django&#8221; so that it looks like the following:</p>
+<p>Next add Zinnia to the INSTALLED_APPS section of your GeoNode projects <tt class="file docutils literal"><span class="pre">settings.py</span></tt> file by editing <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/settings.py</span></tt> and adding &#8216;django.contrib.comments&#8217; to the section labeled &#8220;Apps Bundled with Django&#8221; so that it looks like the following:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Apps bundled with Django</span>
 <span class="s">&#39;django.contrib.auth&#39;</span><span class="p">,</span>
 <span class="s">&#39;django.contrib.contenttypes&#39;</span><span class="p">,</span>
@@ -373,7 +380,7 @@
 <span class="s">&#39;django.contrib.comments&#39;</span><span class="p">,</span>
 </pre></div>
 </div>
-<p>And then add the tagging, mptt and zinnia apps to the end of the INSTALLED_APPS where we previously added a section labeled &#8220;My GeoNode apps&#8221; in the previous part of this workshop section. It should like like the following:</p>
+<p>And then add the <tt class="docutils literal"><span class="pre">tagging</span></tt>, <tt class="docutils literal"><span class="pre">mptt</span></tt> and <tt class="docutils literal"><span class="pre">zinnia</span></tt> apps to the end of the INSTALLED_APPS where we previously added a section labeled &#8220;My GeoNode apps&#8221;. It should like like the following:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># My GeoNode apps</span>
 <span class="s">&#39;polls&#39;</span><span class="p">,</span>
 <span class="s">&#39;tagging&#39;</span><span class="p">,</span>
@@ -381,14 +388,15 @@
 <span class="s">&#39;zinnia&#39;</span><span class="p">,</span>
 </pre></div>
 </div>
-<p>Next you will need to run syncdb again to synchronize the models for the apps we have just added to our project&#8217;s database. This time we want to pass the &#8211;all flag to syncdb so it ignores the schema migrations. Schema migrations are discussed further in GeoNode&#8217;s documentation, but its safe to ignore them here.</p>
-<blockquote>
-<div>$ python manage.py syncdb &#8211;all</div></blockquote>
+<p>Next you will need to run <tt class="docutils literal"><span class="pre">syncdb</span></tt> again to synchronize the models for the apps we have just added to our project&#8217;s database. This time we want to pass the <tt class="docutils literal"><span class="pre">--all</span></tt> flag to <tt class="docutils literal"><span class="pre">syncdb</span></tt> so it ignores the schema migrations. Schema migrations are discussed further in GeoNode&#8217;s documentation, but it is safe to ignore them here.</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> python manage.py syncdb --all
+</pre></div>
+</div>
 <p>You can now restart the development server and visit the Admin interface and scroll to the very bottom of the list to find a section for Zinnia that allows you to manage database records for Categories and Blog Entries.</p>
 <div class="figure">
 <img alt="../_images/zinnia_admin.png" src="../_images/zinnia_admin.png" />
 </div>
-<p>Next we need to configure our project to add Zinnia&#8217;s URL configurations. Add the following 2 url config entries to the end of my_geonode/urls.py:</p>
+<p>Next we need to configure our project to add Zinnia&#8217;s URL configurations. Add the following two URL configuration entries to the end of <tt class="file docutils literal"><span class="pre">&lt;my_geonode&gt;/urls.py</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">url</span><span class="p">(</span><span class="s">r&#39;^blog/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;zinnia.urls&#39;</span><span class="p">)),</span>
 <span class="n">url</span><span class="p">(</span><span class="s">r&#39;^djcomments/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;django.contrib.comments.urls&#39;</span><span class="p">)),</span>
 </pre></div>
@@ -397,28 +405,31 @@
 <div class="figure">
 <img alt="../_images/zinnia_default.png" src="../_images/zinnia_default.png" />
 </div>
-<p>This page includes some guidance for us on how to change the default theme. The first thing we need to do is to copy zinnia&#8217;s base.html template into our own project so we can modify it. When you pip installed Zinnia, its templates were installed to /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/. You can copy the base template by executing the following commands:</p>
-<div class="highlight-python"><pre>$ mkdir my_geonode/templates/zinnia
-$ cp /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/base.html my_geonode/templates/zinnia/</pre>
+<p>This page includes some guidance for us on how to change the default theme. The first thing we need to do is to copy Zinnia&#8217;s <tt class="file docutils literal"><span class="pre">base.html</span></tt> template into our own project so we can modify it. When you installed Zinnia, templates were installed to <tt class="file docutils literal"><span class="pre">/var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/</span></tt>. You can copy the base template by executing the following commands:</p>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> mkdir &lt;my_geonode&gt;/templates/zinnia
+<span class="gp">$</span> cp /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/base.html &lt;my_geonode&gt;/templates/zinnia/
+</pre></div>
 </div>
-<p>Then you need to edit this file and change the topmost line to read as below such that this template extends from our projects site_base.html rather than the zinnia skeleton.html:</p>
-<div class="highlight-python"><pre>{% extends "site_base.html" %}</pre>
+<p>Then you need to edit this file and change the topmost line to read as below such that this template extends from our projects <tt class="file docutils literal"><span class="pre">site_base.html</span></tt> rather than the zinnia <tt class="file docutils literal"><span class="pre">skeleton.html</span></tt>:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% extends &quot;site_base.html&quot; %}
+</pre></div>
 </div>
-<p>Since Zinnia uses a bit different block naming scheme than GeoNode does, you need to add the following line to the bottom of your site_base.html file so that the content block gets rendered properl:</p>
-<div class="highlight-python"><pre>{% block body %}{% block content %}{% endblock %}{% endblock %}</pre>
+<p>Since Zinnia uses a different block naming scheme than GeoNode does, you need to add the following line to the bottom of your site_base.html file so that the content block gets rendered properly:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% block body %}{% block content %}{% endblock %}{% endblock %}
+</pre></div>
 </div>
 <div class="figure">
 <img alt="../_images/zinnia_geonode.png" src="../_images/zinnia_geonode.png" />
 </div>
-<p>You can see that there are currently no blog entries, so lets add one. Scroll to the bottom of the interface and click the &#8220;Post an Entry&#8221; link to go to the form in the Admin interface that lets you create a blog post. Go ahead and fill out the form with some information for testing purposes. Make sure that you change the Status dropdown to &#8220;published&#8221; so the post shows up right away.</p>
+<p>You can see that there are currently no blog entries, so let&#8217;s add one. Scroll to the bottom of the interface and click the <em class="guilabel">Post an Entry</em> link to go to the form in the Admin interface that lets you create a blog post. Go ahead and fill out the form with some information for testing purposes. Make sure that you change the Status dropdown to &#8220;published&#8221; so the post shows up right away.</p>
 <div class="figure">
 <img alt="../_images/zinnia_create_post.png" src="../_images/zinnia_create_post.png" />
 </div>
-<p>You can explore all of the options available to you as you create your post, and when you are done, click the Save button. You will be taken to the page that shows the list of all your blog posts.</p>
+<p>You can explore all of the options available to you as you create your post, and when you are done, click the <em class="guilabel">Save</em> button. You will be taken to the page that shows the list of all your blog posts.</p>
 <div class="figure">
 <img alt="../_images/zinnia_post_list.png" src="../_images/zinnia_post_list.png" />
 </div>
-<p>You can then visit your blog post/entry at <a class="reference external" href="http://localhost:8000/blog/">http://localhost:8000/blog/</a></p>
+<p>You can then visit your blog post/entry at <a class="reference external" href="http://localhost:8000/blog/">http://localhost:8000/blog/</a>.</p>
 <div class="figure">
 <img alt="../_images/zinnia_blog.png" src="../_images/zinnia_blog.png" />
 </div>
@@ -426,15 +437,16 @@ $ cp /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/base.h
 <div class="figure">
 <img alt="../_images/zinnia_post.png" src="../_images/zinnia_post.png" />
 </div>
-<p>The last thing we need to do to fully integrate this blog app (and our polls app) into our site is to add it to the options on the navbar. To do so, we need to add the following block override to our Projects site_base.html:</p>
-<div class="highlight-python"><pre>{% block extra-nav %}
-&lt;li id="nav_polls"&gt;
-    &lt;a href="/polls/"&gt;Polls&lt;/a&gt;
-&lt;/li&gt;
-&lt;li id="nav_blog"&gt;
-    &lt;a href="{% url zinnia_entry_archive_index %}"&gt;Blog&lt;/a&gt;
-&lt;/li&gt;
-{% endblock %}</pre>
+<p>The last thing we need to do to fully integrate this blog app (and our polls app) into our site is to add it to the options on the navbar. To do so, we need to add the following block override to our Projects <tt class="file docutils literal"><span class="pre">site_base.html</span></tt>:</p>
+<div class="highlight-html"><div class="highlight"><pre>{% block extra-nav %}
+<span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;nav_polls&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/polls/&quot;</span><span class="nt">&gt;</span>Polls<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li</span> <span class="na">id=</span><span class="s">&quot;nav_blog&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;{% url zinnia_entry_archive_index %}&quot;</span><span class="nt">&gt;</span>Blog<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/li&gt;</span>
+{% endblock %}
+</pre></div>
 </div>
 <div class="figure">
 <img alt="../_images/navbar_add.png" src="../_images/navbar_add.png" />
@@ -442,7 +454,7 @@ $ cp /var/lib/geonode/lib/python2.7/site-packages/zinnia/templates/zinnia/base.h
 <p>At this point, you could explore options for tighter integration between your GeoNode project and Zinnia. Integrating blog posts from Zinnia into your overall search could be useful, as well as including the blog posts a user has written on their Profile Page. You could also explore the additional plugins that go with Zinnia.</p>
 </div>
 <div class="section" id="adding-other-apps">
-<h2>Adding Other Apps<a class="headerlink" href="#adding-other-apps" title="Permalink to this headline">¶</a></h2>
+<h2>Adding other apps<a class="headerlink" href="#adding-other-apps" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have both written your own app and plugged in a 3rd party one, you can explore sites like Django Packages to look for other modules that you could plug into your GeoNode project to meet your needs and requirements. For many types of apps, there are several options and Django Packages is a nice way to compare them. You may find that some apps require significantly more work to integrate into your app than others, but reaching out to the app&#8217;s author and/or developers should help you get over any difficulties you may encounter.</p>
 <div class="figure">
 <img alt="../_images/django_packages.png" src="../_images/django_packages.png" />
