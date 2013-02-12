@@ -79,7 +79,13 @@
             <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
-<li><a class="reference internal" href="#">Debugging GeoNode in the Browser</a></li>
+<li><a class="reference internal" href="#">Debugging GeoNode in the Browser</a><ul>
+<li><a class="reference internal" href="#net-tab">Net Tab</a></li>
+<li><a class="reference internal" href="#dom-tab">Dom Tab</a></li>
+<li><a class="reference internal" href="#script-tab">Script Tab</a></li>
+<li><a class="reference internal" href="#html-tab">HTML Tab</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -113,6 +119,51 @@
   
   <div class="section" id="debugging-geonode-in-the-browser">
 <span id="browser"></span><h1>Debugging GeoNode in the Browser<a class="headerlink" href="#debugging-geonode-in-the-browser" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="net-tab">
+<h2>Net Tab<a class="headerlink" href="#net-tab" title="Permalink to this headline">¶</a></h2>
+<p>The net tab allows viewing all of the network traffic from the browser. The subtabs (like the selected &#8220;Images&#8221; tab) allow filtering by the type of traffic. In this screenshot, the mouse hover shows the image content and the full URL requested. One can right-click to copy-paste the URL or view in a separate tab. This is useful for obtaining test URLs. The grayed out entries show that the resource was cached via conditional-get (the 304 not modified). Other very useful advanced information includes the size of the response and the loading indicator graphics on the right. At the bottom, note the total size and timing information.</p>
+<p>-Go to layers/maps/search pages and look at the various requests. Note
+the AJAX tab. Look at the various request specific tabs: headers,
+params, etc.
+-Use the &#8216;disable browser cache&#8217; option and see how it affects page
+loads. Discuss advantages/challenges of caching.</p>
+<div class="figure">
+<img alt="../_images/firebug-net.png" src="../_images/firebug-net.png" />
+</div>
+</div>
+<div class="section" id="dom-tab">
+<h2>Dom Tab<a class="headerlink" href="#dom-tab" title="Permalink to this headline">¶</a></h2>
+<p>The dom tab shows all of the top-level window objects. By drilling down, this can be a useful way to find out what&#8217;s going on in a page. In this example, the mouse is hovering over the app. Note the high level view of objects and their fields. The console tab allows interacting with the objects.
+-drill down in the dom tab.
+-use the console to interactively exercise jquery.
+-use the console to interact with the app/map or other page objects</p>
+<div class="figure">
+<img alt="../_images/firebug-dom.png" src="../_images/firebug-dom.png" />
+</div>
+</div>
+<div class="section" id="script-tab">
+<h2>Script Tab<a class="headerlink" href="#script-tab" title="Permalink to this headline">¶</a></h2>
+<p>The script tab allows viewing scripts and debugging. The screenshot shows a breakpoint set at line 3, the current code is stopped at line 8 and the mouse hover is showing the value of the variable &#8216;class_list&#8217;. On the right, the &#8216;Watch&#8217; tab shows the various variables and scopes and offers a drill down view similar to the dom view. The stack tab shows the execution stack context outside the current frame.</p>
+<ul class="simple">
+<li>step through some code, look at various features, answer questions ???</li>
+<li>TODO - can we build the client stuff in debug mode (aka - not minified, etc.)? How?</li>
+</ul>
+<div class="figure">
+<img alt="../_images/firebug-debug.png" src="../_images/firebug-debug.png" />
+</div>
+</div>
+<div class="section" id="html-tab">
+<h2>HTML Tab<a class="headerlink" href="#html-tab" title="Permalink to this headline">¶</a></h2>
+<p>The HTML tag allows viewing and drilling down into the DOM. The screenshot shows a search result &#8216;article&#8217; element highlighted with padding and margin in yellow and purple. The DOM structure is shown on the left and the right panel shows the specific style rules while the computed tab shows the effective style rules. The layout tab displays rulers and property values while the DOM tab shows a debug/DOM-like view of the actual object&#8217;s properties.</p>
+<ul class="simple">
+<li>identify elements, look at the various tabs, etc.</li>
+<li>change styles, add new rules and styles</li>
+<li>edit existing HTML elements via the raw and tree-view</li>
+</ul>
+<div class="figure">
+<img alt="../_images/firebug-html.png" src="../_images/firebug-html.png" />
+</div>
+</div>
 </div>
 
 
