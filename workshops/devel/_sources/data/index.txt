@@ -8,6 +8,7 @@ This module will walk you through the various options available to load data int
 .. toctree::
    :maxdepth: 2
 
+   importlayers
    geoserver
-   ogr2ogr
-   osm2pgsql
+   gdalogr
+   osm 
