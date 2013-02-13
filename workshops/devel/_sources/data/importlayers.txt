@@ -124,7 +124,7 @@ If you encounter errors while running this command, you can use the -v option to
 
 This error indicates that GeoNode was unable to connect to GeoServer to load the layers. To solve this, you should make sure GeoServer is running and re-run the command. 
 
-If you encounter errors with this command that you cannot solve, you should bring them up on the geonode developers mailing list.
+If you encounter errors with this command that you cannot solve, you should bring them up on the geonode users mailing list.
 
 You should now have the knowledge necessary to import layers into your GeoNode project from a directory on the servers filesystem and can use this to load many layers into your GeoNode at once. 
 

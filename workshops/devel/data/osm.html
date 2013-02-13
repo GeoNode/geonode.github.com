@@ -110,6 +110,78 @@
   
   <div class="section" id="loading-osm-data-into-geonode">
 <span id="osm2pgsql"></span><h1>Loading OSM Data into GeoNode<a class="headerlink" href="#loading-osm-data-into-geonode" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we will walk through the steps necessary to load OSM data into your GeoNode project. As discussed in previous sections, your GeoNode already uses OSM tiles from MapQuest and the main OSM servers as some of the available base layers. This session is specifically about extracting actual data from OSM and converting it for use in your project and potentially for Geoprocessing tasks.</p>
+<p>The first step in this process is to get the data from OSM. We will be using the OSM Overpass API since it lets us do more complex queries than the OSM API itself. You should refer to the OSM Overpass API documentation to learn about all of its features. It is an extremely powerful API that lets you extract data from OSM using a very sophisticated API.</p>
+<ul class="simple">
+<li><a class="reference external" href="http://wiki.openstreetmap.org/wiki/Overpass_API">http://wiki.openstreetmap.org/wiki/Overpass_API</a></li>
+<li><a class="reference external" href="http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide">http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide</a></li>
+</ul>
+<p>In this example, we will be extracting building footprint data around Port au Prince in Haiti. To do this we will use an interactive tool that makes it easy construct a Query against the Overpass API. Point your browser at <a class="reference external" href="http://overpass-turbo.eu/">http://overpass-turbo.eu/</a> and use the search tools to zoom into Port Au Prince and Cite Soleil specifically. You will then need to specify the key value query as &lt;has-kv k=&#8221;building&#8221; v=&#8221;yes&#8221;/&gt; and change the query type to &#8220;way&#8221;. This should look like the following.</p>
+<div class="figure">
+<img alt="../_images/overpass_turbo.png" src="../_images/overpass_turbo.png" />
+</div>
+<p>You will need to cut and paste the query specified below to get all of the appropriate data under the bbox:</p>
+<div class="highlight-python"><pre>&lt;osm-script&gt;
+  &lt;union into="_"&gt;
+    &lt;bbox-query {{bbox}}/&gt;
+    &lt;recurse into="x" type="node-relation"/&gt;
+    &lt;query type="way"&gt;
+      &lt;bbox-query {{bbox}}/&gt;
+      &lt;has-kv k="building" v="yes"&gt;&lt;/has-kv&gt;
+    &lt;/query&gt;
+    &lt;recurse into="x" type="way-node"/&gt;
+    &lt;recurse type="way-relation"/&gt;
+  &lt;/union&gt;
+  &lt;print mode="meta"/&gt;
+&lt;/osm-script&gt;</pre>
+</div>
+<p>When you have the bbox and query set correctly, click the &#8220;Export&#8221; button on the menu to bring up the export menu, and then click the API interpreter link to download the OSM data base on the query you have specified.</p>
+<div class="figure">
+<img alt="../_images/overpass_export.png" src="../_images/overpass_export.png" />
+</div>
+<p>This will download a file named &#8216;interpreter&#8217; on your file system. You will probably want to rename it something else more specific. You can do that by issuing the following command in the directory where it was downloaded:</p>
+<div class="highlight-python"><pre>$ mv interpreter cite_soleil_buildings.osm</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can also rename the file in your Operating Systems File managmenet tool (Windows Explorer, Finder etc).</p>
+</div>
+<p>Now that we have osm data on our filesystem, we will need to convert it into a format suitable for uploading into your GeoNode. There are many ways to accomplish this, but for purposes of this example, we will use an OSM QGIS plugin that makes if fairly easy. Please consult the wiki page that explains how to install this plugin and make sure it is installed in your QGIS instance. Once its installed, you can use the Web Menu to load your file.</p>
+<div class="figure">
+<img alt="../_images/load_osm.png" src="../_images/load_osm.png" />
+</div>
+<p>This will bring up a dialog box that you can use to find and convert the osm file we downloaded.</p>
+<div class="figure">
+<img alt="../_images/load_osm_dialog.png" src="../_images/load_osm_dialog.png" />
+</div>
+<p>When the process has completed,  you will see your layers in the Layer Tree in QGIS.</p>
+<div class="figure">
+<img alt="../_images/qgis_layers.png" src="../_images/qgis_layers.png" />
+</div>
+<p>Since we are only interested in the polygons, we can turn the other 2 layers off in the Layer Tree.</p>
+<div class="figure">
+<img alt="../_images/qgis_layer_off.png" src="../_images/qgis_layer_off.png" />
+</div>
+<p>The next step is to use QGIS to convert this layer into a Shapefile so we can upload it into GeoNode. To do this, select the layer in the Layer tree, right click and then select the Save As option.</p>
+<div class="figure">
+<img alt="../_images/qgis_save_as.png" src="../_images/qgis_save_as.png" />
+</div>
+<p>This will bring up the Save Vector Layer as Dialog.</p>
+<div class="figure">
+<img alt="../_images/qgis_save_as_dialog.png" src="../_images/qgis_save_as_dialog.png" />
+</div>
+<p>Specify where on disk you want your file saved, and hit Save then OK.</p>
+<div class="figure">
+<img alt="../_images/save_layer_path.png" src="../_images/save_layer_path.png" />
+</div>
+<p>You now have a shapefile of the data you extracted from OSM that you can use to load into GeoNode. Use the GeoNode Layer Upload form to load the Shapefile parts into your GeoNode, and optionally edit the metadata and then you can view your layer in the Layer Info page in your geonode.</p>
+<div class="figure">
+<img alt="../_images/buildings_layer_geonode.png" src="../_images/buildings_layer_geonode.png" />
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may want to switch to an imagery layer in order to more easily see the buildings on the OSM background.</p>
+</div>
 </div>
 
 
