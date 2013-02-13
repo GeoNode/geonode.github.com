@@ -29,7 +29,7 @@
     <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
-    <link rel="next" title="Debugging GeoNode’s Python Components" href="python.html" />
+    <link rel="next" title="Debugging GeoNode in the Browser" href="browser.html" />
     <link rel="prev" title="Loading OSM Data into GeoNode" href="../data/osm.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -86,8 +86,8 @@
             
   <li><a href="../data/osm.html"
          title="previous chapter">&laquo; Loading OSM Data into GeoNode</a></li>
-  <li><a href="python.html"
-         title="next chapter">Debugging GeoNode&#8217;s Python Components &raquo;</a></li>
+  <li><a href="browser.html"
+         title="next chapter">Debugging GeoNode in the Browser &raquo;</a></li>
           
           
             <li>
@@ -111,17 +111,41 @@
   
   <div class="section" id="geonode-debugging-techniques">
 <span id="debug"></span><h1>GeoNode debugging techniques<a class="headerlink" href="#geonode-debugging-techniques" title="Permalink to this headline">¶</a></h1>
+<p>GeoNode can be difficult to debug as there are several different components
+involved:</p>
+<ul class="simple">
+<li>Browser - includes HTML/CSS issues, JavaScript, etc.</li>
+<li>Django - GeoNode HTML views and web APIs</li>
+<li>GeoServer - Core Wxx services and Platform REST APIs</li>
+</ul>
+<p>When attempting to diagnose a specific problem, often the order of investigation
+mirrors the order above - that is, start with the client: Is this a bug in code
+running on the browser. If not, step to the next level: the Django responses to
+client requests. Often this is possible via the browser using the correct tools.
+Many requests require Django communications with GeoServer. This is the next
+stage of investigation if a specific bug does not appear to originate in Django
+or the client.</p>
+<p>The following section covers techniques to help diagnose and debug errors.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="python.html">Debugging GeoNode&#8217;s Python Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="browser.html">Debugging GeoNode in the Browser</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="browser.html#net-tab">Net Tab</a></li>
-<li class="toctree-l2"><a class="reference internal" href="browser.html#dom-tab">Dom Tab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browser.html#dom-tab">DOM Tab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="browser.html#script-tab">Script Tab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="browser.html#html-tab">HTML Tab</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="geoserver.html">Debugging GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Debugging GeoNode&#8217;s Python Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="python.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#pdb">PDB</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver.html">Debugging GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="geoserver.html#logging">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoserver.html#advanced-troubleshooting">Advanced Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoserver.html#using-django-to-help-debug">Using Django to Help Debug</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>

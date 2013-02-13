@@ -30,8 +30,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
     <link rel="up" title="GeoNode debugging techniques" href="index.html" />
-    <link rel="next" title="Debugging GeoServer" href="geoserver.html" />
-    <link rel="prev" title="Debugging GeoNode’s Python Components" href="python.html" />
+    <link rel="next" title="Debugging GeoNode’s Python Components" href="python.html" />
+    <link rel="prev" title="GeoNode debugging techniques" href="index.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -78,7 +78,7 @@
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Debugging GeoNode in the Browser</a><ul>
 <li><a class="reference internal" href="#net-tab">Net Tab</a></li>
-<li><a class="reference internal" href="#dom-tab">Dom Tab</a></li>
+<li><a class="reference internal" href="#dom-tab">DOM Tab</a></li>
 <li><a class="reference internal" href="#script-tab">Script Tab</a></li>
 <li><a class="reference internal" href="#html-tab">HTML Tab</a></li>
 </ul>
@@ -89,10 +89,10 @@
           
           
             
+  <li><a href="index.html"
+         title="previous chapter">&laquo; GeoNode debugging techniques</a></li>
   <li><a href="python.html"
-         title="previous chapter">&laquo; Debugging GeoNode&#8217;s Python Components</a></li>
-  <li><a href="geoserver.html"
-         title="next chapter">Debugging GeoServer &raquo;</a></li>
+         title="next chapter">Debugging GeoNode&#8217;s Python Components &raquo;</a></li>
           
           
             <li>
@@ -116,54 +116,70 @@
   
   <div class="section" id="debugging-geonode-in-the-browser">
 <span id="browser"></span><h1>Debugging GeoNode in the Browser<a class="headerlink" href="#debugging-geonode-in-the-browser" title="Permalink to this headline">¶</a></h1>
+<p>This section covers some techniques for debugging browser and Django related
+response bugs using the Firefox web browser extension named Firebug. The concepts
+covered apply to other browser&#8217;s tools but may vary in terminology.</p>
+<p>Another Firefox extension worth noting is &#8216;jsonview&#8217;. This extension supports
+formatted viewing of JSON responses and integrates well with Firebug.</p>
+<p>References:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://getfirebug.com/faq/">https://getfirebug.com/faq/</a></li>
+<li><a class="reference external" href="http://jsonview.com/">http://jsonview.com/</a></li>
+</ul>
 <div class="section" id="net-tab">
 <h2>Net Tab<a class="headerlink" href="#net-tab" title="Permalink to this headline">¶</a></h2>
-<p>The net tab allows viewing all of the network traffic from the browser. The subtabs (like the selected &#8220;Images&#8221; tab) allow filtering by the type of traffic. In this screenshot, the mouse hover shows the image content and the full URL requested. One can right-click to copy-paste the URL or view in a separate tab. This is useful for obtaining test URLs. The grayed out entries show that the resource was cached via conditional-get (the 304 not modified). Other very useful advanced information includes the size of the response and the loading indicator graphics on the right. At the bottom, note the total size and timing information.</p>
+<p>The net tab allows viewing all of the network traffic from the browser. The subtabs (like the selected &#8220;Images&#8221; tab) allow filtering by the type of traffic.</p>
 <ul class="simple">
-<li>Go to layers/maps/search pages and look at the various requests. Note</li>
+<li>Go to layers/maps/search pages and look at the various requests. Note
+the AJAX tab. Look at the various request specific tabs: headers,
+params, etc.</li>
+<li>Use the &#8216;disable browser cache&#8217; option and see how it affects page
+loads. Discuss advantages/challenges of caching.</li>
 </ul>
-<p>the AJAX tab. Look at the various request specific tabs: headers,
-params, etc.
-- Use the &#8216;disable browser cache&#8217; option and see how it affects page
-loads. Discuss advantages/challenges of caching.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../_images/firebug-net.png" src="../_images/firebug-net.png" />
+<p class="caption">Firebug Net Tab</p>
 </div>
+<p>In this screenshot, the mouse hover displays the image content and the full URL requested. One can right-click to copy-paste the URL or view in a separate tab. This is useful for obtaining test URLs. The grayed out entries show that the resource was cached via conditional-get (the 304 not modified). Other very useful advanced information includes the size of the response and the loading indicator graphics on the right. At the bottom, note the total size and timing information.</p>
 </div>
 <div class="section" id="dom-tab">
-<h2>Dom Tab<a class="headerlink" href="#dom-tab" title="Permalink to this headline">¶</a></h2>
-<p>The dom tab shows all of the top-level window objects. By drilling down, this can be a useful way to find out what&#8217;s going on in a page. In this example, the mouse is hovering over the app. Note the high level view of objects and their fields. The console tab allows interacting with the objects.</p>
+<h2>DOM Tab<a class="headerlink" href="#dom-tab" title="Permalink to this headline">¶</a></h2>
+<p>The DOM tab displays all of the top-level window objects. By drilling down, this can be a useful way to find out what&#8217;s going on in a page.</p>
 <ul class="simple">
 <li>drill down in the dom tab.</li>
 <li>use the console to interactively exercise jquery.</li>
 <li>use the console to interact with the app/map or other page objects</li>
 </ul>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../_images/firebug-dom.png" src="../_images/firebug-dom.png" />
+<p class="caption">Firebug DOM Tab</p>
 </div>
+<p>In this example, the mouse is hovering over the app. Note the high level view of objects and their fields. The console tab allows interacting with the objects.</p>
 </div>
 <div class="section" id="script-tab">
 <h2>Script Tab<a class="headerlink" href="#script-tab" title="Permalink to this headline">¶</a></h2>
-<p>The script tab allows viewing scripts and debugging. The screenshot shows a breakpoint set at line 3, the current code is stopped at line 8 and the mouse hover is showing the value of the variable &#8216;class_list&#8217;. On the right, the &#8216;Watch&#8217; tab shows the various variables and scopes and offers a drill down view similar to the dom view. The stack tab shows the execution stack context outside the current frame.</p>
+<p>The script tab allows viewing scripts and debugging.</p>
 <ul class="simple">
 <li>step through some code, look at various features, answer questions ???</li>
 <li>TODO - can we build the client stuff in debug mode (aka - not minified, etc.)? How?</li>
 </ul>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../_images/firebug-debug.png" src="../_images/firebug-debug.png" />
 </div>
+<p>The screenshot displays a breakpoint set at line 3, the current code is stopped at line 8 and the mouse hover is displaying the value of the variable &#8216;class_list&#8217;. On the right, the &#8216;Watch&#8217; tab displays the various variables and scopes and offers a drill down view similar to the dom view. The stack tab displays the execution stack context outside the current frame.</p>
 </div>
 <div class="section" id="html-tab">
 <h2>HTML Tab<a class="headerlink" href="#html-tab" title="Permalink to this headline">¶</a></h2>
-<p>The HTML tag allows viewing and drilling down into the DOM. The screenshot shows a search result &#8216;article&#8217; element highlighted with padding and margin in yellow and purple. The DOM structure is shown on the left and the right panel shows the specific style rules while the computed tab shows the effective style rules. The layout tab displays rulers and property values while the DOM tab shows a debug/DOM-like view of the actual object&#8217;s properties.</p>
+<p>The HTML tag allows viewing and drilling down into the DOM.</p>
 <ul class="simple">
 <li>identify elements, look at the various tabs, etc.</li>
 <li>change styles, add new rules and styles</li>
 <li>edit existing HTML elements via the raw and tree-view</li>
 </ul>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../_images/firebug-html.png" src="../_images/firebug-html.png" />
 </div>
+<p>The screenshot displays a search result &#8216;article&#8217; element highlighted with padding and margin in yellow and purple. The DOM structure is displayed on the left and the right panel displays the specific style rules while the computed tab displays the effective style rules. The layout tab displays rulers and property values while the DOM tab displays a debug/DOM-like view of the actual object&#8217;s properties.</p>
 </div>
 </div>
 
