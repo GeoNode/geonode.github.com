@@ -59,6 +59,12 @@ Hints
 
       logging.info('some var %s is not = %s', x, y)
 
+Excercises:
+...........
+
+#. Enable logging of all SQL statements. Visit some pages and view the logging output.
+#. Using the python shell, use the ``queries`` object to demonstrate the results of specific queries.
+
 
 PDB
 ---

@@ -116,10 +116,7 @@
 <li><a class="reference external" href="http://wiki.openstreetmap.org/wiki/Overpass_API">http://wiki.openstreetmap.org/wiki/Overpass_API</a></li>
 <li><a class="reference external" href="http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide">http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide</a></li>
 </ul>
-<p>In this example, we will be extracting building footprint data around Port au Prince in Haiti. To do this we will use an interactive tool that makes it easy construct a Query against the Overpass API. Point your browser at <a class="reference external" href="http://overpass-turbo.eu/">http://overpass-turbo.eu/</a> and use the search tools to zoom into Port Au Prince and Cite Soleil specifically. You will then need to specify the key value query as &lt;has-kv k=&#8221;building&#8221; v=&#8221;yes&#8221;/&gt; and change the query type to &#8220;way&#8221;. This should look like the following.</p>
-<div class="figure">
-<img alt="../_images/overpass_turbo.png" src="../_images/overpass_turbo.png" />
-</div>
+<p>In this example, we will be extracting building footprint data around Port au Prince in Haiti. To do this we will use an interactive tool that makes it easy construct a Query against the Overpass API. Point your browser at <a class="reference external" href="http://overpass-turbo.eu/">http://overpass-turbo.eu/</a> and use the search tools to zoom into Port Au Prince and Cite Soleil specifically.</p>
 <p>You will need to cut and paste the query specified below to get all of the appropriate data under the bbox:</p>
 <div class="highlight-python"><pre>&lt;osm-script&gt;
   &lt;union into="_"&gt;
@@ -134,6 +131,10 @@
   &lt;/union&gt;
   &lt;print mode="meta"/&gt;
 &lt;/osm-script&gt;</pre>
+</div>
+<p>This should look like the following.</p>
+<div class="figure">
+<img alt="../_images/overpass_turbo.png" src="../_images/overpass_turbo.png" />
 </div>
 <p>When you have the bbox and query set correctly, click the &#8220;Export&#8221; button on the menu to bring up the export menu, and then click the API interpreter link to download the OSM data base on the query you have specified.</p>
 <div class="figure">

@@ -77,10 +77,22 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Debugging GeoNode in the Browser</a><ul>
-<li><a class="reference internal" href="#net-tab">Net Tab</a></li>
-<li><a class="reference internal" href="#dom-tab">DOM Tab</a></li>
-<li><a class="reference internal" href="#script-tab">Script Tab</a></li>
-<li><a class="reference internal" href="#html-tab">HTML Tab</a></li>
+<li><a class="reference internal" href="#net-tab">Net Tab</a><ul>
+<li><a class="reference internal" href="#net-tab-exercises">Net Tab Exercises</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dom-tab">DOM Tab</a><ul>
+<li><a class="reference internal" href="#dom-tab-exercises">DOM Tab Exercises</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#script-tab">Script Tab</a><ul>
+<li><a class="reference internal" href="#script-tab-exercises">Script Tab Exercises</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#html-tab">HTML Tab</a><ul>
+<li><a class="reference internal" href="#html-tab-exercises">HTML Tab Exercises</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -129,57 +141,73 @@ formatted viewing of JSON responses and integrates well with Firebug.</p>
 <div class="section" id="net-tab">
 <h2>Net Tab<a class="headerlink" href="#net-tab" title="Permalink to this headline">¶</a></h2>
 <p>The net tab allows viewing all of the network traffic from the browser. The subtabs (like the selected &#8220;Images&#8221; tab) allow filtering by the type of traffic.</p>
-<ul class="simple">
-<li>Go to layers/maps/search pages and look at the various requests. Note
-the AJAX tab. Look at the various request specific tabs: headers,
-params, etc.</li>
-<li>Use the &#8216;disable browser cache&#8217; option and see how it affects page
-loads. Discuss advantages/challenges of caching.</li>
-</ul>
 <div class="figure align-center">
 <img alt="../_images/firebug-net.png" src="../_images/firebug-net.png" />
 <p class="caption">Firebug Net Tab</p>
 </div>
-<p>In this screenshot, the mouse hover displays the image content and the full URL requested. One can right-click to copy-paste the URL or view in a separate tab. This is useful for obtaining test URLs. The grayed out entries show that the resource was cached via conditional-get (the 304 not modified). Other very useful advanced information includes the size of the response and the loading indicator graphics on the right. At the bottom, note the total size and timing information.</p>
+<p>In this screen-shot, the mouse hover displays the image content and the full URL requested. One can right-click to copy-paste the URL or view in a separate tab. This is useful for obtaining test URLs. The grayed out entries show that the resource was cached via conditional-get (the 304 not modified). Other very useful advanced information includes the size of the response and the loading indicator graphics on the right. At the bottom, note the total size and timing information.</p>
+<div class="section" id="net-tab-exercises">
+<h3>Net Tab Exercises<a class="headerlink" href="#net-tab-exercises" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Go to layers/maps/search pages and look at the various requests. Note</li>
+</ol>
+<blockquote>
+<div>the XHR subtab. Look at the various request specific tabs: headers,
+params, etc.</div></blockquote>
+<ol class="arabic simple">
+<li>Use the &#8216;disable browser cache&#8217; option and see how it affects page</li>
+</ol>
+<blockquote>
+<div>loads. Discuss advantages/challenges of caching.</div></blockquote>
+</div>
 </div>
 <div class="section" id="dom-tab">
 <h2>DOM Tab<a class="headerlink" href="#dom-tab" title="Permalink to this headline">¶</a></h2>
 <p>The DOM tab displays all of the top-level window objects. By drilling down, this can be a useful way to find out what&#8217;s going on in a page.</p>
-<ul class="simple">
-<li>drill down in the dom tab.</li>
-<li>use the console to interactively exercise jquery.</li>
-<li>use the console to interact with the app/map or other page objects</li>
-</ul>
 <div class="figure align-center">
 <img alt="../_images/firebug-dom.png" src="../_images/firebug-dom.png" />
 <p class="caption">Firebug DOM Tab</p>
 </div>
-<p>In this example, the mouse is hovering over the app. Note the high level view of objects and their fields. The console tab allows interacting with the objects.</p>
+<p>In this example, the mouse is hovering over the <tt class="docutils literal"><span class="pre">app</span></tt> object. Note the high level view of objects and their fields. The console tab allows interacting with the objects.</p>
+<div class="section" id="dom-tab-exercises">
+<h3>DOM Tab Exercises<a class="headerlink" href="#dom-tab-exercises" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Drill down in the DOM tab.</li>
+<li>Use the console to interactively exercise jquery.</li>
+<li>Use the console to interact with the app/map or other page objects</li>
+</ol>
+</div>
 </div>
 <div class="section" id="script-tab">
 <h2>Script Tab<a class="headerlink" href="#script-tab" title="Permalink to this headline">¶</a></h2>
 <p>The script tab allows viewing scripts and debugging.</p>
-<ul class="simple">
-<li>step through some code, look at various features, answer questions ???</li>
-<li>TODO - can we build the client stuff in debug mode (aka - not minified, etc.)? How?</li>
-</ul>
 <div class="figure align-center">
 <img alt="../_images/firebug-debug.png" src="../_images/firebug-debug.png" />
 </div>
-<p>The screenshot displays a breakpoint set at line 3, the current code is stopped at line 8 and the mouse hover is displaying the value of the variable &#8216;class_list&#8217;. On the right, the &#8216;Watch&#8217; tab displays the various variables and scopes and offers a drill down view similar to the dom view. The stack tab displays the execution stack context outside the current frame.</p>
+<p>The screen-shot displays a breakpoint set at line 3, the current code is stopped at line 8 and the mouse hover is displaying the value of the variable &#8216;class_list&#8217;. On the right, the &#8216;Watch&#8217; tab displays the various variables and scopes and offers a drill down view similar to the DOM view. The stack tab displays the execution stack context outside the current frame.</p>
+<div class="section" id="script-tab-exercises">
+<h3>Script Tab Exercises<a class="headerlink" href="#script-tab-exercises" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Step through some code</li>
+<li>Look at various features: variables, scopes, DOM drill-down</li>
+</ol>
+</div>
 </div>
 <div class="section" id="html-tab">
 <h2>HTML Tab<a class="headerlink" href="#html-tab" title="Permalink to this headline">¶</a></h2>
-<p>The HTML tag allows viewing and drilling down into the DOM.</p>
-<ul class="simple">
-<li>identify elements, look at the various tabs, etc.</li>
-<li>change styles, add new rules and styles</li>
-<li>edit existing HTML elements via the raw and tree-view</li>
-</ul>
+<p>The HTML tag allows viewing and drilling down into the DOM. This is an incredibly useful feature when doing CSS or HTML work.</p>
 <div class="figure align-center">
 <img alt="../_images/firebug-html.png" src="../_images/firebug-html.png" />
 </div>
-<p>The screenshot displays a search result &#8216;article&#8217; element highlighted with padding and margin in yellow and purple. The DOM structure is displayed on the left and the right panel displays the specific style rules while the computed tab displays the effective style rules. The layout tab displays rulers and property values while the DOM tab displays a debug/DOM-like view of the actual object&#8217;s properties.</p>
+<p>The screen-shot displays a search result &#8216;article&#8217; element highlighted with padding and margin in yellow and purple. The DOM structure is displayed on the left and the right panel displays the specific style rules while the computed tab displays the effective style rules. The layout tab displays rulers and property values while the DOM tab displays a debug/DOM-like view of the actual object&#8217;s properties.</p>
+<div class="section" id="html-tab-exercises">
+<h3>HTML Tab Exercises<a class="headerlink" href="#html-tab-exercises" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Identify elements, look at the tabs on the right</li>
+<li>Change styles, add new rules and styles</li>
+<li>Edit existing HTML elements via the raw and tree-view</li>
+</ol>
+</div>
 </div>
 </div>
 

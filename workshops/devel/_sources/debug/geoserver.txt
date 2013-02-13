@@ -24,7 +24,7 @@ When using a standard geoserver installation, the GeoServer logs are located at
 :file:`/usr/share/geoserver/data/logs/geoserver.log`. The properties files that
 control the varying rules are also located here.
 
-Excercises
+Exercises
 ..........
 
 #. Switch logging levels for various loggers.
@@ -39,7 +39,7 @@ GeoServer documents linked to above. When providing information for a bug
 report, these can be helpful but in-depth Java knowledge is required to fully
 comprehend the output from some of these tools.
 
-Excercises
+Exercises
 ..........
 
 #. Look at jstack output

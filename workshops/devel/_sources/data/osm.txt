@@ -10,9 +10,7 @@ The first step in this process is to get the data from OSM. We will be using the
 - http://wiki.openstreetmap.org/wiki/Overpass_API
 - http://wiki.openstreetmap.org/wiki/Overpass_API/Language_Guide
 
-In this example, we will be extracting building footprint data around Port au Prince in Haiti. To do this we will use an interactive tool that makes it easy construct a Query against the Overpass API. Point your browser at http://overpass-turbo.eu/ and use the search tools to zoom into Port Au Prince and Cite Soleil specifically. You will then need to specify the key value query as <has-kv k="building" v="yes"/> and change the query type to "way". This should look like the following.
-
-.. figure:: img/overpass_turbo.png
+In this example, we will be extracting building footprint data around Port au Prince in Haiti. To do this we will use an interactive tool that makes it easy construct a Query against the Overpass API. Point your browser at http://overpass-turbo.eu/ and use the search tools to zoom into Port Au Prince and Cite Soleil specifically. 
 
 You will need to cut and paste the query specified below to get all of the appropriate data under the bbox::
 
@@ -29,6 +27,10 @@ You will need to cut and paste the query specified below to get all of the appro
       </union>
       <print mode="meta"/>
     </osm-script>
+
+This should look like the following.
+
+.. figure:: img/overpass_turbo.png
 
 When you have the bbox and query set correctly, click the "Export" button on the menu to bring up the export menu, and then click the API interpreter link to download the OSM data base on the query you have specified. 
 
