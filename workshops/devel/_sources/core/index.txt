@@ -9,4 +9,5 @@ This module will introduce you to the
    :maxdepth: 2
 
    prerequisites
-   coremodules 
+   coremodules
+   exercises

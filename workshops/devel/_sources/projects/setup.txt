@@ -123,28 +123,73 @@ You can also view your project on GitHub.
 
 Each of the key files in your project are described below.
 
-.. todo:: Intentionally blank or just not written yet?
-
 manage.py
 ~~~~~~~~~
+
+:file:`manage.py` is the main entry point for managing your project during
+development. It allows running all the management commands from each app in your
+project. When run with no arguments, it will list all of the management commands.
 
 settings.py
 ~~~~~~~~~~~
 
+:file:`settings.py` is the primary settings file for your project. It is quite
+common to put all sensible defaults here and keep deployment specific configuration
+in the :file:`local_settings.py` file. All of the possible settings values and
+their meanings are detailed in the Django documentation.
+
+A common paradigm for handing 'local settings' (and in other areas where some
+python module may not be available) is:
+
+  .. code-block: python
+  
+  try:
+      from local_settings import *
+  except:
+      pass
+
+This is not required and there are many other solutions to handling varying
+deployment configuration requirements.
+
 urls.py
 ~~~~~~~
+
+:file:`urls.py` is where your application specific URL routes go. Additionally,
+any `overrides` can be placed here, too.
 
 wsgi.py
 ~~~~~~~
 
+This is a generated file to make deploying your project to a WSGI server easier.
+Unless there is very specific configuration you need, :file:`wsgi.py` can be
+left alone.
+
 setup.py
 ~~~~~~~~
+
+There are several packaging options in python but a common approach is to place
+your project metadata (version, author, etc.) and dependencies in :file:`setup.py`.
+
+This is a large topic and not necessary to understand while getting started with
+GeoNode development but will be important for larger projects and to make
+development easier for other developers.
+
+More: http://docs.python.org/2/distutils/setupscript.html
 
 static
 ~~~~~~
 
+The :file:`static` directory will contain your fixed resources: css, html, 
+images, etc. Everything in this directory will be copied to the final media
+directory (along with the `static` resources from other apps in your project).
+
 templates
 ~~~~~~~~~
+
+All of your projects templates go in the :file:`templates` directory. While
+no organization is required for your project specific templates, when overriding
+or replacing a template from another app, the path must be the same as the template
+to be replaced.
 
 Deploying your GeoNode Project
 ------------------------------
@@ -158,6 +203,18 @@ Now that your own project is set up, you will need to replace the existing defau
 #. Check GeoServer configuration
 
 #. Check database configuration
+
+Production Ready
+----------------
+
+While not a complete checklist, some changes should be made prior to deploying
+to production.
+
+* Ensure DEBUG=False in your effective `settings`.
+* Change any admin passwords from any common defaults (i.e. admin/admin)
+* Change the geoserver `master password <http://docs.geoserver.org/stable/en/user/webadmin/security/passwords.html#webadmin-sec-masterpasswordprovider>`_ from the default
+* Ensure GeoServer is `ready <http://docs.geoserver.org/stable/en/user/production/index.html>`_.
+
 
 Staying in sync with mainline GeoNode
 -------------------------------------

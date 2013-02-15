@@ -16,4 +16,6 @@ A set of reference links on these topics is included at the end of this module.
    components 
    standards
    architecture
+   exercises
    reference
+
