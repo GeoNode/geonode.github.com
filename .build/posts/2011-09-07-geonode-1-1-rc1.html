@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <title>GeoNode</title> 
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <meta name='description' content='GeoNode'/>
+        <meta name='keywords' content='GeoNode'/>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='/static/css/site.css' type='text/css' media='all' />
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+	
+        <script type="text/javascript" src="/static/js/jquery.js"></script>
+        <script type="text/javascript" src="/static/js/sequence.jquery-min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+	
+    </head>
+    <body class="geonode-features">
+		
+        <header class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="span2">
+                        <h1><a class="brand" href="/">GeoNode</a></h1>
+                    </div>
+                    <div class="span1">
+                        <div class="btn-group nav-coll">
+                            <button type="button" class="btn-nav-coll" data-toggle="dropdown">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/user_features.html">For Users</a></li>
+                                <li><a href="/dev_features.html">For Developers</a></li>
+                                <li><a href="/admin_features.html">For Admins</a></li>
+                                <li><a href="http://docs.geonode.org/" target = '_blank'>Documentation</a></li>
+                                <li><a href="/faqs.html">FAQs</a></li>
+                                <li><a href="/communication.html">Mailing Lists / IRC</a></li>
+                                <li><a href="http://github.com/geonode/geonode/issues" target = '_blank'>Issue Tracker</a></li>
+                                <li><a href="/gallery.html">Sites Gallery</a></li>
+                                <li><a href="/posts/">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span9">
+                        <div class="pull-right">
+                            <a href="/install.html" class="btn btn-success">Install GeoNode</a>
+                            <a target="_blank" href="http://alpha.dev.geonode.org/" class="btn btn-warning">Try the Demo</a>
+                            <a href="/posts/" class="btn btn-success">Read our Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+		
+
+    
+     <section class="feature-detail">
+            <div class="container">
+                <div class="row">
+                    <div class="span7">
+                        <h1></h1> 
+                        <article class="article1">
+    
+<!--
+comments: true
+date: 2011-09-07 20:19:24
+layout: post
+slug: geonode-1-1-rc1
+title: GeoNode 1.1-RC1
+wordpress_id: 460
+categories:
+- Development
+-->
+
+<p>The GeoNode team is proud to release GeoNode 1.1-RC1, another important milestone towards GeoNode 1.1.  All planned features for GeoNode 1.1 are in place for this release but some testing, bug fixing, and documentation remains to be done before the final release.  This unstable release is intended to allow GeoNode users to <a href="http://dev.geonode.org/trac/query?status=accepted&amp;status=assigned&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=type&amp;col=priority&amp;col=component&amp;col=version&amp;milestone=1.1+%22Rock+Solid%22&amp;report=10">help us identify bugs before the final release</a>. As always, be sure to backup any existing data and configuration before attempting to upgrade. <a href="http://dev.geonode.org/release/GeoNode-1.1-RC1.tar.gz">Download it now!</a></p>
+
+<h2>New goodies</h2>
+
+<p>This release attempts to simplify GeoNode installations and comes bundled with sample config files as well as scripts to install GeoNode in Ubuntu.</p>
+
+<ul>
+<li><p>Support for GeoServer 2.1, including:</p>
+
+<ul>
+<li><p>GeoWebCache integration</p></li>
+<li><p>direct Shapefile-to-PostGIS import from the GeoNode upload form</p></li>
+</ul></li>
+
+
+
+<li><p>Support for GeoNetwork 2.6* speed improvements to the way GeoNode manages GeoServer configuration</p></li>
+<li><p>Various UI improvements, including:</p>
+
+<ul>
+<li><p>a new user profile page listing the user’s layers and maps</p></li>
+<li><p>a “Get feature info” tool to identify feature attributes when viewing maps</p></li>
+</ul></li>
+
+
+
+<li><p>Increased coverage in GeoNode's automated test suite</p></li>
+<li><p>Numerous bug fixes thanks to support from partners at the <a href="http://geonode.org/2011/05/roadmapping-summit/">roadmapping summit</a></p></li>
+</ul>
+
+<h2>Installer scripts</h2>
+
+<p>Much work has gone into simplifying and automating the installation process for GeoNode for this release. The .tar.gz distribution now includes an "install.sh" script that automatically adds GeoNode files to the proper places in the system. While this script has so far only been developed for Ubuntu systems, we aspire to generalize it for use with GeoNode installations across different Unix-like systems.</p>
+
+<p>If you're a systems administrator with an interest in GeoNode, testing and improving this script is a great way to help out. <a href="http://docs.geonode.org/en/latest/deploy/install.html">See the documentation</a> for details.</p>
+
+<h2>Ubuntu packages</h2>
+
+<p>Based on the installer scripts, we have created new GeoNode packages to provide you with easier updates. It's our goal to support an automated transition from 1.1-RC1 to 1.1 final but we are counting on your help to iron out the process. <a href="http://docs.geonode.org/en/latest/intro/install.html">Details about installation</a> are available in the manual.</p>
+
+<h2>Known Issues</h2>
+
+<p>Changes to the way GeoServer is deployed mean that <em>upgrading a previously installed GeoNode is currently problematic</em>. Before the final release we will be providing an automatic solution to help with this migration, but currently it is not advised to attempt upgrading pre-existing GeoNode installations. As mentioned above, be sure to backup any existing data and configuration before attempting to upgrade.</p>
+
+<h2>Thanks</h2>
+
+<p>Thanks to AIFDR and GEM for their contributions toward the "Rock Solid" initiative to improve GeoNode test coverage, Harvard CGA's Worldmap for their contributions in supporting better PostGIS integration in GeoNode, and GFDRR for their heavy time investment in the installation scripts. Other GeoNode users have also contributed translations and theme corrections for this release.</p>
+
+                        </article>
+                </div>
+            </div>
+        </section>
+    
+
+	
+		 <footer class="footer">
+			<div class="container">
+                
+                <section class="btm">
+                    <div class="row">
+                        <div class="span6">
+                          <p>This <a href="http://github.com/geonode/geonode.github.com/" target="_blank">Website</a> is licensed <a href='license.html'>CC by SA 2012.</a> - <a href='contributors.html'>GeoNode Contributors.</a> Designed by <a href="http://www.spatialdev.com/" target="_blank">Spatial Dev</a></p>
+                        </div>
+                        <div class="span6">
+                            <div class="pull-right social">
+                                <a href="http://github.com/geonode/" class="gh" target="_blank">GitHub</a>
+                                <a href="https://twitter.com/GeoNode" class="tw" target="_blank">Twitter</a>
+                                <a href="https://plus.google.com/u/1/b/100587124776656797019/" class="gp" target="_blank">Google+</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+		
+<a href="https://github.com/GeoNode/geonode/tree/dev"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+        
+    </body>
+</html>
