@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Spatial Processing with Sextante &mdash; GeoNode Developers Workshop 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-2.2.1.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/bootstrap-responsive-2.2.1.min.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/bootstrap-2.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="GeoNode Developers Workshop 2.0 documentation" href="../index.html" />
+    <link rel="up" title="Spatial Processing with GeoNode" href="index.html" />
+    <link rel="next" title="GeoNode APIs" href="../api/index.html" />
+    <link rel="prev" title="Spatial Processing with GeoNode" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+<div class="container">
+  
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="brand" href="../index.html">GeoNode Developers Workshop</a>
+      <span class="navbar-text pull-left"><b>2.0</b></span>
+
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          
+            <li class="dropdown">
+  <a href="../index.html"
+     class="dropdown-toggle"
+     data-toggle="dropdown">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+    ><ul class="simple">
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction to GeoNode development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../core/index.html">Development Prerequsites and Core Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects/index.html">Customized GeoNode Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/index.html">Loading Data into a GeoNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debug/index.html">GeoNode debugging techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Spatial Processing with GeoNode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">GeoNode APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../envsetup/index.html">Setting up a GeoNode development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devprocess/index.html">GeoNode&#8217;s development process</a></li>
+</ul>
+</ul>
+</li>
+            <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"><ul>
+<li><a class="reference internal" href="#">Spatial Processing with Sextante</a></li>
+</ul>
+</ul>
+</li>
+          
+          
+            
+  <li><a href="index.html"
+         title="previous chapter">&laquo; Spatial Processing with GeoNode</a></li>
+  <li><a href="../api/index.html"
+         title="next chapter">GeoNode APIs &raquo;</a></li>
+          
+          
+            <li>
+  <a href="../_sources/processing/sextante.txt"
+     rel="nofollow">Source</a></li>
+          
+        </ul>
+
+        
+          
+<form class="navbar-search pull-right" style="margin-bottom:-3px;" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="section" id="spatial-processing-with-sextante">
+<span id="sextante"></span><h1>Spatial Processing with Sextante<a class="headerlink" href="#spatial-processing-with-sextante" title="Permalink to this headline">¶</a></h1>
+<p>Once you have connected to a GeoNode service and its data is available from QGIS, analysis can be performed on it, just as if you were using local data.</p>
+<p>SEXTANTE is the analysis and data processing framework of QGIS, and it can be used to run a large number of different analysis algorithms for both raster and vector data. Both WCS and WFS connections can be used to get data that can be processes through SEXTANTE.</p>
+<p>The SEXTANTE toolbox is the main component to call processing algorithms, and it contains a list all of available ones, organized by providers.</p>
+<img alt="../_images/toolbox.png" src="../_images/toolbox.png" />
+<p>The <em>QGIS algorithms</em> group contains native python algorithms. Most of the remaining ones represent algorithms that depend on a third-party application. From the point of view of the user, however, there is no difference in the way these algorithms are executed, since they share a common UI and SEXTANTE takes care of the communication between the application and QGIS.</p>
+<p>To run an algorithm, just click on its name in the toolbox, and a dialog will appear to define the inputs and outputs of the selected algorithm.</p>
+<img alt="../_images/centroids.png" src="../_images/centroids.png" />
+<p>All dialogs used to entering the parameters needed for an algorithm are created on-the-fly, and they all share the same look and feel, no matter which application the algorithm relies on.</p>
+<p>If the selected algorithm requires vector layers, all loaded vector layers will be available, including those from WFS connections. If it requires raster layers, all loaded raster layers will be available, including those from WCS connections.</p>
+<p>Click on <em>Ok</em> and the algorithm will be run and its outputs loaded in the QGIS canvas.</p>
+<p>Algorithm depending on third-party application can be called in the same way. WFS and WMS layers will be available as well, even if the application does not support web services. SEXTANTE will take care of creating an intermediate file or selecting a compatible way of feeding the data into the application, performing all necessary import operations under the hood.</p>
+<p>For instance, you can run algorithm that uses the R statistical computing software to perform a statistical analysis on the data loaded from a WFS connection.</p>
+<img alt="../_images/r_alg.png" src="../_images/r_alg.png" />
+<p>The interface to define the input parameters is very similar to the one we saw in the previous example (and to those of all the other algorithms), and using an external application makes no difference from the point of view of the user.</p>
+<img alt="../_images/r_dialog.png" src="../_images/r_dialog.png" />
+<p>SEXTANTE algorithms are aware of the state of layers used for input. That means that they can take into account whether there is a selection in a vector layer, even in the case of calling an external application. In the SEXTANTE configuration menu, in the <em>General</em> group, check the &#8220;Use selected features&#8221; option to enable this behavior.</p>
+<p>image:: use_selected.png</p>
+<p>Now you can make a selection and call the R algorithm used before. It will just use those features that you selected.</p>
+<p>Notice that SEXTANTE provides the context for seamlessly integrating all the pieces and allowing to easily work with all of them together. In this case, GeoServer is providing the data, QGIS is providing the interface where we perform the selection, and R is providing the processing. SEXTANTE is just the mediator between these elements.</p>
+<p>Using SEXTANTE we can interact with a GeoServer instance not just to consume its data, but to import into it, having a bidirectional connection.</p>
+<p>In the <em>GeoServer/PostGIS tools</em> group, you will find some tools that you can use to create a new workspace, import a layer or import a style, among others.</p>
+<img alt="../_images/geoserver.png" src="../_images/geoserver.png" />
+<p>Styles are imported using an SLD file. Since QGIS supports exporting the style of a layer to SLD, you can create you styling using QGIS, then export it, and then use the corresponding SEXTANTE algorithm to add it to your GeoServer. To create and export a style, just right-click on a layer name in the TOC, select <em>Properties</em>, and then move to the <em>Style</em> tab. Clink on <em>Save Style...&#8221; and the select *SLD style</em>.</p>
+<img alt="../_images/style.png" src="../_images/style.png" />
+<p>Calling algorithms from the toolbox is the most common way of processing data with SEXTANTE, but in some cases that might not be the best alternative, specially if we have a workflow that involves a large number of different processes. SEXTANTE includes a graphical modeler that allow to create complex workflows that can be later executed as a single process, thus simplifying the process.</p>
+<p>The modeler interface is started from the SEXTANTE menu, using the &#8220;SEXTANTE modeler&#8221; menu.</p>
+<img alt="../_images/modeler.png" src="../_images/modeler.png" />
+<p>Creating a model involves adding a set of inputs and then the algorithms to use on then, defining the links between them.</p>
+<p>As an example, the model in the figure below takes a points layer, interpolates a raster layer from it and then extracts contour lines for that resulting raster layer, given an interval. The final layer is imported into a GeoServer instance. Used with a WFS service, this can be used to easily create an additional lines layer for a given points layer in a GeoServer instance, such as one containing temperature data for a set of sensors.</p>
+<img alt="../_images/model.png" src="../_images/model.png" />
+<p>The model can be added to the toolbox and run as any of the built-in algorithms.</p>
+<img alt="../_images/model_toolbox.png" src="../_images/model_toolbox.png" />
+<p>Its parameters dialog is also created automatically from the inputs it takes and the outputs it produces.</p>
+<img alt="../_images/model_dialog.png" src="../_images/model_dialog.png" />
+<p>SEXTANTE exposes its API through the QGIS python console, including not just all its available algorithms, but also several tools for easy handling both vector and raster data and creating new geoalgorithms. Users familiar with python will be able to create much more complex models with ease, and to automate tasks that involve processing.</p>
+<p>algorithms are executed ussing the <tt class="docutils literal"><span class="pre">runalg</span></tt> method, passing the name of the algorithm and the parameters it requires. Importing a layer into geoserver can be done from the QGIS console using code like the one shown below:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sextante</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;/home/gisdata/example.shp&quot;</span>
+<span class="n">sextante</span><span class="o">.</span><span class="n">runalg</span><span class="p">(</span><span class="s">&quot;gspg:importvectorintogeoserver&quot;</span><span class="p">,</span><span class="s">&quot;http://localhost:8080/geoserver/rest&quot;</span><span class="p">,</span><span class="s">&quot;admin&quot;</span><span class="p">,</span><span class="s">&quot;geoserver&quot;</span><span class="p">,</span><span class="n">filename</span><span class="p">,</span><span class="s">&quot;workspace_name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Algorithms in the <tt class="docutils literal"><span class="pre">gspg</span></tt> namespace include utilities for interacting with both GeoServer and PostGIS.</p>
+<p>If the layer is loaded into QGIS, there is no need to enter the filename. The layer object can be obtained with the <tt class="docutils literal"><span class="pre">getobject()</span></tt> method and then passed to the algorithm call instead of the filename. For a layer named <em>mylayer</em>, that would be:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sextante</span>
+<span class="n">layer</span> <span class="o">=</span> <span class="n">sextante</span><span class="o">.</span><span class="n">getobject</span><span class="p">(</span><span class="s">&quot;mylayer&quot;</span><span class="p">)</span>
+<span class="n">sextante</span><span class="o">.</span><span class="n">runalg</span><span class="p">(</span><span class="s">&quot;gspg:importvectorintogeoserver&quot;</span><span class="p">,</span><span class="s">&quot;http://localhost:8080/geoserver/rest&quot;</span><span class="p">,</span><span class="s">&quot;admin&quot;</span><span class="p">,</span><span class="s">&quot;geoserver&quot;</span><span class="p">,</span><span class="n">layer</span><span class="p">,</span><span class="s">&quot;workspace_name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Finally, a last productivity tool is available in SEXTANTE: the batch processing interface. Repeated calls to a single algorithm are simplified by using the batch processing interface. This can be used, for instance, to perform a bulk import of layers into GeoServer, by setting the batch processing interface to call the <em>Import into GeoServer</em> algorithm as many times as layers are to be imported.</p>
+<p>To open the batch processing interface, right-click on the name of an algorithm in the toolbox and select <em>Run as batch process</em>.</p>
+<img alt="../_images/batch.png" src="../_images/batch.png" />
+<p>Each row in the table (3 by default) represents a single execution, and more rows can be added manually, or will be automatically added when selecting a set of input layers, each of them to be used as input in a different execution of the algorithm.</p>
+<img alt="../_images/batch_import.png" src="../_images/batch_import.png" />
+<p>Models can also be run as a batch process. The model defined above, which computed a set of contour lines from a points layer and imported the result into GeoServer, can be called repeatedly using the same input layer and different intervals, to get contour layers of different level of detail, suitable to be rendered at different scales.</p>
+<p>More detailed documentation about SEXTANTE can be found at a dedicated chapter in the current QGIS manual, at <a class="reference external" href="http://docs.qgis.org/html/en/docs/user_manual/sextante/index.html">http://docs.qgis.org/html/en/docs/user_manual/sextante/index.html</a>. For the most up-to-date version, check the corresponding entry at the QGIS documentation github repository, at <a class="reference external" href="https://github.com/qgis/QGIS-Documentation/tree/master/source/docs/user_manual/sextante">https://github.com/qgis/QGIS-Documentation/tree/master/source/docs/user_manual/sextante</a></p>
+</div>
+
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright GeoNode Development Community.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.<br/>
+    </p>
+  </div>
+</footer>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38570723-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </body>
+</html>

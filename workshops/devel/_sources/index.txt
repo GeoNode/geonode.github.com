@@ -21,13 +21,16 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
 :ref:`debug`
   Learn how to debug GeoNode instances and projects.
 
+:ref:`processing`
+  Learn how to use the data in your GeoNode to do Spatial data processing with various tools. 
+
 :ref:`envsetup`
   Learn how to set up a GeoNode development environment so you can contribute to GeoNode's core.
 
 :ref:`api`
   Learn about the APIs GeoNode leverages and provides.
 
-:ref:`process`
+:ref:`devprocess`
   Learn about GeoNode's development process and how to work with the GeoNode community.
 
 .. toctree::
@@ -38,6 +41,7 @@ Welcome to the GeoNode Developers Workshop! This workshop will teach how to deve
    projects/index
    data/index
    debug/index
+   processing/index
    api/index
    envsetup/index
-   process/index
+   devprocess/index
