@@ -10,14 +10,11 @@
                 <div class="row">
                     <div class="span6">
                         <h1>
-                            <strong>Hello Administrator</strong>,<br />
-                            <span>Let us introduce the administrative features of <strong>GeoNode</strong>.</span>
+                            <strong>For Administrators</strong><br />
+                            <span>Learn more about the administrative features of <strong>GeoNode</strong></span>
                         </h1>
-                        <p>
-                            This tour will introduce the features of GeoNode, a complete web mapping solution.
-                        </p>
                         <div class="">
-                            <a href="/workshops/admin/" class="btn btn-success" target="_blank">Follow the Administrators <strong>Workshop</strong></a>
+                            <a href="/workshops/admin/" class="btn btn-success" target="_blank">Follow the <strong>Administrators Workshop</strong></a>
                         </div>
 
                     </div>
@@ -37,8 +34,8 @@
                                 <li><a href="#ogcsdi">Spatial Data Infrastructure</strong></a></li>
                                 <li><a href="#metadata"><strong>Metadata</strong></a></li>
                                 <li><a href="#security"><strong>Security</strong></a></li>
-                                <li><a href="#scale"><strong>Scaleablity</strong></a></li>
-                                <li><a href="#adminconsole"><strong>Admin Console</strong></a></li>
+                                <li><a href="#scale"><strong>Scalability</strong></a></li>
+                                <li><a href="#adminconsole"><strong>Administrator Console</strong></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -53,16 +50,17 @@
                     </div>
                     <div class="span7 number one">
                         <div class="highlighted-box">
-                            <h2>OGC Compliant SDI</strong></h2>
-                            <h4>Essential components for deploying OGC SDI</h4>
+                            <h2>Spatial Data Infrastructure</strong></h2>
+                            <h4>Essential components for deploying OGC-compliant services</h4>
                             <div>
-                                <p>GeoNode includes the essential building blocks than an agency needs to deploy an OGC compliant SDI. Having GeoServer as a foundation enables you to publish data from a wide variety of spatial data sources using Open Standards from the OGC and ISO. GeoServer is the reference implementation of WFS and WCS and is a certified compliant WMS. </p><p>GeoNode's Metadata and Cataloguing system also enables you to publish metadata in a variety of geospatial metadata standards (ISO, FGDC, NASA DIF, Dublin Core). pycsw is certified OGC compliant and a CSW reference implementation, providing a standards-based metadata and catalogue component of SDI.
+                                <p>GeoNode includes the essential building blocks that an agency needs to deploy an OGC-compliant spatial data infrastructure (SDI). Having GeoServer as a foundation enables you to publish data from a wide variety of spatial data sources using open protocols from the OGC such as Web Map Service (WMS) and Web Feature Service (WFS).</p>
+                                <p>GeoNode's metadata and catalog system also enables publishing metadata in a variety of standards (ISO, FGDC, NASA DIF, Dublin Core). The catalog implementation, pycsw, is certified OGC-compliant and a Catalog Service for Web (CSW) reference implementation.
                                 </p>
                             <ul class="unstyled">
                                 <li>Web Map Service (WMS)</li>
                                 <li>Web Feature Service (WFS)</li>
                                 <li>Web Coverage Service (WCS)</li>
-                                <li>Catalogue Service for Web (CSW)</li>
+                                <li>Catalog Service for Web (CSW)</li>
                                 <li>Web Map Context (WMC)</li>
                                 <li>Tile Map Service (TMS)</li>
                             </ul>
@@ -79,18 +77,17 @@
                     <div class="span7 number two">
                         <div class="highlighted-box">
                             <h2>Metadata</strong></h2>
-                            <h4>Metadata: Catalogue, Authoring and Management</h4>
+                            <h4>Authoring and management</h4>
                             <div>
-                                <p>Metadata is a key component of any SDI, and a key component of GeoNode's data and map publishing workflow. GeoNode provides a complete metadata catalogue solution.  Users and adminstrators can use GeoNode's metadata editor or upload an existing geospatial metadata XML document. Even further, default metadata is scraped from each individuals profile. Records are then editable through the web and accessible via search or a variety of standards-based catalogue interface standards via pycsw (OGC CSW, SRU, OpenSearch). Users can also access dataset and map metadata in a variety of standard formats (ISO, FGDC, NASA DIF, Dublin Core).</br>
+                                <p>GeoNode provides a complete metadata catalog solution. Users and administrators can use GeoNode's metadata editor or upload an existing metadata document. If no separate document is available, default metadata is harvested from existing information. Records are editable and accessible via search or a variety of standards-based catalog interfaces via pycsw (OGC CSW, SRU, OpenSearch). Users can also access metadata in a variety of standard formats (ISO, FGDC, NASA DIF, Dublin Core).</br>
                                 </p>
                             <ul class="unstyled">
-                                <li>CSW</li>
                                 <li>Upload</li>
                                 <li>Search</li>
-                                <li>Format Support</li>
+                                <li>Format support</li>
                                 <li>Versioning</li>
                             </ul>
-                            <a href="catalogue_metadata.html" class="hide btn btn-success">Learn about GeoNode's Metadata Capabilities</a>
+                            <a href="catalogue_metadata.html" class="hide btn btn-success">Learn about GeoNode's metadata capabilities</a>
                         </div>
                         </div>
                     </div>
@@ -109,36 +106,40 @@
                     <div class="span7 number three">
                         <div class="highlighted-box">
                             <h2>Security</strong></h2>
-                            <h4>Security Framework</h4>
+                            <h4>A framework for securing your users' data</h4>
                             <div>
-                                <p>GeoNode provides a robust framework for ensuring that it is is both easy to share your data with the public, with other users and groups as well as ensuring that data that is meant to be secure and private is only accessible by authorized users. GeoNode builds on Django's authentication framework and integrates with GeoServer's security subsystem. Permissions can be applied to layers and maps and can be used to assign read, write and edit permissions to them. </p><p>Additionally, GeoNode's integration with GeoServers security system ensures that the Web Services provied from your GeoNode honor the security setup you and your users have defined. <p></p>The GeoNode development team is also working to make it easy to use external services for authentication such as oAuth and LDAP as well as against social platforms like Facebook, Twitter and Google+. 
+                                <p>GeoNode builds on Django's authentication framework and integrates with GeoServer's security subsystem. Permissions can be applied to layers and maps and can be used to assign read, write, and edit permissions to them. Data can be freely open to the public or accessible only by authorized users.</p>
+                                <p>External services for authentication are available such as oAuth and LDAP, as well as through social platforms like Facebook, Twitter, and Google+. 
                                 </p>
                             <ul class="unstyled">
-                                <li>Generic Permissions (Anonymous or Authenticated)</li>
-                                <li>Layer and Map object Permissions</li>
+                                <li>Layer and map object permissions</li>
                                 <li>Integration with GeoServer security at the service level</li>
                                 <li>Integration with external authentication services</li>
                             </ul>
-                            <a href="security.html" class="hide btn btn-success">Learn about GeoNode's Security Framework</a>
+                            <a href="security.html" class="hide btn btn-success">Learn about GeoNode's security framework</a>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="feature-details feature2" id="scale">
+        <section class="feature-details feature4" id="scale">
             <div class="container">
                 <div class="row">
                     <div class="span7 number two">
                         <div class="highlighted-box">
                             <h2>Scalability</strong></h2>
-                            <h4>Scalability, reliability</h4>
+                            <h4>Designed for reliability under all load conditions</h4>
                             <div>
-                                <p>Since GeoNode's web components are based on django, the path to scalabilty is well travelled one, as Django is used on some of the highest traffic sites in the world. Caching can be implemented at several levels including at the page and layer level. </p><p>Additionally GeoNode leverages GeoWebCache to either dynamically or statically cache web map tiles locally or to a CDN which dramatically improves performance for your users and makes it easy to run high traffic geonode sites with minimal demands on your infrastructure. <p></p>The GeoNode development team is also constantly working to make it easier to deploy GeoNode to cloud based services such as Amazon Web Services (AWS) or OpenShift and making scalability on those platforms automatic and frictionless. 
+                                <p>GeoNode's web components are based on Django, used on some of the highest traffic sites on the web. Caching can be implemented at several levels including at the page and layer level. </p>
+                                <p>Additionally GeoNode leverages GeoWebCache to cache map tiles dramatically improving performance for your users and making it possible to run high-traffic sites with minimal demands on your infrastructure.</p>
+                                <p>GeoNode can also be deployed to cloud based services such as Amazon Web Services (AWS) or OpenShift, making scalability on those platforms automatic and frictionless. 
                                 </p>
                             <ul class="unstyled">
+                                <li>Cache map tiles locally or to a content delivery network (CDN)</li>
                             </ul>
-                            <a href="scale.html" class="hide hide btn btn-success">Learn about Deploying and Scaling GeoNode</a>
+
+                            <a href="scale.html" class="hide hide btn btn-success">Learn about deploying and scaling GeoNode</a>
                         </div>
                         </div>
                     </div>
@@ -148,7 +149,7 @@
                 </div>
             </div>
         </section>
-      <section class="feature-details feature3" id="adminconsole">
+      <section class="feature-details feature5" id="adminconsole">
             <div class="container">
                 <div class="row">
                     <div class="span5">
@@ -157,13 +158,13 @@
                     <div class="span7 number three">
                         <div class="highlighted-box">
                             <h2>Administration Console</strong></h2>
-                            <h4>Django Administrator Console</h4>
+                            <h4>Leverage the Django Administration Console</h4>
                             <div>
-                                <p>GeoNode provides a customized version of the default Django Adminsitration and Management console which provides an easy to use interface for looking at the entire set of modules and data that make up a GeoNode and to perform bulk operations against those. The Admin console can also be used to do basic usage monitoring and to monitor user provided content for acceptability and xxx per your sites specific use case. 
+                                <p>GeoNode provides a customized version of the default Django Administration and Management Console which provides an interface for viewing the entire set of modules and data that make up a GeoNode instance and to perform bulk operations. The console can also be used to do basic usage monitoring and to monitor user-provided content. 
                                 </p>
                             <ul class="unstyled">
-                                <li>Metadata Editing</li>
-                                <li>Bulk Operations</li>
+                                <li>Metadata editing</li>
+                                <li>Bulk operations</li>
                             </ul>
                             </div>
                         </div>
