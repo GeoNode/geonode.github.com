@@ -267,7 +267,7 @@
 
 	
 	<url>
-		<loc>about.html</loc>
+		<loc>about/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -323,7 +323,7 @@
 
 	
 	<url>
-		<loc>communication.html</loc>
+		<loc>communication/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -348,14 +348,6 @@
 	
 	<url>
 		<loc>dev_features.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>developers.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -389,7 +381,15 @@
 
 	
 	<url>
-		<loc>gallery.html</loc>
+		<loc>for-developers/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>gallery/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -429,7 +429,7 @@
 
 	
 	<url>
-		<loc>license.html</loc>
+		<loc>license/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
