@@ -8,6 +8,10 @@ To make and preview changes you need to do the following:
 pip install cactus
 cactus build
 cactus serve
+# navigate to http://localhost:8000/
+cp -R .build/* .
+lessc static/less/site.less > static/css/style.css
+# commit and push
 ```
 
 [1] https://github.com/koenbok/Cactus
