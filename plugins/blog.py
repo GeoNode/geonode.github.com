@@ -2,7 +2,7 @@ import os
 import datetime
 import logging
 
-POSTS_PATH = 'posts/'
+POSTS_PATHS = ['2010', '2011', '2012', '2013']
 POSTS = []
 
 def preBuild(site):
@@ -11,8 +11,12 @@ def preBuild(site):
 	
 	# Build all the posts
 	for page in site.pages():
-		if page.path.startswith(POSTS_PATH):
-			
+		isblog = False
+		for s in POSTS_PATHS:
+			if page.path.startswith(s):
+				isblog = True	
+		if isblog: 
+			print page.path			
 			if not page.path.endswith('.html'):
 				continue
 			
@@ -28,12 +32,13 @@ def preBuild(site):
 			postContext['author'] = find('author')
 			postContext['date'] = find('date')
 			postContext['path'] = page.path
-			
+		
+			print postContext['date']	
 			# Parse the date into a date object
 			try:
-				postContext['date'] = datetime.datetime.strptime(postContext['date'], '%d-%m-%Y')
+				postContext['date'] = datetime.datetime.strptime(postContext['date'], '%Y-%m-%d %H:%M:%S')
 			except Exception, e:
-				logging.warning("Date format not correct for page %s, should be dd-mm-yy\n%s" % (page.path, e))
+				logging.warning("Date format not correct for page %s, should be YYYY-mm-dd HH:MM:SS\n%s" % (page.path, e))
 				continue
 			
 			POSTS.append(postContext)
