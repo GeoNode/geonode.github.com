@@ -299,6 +299,14 @@
 
 	
 	<url>
+		<loc>blog/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>bootstrap_jquery.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>

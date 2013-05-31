@@ -35,6 +35,7 @@ about/index.html
 admin_console.html
 admin_features.html
 apis.html
+blog/index.html
 bootstrap_jquery.html
 catalogue_metadata.html
 collaboration.html
