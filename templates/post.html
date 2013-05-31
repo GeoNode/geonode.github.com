@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% block title %}{{ title }}{% endblock %}
 {% block body_class %}geonode-features{% endblock %}
 
     {% block contentwrap %}
@@ -11,6 +11,8 @@
                         <article class="article1">
     {% block content %}
     {% endblock %}
+    <p>Posted at - {{ date }}</p>
+    <a href='/{{ prevPost.path }}'><< {{ prevPost.title }}</a> -  <a href='/{{ nextPost.path }}'> {{ nextPost.title }} >></a> 
                         </article>
                 </div>
             </div>
