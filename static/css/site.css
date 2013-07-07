@@ -5400,3 +5400,8 @@ body.geonode-features section.feature-details .btn-next .arrow-right {
   display: block;
   padding-right: 25px;
 }
+
+
+.feature-img{
+    margin-top:80px;
+}
