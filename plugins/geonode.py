@@ -9,4 +9,5 @@ def preBuildPage(site, page, context, data):
         context['admin_workshop'] = admin_workshop
         context['dev_workshop'] = dev_workshop
         context['users_workshop'] = users_workshop
+        context['demo_site'] = "http://demo.geonode.org/"
         return context, data
