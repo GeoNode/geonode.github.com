@@ -267,6 +267,14 @@
 
 	
 	<url>
+		<loc>2014/04/geonode-2-0/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>about/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
@@ -462,6 +470,278 @@
 	
 	<url>
 		<loc>opensource_geospatial.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/01/hello-world/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/03/geonode-development-drives-geoext-styling-components/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/03/looking-for-partners/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/08/geonode-1-0-beta-release/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/10/geonode-1-0-rc1-release/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/10/geonode-1-0-rc2/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/11/geonode-1-0-rc3/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/11/geonode-1-0-rc4/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/11/geonode-presentation/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2010/12/geonode-1-0-released/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/02/worldmap/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/03/geonode-since-1-0/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/04/data-gov-is-dead-long-live-open-data/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/05/geonode-announcement-list/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/05/patch-review/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/05/roadmapping-summit/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/05/week-in-review-9-13-may-2011/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/06/become-a-geonode-developer/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/06/geonode-1-1-beta2/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/07/another-way-to-become-a-geonode-developer/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/07/seeking-partners/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/08/geonode-at-foss4g/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/09/geonode-1-1-rc1/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2011/10/geonode-in-the-eastern-caribbean/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/02/geonode-1-1-released/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/02/geonode-user-survey/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/02/sprint/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/03/geonode-user-survey-results/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/05/geonode-1-1-1/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/05/geonode-1-2-alpha-2/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/07/geonode-1-2-beta1/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/09/help-the-world-bank-build-a-geonode-to-qgis-bridge/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2012/10/geonode-1-2/index.html</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>posts/2014/04/geonode-2-0/index.html</loc>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
