@@ -5,6 +5,10 @@ Please do not edit files outside the 'pages' directory. This repo is using Cactu
 To make and preview changes you need to do the following:
 
 ```
+
+#install lessc
+sudo npm install -g less
+
 pip install cactus
 cactus build
 cactus serve
