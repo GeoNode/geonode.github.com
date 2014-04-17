@@ -15,7 +15,28 @@ class GalleryItem(object):
         self.region = region
         self.url = url
 
-
+nepa = GalleryItem('nepaNODE',
+                      subtitle="nepaNODE",
+                      description='This GeoNode instance is made available to federal staff and contractors working to implement the National Environmental Policy Act of 1969 (NEPA) and other related environmental reviews and permitting processes.',
+                      screenshot="../static/img/nepanode.png",
+                      screenshot_width=325,
+                      screenshot_height=168,
+                      region="americas",
+                      url="http://nepanode.anl.gov/"
+                      )
+                      
+wfp = GalleryItem('UN WFP',
+                      subtitle="United Nations World Food Programme",
+                      description='The United Nations World Food Programme is using GeoNode enhance their data collecting capabilities \
+                            from anywhere in the world. By leveraging features like on line editing features \
+                            and crowdsouring data they are be better prepared to react during humanitarian emergencies.',
+                      screenshot="../static/img/wfp.png",
+                      screenshot_width=325,
+                      screenshot_height=168,
+                      region="worldwide",
+                      url="http://geonode.wfp.org"
+                      )
+                      
 bolivia = GalleryItem('Bolivia GeoNode',
                       description='Bolivia is using GeoNode to develop a \
                                    Geographical Data Infrastructure for the National Information System for Risk \
@@ -175,14 +196,12 @@ additional_geonodes = GalleryItem("More examples",
                                 	         remote sensing techniques along with reference data to support the Post Disaster Needs Assessments.</li> \
                                             <li><a href= "http://www.golfgis.com" target="_new">Golfgis.com</a> - Golfgis.com was developed to help golf courses manage sustainably, reduce waste, improve ecological diversity and help drive business.</li>\
                                             <li><a href= "http://geonode.gov.vc" target="_new">St. Vincent Geonode</a> - Various ministries of the St. Vincent Government are using GeoNode to expose their geospatial data.</li>\
-                                            <li><a href= "http://geonode.wfp.org" target="_new">World Food Programme</a> - The United Nations World Food Programme is using GeoNode enhance their data collecting capabilities from anywhere in the world. By leveraging features like on line editing features\
-                                        and crowdsouring data they are be better prepared to react during humanitarian emergencies.</li> \
                                         </ul>',
                                   region='worldwide',
                                   screenshot="../static/img/additional.png"
                                   )
 
 def preBuildPage(site, page, context, data):
-        context['gallery'] = [bolivia, cba, cigno, haiti, mapstory, masdap, montagneAperte, mozadapt, paris,
+        context['gallery'] = [nepa, wfp, bolivia, cba, cigno, haiti, mapstory, masdap, montagneAperte, mozadapt, paris,
                               virtual_kenya, additional_geonodes]
         return context, data
