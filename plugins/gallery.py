@@ -36,6 +36,36 @@ wfp = GalleryItem('UN WFP',
                       region="worldwide",
                       url="http://geonode.wfp.org"
                       )
+
+jrc = GalleryItem('EU JRC',
+                      subtitle="European Commission - Joint Research Centre",
+                      description='The European Commission - Joint Research Centre is using GeoNode to provide a Spatial \
+                            Data Infrastructure (SDI) for Syria Damage Assessment is proposed as a common platform to \
+                            collect and disseminate geospatial analysis results which relate to the impact assessment \
+                            of the Syrian crisis. The prime purpose of the site is to host documented data sets that \
+                            describe impact in a consistent spatio-temporal manner. The data sets can be maintained \
+                            through versioning and a consistent description of their lineage through meta-data records.',
+                      screenshot="../static/img/jrc.png",
+                      screenshot_width=325,
+                      screenshot_height=168,
+                      region="worldwide",
+                      url="http://geonode.jrc.ec.europa.eu"
+                      )
+
+icraf = GalleryItem('ICRAF',
+                      subtitle="ICRAF Geoscience Lab",
+                      description='TICRAF Geoscience Lab, uses Geonde as a spatial data sharing platform to meets its \
+                            mission of applying GeoSciences in real decision contexts, such as climate change adaptation,\
+                            hydrological effects of changes in climate and land cover, targeting of agroforestry \
+                            interventions, provision of soil fertility and surveillance advisory services for smallholder \
+                            farmers, digital soil and land use/cover mapping, and measuring impacts of interventions, all \
+                            this using open source.',
+                      screenshot="../static/img/icraf.png",
+                      screenshot_width=325,
+                      screenshot_height=168,
+                      region="worldwide",
+                      url="http://landscapeportal.org/"
+                      )
                       
 bolivia = GalleryItem('Bolivia GeoNode',
                       description='Bolivia is using GeoNode to develop a \
@@ -189,19 +219,8 @@ virtual_kenya = GalleryItem("VirtualKenya.org",
                            url="http://maps.virtualkenya.org"
                            )
 
-additional_geonodes = GalleryItem("More examples",
-                                  "Links to additional GeoNode deployments.",
-                                  description='<ul class="unstyled"> \
-                                            <li><a href= "http://geonode.ithacaweb.org" target="_new">The CoSA Web Applicaiton</a> - Ithaca is using GeoNode as a demonstration of an online geospatial platform with data obtained through \
-                                	         remote sensing techniques along with reference data to support the Post Disaster Needs Assessments.</li> \
-                                            <li><a href= "http://www.golfgis.com" target="_new">Golfgis.com</a> - Golfgis.com was developed to help golf courses manage sustainably, reduce waste, improve ecological diversity and help drive business.</li>\
-                                            <li><a href= "http://geonode.gov.vc" target="_new">St. Vincent Geonode</a> - Various ministries of the St. Vincent Government are using GeoNode to expose their geospatial data.</li>\
-                                        </ul>',
-                                  region='worldwide',
-                                  screenshot="../static/img/additional.png"
-                                  )
 
 def preBuildPage(site, page, context, data):
-        context['gallery'] = [nepa, wfp, bolivia, cba, cigno, haiti, mapstory, masdap, montagneAperte, mozadapt, paris,
-                              virtual_kenya, additional_geonodes]
+        context['gallery'] = [nepa, wfp, jrc, icraf, bolivia, cba, cigno, haiti, mapstory, masdap, montagneAperte, mozadapt, paris,
+                              virtual_kenya]
         return context, data
