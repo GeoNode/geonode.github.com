@@ -46,6 +46,7 @@ jrc = GalleryItem('EU JRC',
                             describe impact in a consistent spatio-temporal manner. The data sets can be maintained \
                             through versioning and a consistent description of their lineage through meta-data records.',
                       screenshot="../static/img/jrc.png",
+                      screenshot_width=325,
                       screenshot_height=168,
                       region="worldwide",
                       url="http://geonode.jrc.ec.europa.eu"
