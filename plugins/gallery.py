@@ -38,7 +38,7 @@ wfp = GalleryItem('UN WFP',
                       )
 
 jrc = GalleryItem('EU JRC',
-                      subtitle="European Commission - Joint Research Centre",
+                      subtitle="European Commission - JRC",
                       description='The European Commission - Joint Research Centre is using GeoNode to provide a Spatial \
                             Data Infrastructure (SDI) for Syria Damage Assessment is proposed as a common platform to \
                             collect and disseminate geospatial analysis results which relate to the impact assessment \
