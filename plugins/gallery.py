@@ -158,7 +158,7 @@ masdap = GalleryItem("MASDAP",
                      region="worldwide",
                      screenshot="../static/img/masdap.png",
                      screenshot_height=189,
-                     url="http://23.22.63.123")
+                     url="http://www.masdap.mw")
 
 montagneAperte = GalleryItem("montagneAperte",
                              "GfosServices",
