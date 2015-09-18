@@ -1,0 +1,66 @@
+---
+layout: base
+title: GeoNode 2.0
+---    
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <h1>GeoNode 2.0</h1> 
+        <article class="article1">
+          
+          <p>
+            The GeoNode team is proud to announce the release of GeoNode 2.0. This
+            is a huge step forward for the project in usability, stability, and
+            flexibility. The team reworked the core to be much easier to customize
+            with Django. And then worked out countless bugs so that it is a stable
+            server. 2.0 brings a complete redesign of the user experience,
+            integrating Bootstrap to enable easier front-end customization.
+          </p>
+
+          <p>
+            Another huge effort for 2.0 has been
+            <a href="http://docs.geonode.org/en/latest/" target="_blank">documentation</a> for users,
+            developers and administrators to all get up to speed quickly. The <a href"http://docs.geonode.org/en/latest/tutorials/index.html" target="_blank">tutorials</a> have been used in a number of live workshops, so are battle-tested to work well.
+          </p>
+
+          <h2>Technical report</h2>
+
+          <p>If you are hungry for the details, please see our <a href="https://docs.google.com/document/d/11no8Cy8-e3Y0T-6iiCq1SEBhehdJZao4ET6H0-ly8WI/edit" target="_blank">technical description of the changes</a> including links to GNIPS (GeoNode Improvement Proposals) and information about project growth.<p>
+
+            <h2>Upgrade Instructions</h2>
+
+            <p>Ubuntu users who have installed from ppa:geonode/release can do the following to download the new version:</p>
+
+            <p><code>sudo apt-get update</code><br>
+              <code>sudo apt-get upgrade</code></p>
+
+              <h2>New Installation Instructions</h2>
+
+              <p>This release is compatible only with Ubuntu 12.04 Precise, when 14.04 Trusty Tahr is released later this month, we will release GeoNode 2.1 to go with it. Security bugfixes will be released as 2.0.x and will be compatible with 12.04. If you want to install it for the first time, here is what you have to do:</p>
+
+              <p>
+                <code>sudo add-apt-repository ppa:geonode/release</code><br>
+                <code>sudo apt-get update</code><br>
+                <code>sudo apt-get install geonode</code>
+              </p>
+
+              <p>Then set the IP address and create a superuser</p>
+
+              <code>sudo geonode-updateip 127.0.0.1</code><br>
+              <code>geonode createsuperuser</code>
+
+              <p>After your GeoNode is set up, don't forget to read the <a href="http://docs.geonode.org/en/latest/#for-administrators" target="_blank">admin docs</a> to personalize it and tweak it for better performance</p>
+
+              <h2>Getting support</h2>
+
+              <p>You can report any issues or feature requests in our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker in Github</a>.</p>
+
+              <p>And a big thank you to all the developers and contributors for the big effort. See you in our IRC channel #geonode on <a href="http://webchat.freenode.net/" target="_blank">Freenode.net</a> or our <a href="https://groups.google.com/forum/#!forum/geonode-users" target="_blank">Users Google Group</a></p>
+
+              <p>Posted at - 2014-04-9 14:59:03</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      {% include footer.html %}

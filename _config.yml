@@ -1,0 +1,6 @@
+baseurl: "/geonode_jekyll"
+
+defaults:
+ -
+  values:
+    layout: 'base.html'
