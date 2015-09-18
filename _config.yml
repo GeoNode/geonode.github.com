@@ -1,4 +1,4 @@
-baseurl: "/geonode_jekyll"
+baseurl: "/"
 
 defaults:
  -
