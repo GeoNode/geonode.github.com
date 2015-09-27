@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Dev Features - GeoNode</title> 
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <meta name='description' content='GeoNode'/>
+    <meta name='keywords' content='GeoNode'/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/static/css/site.css' type='text/css' media='all' />
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/sequence.jquery-min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  </head>
+  <body class="geonode-features admin-features">
+    <header class="main">
+      <div class="container">
+        <div class="row">
+          <div class="span2">
+            <h1><a class="brand" href="">GeoNode</a></h1>
+          </div>
+          <div class="span1">
+            <div class="btn-group nav-coll">
+              <button type="button" class="btn-nav-coll" data-toggle="dropdown">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="/user_features.html">For Users</a></li>
+                <li><a href="/dev_features.html">For Developers</a></li>
+                <li><a href="/admin_features.html">For Admins</a></li>
+                <li><a href="http://docs.geonode.org/en/latest/tutorials/">Workshops</a></li>
+                <li><a href="/communication/">Communication</a></li>
+                <li><a href="/faqs.html">FAQs</a></li>
+                <li><a href="/gallery/">Sites Gallery</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="http://docs.geonode.org/" target = '_blank'>Documentation</a></li>
+                <li><a href="http://github.com/geonode/geonode/issues" target = '_blank'>Issue Tracker</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="span9">
+            <div class="pull-right">
+              <a href="/#install" class="btn btn-success">Install GeoNode</a>
+              <a target="_blank" href="http://demo.geonode.org" class="btn btn-warning">Try the Demo</a>
+              <a href="/blog/" class="btn btn-success">Read our Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h1>
+          <strong>For Administrators</strong><br />
+          <span>Learn more about the administrative features of <strong>GeoNode</strong></span>
+        </h1>
+        <div class="">
+          <a href="http://docs.geonode.org/en/latest/tutorials/admin/" class="btn btn-success" target="_blank">Follow the <strong>Administrators Workshop</strong></a>
+        </div>
+
+      </div>
+      <div class="span6">
+        <img src="static/img/features_hero_img.png" width="489" height="216" alt="" class="pull-right hero-img" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="body">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <nav class="subnav">
+          <h5>Administrator Features:</h5>
+          <ul class="unstyled">
+            <li><a href="#ogcsdi">Spatial Data Infrastructure</strong></a></li>
+            <li><a href="#security"><strong>Security</strong></a></li>
+            <li><a href="#scale"><strong>Scalability</strong></a></li>
+            <li><a href="#adminconsole"><strong>Administrator Console</strong></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feature-details feature1" id="ogcsdi">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="static/img/noun_project_9760.svg.png" width="320" height="320" alt="Explore Maps" class="feature-img" />
+      </div>
+      <div class="span7 number one">
+        <div class="highlighted-box">
+          <h2>Spatial Data Infrastructure</strong></h2>
+          <h4>Essential components for OGC-compliant services</h4>
+          <div>
+            <p>GeoNode includes the essential building blocks that an agency needs to deploy an OGC-compliant spatial data infrastructure (SDI). Having GeoServer as a foundation enables you to publish data from a wide variety of spatial data sources using open protocols from the OGC such as Web Map Service (WMS) and Web Feature Service (WFS).</p>
+            <p>GeoNode's metadata and cataloguing system also enables publishing metadata in a variety of standards (ISO, FGDC, NASA DIF, Dublin Core). The catalogue implementation, pycsw, is certified OGC-compliant and a Catalog Service for Web (CSW) reference implementation.
+            </p>
+            <ul class="unstyled">
+              <li>Web Map Service (WMS)</li>
+              <li>Web Feature Service (WFS)</li>
+              <li>Web Coverage Service (WCS)</li>
+              <li>Catalog Service for Web (CSW)</li>
+              <li>Web Map Context (WMC)</li>
+              <li>Tile Map Service (TMS)</li>
+            </ul>
+            <a href="ogc_sdi.html" class="hide btn btn-success">Learn about GeoNode for SDI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature-details feature3" id="security">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="static/img/noun_project_3182.svg.png" width="340" height="340" alt="Explore Maps" class="feature-img" />
+      </div>
+      <div class="span7 number three">
+        <div class="highlighted-box">
+          <h2>Security</strong></h2>
+          <h4>A framework for securing your users' data</h4>
+          <div>
+            <p>GeoNode builds on Django's authentication framework and integrates with GeoServer's security subsystem. Permissions can be applied to layers and maps and can be used to assign read, write, and edit permissions to them. Data can be freely open to the public or accessible only by authorized users.</p>
+            <p>External services for authentication are available such as oAuth and LDAP, as well as through social platforms like Facebook, Twitter, and Google+. 
+            </p>
+            <ul class="unstyled">
+              <li>Layer and map object permissions</li>
+              <li>Integration with GeoServer security at the service level</li>
+              <li>Integration with external authentication services</li>
+            </ul>
+            <a href="security.html" class="hide btn btn-success">Learn about GeoNode's security framework</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feature-details feature4" id="scale">
+  <div class="container">
+    <div class="row">
+      <div class="span7 number four">
+        <div class="highlighted-box">
+          <h2>Scalability</strong></h2>
+          <h4>Designed for reliability under all load conditions</h4>
+          <div>
+            <p>GeoNode's web components are based on Django, used on some of the highest traffic sites on the web. Caching can be implemented at several levels including at the page and layer level. </p>
+            <p>Additionally GeoNode leverages GeoWebCache to cache map tiles dramatically improving performance for your users and making it possible to run high-traffic sites with minimal demands on your infrastructure.</p>
+            <p>GeoNode can also be deployed to cloud based services such as Amazon Web Services (AWS) or OpenShift, making scalability on those platforms automatic and frictionless. 
+            </p>
+            <ul class="unstyled">
+              <li>Cache map tiles locally or to a content delivery network (CDN)</li>
+            </ul>
+
+            <a href="scale.html" class="hide hide btn btn-success">Learn about deploying and scaling GeoNode</a>
+          </div>
+        </div>
+      </div>
+      <div class="span5">
+        <img src="static/img/noun_project_6853.svg.png" width="350" height="350" alt="Explore Maps" class="feature-img" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feature-details feature5" id="adminconsole">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="static/img/noun_project_18273.svg.png" width="290" height="290" alt="Explore Maps" class="feature-img" />
+      </div>
+      <div class="span7 number five">
+        <div class="highlighted-box">
+          <h2>Administration Console</strong></h2>
+          <h4>Leverage the Django Administration Console</h4>
+          <div>
+            <p>GeoNode provides a customized version of the default Django Administration and Management Console which provides an interface for viewing the entire set of modules and data that make up a GeoNode instance and to perform bulk operations. The console can also be used to do basic usage monitoring and to monitor user-provided content. 
+            </p>
+            <ul class="unstyled">
+              <li>Metadata editing</li>
+              <li>Bulk operations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hide continue">
+  <div class="container">
+    <a href="#">Continue</a>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    
+
+    <section class="btm">
+      <div class="row">
+        <div class="span6">
+          <p>This <a href="http://github.com/geonode/geonode.github.com/" target="_blank">Website</a> is licensed <a href='license.html'>CC by SA 2012.</a> - <a href='contributors.html'>GeoNode Contributors.</a> Designed by <a href="http://www.spatialdev.com/" target="_blank">Spatial Dev</a></p>
+        </div>
+        <div class="span6">
+          <div class="pull-right social">
+            <a href="http://github.com/geonode/" class="gh" target="_blank">GitHub</a>
+            <a href="https://twitter.com/GeoNode" class="tw" target="_blank">Twitter</a>
+            <a href="https://plus.google.com/u/1/b/100587124776656797019/" class="gp" target="_blank">Google+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+    <a href="https://github.com/GeoNode/geonode/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38570723-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+  </body>
+</html>

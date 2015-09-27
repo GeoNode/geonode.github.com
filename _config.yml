@@ -1,0 +1,6 @@
+baseurl: "/"
+
+defaults:
+ -
+  values:
+    layout: 'base.html'

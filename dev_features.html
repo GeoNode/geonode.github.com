@@ -1,286 +1,185 @@
-<!doctype html>
-<html lang="en-US">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="UTF-8">
-        <title> Developer Features — GeoNode </title> 
-        <link rel="shortcut icon" href="/static/img/favicon.ico" />
-        <meta name='description' content='GeoNode'/>
-        <meta name='keywords' content='GeoNode'/>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' href='/static/css/site.css' type='text/css' media='all' />
-        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-	
-        <script type="text/javascript" src="/static/js/jquery.js"></script>
-        <script type="text/javascript" src="/static/js/sequence.jquery-min.js"></script>
-        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-	
-    </head>
-    <body class="geonode-features dev-features">
-		
-        <header class="main">
-            <div class="container">
-                <div class="row">
-                    <div class="span2">
-                        <h1><a class="brand" href="/">GeoNode</a></h1>
-                    </div>
-                    <div class="span1">
-                        <div class="btn-group nav-coll">
-                            <button type="button" class="btn-nav-coll" data-toggle="dropdown">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="/user_features.html">For Users</a></li>
-                                <li><a href="/dev_features.html">For Developers</a></li>
-                                <li><a href="/admin_features.html">For Admins</a></li>
-                                <li><a href="http://docs.geonode.org/en/latest/tutorials">Workshops</a></li>
-                                <li><a href="/communication/">Communication</a></li>
-                                <li><a href="/faqs.html">FAQs</a></li>
-                                <li><a href="/gallery/">Sites Gallery</a></li>
-                                <li><a href="/blog/">Blog</a></li>
-                                <li><a href="http://docs.geonode.org/" target = '_blank'>Documentation</a></li>
-                                <li><a href="http://github.com/geonode/geonode/issues" target = '_blank'>Issue Tracker</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="span9">
-                        <div class="pull-right">
-                            <a href="/#install" class="btn btn-success">Install GeoNode</a>
-                            <a target="_blank" href="http://demo.geonode.org/" class="btn btn-warning">Try the Demo</a>
-                            <a href="/blog/" class="btn btn-success">Read our Blog</a>
-                        </div>
-                    </div>
-                </div>
+---
+layout: base
+title: Dev Features - GeoNode
+body_class: "geonode-features dev-features"
+---    
+<section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h1>
+          <strong>For Developers</strong>,<br />
+          <span>Learn more about the powerful development features of <strong>GeoNode</strong>.</span>
+        </h1>
+        <div>
+          <a href="http://docs.geonode.org/en/latest/tutorials/devel/" class="btn btn-success" target = "_blank">Follow the <strong>Developers Workshop</strong></a>
+        </div>
+      </div>
+      <div class="span6">
+        <img src="static/img/features_hero_img.png" width="489" height="216" alt="" class="pull-right hero-img" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="body">
+  <div class="container">
+    <div class="row">
+      <div class="span10">
+        <nav class="subnav">
+          <h5>Developer Features:</h5>
+          <ul class="unstyled">
+            <li><a href="#osgeo">Open Source Geospatial</strong></a></li>
+            <li><a href="#django">Django</strong></a></li>
+            <li><a href="#front-end">Bootstrap and jQuery</strong></a></li>
+            <li><a href="#apis">APIs</strong></a></li>
+            <li><a href="#interoperability">Interoperability</strong></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feature-details feature1" id="osgeo">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="static/img/noun_project_8233.svg.png" width="400" height="400" alt="Open Source Geospatial" class="feature-img" />
+      </div>
+      <div class="span7 number one">
+        <div class="highlighted-box">
+          <h2>Open Source Geospatial</strong></h2>
+          <h4>Open from top to bottom</h4>
+          <div>
+           <p>GeoNode is built upon a platform of proven open source components including Django, GeoServer, pycsw, OpenLayers and GeoExt. GeoNode implements many Open Geospatial Consortium (OGC) standards, including Web Map Service (WMS), Web Feature Service (WFS), Web Coverage Service (WCS), KML, and Catalogue Service for Web (CSW). GeoNode development also contributes to the underlying open source projects and software libraries.</p>
+           <p>Features include: 
+           </p>
+         </div>
+         <ul class="unstyled">
+          <li>PostGIS Spatial Databases</li>
+          <li>GeoServer OGC Services</li>
+          <li>pycsw CSW Metadata Catalogue</li>
+          <li>Geospatial Python libraries</li>
+          <li>OpenLayers and GeoExt Web Mapping Libraries</li>
+        </ul>
+        <a href="opensource_geospatial.html" class="hide btn btn-success">Learn about GeoNode's open source geospatial foundation</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="feature-details feature2" id="django">
+  <div class="container">
+    <div class="row">
+      <div class="span7 number two">
+        <div class="highlighted-box">
+          <h2>Django</strong></h2>
+          <h4>Built for the web</h4>
+          <ul class="unstyled">
+           <div>
+            <p>GeoNode leverages the Django web framework, offering a friendly and extensible environment for web developers accustomed to using any modern MVC web framework. In contrast with many geospatial tools which force web developers to adapt to a GIS context, GeoNode and Django offer a framework on which developers can build geospatial web applications in a familiar environment.</p>
+            <p>
+              Django has a large user base and ecosystem of apps, making it easy to develop websites focused on users and collaboration.</p>
+              <p>
+                Features Include: 	
+              </p>
             </div>
-        </header>
-		
-
-    
-	
-        <section class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="span6">
-                        <h1>
-                            <strong>For Developers</strong>,<br />
-                            <span>Learn more about the powerful development features of <strong>GeoNode</strong>.</span>
-                        </h1>
-                        <div>
-                            <a href="http://docs.geonode.org/en/latest/tutorials/devel/" class="btn btn-success" target = "_blank">Follow the <strong>Developers Workshop</strong></a>
-                        </div>
-                    </div>
-                    <div class="span6">
-                        <img src="static/img/features_hero_img.png" width="489" height="216" alt="" class="pull-right hero-img" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="body">
-            <div class="container">
-                <div class="row">
-                    <div class="span10">
-                        <nav class="subnav">
-                            <h5>Developer Features:</h5>
-                            <ul class="unstyled">
-                                <li><a href="#osgeo">Open Source Geospatial</strong></a></li>
-                                <li><a href="#django">Django</strong></a></li>
-                                <li><a href="#front-end">Bootstrap and jQuery</strong></a></li>
-                                <li><a href="#apis">APIs</strong></a></li>
-                                <li><a href="#interoperability">Interoperability</strong></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feature-details feature1" id="osgeo">
-            <div class="container">
-                <div class="row">
-                    <div class="span5">
-                        <img src="static/img/noun_project_8233.svg.png" width="400" height="400" alt="Open Source Geospatial" class="feature-img" />
-                    </div>
-                    <div class="span7 number one">
-                        <div class="highlighted-box">
-                            <h2>Open Source Geospatial</strong></h2>
-                            <h4>Open from top to bottom</h4>
-							<div>
-							<p>GeoNode is built upon a platform of proven open source components including Django, GeoServer, pycsw, OpenLayers and GeoExt. GeoNode implements many Open Geospatial Consortium (OGC) standards, including Web Map Service (WMS), Web Feature Service (WFS), Web Coverage Service (WCS), KML, and Catalogue Service for Web (CSW). GeoNode development also contributes to the underlying open source projects and software libraries.</p>
-							<p>Features include: 
-							</p>
-							</div>
-                            <ul class="unstyled">
-                                <li>PostGIS Spatial Databases</li>
-                                <li>GeoServer OGC Services</li>
-                                <li>pycsw CSW Metadata Catalogue</li>
-                                <li>Geospatial Python libraries</li>
-                                <li>OpenLayers and GeoExt Web Mapping Libraries</li>
-                            </ul>
-                            <a href="opensource_geospatial.html" class="hide btn btn-success">Learn about GeoNode's open source geospatial foundation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feature-details feature2" id="django">
-            <div class="container">
-                <div class="row">
-                    <div class="span7 number two">
-                        <div class="highlighted-box">
-                            <h2>Django</strong></h2>
-                            <h4>Built for the web</h4>
-                            <ul class="unstyled">
-							<div>
-								<p>GeoNode leverages the Django web framework, offering a friendly and extensible environment for web developers accustomed to using any modern MVC web framework. In contrast with many geospatial tools which force web developers to adapt to a GIS context, GeoNode and Django offer a framework on which developers can build geospatial web applications in a familiar environment.</p>
-								<p>
-								Django has a large user base and ecosystem of apps, making it easy to develop websites focused on users and collaboration.</p>
-                                <p>
-								Features Include: 	
-								</p>
-							</div>
-                            <ul class="unstyled">
-                                <li>Modern web framework</li>
-                                <li>Pluggable GeoNode Django apps</li>
-                                <li>Deployable template projects</li>
-                                <li>Integrated admin interface</li>
-                                <li>Large ecosystem of pluggable apps</li>
-                                <li>Spatial GeoDjango object-relational mapping available</li>
-                            </ul>
-                            <a href="django.html" class="hide btn btn-success">Learn about GeoNode's pluggable Django apps and deployable projects</a>
-                        </div>
-                    </div>
-                    <div class="span5">
-                        <img src="static/img/noun_project_2174.svg.png" width="310" height="310" alt="Explore Maps" class="feature-img" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feature-details feature3" id="front-end">
-            <div class="container">
-                <div class="row">
-                    <div class="span5">
-                        <img src="static/img/noun_project_3064.svg.png" width="280" height="280" alt="Explore Maps" class="feature-img" />
-                    </div>
-                    <div class="span7 number three">
-                        <div class="highlighted-box">
-                            <h2>Bootstrap and jQuery</strong></h2>
-                            <h4>Modern and flexible front-end</h4>
-                            <p>GeoNode's front-end is based on the popular and flexible jQuery and Bootstrap frameworks. A set of jQuery JavaScript plugins is used to drive the user interface, and Bootstrap CSS is used to style the pages. Both of these frameworks make it easy to theme and customize your own GeoNode implementation if desired.</p>
-							<p>Features include:</p>
-                            <ul class="unstyled">
-                                <li>Bootstrap CSS framework</li>
-                                <li>jQuery JavaScript front-end and plugins</li>
-                                <li>Django templating system</li>
-                                <li>Customizable themes using LESS and Bootswatch</li>
-                            </ul>
-                            <a href="bootstrap_jquery.html" class="hide btn btn-success">Learn about GeoNode's Front End</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feature-details feature4" id="apis">
-            <div class="container">
-                <div class="row">
-                    <div class="span7 number four">
-                        <div class="highlighted-box">
-                            <h2>APIs<strong></h2>
-                            <h4>Integrate easily</h4>
-						<div>
-							<p>GeoNode supports multiple points for application integration. 
-							</br>Features include: 
-							</p>
-						</div>
-                            <ul class="unstyled">
-                                <li>OGC-compliant web services</li>
-                                <li>GeoServer REST API</li>
-                                <li>GeoNode search and REST APIs</li>
-                            </ul>
-                            <a href="apis.html" class="hide btn btn-success">Learn about GeoNode's APIs</a>
-                        </div>
-                    </div>
-                    <div class="span5">
-                        <img src="static/img/noun_project_18273.svg.png" width="280" height="280" alt="Explore Maps" class="feature-img" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="feature-details feature5" id="interoperability">
-            <div class="container">
-                <div class="row">
-                    <div class="span5">
-                        <img src="static/img/noun_project_2549.svg.png" width="350" height="350" alt="Explore Maps" class="feature-img" />
-                    </div>
-                    <div class="span7 number five">
-                        <div class="highlighted-box">
-                            <h2>Interoperability</strong></h2>
-                            <h4>Plays well with others</h4>
-						<div>
-							<p>GeoNode is a social platform. GeoNode's foundational components make it easy to interact with other GeoNode deployments, external OGC services as well as with many other popular social services and tools.
-							</br>	
-							</p>
-						</div>
-                            <ul class="unstyled">
-                                <li>Connects with other GeoNode deployments</li>
-                                <li>Interacts with OGC-compliant SDIs</li>
-                                <li>Integrates with other social networking platforms (Twitter, Facebook, Google+, LinkedIn, Jive, Telligent)</li>
-                                <li>Integrates with other content management systems (WordPress, Drupal)</li>
-                            </ul>
-                            <a href="interoperability.html" class="hide btn btn-success">Learn more about interoperability with external systems</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="hide">
-            <div class="container">
-                <a href="#">Continue</a>
-            </div>
-        </section>
-
-    
-
-	
-		 <footer class="footer">
-			<div class="container">
-                
-                <section class="btm">
-                    <div class="row">
-                        <div class="span6">
-                          <p>This <a href="http://github.com/geonode/geonode.github.com/" target="_blank">Website</a> is licensed <a href='license.html'>CC by SA 2012.</a> - <a href='contributors.html'>GeoNode Contributors.</a> Designed by <a href="http://www.spatialdev.com/" target="_blank">Spatial Dev</a></p>
-                        </div>
-                        <div class="span6">
-                            <div class="pull-right social">
-                                <a href="http://github.com/geonode/" class="gh" target="_blank">GitHub</a>
-                                <a href="https://twitter.com/GeoNode" class="tw" target="_blank">Twitter</a>
-                                <a href="https://plus.google.com/u/1/b/100587124776656797019/" class="gp" target="_blank">Google+</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </footer>
-		
-<a href="https://github.com/GeoNode/geonode/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-        
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38570723-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-    </body>
-</html>
+            <ul class="unstyled">
+              <li>Modern web framework</li>
+              <li>Pluggable GeoNode Django apps</li>
+              <li>Deployable template projects</li>
+              <li>Integrated admin interface</li>
+              <li>Large ecosystem of pluggable apps</li>
+              <li>Spatial GeoDjango object-relational mapping available</li>
+            </ul>
+            <a href="django.html" class="hide btn btn-success">Learn about GeoNode's pluggable Django apps and deployable projects</a>
+          </div>
+        </div>
+        <div class="span5">
+          <img src="static/img/noun_project_2174.svg.png" width="310" height="310" alt="Explore Maps" class="feature-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature-details feature3" id="front-end">
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <img src="static/img/noun_project_3064.svg.png" width="280" height="280" alt="Explore Maps" class="feature-img" />
+        </div>
+        <div class="span7 number three">
+          <div class="highlighted-box">
+            <h2>Bootstrap and jQuery</strong></h2>
+            <h4>Modern and flexible front-end</h4>
+            <p>GeoNode's front-end is based on the popular and flexible jQuery and Bootstrap frameworks. A set of jQuery JavaScript plugins is used to drive the user interface, and Bootstrap CSS is used to style the pages. Both of these frameworks make it easy to theme and customize your own GeoNode implementation if desired.</p>
+            <p>Features include:</p>
+            <ul class="unstyled">
+              <li>Bootstrap CSS framework</li>
+              <li>jQuery JavaScript front-end and plugins</li>
+              <li>Django templating system</li>
+              <li>Customizable themes using LESS and Bootswatch</li>
+            </ul>
+            <a href="bootstrap_jquery.html" class="hide btn btn-success">Learn about GeoNode's Front End</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature-details feature4" id="apis">
+    <div class="container">
+      <div class="row">
+        <div class="span7 number four">
+          <div class="highlighted-box">
+            <h2>APIs<strong></h2>
+            <h4>Integrate easily</h4>
+            <div>
+             <p>GeoNode supports multiple points for application integration. 
+             </br>Features include: 
+           </p>
+         </div>
+         <ul class="unstyled">
+          <li>OGC-compliant web services</li>
+          <li>GeoServer REST API</li>
+          <li>GeoNode search and REST APIs</li>
+        </ul>
+        <a href="apis.html" class="hide btn btn-success">Learn about GeoNode's APIs</a>
+      </div>
+    </div>
+    <div class="span5">
+      <img src="static/img/noun_project_18273.svg.png" width="280" height="280" alt="Explore Maps" class="feature-img" />
+    </div>
+  </div>
+</div>
+</section>
+<section class="feature-details feature5" id="interoperability">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="static/img/noun_project_2549.svg.png" width="350" height="350" alt="Explore Maps" class="feature-img" />
+      </div>
+      <div class="span7 number five">
+        <div class="highlighted-box">
+          <h2>Interoperability</strong></h2>
+          <h4>Plays well with others</h4>
+          <div>
+           <p>GeoNode is a social platform. GeoNode's foundational components make it easy to interact with other GeoNode deployments, external OGC services as well as with many other popular social services and tools.
+           </br>	
+         </p>
+       </div>
+       <ul class="unstyled">
+        <li>Connects with other GeoNode deployments</li>
+        <li>Interacts with OGC-compliant SDIs</li>
+        <li>Integrates with other social networking platforms (Twitter, Facebook, Google+, LinkedIn, Jive, Telligent)</li>
+        <li>Integrates with other content management systems (WordPress, Drupal)</li>
+      </ul>
+      <a href="interoperability.html" class="hide btn btn-success">Learn more about interoperability with external systems</a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section class="hide">
+  <div class="container">
+    <a href="#">Continue</a>
+  </div>
+</section>
+{% include footer.html %}

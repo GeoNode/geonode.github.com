@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>User Features - GeoNode</title> 
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <meta name='description' content='GeoNode'/>
+    <meta name='keywords' content='GeoNode'/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/static/css/site.css' type='text/css' media='all' />
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/sequence.jquery-min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  </head>
+  <body class="geonode-features user-features">
+    <header class="main">
+      <div class="container">
+        <div class="row">
+          <div class="span2">
+            <h1><a class="brand" href="">GeoNode</a></h1>
+          </div>
+          <div class="span1">
+            <div class="btn-group nav-coll">
+              <button type="button" class="btn-nav-coll" data-toggle="dropdown">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="/user_features.html">For Users</a></li>
+                <li><a href="/dev_features.html">For Developers</a></li>
+                <li><a href="/admin_features.html">For Admins</a></li>
+                <li><a href="http://docs.geonode.org/en/latest/tutorials/">Workshops</a></li>
+                <li><a href="/communication/">Communication</a></li>
+                <li><a href="/faqs.html">FAQs</a></li>
+                <li><a href="/gallery/">Sites Gallery</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="http://docs.geonode.org/" target = '_blank'>Documentation</a></li>
+                <li><a href="http://github.com/geonode/geonode/issues" target = '_blank'>Issue Tracker</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="span9">
+            <div class="pull-right">
+              <a href="/#install" class="btn btn-success">Install GeoNode</a>
+              <a target="_blank" href="http://demo.geonode.org" class="btn btn-warning">Try the Demo</a>
+              <a href="/blog/" class="btn btn-success">Read our Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <h1>
+          <strong>For Users</strong><br />
+          <span>Learn more about the features of <strong>GeoNode</strong>.</span>
+        </h1>
+        <div>
+          <a href="http://docs.geonode.org/en/latest/tutorials/users/" class="btn btn-success" target="_blank">Follow the <strong>Users Workshop</strong></a>
+        </div>
+      </div>
+      <div class="span6">
+        <img src="/static/img/features_hero_img.png" width="489" height="216" alt="" class="pull-right hero-img" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="body">
+  <div class="container">
+    <div class="row">
+      <div class="span10">
+        <nav class="subnav">
+          <h5>Features:</h5>
+          <ul class="unstyled" id="subnav">
+            <li><a href="#discover"><strong>Spatial Data Discovery</strong></a></li>
+            <li><a href="#import"><strong>Import and Manage</strong></a></li>
+            <li><a href="#mapping"><strong>Interactive Mapping</strong></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="feature-details feature1" id="explore">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="/static/img/noun_project_17976.svg.png" width="250" height="250" alt="Explore Maps" class="feature-img" />
+      </div>
+      <div class="span7 number one">
+        <div class="highlighted-box">
+          <h2>Spatial Data Discovery</h2>
+          <h4>Browse and search for geospatial data</h4>
+          <div>
+            <p>By combining collaboration found in social networks with specialized geospatial tools, GeoNode makes it easy to explore, process, style, and share maps and geospatial data.</p>
+            <p>Spatial datasets can be imported and shared, all through a non-technical user interface.</p><p>
+            Features include:
+          </p>
+        </div>
+
+        <ul class="unstyled">
+         <li>Powerful spatial search engine</li>
+         <li>Federated OGC services</li>
+         <li>Metadata catalogue</li>
+       </ul>
+       <a href="explore_discover.html" class="hide btn btn-success">Learn about GeoNode's discovery features</a>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+<section class="feature-details feature2" id="import">
+  <div class="container">
+    <div class="row">
+      <div class="span7 number two">
+        <div class="highlighted-box">
+          <h2>Import and Manage</strong></h2>
+          <h4>Upload and share geospatial data, securely</h4>
+          <div>
+           <p>
+             GeoNode makes it easy to upload and manage geospatial data on the web. Any user can upload  and make content available via standard OGC protocols such as Web Map Service (WMS) and Web Feature Service (WFS). Data is available for browsing, searching, styling, and processing to generate maps which can be shared publicly or restricted to specific users only.</p>
+             <p>Supported upload formats include shapefile, GeoTIFF, KML and CSV. In addition, it is possible to connect to existing external spatial databases and services.
+             </p><p>Features include:
+           </p>
+         </div>
+
+         <ul class="unstyled">
+           <li>Publish raster, vector, and tabular data</li>
+           <li>Manage metadata and associated documents</li>
+           <li>Securely or publicly share data</li>
+           <li>Versioned geospatial data editor</li>
+
+         </ul>
+         <a href="import_manage.html" class="hide btn btn-success">Learn about GeoNode's data management features</a>
+       </div>
+     </div>
+     <div class="span5">
+      <img src="static/img/noun_project_463.svg.png" width="220" height="220" alt="Explore Maps" class="feature-img" />
+    </div>
+  </div>
+</div>
+</section>
+<section class="feature-details feature3" id="mapping">
+  <div class="container">
+    <div class="row">
+      <div class="span5">
+        <img src="static/img/noun_project_1670.svg.png" width="300" height="300" alt="Explore Maps" class="feature-img" />
+      </div>
+      <div class="span7 number three">
+        <div class="highlighted-box">
+          <h2>Interactive Mapping</strong></h2>
+          <h4>Create and share interactive web maps</h4>
+
+          <div>
+           <p>GeoNode comes with helpful cartography tools for styling and composing maps graphically. These tools make it easy for anyone to assemble a web-based mapping application with functionality traditionally found in desktop GIS applications.</p>
+           <p>Users can gain enhanced interactivity with GIS-specific tools such as querying and measuring.
+           </p><p>Features include:
+         </p>
+       </div>
+       <ul class="unstyled">
+        <li>GeoExplorer GIS client</li>
+        <li>Graphical style editor</li>
+        <li>Create multi-layer interactive maps</li>
+        <li>Share and embed maps in web pages</li>
+      </ul>
+      <a href="mapping.html" class="hide btn btn-success">Learn about GeoNode's mapping features</a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<footer class="footer">
+  <div class="container">
+    
+
+    <section class="btm">
+      <div class="row">
+        <div class="span6">
+          <p>This <a href="http://github.com/geonode/geonode.github.com/" target="_blank">Website</a> is licensed <a href='license.html'>CC by SA 2012.</a> - <a href='contributors.html'>GeoNode Contributors.</a> Designed by <a href="http://www.spatialdev.com/" target="_blank">Spatial Dev</a></p>
+        </div>
+        <div class="span6">
+          <div class="pull-right social">
+            <a href="http://github.com/geonode/" class="gh" target="_blank">GitHub</a>
+            <a href="https://twitter.com/GeoNode" class="tw" target="_blank">Twitter</a>
+            <a href="https://plus.google.com/u/1/b/100587124776656797019/" class="gp" target="_blank">Google+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+    <a href="https://github.com/GeoNode/geonode/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38570723-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+  </body>
+</html>
