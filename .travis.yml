@@ -1,7 +1,7 @@
 language: ruby
 
 install:
-  - gem install jekyll link-checker
+  - gem install jekyll jekyll-feed jekyll-mentions jekyll-sitemap link-checker
 
 script:
   - jekyll build
