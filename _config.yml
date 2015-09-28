@@ -4,3 +4,8 @@ defaults:
  -
   values:
     layout: 'base.html'
+
+gems:
+- jekyll-feed
+- jekyll-mentions
+- jekyll-sitemap
