@@ -10,3 +10,6 @@ gems:
 - jekyll-feed
 - jekyll-mentions
 - jekyll-sitemap
+
+feed:
+  path: blog/feed.xml
