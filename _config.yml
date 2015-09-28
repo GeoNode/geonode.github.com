@@ -1,3 +1,4 @@
+name: GeoNode
 baseurl: http://geonode.org
 
 defaults:
