@@ -1,5 +1,5 @@
 # geonode.org
-
+[![Build Status](https://travis-ci.org/GeoNode/geonode.github.com.png)](https://travis-ci.org/GeoNode/geonode.github.com)
 This is the setup for the [GeoNode website](http://geonode.org).
 
 ## Setting up website environment locally
