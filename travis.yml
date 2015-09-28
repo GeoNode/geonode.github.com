@@ -1,0 +1,18 @@
+language: ruby
+
+install:
+  - gem install jekyll link-checker
+
+script:
+  - jekyll build
+#  - check-links _site
+
+branches:
+  only:
+    - master
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#geonode"
+    use_notice: true
