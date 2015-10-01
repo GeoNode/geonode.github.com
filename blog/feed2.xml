@@ -17,7 +17,7 @@ layout: none
         <updated>{{ post.publish_date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
         <id>{{ site.baseurl }}{{ post.url }}<?id>
         <content>{{ post.content | xml_escape }}</content>
-        <summary>{{ post.content | truncatewords: 20</summary>
+        <summary>{{ post.content | truncatewords: 20 }}</summary>
     </entry>
     {% endfor %}
 </feed>
