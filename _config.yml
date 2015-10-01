@@ -7,9 +7,9 @@ defaults:
     layout: 'base.html'
 
 gems:
-- jekyll-feed
+#- jekyll-feed
 - jekyll-mentions
 - jekyll-sitemap
 
-feed:
-  path: blog/feed.xml
+#feed:
+#  path: blog/feed.xml
