@@ -29,7 +29,7 @@ body_class: "geonode-features"
         <h1>{{ post.date | date: "%Y" }}</h1>
         {% endif %}
         <li>
-          <h2><a href="{{site.baseurl}}/{{ post.url }}">{{ post.title }}</a></h2>
+          <h2><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
           <p>{{ post.date | date_to_string }}</p>
         </li>
         {% endfor %}
