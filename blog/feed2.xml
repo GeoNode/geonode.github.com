@@ -15,7 +15,7 @@ layout: none
         <link href="{{ site.baseurl }}{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
         <published>{{ post.publish_date | date: "%a, %d %b %Y %H:%M:%S %z" }}</published>
         <updated>{{ post.publish_date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
-        <id>{{ site.baseurl }}{{ post.url }}<?id>
+        <id>{{ site.baseurl }}{{ post.url }}</id>
         <content>{{ post.content | xml_escape }}</content>
         <summary>{{ post.content | truncatewords: 20 }}</summary>
     </entry>
