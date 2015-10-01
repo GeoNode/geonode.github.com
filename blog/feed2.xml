@@ -1,0 +1,23 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <generator uri="https://github.com/GeoNode/geonode.github.com/blob/master/blog/feed.xml" version="master">GeoNode.org</generator>
+    <link href="{{ site.baseurl }}/blog/feed.xml" rel="self" type="application/atom+xml"/>
+    <link href="http://geonode.org" rel="alternate" type="text/html"/>
+    <id>http://geonode.org/</id>
+    <title>{{ site.name }}</title>
+
+    {% for post in site.posts %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="{{ site.baseurl }}{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
+        <published>{{ post.publish_date | date: "%a, %d %b %Y %H:%M:%S %z" }}</published>
+        <updated>{{ post.publish_date | date: "%a, %d %b %Y %H:%M:%S %z" }}</updated>
+        <id>{{ site.baseurl }}{{ post.url }}<?id>
+        <content>{{ post.content | xml_escape }}</content>
+        <summary>{{ post.content | truncatewords: 20</summary>
+    </entry>
+    {% endfor %}
+</feed>
