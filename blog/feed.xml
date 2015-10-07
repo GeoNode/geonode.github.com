@@ -16,7 +16,7 @@ layout: null
     {% for post in site.posts %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="http://geonode{{ post.id }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
+        <link href="http://geonode.org{{ post.id }}" rel="alternate" type="text/html" title="{{ post.title }}"/>
         <published>{{ post.date | date_to_xmlschema }}</published>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>http://geonode.org{{ post.url }}</id>
