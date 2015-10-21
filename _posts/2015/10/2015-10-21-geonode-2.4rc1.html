@@ -1,0 +1,48 @@
+---
+layout: base
+title: GeoNode 2.4 RC1
+---    
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <h1>GeoNode 2.4 RC1</h1> 
+        <article class="article1">
+          
+          <p>
+            The long road towards the 2.4 is getting to the end!
+          </p>
+          <p>GeoNode 2.4 Release Candidate 1 is out!
+            </p>
+            <p>Check it out for Ubuntu 14.04.
+          </p>
+
+            <h2>New Installation Instructions</h2>
+
+              <p>This release is compatible only with Ubuntu 14.04 Trusty Tahr.</p>
+
+              <p>
+                <code>sudo add-apt-repository ppa:geonode/testing</code><br>
+                <code>sudo apt-get update</code><br>
+                <code>sudo apt-get install geonode</code>
+              </p>
+
+              <p>Then set the IP address and create a superuser</p>
+
+              <code>geonode createsuperuser</code><br>
+              <code>sudo geonode-updateip 127.0.0.1</code>
+                            
+              <p>After your GeoNode is set up, don't forget to read the <a href="http://docs.geonode.org/en/latest/#for-administrators" target="_blank">admin docs</a> to personalize it and tweak it for better performance</p>
+
+              <h2>Getting support</h2>
+
+              <p>You can report any issues or feature requests in our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker in Github</a>.</p>
+
+              <p>And a big thank you to all the developers and contributors for the big effort. See you in our <a href="http://lists.osgeo.org/pipermail/geonode-users/" target="_blank">Users mailing list</a></p>
+
+              <p>Posted at - 2015-10-21 16:30:00</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      {% include footer.html %}
