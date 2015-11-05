@@ -1,5 +1,8 @@
 language: ruby
 
+rvm:
+  - 2.0.0-p247
+
 install:
   - gem install jekyll jekyll-feed jekyll-mentions jekyll-sitemap link-checker
 
