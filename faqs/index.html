@@ -1,0 +1,59 @@
+---
+layout: base
+title: Faq
+body_class: "geonode-features"
+---    
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <h1>Frequently Asked Questions</h1>
+        <div class="section" id="geonode-s-documentation">
+          <div class="section" id="for-users">
+            <h2>For Users</h2>
+            <div>
+              <ul class="simple">
+                {% for faq in site.categories.faqs reversed %}
+                  {% if faq.keywords contains 'users' %}
+                    <li>
+                      <a class="reference internal" href="{{ site.extbase.docs }}{{ faq.link_docs }}"><em>{{ faq.question }}</em></a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="section" id="for-administrators">
+            <h2>For Administrators</h2>
+            <div>
+              <ul class="simple">
+                {% for faq in site.categories.faqs reversed %}
+                  {% if faq.keywords contains 'admins' %}
+                    <li>
+                      <a class="reference internal" href="{{ site.extbase.docs }}{{ faq.link_docs }}"><em>{{ faq.question }}</em></a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="section" id="for-developers">
+            <h2>For Developers</h2>
+            <div>
+              <ul class="simple">
+                {% for faq in site.categories.faqs reversed %}
+                  {% if faq.keywords contains 'devs' %}
+                    <li>
+                      <a class="reference internal" href="{{ site.extbase.docs }}{{ faq.link_docs }}"><em>{{ faq.question }}</em></a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include footer.html %}

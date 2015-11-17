@@ -1,5 +1,19 @@
 name: GeoNode
-baseurl: http://geonode.org
+description: "GeoNode is a web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI)."
+markdown: redcarpet
+permalink: /:categories/:year/:month/:day/:title/
+# Development
+#baseurl: 
+#url: http://localhost:8000
+#destination: /var/www
+# GitHub Pages
+#baseurl:
+#url: http://geonode.github.com
+#destination: _site
+# Production
+baseurl: 
+url: http://geonode.org
+destination: _site
 
 defaults:
  -
@@ -15,3 +29,29 @@ gems:
 #  path: blog/feed.xml
 
 exclude: [README.md, setenv-ruby-gem, LICENSE.txt, CNAME]
+
+# Markdown Configuration
+redcarpet:
+  extensions: [with_toc_data]
+
+# Analytics
+ga:
+  enabled: true
+  code: "UA-38570723-1"
+
+extbase:
+  docs: "http://docs.geonode.org/en/master/"
+
+
+dns_prefetch: ['//www.google-analytics.com', '//fonts.googleapis.com']
+
+fonts: ['Lato:300,400,700', 'Inconsolata']
+
+keywords:
+  - GeoNode
+  - spatial data infrastructure
+  - SDI
+  - metadata
+  - geospatial content management
+  - geospatial portal
+  - GIS

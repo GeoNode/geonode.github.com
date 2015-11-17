@@ -2,3 +2,4 @@
 .build/
 build/
 _site/
+.jekyll-metadata
