@@ -6,24 +6,28 @@ title: GeoNode
 <section class="banner">
   <div class="container">
     <div class="row">
-      <div class="span6">
-        <h1>Open Source Geospatial Content Management System</h1>
-        <p>
-          GeoNode is a web-based application and platform 
-          for developing geospatial information systems (GIS)
-          and for deploying spatial data infrastructures (SDI).
-        </p>
-        <p>
-          It is designed to be extended and modified, and can be integrated into existing platforms.
-        </p>
-        <p>
-          <a href="/blog/2015/10/21/geonode-2.4rc1/" class="btn btn-md btn-success">GeoNode 2.4 RC1 is out!</a>
-          <a title="OSGeo Project in Incubation" href="http://osgeo.org"><img alt="OSGeo Project in Incubation" src="https://svn.osgeo.org/osgeo/marketing/logo/png8/150/OSGeo_incubation.png"/></a>
-          <a title="FOSS4G Conference" href="http://2016.foss4g.org"><img style="background-color: white;" alt="FOSS4G Conference" src="https://svn.osgeo.org/osgeo/foss4g/2016/marketing/logo/foss4g-logo_150x45px.png" height="45"/></a>
-        </p>
-      </div>
-      <div class="span6">
-        <img src="static/img/hero_img.png" width="560" height="325" alt="" class="hero-img" />
+      <div class="col-md-12">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+          <h1>Open Source Geospatial Content Management System</h1>
+          <p>
+            GeoNode is a web-based application and platform
+            for developing geospatial information systems (GIS)
+            and for deploying spatial data infrastructures (SDI).
+          </p>
+          <p>
+            It is designed to be extended and modified, and can be integrated into existing platforms.
+          </p>
+          <p>
+            <a href="/2015/10/21/geonode-2.4rc1.html" class="btn btn-md btn-success">GeoNode 2.4 RC1 is out!</a>
+          </p>
+          <div class="promo-links">
+            <a title="OSGeo Project in Incubation" href="http://osgeo.org"><img style="background-color:white;" alt="OSGeo Project in Incubation" src="https://svn.osgeo.org/osgeo/marketing/logo/png8/150/OSGeo_incubation.png"/></a>
+            <a title="FOSS4G Conference" href="http://2016.foss4g.org"><img style="background-color:white;" alt="FOSS4G Conference" src="https://svn.osgeo.org/osgeo/foss4g/2016/marketing/logo/foss4g-logo_150x45px.png"/></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+          <img src="static/img/hero_img.png" alt="" class="hero-img" />
+        </div>
       </div>
     </div>
   </div>
@@ -31,7 +35,7 @@ title: GeoNode
 <section class="body">
   <div class="container">
     <div class="row">
-      <div class="span4">
+      <div class="col-md-4">
         <div class="box box-users">
           <a href="user_features.html" class="header-link">
             <header class="box-header">
@@ -47,7 +51,7 @@ title: GeoNode
           <a href = "user_features.html" class="btn btn-success">Take the Tour</a>
         </div>
       </div>
-      <div class="span4">
+      <div class="col-md-4">
         <div class="box box-devs">
           <a href="dev_features.html" class="header-link">
             <header class="box-header">
@@ -64,7 +68,7 @@ title: GeoNode
           <a href = "dev_features.html" class="btn btn-success">Take the Tour</a>
         </div>
       </div>
-      <div class="span4">
+      <div class="col-md-4">
         <div class="box box-admins">
           <a href="admin_features.html" class="header-link">
             <header class="box-header">
@@ -83,5 +87,27 @@ title: GeoNode
     </div>
   </div>
 </section>
+
+<section class="blog-posts">
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts limit:2 %}
+       <div class="post-preview col-md-5">
+         <div class="col-md-6">
+           <img src="{{ post.image }}">
+         </div>
+         <div class="col-md-6">
+           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+            {% if post.content contains '<!--break-->' %}
+              <a href="{{ post.url }}">read more</a>
+           {% endif %}
+        </div>
+       </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% assign important_links = 'true' %}
 {% include footer.html %}

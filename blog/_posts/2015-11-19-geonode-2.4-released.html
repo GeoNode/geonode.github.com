@@ -1,0 +1,60 @@
+---
+layout: base
+category: blog
+title: GeoNode 2.4
+image: "/static/img/GeoNode-2.4-Released.png"
+---
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <h1>GeoNode 2.4 Released</h1>
+        <article class="article1">
+              <img src="/static/img/GeoNode-2.4-Released.png" width="auto" height="auto" alt=""/>
+          <p>
+            The GeoNode dev team is proud to announce the release of GeoNode 2.4 stable!
+          </p>
+          <p>GeoNode 2.4 ships a lot of new features:
+            <ul>
+              <li>New granular permissions system</li>
+              <li>Support for groups and group permissions</li>
+              <li>New search engine based on json REST API with spatial search</li>
+              <li>Support for remote services</li>
+              <li>New responsive templates with brand new look</li>
+              <li>New contrib apps</li>
+              <li>Support to Geoserver 2.7.x</li>
+              <li>Several performance enhancemens</li>
+            </ul>
+            </p>
+            <p>Check it out for Ubuntu 14.04.
+          </p>
+
+            <h2>Installation Instructions</h2>
+
+              <p>The automatic installer is available for Ubuntu 14.04 Trusty Tahr.</p>
+
+              <p>
+                <code>sudo add-apt-repository ppa:geonode/release</code><br>
+                <code>sudo apt-get update</code><br>
+                <code>sudo apt-get install geonode</code>
+              </p>
+
+              <p>Then set the IP address and create a superuser</p>
+
+              <code>geonode createsuperuser</code><br>
+              <code>sudo geonode-updateip 127.0.0.1</code>
+
+              <p>After your GeoNode is set up, don't forget to read the <a href="http://docs.geonode.org/en/latest/#for-administrators" target="_blank">admin docs</a> to personalize it and tweak it for better performance</p>
+
+              <h2>Getting support</h2>
+
+              <p>You can report any issues or feature requests in our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker in Github</a>.</p>
+
+              <p>And a big thank you to all the developers and contributors for the big effort. See you in our <a href="http://lists.osgeo.org/pipermail/geonode-users/" target="_blank">Users mailing list</a></p>
+
+              <p>Posted at - 2015-11-19 16:30:00</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      {% include footer.html %}
