@@ -35,7 +35,7 @@ title: GeoNode
 <section class="body">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
         <div class="box box-users">
           <a href="user_features.html" class="header-link">
             <header class="box-header">
@@ -51,7 +51,7 @@ title: GeoNode
           <a href = "user_features.html" class="btn btn-success">Take the Tour</a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
         <div class="box box-devs">
           <a href="dev_features.html" class="header-link">
             <header class="box-header">
@@ -68,7 +68,7 @@ title: GeoNode
           <a href = "dev_features.html" class="btn btn-success">Take the Tour</a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
         <div class="box box-admins">
           <a href="admin_features.html" class="header-link">
             <header class="box-header">
@@ -92,11 +92,11 @@ title: GeoNode
   <div class="container">
     <div class="row">
       {% for post in site.posts limit:2 %}
-       <div class="post-preview col-md-5">
-         <div class="col-md-6">
-           <img src="{{ post.image }}">
+       <div class="post-preview col-md-6 col-lg-6 col-sm-6 col-xs-6">
+         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+           <img src="{{ post.image }}" class="img-responsive">
          </div>
-         <div class="col-md-6">
+         <div class="col-md-6 col-lg-6 col-sm-6">
            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
             {% if post.content contains '<!--break-->' %}
