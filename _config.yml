@@ -1,6 +1,6 @@
 name: GeoNode
 description: "GeoNode is a web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI)."
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 # Development
 #baseurl: 
