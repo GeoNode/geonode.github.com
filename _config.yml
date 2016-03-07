@@ -31,7 +31,7 @@ gems:
 exclude: [README.md, setenv-ruby-gem, LICENSE.txt, CNAME]
 
 # Markdown Configuration
-redcarpet:
+kramdown:
   extensions: [with_toc_data]
 
 # Analytics
