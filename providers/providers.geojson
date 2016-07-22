@@ -4,21 +4,21 @@
         {
             "geometry": {
                 "type": "Point", 
-                "coordinates": [-140, 53]
+                "coordinates": [-117.1, 32.7]
             }, 
             "type": "Feature", 
             "properties": {
-                "name": "<a target=\"_blank\" href=\"http://example.org\">Example.org</a>"
+                "name": "<a target=\"_blank\" href=\"http://terranodo.io\">Terranodo</a>"
             }
         },
         {
             "geometry": {
                 "type": "Point", 
-                "coordinates": [177, -66]
+                    "coordinates": [-75, 11]
             }, 
             "type": "Feature", 
             "properties": {
-                "name": "<a target=\"_blank\" href=\"http://example.org\">Example.org</a>"
+                "name": "<a target=\"_blank\" href=\"http://piensa.co\">Piensa</a>"
             }
         }
     ]
