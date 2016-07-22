@@ -20,6 +20,16 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://piensa.co\">Piensa</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [10.2979365, 43.884037]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.geo-solutions.it\">GeoSolutions</a>"
+            }
         }
     ]
 }
