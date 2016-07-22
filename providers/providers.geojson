@@ -1,0 +1,25 @@
+{
+    "type": "FeatureCollection", 
+    "features": [
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [-140, 53]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://example.org\">Example.org</a>"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [177, -66]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://example.org\">Example.org</a>"
+            }
+        }
+    ]
+}
