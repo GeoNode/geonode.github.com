@@ -30,6 +30,16 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.geo-solutions.it\">GeoSolutions</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [12.5041791, 41.9669304]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.geobeyond.it\">Geobeyond</a>"
+            }
         }
     ]
 }
