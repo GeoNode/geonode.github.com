@@ -40,6 +40,17 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.geobeyond.it\">Geobeyond</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [39.7391, 75.5398]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.acugis.com\">AcuGIS</a>"
+            }
         }
+        
     ]
 }
