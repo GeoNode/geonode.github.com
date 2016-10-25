@@ -50,6 +50,16 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.acugis.com\">AcuGIS</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [1.4480, 43.6088]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.neogeo-online.net\">Neogeo Technologies</a>"
+            }
         }
         
     ]
