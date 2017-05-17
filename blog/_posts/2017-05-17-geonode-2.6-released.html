@@ -1,0 +1,75 @@
+---
+layout: base
+category: blog
+title: GeoNode 2.6
+image: "/static/img/GeoNode-2.6-Released.png"
+---
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <h1>GeoNode 2.6 Released</h1>
+        <article class="article1">
+              <img src="/static/img/GeoNode-2.6-Released.png" width="auto" height="auto" alt=""/>
+          <p>
+            The GeoNode dev team is proud to announce the release of GeoNode 2.6 stable!
+          </p>
+          <p>GeoNode 2.6 ships a lot of new features:
+            <ul>
+              <li>New granular permissions system</li>
+              <li>Support for groups and group permissions</li>
+              <li>New search engine based on json REST API with spatial search</li>
+              <li>Support for remote services</li>
+              <li>Better usability and nicer user interface layout</li>
+              <li>New advanced and reliable security system based on a token based protocol</li>
+              <li>A new alternative client based on the React JavaScript Framework and OpenLayers 3</li>
+              <li>New powerful optional importer with more supported formats for uploading data</li>
+              <li>New administration command line tools</li>
+              <li>New contrib apps</li>
+              <li>Using recent versions of popular components and libraries such as Django, PostreSQL/PostGIS, pycsw, OWSLib</li>
+              <li>Support to Geoserver 2.9.x</li>
+              <li>QGIS server as back-end system alternative to GeoServer</li>
+              <li>Ansible and Docker scripts for deploying in private and public cloud infrastructures</li>
+              <li>Several performance enhancements</li>
+              <li>Robust backup and restore system for migration</li>
+            </ul>
+            </p>
+            <p>Check it out for Ubuntu 16.04.
+          </p>
+            <h2>Don't upgrade before backing up your data!</h2>
+            <p>There are a lot of internal changes from version 2.4 to 2.6, and even from 2.6 pre-release to 2.6 final.</p>
+            <p>The recommended upgrde path is to set up a new server from scratch and migrate the data to it.</p>
+
+            <h2>Installation Instructions</h2>
+
+              <p>The automatic installer is available for Ubuntu 16.04 Xenial.</p>
+
+              <p>
+                <code>sudo add-apt-repository ppa:geonode/stable</code><br>
+                <code>sudo apt-get update</code><br>
+                <code>sudo apt-get install geonode</code>
+              </p>
+
+              <p>Then set the IP address and create a superuser.</p>
+
+              <code>geonode createsuperuser</code><br>
+              <code>sudo geonode-updateip 127.0.0.1</code>
+
+              <p>For further information, please take a look at <a href="http://docs.geonode.org/en/latest/tutorials/install_and_admin/quick_install.html#ubuntu-standard-deployment">Quick GeoNode Install</a></p>
+
+              <p>The manual installation is possible for any OS following this guide <a href="http://docs.geonode.org/en/master/tutorials/install_and_admin/geonode_install/index.html#geonode-install">GeoNode Install</a></p>
+
+              <p>After your GeoNode is set up, don't forget to read the <a href="http://docs.geonode.org/en/latest/#for-administrators" target="_blank">admin docs</a> to personalize it and tweak it for better performance.</p>
+
+              <h2>Getting support</h2>
+
+              <p>You can report any issues or feature requests in our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker in Github</a>.</p>
+
+              <p>And a big thank you to all the developers and contributors for the big effort. See you in our <a href="http://lists.osgeo.org/pipermail/geonode-users/" target="_blank">Users mailing list</a></p>
+
+            </article>
+          </div>
+        </div>
+  </div>
+</section>
+      {% include footer.html %}
