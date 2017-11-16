@@ -60,6 +60,16 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.neogeo-online.net\">Neogeo Technologies</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [5.87292, 45.6420588]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.camptocamp.com\">Camptocamp France</a>"
+            }
         }
         
     ]
