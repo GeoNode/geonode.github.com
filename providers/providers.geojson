@@ -70,7 +70,18 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.camptocamp.com\">Camptocamp France</a>"
             }
+        },
+          {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [30.036711, 30.959753]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.cartologic.com\">Cartologic </a>"
+            }
         }
+        
         
     ]
 }
