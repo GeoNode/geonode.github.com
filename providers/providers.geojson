@@ -89,6 +89,7 @@
             "type": "Feature", 
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.kartoza.com\">Kartoza</a>"
-            }     
+            }
+        }
     ]
 }
