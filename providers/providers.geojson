@@ -80,8 +80,15 @@
             "properties": {
                 "name": "<a target=\"_blank\" href=\"http://www.cartologic.com\">Cartologic </a>"
             }
-        }
-        
-        
+        },
+          {
+            "geometry": {
+                "type": "Point", 
+                    "coordinates": [ 18.840230297157284, -33.965278388852255]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "name": "<a target=\"_blank\" href=\"http://www.kartoza.com\">Kartoza</a>"
+            }     
     ]
 }
