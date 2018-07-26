@@ -1,105 +1,148 @@
 {
-    "type": "FeatureCollection", 
-    "features": [
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [-2.142682, 51.447593]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.scisys.co.uk/what-we-do/geographic-information-systems/cartosys.html\">SCISYS - Cartosys</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [-117.1, 32.7]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://terranodo.io\">Terranodo</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [-74.960151, 10.988808]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://piensa.co\">Piensa</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [10.2979365, 43.884037]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.geo-solutions.it\">GeoSolutions</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [12.5041791, 41.9669304]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.geobeyond.it\">Geobeyond</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [-75.5398, 39.7391]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.acugis.com\">AcuGIS</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [1.4480, 43.6088]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.neogeo-online.net\">Neogeo Technologies</a>"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [5.87292, 45.6420588]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.camptocamp.com\">Camptocamp France</a>"
-            }
-        },
-          {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [ 30.959753,30.036711]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.cartologic.com\">Cartologic </a>"
-            }
-        },
-          {
-            "geometry": {
-                "type": "Point", 
-                    "coordinates": [ 18.840230297157284, -33.965278388852255]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "name": "<a target=\"_blank\" href=\"http://www.kartoza.com\">Kartoza</a>"
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.142682,
+          51.447593
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.scisys.co.uk/what-we-do/geographic-information-systems/cartosys.html\">SCISYS - Cartosys</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1,
+          32.7
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://terranodo.io\">Terranodo</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.960151,
+          10.988808
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://piensa.co\">Piensa</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2979365,
+          43.884037
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.geo-solutions.it\">GeoSolutions</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5041791,
+          41.9669304
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.geobeyond.it\">Geobeyond</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5398,
+          39.7391
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.acugis.com\">AcuGIS</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.448,
+          43.6088
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.neogeo-online.net\">Neogeo Technologies</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.87292,
+          45.6420588
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.camptocamp.com\">Camptocamp France</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.959753,
+          30.036711
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.cartologic.com\">Cartologic </a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.840230297157284,
+          -33.965278388852255
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"http://www.kartoza.com\">Kartoza</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.323181,
+          48.168699
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"https://www.csgis.de\">Csgis</a>"
+      }
+    }
+  ]
 }
