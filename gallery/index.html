@@ -14,24 +14,6 @@ body_class: "geonode-features sites-gallery"
     </div>
   </div>
 </section>
-<section class="body">
-  <div class="container">
-    <div class="row">
-      <div class="hide btn btn-success">
-        <nav class="subnav">
-          <h5>Entries by Region:</h5>
-          <ul class="unstyled">
-            <li><a href="#africa"><strong>Africa</strong></a></li>
-            <li><a href="#americas"><strong>Americas</strong></a></li>
-            <li><a href="#asiapacific"><strong>Asia Pacific</strong></a></li>
-            <li><a href="#europe"><strong>Europe</strong></a></li>
-            <li><a href="#worldwide"><strong>World Wide</strong></a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</section>
 
 {% for item in site.data.gallery %}
 {% assign loopindex = forloop.index | modulo: 2 %}
@@ -53,11 +35,11 @@ body_class: "geonode-features sites-gallery"
         </div>
       </div>
       <div class="span5">
-        <a href="{{ item.url }}" target="_new"><img src="../static/img/{{ item.image }}" width="325" height="168" alt="InnovationLab" class="feature-img thumbnail" /></a>
+        <a href="{{ item.url }}" target="_new"><img src="../static/img/{{ item.image }}" width="325" height="168" alt="{{ item.title }}" class="feature-img thumbnail" /></a>
       </div>
 	  {% else %}
 	  <div class="span5">
-        <a href="{{ item.url }}" target="_new"><img src="../static/img/{{ item.image }}" width="325" height="168" alt="InnovationLab" class="feature-img thumbnail" /></a>
+        <a href="{{ item.url }}" target="_new"><img src="../static/img/{{ item.image }}" width="325" height="168" alt="{{ item.title }}" class="feature-img thumbnail" /></a>
       </div>
 	  <div class="span7">
         <div class="highlighted-box">
