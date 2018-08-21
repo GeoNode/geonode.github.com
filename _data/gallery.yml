@@ -58,9 +58,21 @@
   url: http://geonode.state.gov/
   image: stategeonode.png
   
+- title: CMA
+  subtitle: Caribbean Marine Atlas
+  description: The Caribbean Marine Atlas is a digital technological platform on line which function as repository of geospatial and documental information to support decision making in Integrated Coastal Zone Management ICZM as well as for monitoring and evaluation of Caribbean Large Marine Ecosystem CLME. The Atlas, its tools and contents are addressed to professionals in charge of planning, ministries and national and regional authorities, decision makers, policy makers and potential partners related to ICZM of country pilots in this phase, to the country partners of CLME+ project and the rest of countries, institutions or stakeholders interested from Caribbean.
+  url: https://www.caribbeanmarineatlas.net/
+  image: cma2.png
+  
+- title: SIAM
+  subtitle: Catalogue of Coastal Marine Cartographic Resources of Colombia
+  description: Digital map collection of support for environmental management and planning of Colombia's coast and oceans.
+  url: http://geonodesiam.invemar.org.co/
+  image: siam.png
+  
 - title: ARPA Veneto
   subtitle: ARPA Veneto Italy
-  description: Venetor Region - Agency for Environmental Protection (ARPAV)
+  description: Venetor Region - Agency for Environmental Protection (ARPAV).
   url: http://geomap.arpa.veneto.it/
   image: arpa.png
   
