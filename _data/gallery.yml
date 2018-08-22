@@ -22,6 +22,12 @@
   url: http://assess-risk.info
   image: heve.png
   
+- title: WorldMap
+  subtitle: Harvard WorldMap
+  description: The Harvard University open SDI and GeoCMS platform based on GeoNode.
+  url: http://worldmap.harvard.edu/
+  image: worldmap.png
+  
 - title: GeoSAFE
   subtitle: Mozambique Government
   description: GeoSAFE is a web platform that provides the ability to run InaSAFE analyses online. InaSAFE is free software that produces realistic natural hazard impact scenarios for better planning, preparedness and response activities. It provides a simple but rigorous way to combine data from scientists, local governments and communities to provide insights into the likely impacts of future disaster events.
@@ -33,12 +39,6 @@
   description: OONDRA, the Online Operational Natural Disaster Risk Assessment platform, is an open source platform based on Geonode, for sharing geospatial hazard and exposure data and maps.
   url: http://oondra.kartoza.com/
   image: oondra.png
-  
-- title: IGAD
-  subtitle: IGAD Spatial Web Portal
-  description: The Geoportal of the Intergovernmental Authority on Drought and Development 
-  url: http://geonode.igad.int/
-  image: igad.png
   
 - title: ESDAC
   subtitle: ESDAC Map Viewer
@@ -87,6 +87,12 @@
   description: TICRAF Geoscience Lab, uses Geonde as a spatial data sharing platform to meets its mission of applying GeoSciences in real decision contexts, such as climate change adaptation,                         hydrological effects of changes in climate and land cover, targeting of agroforestry interventions, provision of soil fertility and surveillance advisory services for smallholder farmers, digital soil and land use/cover mapping, and measuring impacts of interventions, all this using open source.
   url: http://landscapeportal.org/
   image: icraf.png
+  
+- title: IGAD
+  subtitle: IGAD Spatial Web Portal
+  description: The Geoportal of the Intergovernmental Authority on Drought and Development 
+  url: http://geonode.igad.int/
+  image: igad.png
   
 - title: Uganda Bureau of Statistics
   subtitle: Uganda
