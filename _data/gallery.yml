@@ -3,28 +3,28 @@
   description: Open data to further your understanding of disaster risk. We maintain a curation of hazard datasets at the global and country level. Tools like ThinkHazard! use these datasets in the backend.
   url: https://www.geonode-gfdrrlab.org/
   image: innovationlab.png
-  
+
 - title: IHP-WINS
   subtitle: UNESCO
   description: Water Information Network System by the International Hydrological Programme of UNESCO.
   url: http://ihp-wins.unesco.org/
   image: ihpwins.png
-  
+
 - title: Disasterrisk
   subtitle: DisasterRisk Afghanistan
   description: A public platform for creating, sharing and accessing geospatial data and maps for decision-making about disaster risk.
   url: http://disasterrisk.af/
   image: disasterrisk.png
-  
+
 - title: Assess Risk (HEV-E)
   subtitle: GFDRR
   description: HEV-E is a Data Exploration platform to promote the ability of a user to access, understand and use hazard, exposure and vulnerability data stored in its global geospatial data repository.
   url: http://assess-risk.info
   image: heve.png
-  
+
 - title: WorldMap
   subtitle: Harvard WorldMap
-  description: The Harvard University open SDI and GeoCMS platform based on GeoNode.
+  description: The Harvard University open SDI and GeoCMS platform based on GeoNode. The WorldMap flavor of GeoNode implements a number of features not found in stock GeoNode including a data search tool called Hypermap which supports search against very large numbers of layers, a layer creation tool, an advanced styling tool, a notes tool, and a gazetteer capability.
   url: http://worldmap.harvard.edu/
   image: worldmap.png
   
@@ -33,67 +33,67 @@
   description: GeoSAFE is a web platform that provides the ability to run InaSAFE analyses online. InaSAFE is free software that produces realistic natural hazard impact scenarios for better planning, preparedness and response activities. It provides a simple but rigorous way to combine data from scientists, local governments and communities to provide insights into the likely impacts of future disaster events.
   url: http://geonode.ingc.gov.mz
   image: geosafe.png
-  
+
 - title: OONDRA
   subtitle: Kartoza
   description: OONDRA, the Online Operational Natural Disaster Risk Assessment platform, is an open source platform based on Geonode, for sharing geospatial hazard and exposure data and maps.
   url: http://oondra.kartoza.com/
   image: oondra.png
-  
+
 - title: ESDAC
   subtitle: ESDAC Map Viewer
   description: The ESDAC Map Viewer allows the user to navigate key soil data for Europe. It provides access to the attributes of the European Soil Database and some additional data related to main soil threats as identified in the Soil Thematic Strategy. The ESDAC Map Viewer is developed according to standards (OGC WMS) so that they are interoperable with similar information allowing real-time integration of environmental data from around the world.
   url: https://esdac.jrc.ec.europa.eu/viewer
   image: esdac.png
-  
+
 - title: UN WFP
   subtitle: United Nations World Food Programme
   description: The United Nations World Food Programme is using GeoNode enhance their data collecting capabilities from anywhere in the world. By leveraging features like on line editing features and crowdsouring data they are be better prepared to react during humanitarian emergencies.
   url: http://geonode.wfp.org
   image: wfp.png
-  
+
 - title: State GeoNode
   subtitle: State GeoNode
   description: The State GeoNode is a digital service provided by the U.S. Department of State for publishing open geographic data produced by or compiled by the U.S. Government to the public, U.S. Government decision-makers, and partners on complex emergencies, natural disasters, and diplomatic activities world-wide.
   url: http://geonode.state.gov/
   image: stategeonode.png
-  
+
 - title: CMA
   subtitle: Caribbean Marine Atlas
   description: The Caribbean Marine Atlas is a digital technological platform on line which function as repository of geospatial and documental information to support decision making in Integrated Coastal Zone Management ICZM as well as for monitoring and evaluation of Caribbean Large Marine Ecosystem CLME. The Atlas, its tools and contents are addressed to professionals in charge of planning, ministries and national and regional authorities, decision makers, policy makers and potential partners related to ICZM of country pilots in this phase, to the country partners of CLME+ project and the rest of countries, institutions or stakeholders interested from Caribbean.
   url: https://www.caribbeanmarineatlas.net/
   image: cma2.png
-  
+
 - title: SIAM
   subtitle: Catalogue of Coastal Marine Cartographic Resources of Colombia
   description: Digital map collection of support for environmental management and planning of Colombia's coast and oceans.
   url: http://geonodesiam.invemar.org.co/
   image: siam.png
-  
+
 - title: ARPA Veneto
   subtitle: ARPA Veneto Italy
   description: Venetor Region - Agency for Environmental Protection (ARPAV).
   url: http://geomap.arpa.veneto.it/
   image: arpa.png
-  
+
 - title: IW:LEARN
   subtitle: IW:LEARN Spatial Lab
   description: The IW:LEARN Spatial Lab aims to provide a customizable mapping of the GEF International Waters (IW) portfolio and provide a visualization of studies, reports and intervention results on the various transboundary water basins pulled together with the help of the GEF IW projects, partner organizations and authoritative sources and other contributors.
   url: http://geonode.iwlearn.org
   image: iwlearn.png
-  
+
 - title: ICRAF
   subtitle: ICRAF Geoscience Lab
   description: TICRAF Geoscience Lab, uses Geonde as a spatial data sharing platform to meets its mission of applying GeoSciences in real decision contexts, such as climate change adaptation,                         hydrological effects of changes in climate and land cover, targeting of agroforestry interventions, provision of soil fertility and surveillance advisory services for smallholder farmers, digital soil and land use/cover mapping, and measuring impacts of interventions, all this using open source.
   url: http://landscapeportal.org/
   image: icraf.png
-  
+
 - title: IGAD
   subtitle: IGAD Spatial Web Portal
-  description: The Geoportal of the Intergovernmental Authority on Drought and Development 
+  description: The Geoportal of the Intergovernmental Authority on Drought and Development
   url: http://geonode.igad.int/
   image: igad.png
-  
+
 - title: Uganda Bureau of Statistics
   subtitle: Uganda
   description: The Uganda Bureau of Statistics Geonode Instance is an open source data dissemination platform for sharing Geo-referenced statistical data and maps.
@@ -110,8 +110,8 @@
   subtitle: Ministero de Energias Bolivia
   description: Geoportal del Viceministerio de Electricitad y Energìas Alternativas del VMEEA.
   url: http://sigvmeea.minenergias.gob.bo/maps/60/view
-  image: vmeea.png 
-  
+  image: vmeea.png
+
 - title: Caribbean Risk Atlas
   subtitle: UMI DRRC
   description: The University of the West Indies (UWI) Disaster Risk Reduction Centre (DRRC) and the World Bank collaborated on the "Caribbean Risk Atlas" project with the main goal of making spatial data on risk for hurricanes, earthquakes and floods in the Caribbean available on-line. Mona GeoInformatics Institute (MGI) built the "Cariska" web map application for this project on the GeoNode platform.
@@ -123,113 +123,111 @@
   description: The CIGNO (Collaborative Interoperable Geographic NOde) geoportal system is proposed to implement a system for heterogeneous multimedia data and metadata management (scientific and geographical, textual documents, tables, etc...). CIGNO can help users (stakeholders, administrators, scientists) to consult and exploit the scientific information provided by the ISMAR researchers.
   url: http://cigno.ve.ismar.cnr.it
   image: cigno.png
-  
+
 - title: HaitiData.org
   subtitle: The World Bank
   description: "HaitiData is designed toto facilitate open access to Haiti-related geo-spatial information, data and knowledge sources, encouraging others to share and use them for the development of Haiti. For a list of all the organizations and people involved in data collection for the site, see the <a href= 'http://haitidata.org/partners/'>partners page.</a>"
   url: http://haitidata.org
   image: haiti.png
-  
+
 - title: MapStory
   subtitle: MapStory Foundation
   description: MapStory, as a compliment to Wikipedia, is a new dimension to the global data commons that empowers a global user community to organize all knowledge about the world spatially and temporally. Just as Wikipedia uses a MediaWiki, MapStory uses a GeoNode.  Perhaps more important, MapStory is an infrastructure for enabling "MapStorytelling" as a means of communicating important issues to a global audience. In order to accomplish this, MapStory has sponsored temporal, social and narrative extensions to GeoNode. The goal is to enable any student, teacher or practitioner on Earth to tap the power of this new mode of conveying one's stories, arrayed across geography and as they unfold over time. MapStory will become the convening point where MapStorytellers of all kinds come to publish their expressions, and to critique each others' MapStories, leading to a consistently accumulating and improving global body of knowledge about global dynamics, worldwide, over the course of history.
   url: http://www.mapstory.org
   image: mapstory.png
-  
+
 - title: MASDAP
   subtitle: Created by GFDRR and the World Bank
   description: The Government of Malawi, in partnership with the GFDRR labs of the World Bank is using GeoNode with data coming from the various ministries to build resilience to disasters in a changing climate.
   url: http://www.masdap.mw/
   image: masdap.png
-  
+
 - title: montagneAperte
   subtitle: GfossServices
   description: The Mountain community of Monti Martani, Seranoand Subasio is using Geonode to share  spatial data such like hiking trails and other distrincitve outdoor feautures.
   url: http://www.montagneaperte.it
   image: montagne.png
-  
+
 - title: PaRIS
   subtitle: SOPAC
   description: Pacific Risk Information Systems (PaRIS) is one of the largest collections of geospatial information for the Pacific island region. PaRIS was assembled to provide detailed probabilistic risk information for 15 Pacific island countries for a range of decision makers including disaster risk management agencies. The perils covered are tropical cyclones (wind, storm surge and rain) and earthquakes (ground shaking, tsunami). The countries covered are Cook Islands, Fiji, Kiribati, Marshall Islands, Federated States of Micronesia, Nauru, Niue, Palau, Papua New Guinea, Samoa, Solomon Islands, Timor Leste, Tonga, Tuvalu and Vanuatu. PaRIS was created by Applied GeoScience and Technology Division, Secretariat of the Pacific Community (SOPAC).
   url: http://pcrafi.spc.int/
   image: paris.png
-  
+
 - title: CityData
   subtitle: City Futures Research Centre, UNSW Sydney
   description: CityData is where urban researchers, planners, stakeholders and urban communities store, discover and share data for city analytics and decision-making.
   url: https://citydata.be.unsw.edu.au/
   image: citydata.png
-  
+
 - title: GeoAvalanche
   subtitle: Geobeyond
   description: GeoAvalanche is a spatial data infrastructure for sharing snow avalanche information and maps with standards in mind. The project supports the development of geospatial solutions to allow the exchange of data between avalanche warning services, authorities and the public for publishing more reliable avalanche risk maps.
   url: http://geoavalanche.org
   image: geoavalanche.png
-  
+
 - title: Chennai Flood Management
   subtitle: Open source collaborative solutions for flooding
   description: ChennaiFloodManagement.org provides a platform for collaborative solutions to the complex social and environmental challenges of life on Chennai's urban floodplains.<br>Geonode provides Chennai with a web-based platform that connects open data, standards, tools and engineers together in one place, to produce interactive management plans that improve with time.
   url: http://chennaifloodmanagement.org
   image: cfm.png
-  
+
 - title: AWARE
   subtitle: Agricultural Web Atlas for REsearch
   description: "In Reunion Island the CIRAD (French Agricultural Research Centre for International Development) needed a platform to collect geographic data in order to share spatial data, facilitate access by its teams, and better communicate research results. Using GeoNode, AWARE (Agricultural Web Atlas for REsearch) meets these needs by providing a catalog of geospatial data available at CIRAD in Reunion Island. The atlas is based on a profile management to respect the rules of confidentiality and broadcasting rights. AWARE targets a wide audience : researchers, agricultural professionals, teachers, funders... Its strength lies in its ability to share spatial information through some said users 'contributors' who can add layers, create maps without using GIS software. It is also possible to link documents to layers and maps. Finally, the atlas uses free technology solutions that implement OGC standards (WMS, WCS, WFS and OWS) ensuring interoperability with GIS software such as ArcGIS or QGIS."
   url: http://aware.cirad.fr/
   image: aware.png
-  
+
 - title: Dominode
   subtitle: Government of Dominica
   description: Dominode is a geospatial data sharing portal operated by the Government of the Commonwealth of Dominica.
   url: http://dominode.dm/
   image: dominode.png
-  
+
 - title: RCMRD Geoportal
   subtitle: RCMRD-SERVIR Eastern (South Africa)
   description: "RCMRD GeoPortal is a platform for disseminating open geospatial datasets and products for the Eastern and Southern Africa region. The Regional Centre for Mapping of Resources for development (RCMRD) has partnered with  <a href='https://www.usaid.gov/' target='_new'> USAID</a> and <a href='https://www.nasa.gov/' target='_new'>NASA</a> through the SERVIR-Eastern &amp; Southern Africa (SERVIRESA) with the objectives of improving the environmental management and resilience to climate change by strengthening the capacity of governments and other key stakeholders to integrate Earth observation information and geospatial technologies into development decision making. SERVIRESA aims at archiving more resilience outcomes in the following areas: Agriculture &amp; Food Security, Land use &amp; Ecosystems, Water &amp; related Disasters, and Weather Climate."
   url: http://geoportal.rcmrd.org
   image: rcmrd.png
-  
+
 - title: Secondary Cities
   subtitle: U.S. Department of State
   description: Building partnerships to create geospatial data on secondary cities (2C)
   url: http://secondarycities.geonode.state.gov/
   image: secondary.png
-  
+
 - title: BIOPAMA
   subtitle: European Union Joint Research Centre
   description: The BIOPAMA project aims to build a solid information base for decision making on protected areas in the Africa, Caribbean, Pacific (ACP) region. This repository, based on GeoNode, is part of the BIOPAMA Reference Information System. Here you can discover and use maps, reports, data and other information sources, and upload your own to share with others. The themes of data you can find here cover a broad range of natural resource management and related topics.
   url: http://geonode-rris.biopama.org/
   image: biopama.png
-  
+
 - title: GeoDASH
   subtitle: Government of Bangladesh with World Bank
   description: Open Source geospatial data management and visualization platform of Bangladesh Government.
   url: http://www.geodash.gov.bd/
   image: geodash.png
-  
+
 - title: RISKINFO
   subtitle: Disaster Management Centre of Sri Lanka
   description: A public platform for GIS Data to support development in Sri Lanka. Developed in collaboration with WorldBank.
   url: http://www.riskinfo.lk/
   image: riskinfo.png
-  
+
 - title: CEDEUS
   subtitle: Centro de Desarrollo Urbano Sustentable
   description: Open Source geospatial data management and visualization platform.
   url: http://www.cedeus.cl/
   image: cedeus.png
-  
+
 - title: Landscape Portal
   subtitle: World Agroforestry Centre Kenia
   description: The Landscape Portal is ICRAF’s interactive online spatial data storage and visualization platform. It comes with a rich set of features to store, document, search and retrieve, and visualize spatial data and maps.
   url: http://landscapeportal.org/
   image: landscape.png
-  
+
 - title: BHUVAN - SUVIDHA
   subtitle: Indian National Remote Sensing Centre
   description: Indian Geo-Platform of ISRO.
   url: http://bhuvan-suvidha.nrsc.gov.in/
   image: suvidha.png
-  
-  
