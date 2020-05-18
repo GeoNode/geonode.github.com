@@ -1,0 +1,47 @@
+---
+layout: base
+category: blog
+title: GeoNode 2.10.4 & 3.0 are out!
+---
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <a href="https://summit.geonode.org"><h2>{{ page.title }}</h2></a>
+        <article class="article1"><br>
+          <img src="/static/img/py3.png" style="height: 170px; margin-bottom: 40px; margin-top: 20px; margin-left: 60px" alt="geonode and python3"/>
+
+          <p><b>This Post is gonna kick things off by summarizing the latest releases 2.10.4 and GeoNode 3.</b></p>
+
+          <p>Yeah, you understood correctly, there is a new major version out now. However, let's start at the beginning.<br><br>
+          With the life of Python 2.7 ending in 2020 — it is a matter of course: GeoNode needing an overhaul for python 3 compatibilities.<br><br>
+          To stick with clarity and precision, the development team has decided to give the new child a name as major version: GeoNode 3 was born!</p>
+
+          <p>Alongside a lot of helping hands inside our community, two major contributors took the challenge in doing the main work on the Code Base of GeoNode 3.
+            Namly Geosolutions (Italy) and Catalyst (New Zealand). The ladder being a relatively new contributor — concerning our community, and we'd love to see more
+            contributions!</p>
+
+          <div style="border-top: 1px dotted #1177A2; border-bottom: 1px dotted #1177A2; padding: 15px; margin-bottom: 40px;margin-top: 30px; background: #1177A2; color:#fff">
+            <b>To rule out any misunderstandings:</b><br><br>
+            Whenever you see GeoNode 2.x make sure your Virtualenv uses Python 2.7.<br>
+            In case you see a shining 3 at the end of GeoNode — you better check your Python Version to be 3.7.
+          </div>
+
+          <h3>New Features</h3>
+          <p>Next to Python 3, here’s one more shot:</p>
+          <p style="padding-bottom: 60px">Both releases fix several <i>minor</i>, <i>major</i> and <i>security</i> issues.<br>
+          Thanks to GeoSolutions again, both Versions are now containing a great new feature called <span style="font-weight: bold; color: #1177A2">Geo Limits</span>, which limits Layer visibility based on an overlapping polygon.<br><br>
+          <img src="/static/img/geolimits.png" style="width: 300px; margin-bottom: 10px;margin-top: 10px;-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.49);" alt="geonode and python3"/><br><br>
+          Further, the <span style="font-weight: bold; color: #1177A2">Backup-restore module</span> has been undertaken a full-on rework!<br><br>
+          For all other great features added, do not miss to read both — the release note for <a href="https://github.com/GeoNode/geonode/releases/tag/2.10.4">GeoNode 2.10.4</a> and <a href="https://github.com/GeoNode/geonode/releases/tag/3.0">GeoNode 3!</a><br><br>
+          Last but not least in case you're planning a manual install of version 3, be sure to visit the updated <a href="https://docs.geonode.org/en/master/">docs</a>. You can report any issues or feature requests at our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker @ Github</a>.
+          <br><br>
+          Stay healthy & happy GeoNod'ing!
+          </p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% include footer.html %}
