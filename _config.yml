@@ -3,7 +3,7 @@ description: "GeoNode is a web-based application and platform for developing geo
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 # Development
-#baseurl: 
+#baseurl:
 #url: http://localhost:8000
 #destination: /var/www
 # GitHub Pages
@@ -11,7 +11,7 @@ permalink: /:categories/:year/:month/:day/:title/
 #url: http://geonode.github.com
 #destination: _site
 # Production
-baseurl: 
+baseurl:
 url: http://geonode.org
 destination: _site
 
@@ -40,7 +40,7 @@ ga:
   code: "UA-38570723-1"
 
 extbase:
-  docs: "https://docs.geonode.org/en/2.10/"
+  docs: "https://docs.geonode.org/en/3.0/"
 
 
 dns_prefetch: ['//www.google-analytics.com', '//fonts.googleapis.com']

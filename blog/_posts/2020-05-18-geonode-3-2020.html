@@ -1,0 +1,69 @@
+---
+layout: base
+category: blog
+title: GeoNode 3.0 and 2.10.4 are out!
+---
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <a href="https://summit.geonode.org"><h2>{{ page.title }}</h2></a>
+        <article class="article1"><br>
+          <img src="/static/img/py3.png" style="height: 170px; margin-bottom: 40px; margin-top: 20px; margin-left: 60px" alt="geonode and python3"/>
+
+          <p><b>This Post is gonna kick things off by summarizing the latest releases 2.10.4 and GeoNode 3.</b></p>
+
+          <p>Yeah, you understood correctly, there is a new major version out now. However, let's start at the beginning.<br><br>
+          With the life of Python 2.7 ending in 2020 — it is a matter of course: GeoNode needing an overhaul for python 3 compatibilities.<br><br>
+          To stick with clarity and precision, the development team has decided to give the new child a name as major version: GeoNode 3 was born!</p>
+
+          <p>Alongside a lot of helping hands inside our community, two major contributors took the challenge in doing the main work on the Code Base of GeoNode 3. Namly Geosolutions (Italy) and Catalyst (New Zealand). The ladder being a relatively new contributor — concerning our community, and we'd love to see more
+            contributions!</p>
+
+          <p style="padding-bottom: 10px">Both releases fix several <i>minor</i>, <i>major</i> and <i>security</i> issues. Further GeoNode 3 brings several new features you should not miss!
+
+          <h3><i class="fa fa-star"></i> Features GeoNode 3</h3>
+
+          <ul>
+            <li>Python upgrade 3.7+</li>
+            <li>Django upgrade 2.2.12</li>
+            <li>GeoServer upgrade 2.16.2</li>
+            <li>Moved Documentation to dedicated repository and build</li>
+            <li>Integration of MapStore as new map viewer/composer</li>
+            <li>Drop of GeoExt, with MapStore client as the new official one</li>
+            <li><a href="https://docs.geonode.org/en/master/intermediate/monitoring/geonode_monitoring/index.html#analytics">Local analytics/monitoring extension</a></li>
+            <li><a href="https://docs.geonode.org/en/master/advanced/contrib/index.html#geonode-logstash-for-centralized-monitoring-analytics">Support for centralized analytics dashboard</a></li>
+            <li><a href="https://docs.geonode.org/en/master/basic/settings/index.html#cache-busting-media-enabled / https://github.com/GeoNode/geonode/issues?q=is%3Aissue+is%3Aclosed+label%3Aperformance">Improvements to frontend for low-bandwidth environments</a></li>
+            <li><a href="https://docs.geonode.org/en/master/intermediate/backup/index.html">B/R refactoringwith new features that make it able to be used for syncing instances</a></li>
+            <li><a href="https://docs.geonode.org/en/master/intermediate/modes/index.html">Read-Only and Mantenance modes</a></li>
+            <li><a href="https://docs.geonode.org/en/master/basic/permissions/index.html#geo-limits-permissions">GeoLimits</a></li>
+            <li>Added "DOI" field to base metadata</li>
+            <li><a href="https://github.com/GeoNode/geonode/issues/5912">Extend resource search api with abstract and purpose fields</a></li>
+            <li>Improved Remote Services and Metadata Fetch</li>
+            <li><a href="https://github.com/GeoNode/geonode/issues/5914">Improved Message Inbox and Messaging & Norification System</a></li>
+            <li>Improved Thumbnails and Thumbnails Upload / edit before posting</li>
+            <li><a href="https://docs.geonode.org/en/master/admin/index.html#geonode-management-commands">Improved Managemend Command</a></li>
+          </ul>
+    
+
+          <div style="padding-left: 15px; margin-bottom: 40px;margin-top: 30px; border-left: 8px solid #1177A2; color:#1177A2; font-weight: bold">
+            To rule out any misunderstandings:<br>
+            Whenever you see GeoNode 2.x make sure your virtual environment uses Python 2.7.
+            In case you see a shining 3 at the end of GeoNode — you have to use Python 3.7.
+          </div>
+
+          <p style="padding-bottom: 30px;">
+          For all other things which have been added, do not miss to read — the release notes for 
+          <a href="https://github.com/GeoNode/geonode/releases/tag/2.10.4">GeoNode 2.10.4</a> and <a href="https://github.com/GeoNode/geonode/releases/tag/3.0">GeoNode 3!</a><br><br>
+          Last but not least in case you're planning a manual install of version 3, be sure to visit the updated 
+          <a href="https://docs.geonode.org/en/master/">docs</a>. You can report any issues or feature requests at our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker @ Github</a>.
+          <br><br>
+          Stay healthy & happy GeoNod'ing!
+          </p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% include footer.html %}
