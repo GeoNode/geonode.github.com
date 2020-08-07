@@ -143,6 +143,19 @@
       "properties": {
         "name": "<a target=\"_blank\" href=\"https://www.csgis.de\">Csgis</a>"
       }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.774,
+          -41.2902
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"https://www.catalyst.net.nz\">Catalyst IT</a>"
+      }
     }
   ]
 }
