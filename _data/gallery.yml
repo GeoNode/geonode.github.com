@@ -1,3 +1,9 @@
+- title: Geoportal OUOT
+  subtitle: Observatorio Universitario de Ordenamiento Territorial (OUOT) - Universidad Nacional Autónoma de Honduras (UNAH)
+  description: The University Observatory of Territorial Planning, proposed by the Faculty of Space Sciences through the Master's Degree in Territorial Planning and Management, is a specialized center that collects, processes, analyzes, interprets, systematizes and disseminates information on the subject of Territorial Planning and Geographic Information Technologies, aimed at supporting and substantiating the scientific research of the UNAH and contributing to the rigorous knowledge of the subject in the country.This Geoportal, based on GeoNode, aims to be an open repository of information to share geospatial data and maps, which can be consulted by the university community and the general population.
+  url: https://geoportalouot.unah.edu.hn/
+  image: GeoNode_OUOT.jpg
+
 - title: InnovationLab
   subtitle: GFDRR InnovationLab
   description: Open data to further your understanding of disaster risk. We maintain a curation of hazard datasets at the global and country level. Tools like ThinkHazard! use these datasets in the backend.
