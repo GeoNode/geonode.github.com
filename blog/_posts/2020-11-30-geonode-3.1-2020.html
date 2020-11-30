@@ -1,0 +1,81 @@
+---
+layout: base
+category: blog
+title: GeoNode 3.1 is out!
+---
+<section class="feature-detail">
+  <div class="container">
+    <div class="row">
+      <div class="span7">
+        <a href="https://summit.geonode.org"><h2>{{ page.title }}</h2></a>
+        <article class="article1"><br>
+          <img src="/static/img/py3.png" style="height: 170px; margin-bottom: 40px; margin-top: 20px; margin-left: 60px" alt="geonode and python3"/>
+
+          <p><b>This Post is gonna kick things off by summarizing the latest release GeoNode 3.1.</b></p>
+
+          <p style="padding-bottom: 10px">The release fixes several <i>minor</i>, <i>major</i> and <i>security</i> issues. Further GeoNode 3.1 brings several new features you should not miss!
+
+          <h3><i class="fa fa-star"></i> Features GeoNode 3.1</h3>
+
+          <ul>
+            <li>Python upgrade 3.7+</li>
+            <li>Django upgrade 2.2.16</li>
+            <li>GeoServer upgrade 2.17.2</li>
+            <li>MapStore2 Client Updates:
+                <ul>
+                    <li>Save Search Services to the Map</li>
+                    <li>Save Map Preferences into the adapter model</li>
+                    <li>Advanced Style Editor with graphical UI</li>
+                    <li>Improved Map Save Widget, specific for GeoNode</li>
+                </ul>
+            </li>
+            <li>Documentation Updates:
+                <ul>
+                    <li><a href="https://docs.geonode.org/en/master/usage/managing_maps/exploring_maps/get_fetureinfo.html?highlight=GetFeatureInfo">GetFeatureInfo Templating For GeoNode</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/usage/other_apps/qgis/index.html">HowTo: Geonode with QGIS</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/usage/other_apps/qgis/index.html?highlight=Connect%20to%20Private%20layers%20by%20using%20OAuth2#connect-to-private-layers-by-using-oauth2">Improve GeoNode OpenID SP Protocol in order to be able to provide access to external clients</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/admin/admin_panel/index.html?highlight=Slide%20show#slide-show">Document the use of slide show in themes</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/install/advanced/core/index.html?highlight=Ubuntu%2020.04LTS#ubuntu-20-04lts">Update Advanced Installation steps to work against Ubuntu 20.04LTS</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/install/advanced/core/index.html?highlight=Ubuntu%2020.04LTS#rhel-7-x">Update Advanced Installation steps to work against RHEL 7.x</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/install/advanced/core/index.html?highlight=Enabling%20Fully%20Asynchronous%20Tasks#enabling-fully-asynchronous-tasks">How to setup rabbitmq, supervisor and memcached in order to fully enable async workers</a></li>
+                    <li><a href="https://docs.geonode.org/en/master/admin/upgrade/index.html?highlight=Upgrade%20from%202.10.x">How to Upgrade from 2.10.x / 3.0</a></li>
+                </ul>
+            </li>
+            <li>GNIP-77: GetFeatureInfo Templating For GeoNode</li>
+            <li>GNIP-76: Add RTL Support</li>
+            <li>Improving GeoNode Theme Library: introducing Jumbotron Slides</li>
+            <li>[Admin bulk perms] Implementation of an action to assign bulk permissions on layer to users selected from People and/or Group Django admin forms enhancement #6582</li>
+            <li>Review of the current advanced resource workflow implementation enhancement security #6551</li>
+            <li>File system operations do not adhere to Django file storage API enhancement in progress #6414</li>
+            <li>Nav Toolbar gets distorted when multiple nav bar items are added by the admin enhancement frontend major #6412</li>
+            <li>Allow only admins to edit/create keywords enhancement regression #6360</li>
+            <li>In home page show only ISO categories currently assigned to some dataset enhancement frontend #6332</li>
+            <li>Modify the admin theme customisation feature to allow for the use of a slide show in the home page enhancement feature frontend #6301</li>
+            <li>Improve GeoNode OpenID SP Protocol in order to be able to provide access to external clients enhancement security #6273</li>
+            <li>Limit "maps using this layer" to maps the user has permission to see enhancement security #6261</li>
+            <li>Prevent integrity errors on singleton model save enhancement #6223</li>
+            <li>Extend SPCGeonode setup to be customizable using Kubernetes docker enhancement #6208</li>
+          </ul>
+    
+
+          <div style="padding-left: 15px; margin-bottom: 40px;margin-top: 30px; border-left: 8px solid #1177A2; color:#1177A2; font-weight: bold">
+            To rule out any misunderstandings:<br>
+            Whenever you see GeoNode 2.x make sure your virtual environment uses Python 2.7.
+            In case you see a shining 3 at the end of GeoNode — you have to use Python 3.7+.
+          </div>
+
+          <p style="padding-bottom: 30px;">
+          For all other things which have been added, do not miss to read — the release notes for 
+          <a href="https://github.com/GeoNode/geonode/releases/tag/3.1">GeoNode 3.1!</a><br><br>
+          Last but not least in case you're planning a manual install of version 3, be sure to visit the updated 
+          <a href="https://docs.geonode.org/en/master/">docs</a>. You can report any issues or feature requests at our <a href="https://github.com/GeoNode/geonode/issues">Issue Tracker @ Github</a>.
+          <br><br>
+          Stay healthy & happy GeoNod'ing!
+          </p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% include footer.html %}
