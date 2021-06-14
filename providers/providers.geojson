@@ -148,6 +148,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.323181,
+          48.168699
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "<a target=\"_blank\" href=\"https://github.com/jahangir091\">Daabsoft</a>"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           174.774,
           -41.2902
         ]
