@@ -1,3 +1,9 @@
+- title: Thünen-Atlas
+  subtitle: OpenData portal by Thünen-Institute 
+  description: Since 2015, the Thünen Institute has made data on land use and animal husbandry in Germany publicly available in digital map sets at the municipal level. In 2016, we added maps on fisheries, forests and forest use. Also, in 2016, the Land Atlas was created as a comprehensive digital map application. The new Thünen Atlas combines all these digital applications and their underlying data inside a data portal providing metadata and web services.
+  url: https://atlas.thuenen.de/
+  image: thuenenAtlas.jpg
+
 - title: AlpConv Atlas
   subtitle: Alpine Convention Atlas 
   description: The Alpine Convention Atlas is the repository where you can discover and browse the Alps' relevant data and information. It aims to collect, organize and disseminate the results of research activities carried out by the Alpine Convention and its Working Groups.
