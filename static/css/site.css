@@ -5975,7 +5975,8 @@ strong {
   section.banner {
       background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
       color: #fff;
-      padding: 0 0 40px
+      padding: 0 0 40px;
+      height: 384px;
   }
 
   section.banner h1 {
