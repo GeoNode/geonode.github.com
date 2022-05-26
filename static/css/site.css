@@ -6007,7 +6007,7 @@ strong {
   section.banner img.hero-img {
       margin-top: 30px;
       width: auto; /* 560px */
-      height: 325px;
+      height: 200px;
   }
 }
 
@@ -6651,7 +6651,7 @@ body.geonode-features section.feature-details.feature3 {
 }
 
 body.geonode-features.user-features section.feature-details img.feature-img {
-    margin-top: 120px;
+    margin-top: 60px;
     opacity: .5;
     filter: alpha(opacity=50)
 }
