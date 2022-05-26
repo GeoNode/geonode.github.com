@@ -6007,7 +6007,7 @@ strong {
   section.banner img.hero-img {
       margin-top: 30px;
       width: auto; /* 560px */
-      height: 200px;
+      height: 325px;
   }
 }
 
@@ -6173,10 +6173,10 @@ strong {
 
   section.body .box {
       background: #e3dfd7;
-      padding: 20px 0;
+      padding: 15px 0;
       text-align: center;
       overflow: visible;
-      margin: 93px 0 30px;
+      margin: 93px 20px 30px;
       min-height: 360px
   }
 
@@ -6623,7 +6623,7 @@ body.geonode-features section.feature-details .number.five {
 }
 
 body.geonode-features section.feature-details.feature2 {
-    padding-top: 20px;
+    padding-top: 40px;
     background-color: #fbfbf9;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0ede7), color-stop(75%, #fff), to(#edeae3));
     background-image: -webkit-linear-gradient(#f0ede7, #fff 75%, #edeae3);
@@ -6651,13 +6651,13 @@ body.geonode-features section.feature-details.feature3 {
 }
 
 body.geonode-features.user-features section.feature-details img.feature-img {
-    margin-top: 60px;
+    margin-top: 120px;
     opacity: .5;
     filter: alpha(opacity=50)
 }
 
 body.geonode-features.user-features section.feature-details.feature1 img.feature-img {
-    margin-left: 60px;
+    margin-left: 60px
 }
 
 body.geonode-features.user-features section.feature-details.feature2 img.feature-img {
