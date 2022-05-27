@@ -815,7 +815,7 @@ blockquote small:before {
 blockquote.pull-right {
     float: right;
     padding-right: 15px;
-    padding-left: 0;
+    padding-left: 5px;
     border-right: 5px solid #eee;
     border-left: 0
 }
@@ -5730,7 +5730,7 @@ a.badge:hover {
 }
 
 .pull-right {
-    float: right
+    float: right;
 }
 
 .pull-left {
@@ -5837,7 +5837,7 @@ strong {
 @media (min-width: 992px) and (max-width: 1200px) {
   header.main {
       background: #03424c;
-      padding: 10px 0;
+      padding: 10px;
       font-family: 'Lato', sans-serif;
   }
 
@@ -5894,8 +5894,8 @@ strong {
   }
 
   .nav-coll .btn-nav-coll {
-      padding: 7px 9px;
-      margin: 2px 0 0;
+      padding: 7px 5px;
+      margin: 2px 20px 0;
       background: #055f6d;
       height: 40px;
       border: 0
@@ -5928,8 +5928,8 @@ strong {
   }
 
   .nav-coll .btn-nav-coll {
-      padding: 7px 9px;
-      margin: 2px 0 0;
+      padding: 7px 5px;
+      margin: 2px 6px 0;
       background: #055f6d;
       height: 40px;
       border: 0;
@@ -5960,7 +5960,7 @@ strong {
 
   .nav-coll .btn-nav-coll {
       padding: 7px 9px;
-      margin: 2px 0 0;
+      margin: 2px 7px 0;
       background: #055f6d;
       height: 40px;
       border: 0;
@@ -5975,7 +5975,8 @@ strong {
   section.banner {
       background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
       color: #fff;
-      padding: 0 0 40px
+      padding: 0 0 40px;
+      height: 384px;
   }
 
   section.banner h1 {
@@ -6311,7 +6312,7 @@ footer.footer .get-started ul.steps li .num {
     background: #0076a0;
     position: absolute;
     top: 0;
-    left: -15px;
+    left: -30px;
     padding: 0 7px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -6350,7 +6351,7 @@ footer.footer article {
 }
 
 footer.footer .documentation-items i {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
 
 }
 
