@@ -1,38 +1,34 @@
 <header class="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 col-lg-2 col-sm-3 col-xs-2"><a class="brand" href="{{ site.baseurl }}/">GeoNode</a></div>
-      <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1">
-        <div class="btn-group nav-coll">
-          <button type="button" class="btn-nav-coll" data-toggle="dropdown">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/user_features">For Users</a></li>
-            <li><a href="{{ site.baseurl }}/dev_features">For Developers</a></li>
-            <li><a href="{{ site.baseurl }}/admin_features">For Admins</a></li>
-            <li><a href="https://docs.geonode.org/en/master/usage/index.html">Workshops</a></li>
-            <li><a href="{{ site.baseurl }}/communication/">Communication</a></li>
-            <li><a href="{{ site.baseurl }}/faqs">FAQs</a></li>
-            <li><a href="{{ site.baseurl }}/gallery/">Sites Gallery</a></li>
-            <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-            <li><a href="https://docs.geonode.org" target="_blank">Documentation</a></li>
-            <li><a href="http://github.com/geonode/geonode/issues" target = "_blank">Issue Tracker</a></li>
-            <li><a href="{{ site.baseurl }}/providers/">Commercial Providers</a></li>
-            <li><a href="{{ site.baseurl }}/jobs/">Jobs</a></li>
-          </ul>
+    <div class="navbar">
+        <div class="container-fluid">
+            <a class="brand" href="{{ site.baseurl }}/">GeoNode</a>
+            <div class="btn-group nav-coll">
+                <button type="button" class="btn-nav-coll" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/user_features">For Users</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/dev_features">For Developers</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/admin_features">For Admins</a></li>
+                    <li><a class="dropdown-item" href="https://docs.geonode.org/en/master/usage/index.html">Workshops</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/communication/">Communication</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/faqs">FAQs</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/gallery/">Sites Gallery</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/blog/">Blog</a></li>
+                    <li><a class="dropdown-item" href="https://docs.geonode.org" target="_blank">Documentation</a></li>
+                    <li><a class="dropdown-item" href="http://github.com/geonode/geonode/issues" target = "_blank">Issue Tracker</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/providers/">Commercial Providers</a></li>
+                    <li><a class="dropdown-item" href="{{ site.baseurl }}/jobs/">Jobs</a></li>
+                </ul>
         </div>
-      </div>
-      <div class="col-md-7 col-lg-8 col-sm-7">
-        <div class="pull-right">
-          <a href="{{ site.baseurl }}/gallery" class="btn btn-success">Gallery</a>
-          <a href="{{ site.baseurl }}/#install" class="btn btn-success">Quick Start</a>
-          <a target="_blank" href="http://master.demo.geonode.org" class="btn btn-warning">Try the Demo</a>
-          <a href="{{ site.baseurl }}/blog/" class="btn btn-success">Blog</a>
+            <div class="pull-right">
+                <a href="{{ site.baseurl }}/gallery" class="btn btn-success">Gallery</a>
+                <a href="{{ site.baseurl }}/#install" class="btn btn-success">Quick Start</a>
+                <a target="_blank" href="http://master.demo.geonode.org" class="btn btn-warning">Try the Demo</a>
+                <a href="{{ site.baseurl }}/blog/" class="btn btn-success">Blog</a>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
