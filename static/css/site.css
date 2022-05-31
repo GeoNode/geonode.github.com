@@ -6394,7 +6394,8 @@ footer.footer section.btm {
     padding: 19px 0;
     font-size: 11px;
     font-family: 'Lato', sans-serif;
-    font-weight: 700
+    font-weight: 700;
+    text-align: center;
 }
 
 footer.footer section.btm .social a {
