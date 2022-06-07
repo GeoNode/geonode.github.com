@@ -4172,7 +4172,6 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .brand {
-    float: left;
     display: block;
     padding: 10px 20px 10px;
     margin-left: -20px;
@@ -5813,7 +5812,6 @@ strong {
       margin: 8px 0 0 0;
       text-indent: -9999px;
       background: url("../img/geonode_logo.png") no-repeat 0 0;
-      float: left
   }
 
   header.main .btn {
@@ -5976,7 +5974,7 @@ strong {
       background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
       color: #fff;
       padding: 0 0 40px;
-      height: 384px;
+      height: 440px;
   }
 
   section.banner h1 {
@@ -6000,7 +5998,7 @@ strong {
 
   section.banner .promo-links img {
     padding: 4px 8px;
-    height: 65px;
+    height: 40px;
     border-radius: 3px;
   }
 
@@ -6040,7 +6038,7 @@ strong {
 
   section.banner .promo-links img {
     padding: 4px 8px;
-    height: 55px;
+    height: 40px;
     border-radius: 3px;
   }
 
