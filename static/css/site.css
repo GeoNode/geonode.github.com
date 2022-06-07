@@ -5802,7 +5802,7 @@ strong {
 @media (min-width: 1200px) {
   header.main {
       background: #03424c;
-      padding: 10px 0;
+      padding: 1px 0;
       font-family: 'Lato', sans-serif;
   }
 
@@ -5810,7 +5810,7 @@ strong {
       display: block;
       width: 138px;
       height: 35px;
-      margin-top: 8px;
+      margin: 8px 0 0 0;
       text-indent: -9999px;
       background: url("../img/geonode_logo.png") no-repeat 0 0;
       float: left
@@ -5825,11 +5825,11 @@ strong {
 
   .nav-coll .btn-nav-coll {
       padding: 7px 10px;
-      margin: 5px 0 0;
+      margin: 5px 1px 0 0;
       background: #055f6d;
       height: 40px;
       border: 0;
-      border-radius: 2px;
+      border-radius: 5px;
   }
 }
 
@@ -5864,7 +5864,7 @@ strong {
       background: #055f6d;
       height: 40px;
       border: 0;
-      border-radius: 2px;
+      border-radius: 5px;
   }
 }
 
@@ -6394,7 +6394,8 @@ footer.footer section.btm {
     padding: 19px 0;
     font-size: 11px;
     font-family: 'Lato', sans-serif;
-    font-weight: 700
+    font-weight: 700;
+    text-align: center;
 }
 
 footer.footer section.btm .social a {
