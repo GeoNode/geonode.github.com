@@ -8,6 +8,10 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+:root {
+    --geonodeBlue: #397aab;
+}
+
 article,
 aside,
 details,
@@ -5800,16 +5804,18 @@ strong {
 /* -- Large Devices --*/
 @media (min-width: 1200px) {
   header.main {
-      background: #03424c;
       padding: 1px 0;
       font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
   }
 
   header.main a.brand {
       display: block;
-      width: 138px;
-      height: 35px;
-      margin: 8px 0 0 0;
+      width: 273px;
+      height: 80px;
+      background-size: 250px;
+      background-position-y: center;
       text-indent: -9999px;
       background: url("../img/geonode_logo.png") no-repeat 0 0;
   }
@@ -5834,16 +5840,18 @@ strong {
 /* -- Medium Devices --*/
 @media (min-width: 992px) and (max-width: 1200px) {
   header.main {
-      background: #03424c;
       padding: 10px;
       font-family: 'Lato', sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
   }
 
   header.main a.brand {
       display: block;
-      width: 138px;
-      height: 35px;
-      margin-top: 8px;
+      width: 273px;
+      height: 80px;
+      background-size: 250px;
+      background-position-y: center;
       text-indent: -9999px;
       background: url("../img/geonode_logo.png") no-repeat 0 0;
       float: left
@@ -5869,16 +5877,18 @@ strong {
 /* -- Small Devices --*/
 @media (min-width: 768px) and (max-width: 991px) {
   header.main {
-      background: #03424c;
       padding: 10px 0;
       font-family: 'Lato', sans-serif;
+      padding-top: 16px;
+      padding-bottom: 16px;
   }
 
   header.main a.brand {
       display: block;
-      width: 138px;
-      height: 35px;
-      margin-top: 5px;
+      width: 273px;
+      height: 80px;
+      background-size: 250px;
+      background-position-y: center;
       text-indent: -9999px;
       background: url("../img/geonode_logo.png") no-repeat 0 0;
       float: left
@@ -5903,16 +5913,18 @@ strong {
 /* -- XSmall Devices --*/
 @media (max-width: 768px) and (min-width: 668px) {
   header.main {
-      background: #03424c;
       padding: 10px 0;
       font-family: 'Lato', sans-serif;
+      padding-top: 10px;
+      padding-bottom: 10px;
   }
 
   header.main a.brand {
       display: block;
-      width: 138px;
-      height: 35px;
-      margin-top: 5px;
+      width: 273px;
+      height: 80px;
+      background-size: 250px;
+      background-position-y: center;
       text-indent: -9999px;
       background: url("../img/geonode_logo.png") no-repeat 0 0;
       float: left
@@ -5937,19 +5949,18 @@ strong {
 
 /* -- XXSmall Devices --*/
 @media (max-width: 668px) {
-  header.main {
-      background: #03424c;
-      padding: 10px 0
-  }
-
   header.main a.brand {
       display: block;
-      width: 138px;
-      height: 35px;
-      margin-top: 5px;
+      width: 150px;
+      height: 60px;
+      background-size: 150px;
+      background-position-y: center;
+      background-image: url("../img/geonode_logo.png");
+      background-repeat: no-repeat;
       text-indent: -9999px;
-      background: url("../img/geonode_logo.png") no-repeat 0 0;
-      float: left
+      float: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
   }
 
   header.main .btn {
@@ -5971,10 +5982,7 @@ strong {
 /* -- Large Devices --*/
 @media (min-width: 1200px) {
   section.banner {
-      background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
-      color: #fff;
-      padding: 0 0 40px;
-      height: 440px;
+      padding: 40px 0 40px 0px;
   }
 
   section.banner h1 {
@@ -5988,7 +5996,7 @@ strong {
       line-height: auto;
       font-weight: 300;
       font-family: 'Lato', sans-serif;
-      margin: 0 40px 25px 0
+      margin: 20px 0px 20px 0px;
   }
 
   section.banner .btn-large {
@@ -5998,12 +6006,11 @@ strong {
 
   section.banner .promo-links img {
     padding: 4px 8px;
-    height: 40px;
+    height: 60px;
     border-radius: 3px;
   }
 
   section.banner img.hero-img {
-      margin-top: 30px;
       width: auto; /* 560px */
       height: 325px;
   }
@@ -6012,8 +6019,6 @@ strong {
 /* -- Medium Devices --*/
 @media (min-width: 992px) and (max-width: 1200px) {
   section.banner {
-      background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
-      color: #fff;
       padding:0 0 40px;
   }
 
@@ -6028,7 +6033,7 @@ strong {
       line-height: auto;
       font-weight: 300;
       font-family: 'Lato', sans-serif;
-      margin: 0 40px 25px 0
+      margin: 20px 0px 20px 0px;
   }
 
   section.banner .btn-large {
@@ -6050,8 +6055,6 @@ strong {
 /* -- Small Devices --*/
 @media (min-width: 768px) and (max-width: 991px) {
   section.banner {
-      background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
-      color: #fff;
       padding:0 0 40px;
   }
 
@@ -6066,7 +6069,7 @@ strong {
       line-height: auto;
       font-weight: 300;
       font-family: 'Lato', sans-serif;
-      margin: 0 30px 25px 0
+      margin: 20px 0px 20px 0px;
   }
 
   section.banner .btn-large {
@@ -6088,8 +6091,6 @@ strong {
 /* -- XSmall Devices --*/
 @media (max-width: 768px) and (min-width: 668px) {
   section.banner {
-      background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
-      color: #fff;
       padding:0 0 40px;
   }
 
@@ -6104,7 +6105,7 @@ strong {
       line-height: auto;
       font-weight: 300;
       font-family: 'Lato', sans-serif;
-      margin: 0 30px 25px 0
+      margin: 10px 0px 10px 0px;
   }
 
   section.banner .btn-large {
@@ -6126,8 +6127,6 @@ strong {
 /* -- XXSmall Devices --*/
 @media (max-width: 668px) {
     section.banner {
-        background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom;
-        color: #fff;
         padding:0 0 40px;
     }
 
@@ -6142,7 +6141,7 @@ strong {
         line-height: auto;
         font-weight: 300;
         font-family: 'Lato', sans-serif;
-        margin: 0 30px 25px 0
+        margin: 10px 0px 10px 0px;
     }
 
     section.banner .btn-large {
@@ -6255,7 +6254,7 @@ section.blog-posts .post-preview img {
 }
 
 footer.footer {
-    background: #395060 url("../img/footer_bg.png") repeat-x 0 0;
+    background-color: #1f577c;
     padding-top: 40px;
     color: #fff
 }
@@ -6469,7 +6468,7 @@ footer.footer section.btm .social a.gp {
     border-right: 7px solid transparent;
     border-bottom: 7px solid #01262c;
     border-left: 7px solid transparent;
-    border-bottom-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: rgba(0, 0, 0, 0.3);g
     content: ''
 }
 
@@ -6482,10 +6481,6 @@ footer.footer section.btm .social a.gp {
 
 .nav-coll .dropdown-menu a:hover {
     background: #011418
-}
-
-body.geonode-features section.banner {
-    background: #edeae3 url("../img/banner_bg.png") repeat-x left bottom
 }
 
 body.geonode-features section.banner h1 strong {
@@ -6833,4 +6828,39 @@ body.workshops article.article1 img.icon {
     margin: 0 15px 10px 0;
     opacity: .5;
     filter: alpha(opacity=50)
+}
+
+.row.demo-container {
+    margin-top: 20px;
+}
+
+.demo-container h4[class*="demo-"] {
+    color: white;
+    line-height: 40px;
+    font-size: 1em;
+    border-radius: 2px;
+}
+
+.demo-container span a {
+    color: #006196;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.demo-btn.maint {
+    background-color: #26972d;
+}
+
+.demo-btn.stable {
+    background-color: #25567B;
+}
+
+.demo-btn.dev {
+    background-color: #bf3330;
+}
+
+
+.demo-btn a {
+    color: white;
+    text-decoration: none;
 }
