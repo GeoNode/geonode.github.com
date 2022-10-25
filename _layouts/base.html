@@ -10,6 +10,15 @@ layout: blank
     <link rel="dns-prefetch" href="{{ dns }}">
     {% endfor %}
     <title>{{ page.title }}</title>
+    <meta property="og:title" content="GeoNode" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Open Source Geospatial Content Management System" />
+    <meta property="og:url" content="https://geonode.org/" />
+    <meta property="og:image" content="https://geonode.org/static/img/geonode_logo.png" />
+    <meta name="twitter:title" content="GeoNode">
+    <meta name="twitter:description" content="Open Source Geospatial Content Management System">
+    <meta name="twitter:image" content="https://geonode.org/static/img/geonode_logo.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="shortcut icon" href="{{ site.baseurl }}/static/img/favicon.ico" />
     <link type="application/atom+xml" rel="alternate" href="http://geonode.org/blog/feed.xml" title="GeoNode" />
     <meta name="description" content="{{ site.description }}"/>
