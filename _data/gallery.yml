@@ -1,3 +1,45 @@
+- title: GeoINTA
+  subtitle: National Institute of Agricultural Technology of Argentine
+  description: GeoINTA update as a SDI node and integration with different GIS tools of the Armed Institute based on INTA is current reality discovery to the different tools integration, providing centralized technological solution and decentralized functionality.
+  url: https://geo-backend.inta.gob.ar/
+  image: GeoNode_GeoInta.png
+  
+- title: GeoMOP
+  subtitle: Public Works Argentine Republic is Ministry
+  description: National SDI for the management of public works of the Argentine Republic for its monitoring and management
+  url: https://geoportal.obraspublicas.gob.ar/
+  image: GeoNode_GeoMop.png
+  
+- title: SDI ECLAC
+  subtitle: UN - ECLAC
+  description: ECLAC SDI that supplies statistical viewers with information from Latin America and the Caribbean, integrating the SDI of the Americas. 
+  url: https://geoportal.cepal.org/
+  image: GeoNode_Cepal.png
+  
+- title: SDI Tres de Febrero Municipality
+  subtitle: Buenos Aires province
+  description: Implementation Service of SDI-Cadastre Platform for the Municipality of 3 de Febrero.
+  url: https://geoportal.tresdefebrero.gob.ar/
+  image: GeoNode_3DeFebrero.png
+
+- title: SDI Luján de Cuyo Municipality
+  subtitle: Mendoza province
+  description: 3D platform is Installation with reference layers and rules engine with data from the Urban Code. IDE node for content management using the open-source software products GeoServer + Postgres + GeoNode. Data migration to the new portal.  Installation of a workflow management and automation platform, Airflow 
+  url: https://geoportal.lujandecuyo.gob.ar/
+  image: GeoNode_LujanDelCuyo.png
+  
+- title: Cadastre 3D San Luis
+  subtitle: San Luis province
+  description: 3D platform Installation and Geographic Information system that allows easy configuration of the geospatial portal and the authorized users can manage metadata catalogs served by the 3D platform 
+  url: https://geonode.catastro.sanluis.gov.ar/
+  image: GeoNode_SanLuis.png
+  
+- title: Cadastre Neuquen
+  subtitle: Neuquén province
+  description: Updating and Modernization of the Cadastre Infrastructure System of the Provincial Directorate of Cadastre and Information of the Province of Neuquén
+  url: https://geonode.dpc.neuquen.gov.ar/
+  image: GeoNode_CatastroNeuquen.png
+
 - title: Thünen-Atlas
   subtitle: OpenData portal by Thünen-Institute 
   description: Since 2015, the Thünen Institute has made data on land use and animal husbandry in Germany publicly available in digital map sets at the municipal level. In 2016, we added maps on fisheries, forests and forest use. Also, in 2016, the Land Atlas was created as a comprehensive digital map application. The new Thünen Atlas combines all these digital applications and their underlying data inside a data portal providing metadata and web services.
