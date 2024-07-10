@@ -1,6 +1,8 @@
-*.pyc
+.bundle/
 .build/
 build/
+vendor/
 _site/
 .jekyll-metadata
 .jekyll-cache
+Gemfile.lock

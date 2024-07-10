@@ -11,7 +11,7 @@ permalink: /:categories/:year/:month/:day/:title/
 #url: http://geonode.github.com
 #destination: _site
 # Production
-baseurl:
+baseurl: 
 url: http://geonode.org
 destination: _site
 
@@ -28,7 +28,7 @@ gems:
 #feed:
 #  path: blog/feed.xml
 
-exclude: [README.md, setenv-ruby-gem, LICENSE.txt, CNAME]
+exclude: [README.md, vendor, LICENSE.txt, CNAME]
 
 # Markdown Configuration
 kramdown:

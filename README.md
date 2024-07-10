@@ -1,25 +1,20 @@
 # geonode.org
 
-## Setting up website environment locally
-
-    # setup virtualenv
-    virtualenv geonode.org && cd $_
-    . bin/activate
-    # get the repo
-    git clone git@github.com:GeoNode/geonode.github.com && cd geonode.github.com
-    # set Ruby environment variables
-    . setenv-ruby-gem.sh
-    # install Jekyll
-    gem install jekyll link-checker jekyll-feed jekyll-mentions jekyll-sitemap github-pages
+Prerequisites
+-------------
+    sudo apt-get install ruby-full build-essential zlib1g-dev
+    echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+    echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+    echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+    source ~/.bashrc
+    gem install bundler
+    bundle install
 
 Workflow
 --------
 
     # edit content
-    jekyll build
-    jekyll serve  # default port is 4000, set explicitly with -P 
-    # check links
-    check-links _site
+    bundle exec jekyll serve  # default port is 4000, set explicitly with -P 
     # view at http://localhost:4000
     # adding blogposts
     cd _drafts
@@ -33,5 +28,6 @@ Workflow
     git mv _drafts/newpost.md _posts/YYYY-MM-DD-newpost.md
     vi _posts/YYYY-MM-DD-newpost.md
     # commit and push
+    bundle exec jekyll build
     git commit -m 'publish article'
     git push origin master
