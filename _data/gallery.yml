@@ -28,6 +28,12 @@
   url: https://geonode.provincia.treviso.it/
   image: treviso.jpg
 
+- title: Tanzania Climate Risk Database
+  subtitle: The catalyst for resilient urban development in Tanzania 
+  description: Resilience Academy’s Climate Risk Database (CRD) is a digital geospatial data repository that supports research, education, and disaster-risk management practices.
+  url: https://geonode.resilienceacademy.ac.tz/
+  image: resilienceacademy.jpg
+  
 - title: Thünen-Atlas
   subtitle: OpenData portal by Thünen-Institute 
   description: Since 2015, the Thünen Institute has made data on land use and animal husbandry in Germany publicly available in digital map sets at the municipal level. In 2016, we added maps on fisheries, forests and forest use. Also, in 2016, the Land Atlas was created as a comprehensive digital map application. The new Thünen Atlas combines all these digital applications and their underlying data inside a data portal providing metadata and web services.
