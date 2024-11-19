@@ -9,12 +9,18 @@
   description: KMAP is conceived as a unique access hub to e UNEP-MAP (Mediterranean Action Plan) knowledge heritage. It is composed by a Data Hub, collecting geographical data in broader sense, The Knowledge Hub, collecting all the UNEP-MAP documental heritage, and an Exchange Hub aimed to enforce the cooperation with UNEP-MAP contributors, stakeholders, citizens, and communities of interests. 
   url: https://kmap.info-rac.org/
   image: kmap.jpg
-
+  
 - title: SCORE
   subtitle: SCORE Project Data exchange and publishing
   description: This the platform of the SCORE project, a four-year EU-funded project aiming to increase climate resilience in European coastal cities.
   url: https://platform.score-eu-project.eu/
   image: score.jpg
+  
+- title: FRAME
+  subtitle: Flood Risk Information System for Adaptation Measures and Evaluation in Central Vietnam
+  description: This tool focuses on flood adaptation in central Vietnam, bringing together various flood-related data sources to support risk-informed planning. It features flood models, asset value functions, land use, and land cover data, all integrated for easy comparison and download. A standout feature is the Asset Values for Flood Damage, available for 1990, 2000, and 2020, with scenario-based projections to be added. The WebGIS is available in Vietnamese (https://frame-vn.org/#/) and English versions, with regular updates to content and functionality.
+  url: https://framefavn.org/
+  image: frame.jpg
 
 - title: Po River Basin Authority
   subtitle: Geoportal of the italian basin authority of Po River
