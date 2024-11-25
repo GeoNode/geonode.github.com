@@ -22,6 +22,12 @@
   url: https://framefavn.org/
   image: frame.jpg
 
+- title: CILSS GEO-AOS geoportal
+  subtitle: CILSS GEO-AOS geoportal
+  description: GEO-AOS is the complete web portal where the object is to strengthen access to the information services provided by the Regional Center AGRHYMET for the Western and Sahel African region
+  url: https://geoportal.cilss.int/
+  image: cilss.jpg
+
 - title: Po River Basin Authority
   subtitle: Geoportal of the italian basin authority of Po River
   description: SDI of the basin authority of Po River, the main italian river, where all the public ecological, hydrological and hydrogeological information and thematic maps about the Po river area are published.
