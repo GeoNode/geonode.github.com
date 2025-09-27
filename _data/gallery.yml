@@ -1,3 +1,9 @@
+- title: RCMRD
+  subtitle: RCMRD Geoportal
+  description: A one-stop platform for discovering, visualizing, and sharing geospatial data to drive sustainable development in Eastern and Southern Africa.
+  url: https://geoportal.rcmrd.org/#/
+  image: rcmrd.jpg
+
 - title: EURAC
   subtitle: EDP - MAPS platform
   description: EDP-MAPS is an open source platform for sharing geospatial data and maps. Here you can upload your own datasets by yourself and set permission. The Platform is one component of EDP managed by the Center for Sensing Solutions of Eurac Research.
