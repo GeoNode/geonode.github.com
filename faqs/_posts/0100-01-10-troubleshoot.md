@@ -4,5 +4,5 @@ category: faqs
 question: "How do I troubleshoot a GeoNode installation?"
 keywords:
   - admins
-link_docs: "install/"
+link_docs: "setup/configuration/components/troubleshooting_advanced_features/"
 ---

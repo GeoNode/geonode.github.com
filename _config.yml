@@ -40,7 +40,7 @@ ga:
   code: "UA-38570723-1"
 
 extbase:
-  docs: "https://docs.geonode.org/en/master/"
+  docs: "https://docs.geonode.org/en/latest/"
 
 
 dns_prefetch: ['//www.google-analytics.com', '//fonts.googleapis.com']

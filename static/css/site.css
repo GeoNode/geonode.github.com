@@ -6864,3 +6864,21 @@ body.workshops article.article1 img.icon {
     color: white;
     text-decoration: none;
 }
+
+/* 1. Force the body to fill the entire screen height */
+body.geonode-features {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* 2. Force the main feature-detail section to stretch and fill all empty space */
+  section.feature-detail {
+    flex: 1 0 auto; /* This pushes the footer down */
+  }
+  
+  /* 3. Keep the footer tucked neatly at the base */
+  footer.footer {
+    flex-shrink: 0;
+  }
