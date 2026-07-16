@@ -11,9 +11,6 @@ body_class: "geonode-features dev-features"
           <strong>For Developers</strong>,<br />
           <span>Learn more about the powerful development features of <strong>GeoNode</strong>.</span>
         </h1>
-        <div>
-          <a href="http://geonode.org/dev-workshop/" class="btn btn-success" target = "_blank">Follow the <strong>Developers Workshop</strong></a>
-        </div>
       </div>
       <div class="col-6">
         <img src="{{site.baseurl}}/static/img/features_hero_img.png" width="489" height="216" alt="" class="pull-right hero-img" />
@@ -30,7 +27,7 @@ body_class: "geonode-features dev-features"
           <ul class="unstyled">
             <li><a href="#osgeo"><strong>Open Source Geospatial</strong></a></li>
             <li><a href="#django"><strong>Django</strong></a></li>
-            <li><a href="#front-end"><strong>Bootstrap and jQuery</strong></a></li>
+            <li><a href="#front-end"><strong>GeoNode Client (MapStore)</strong></a></li>
             <li><a href="#apis"><strong>APIs</strong></a></li>
             <li><a href="#interoperability"><strong>Interoperability</strong></a></li>
           </ul>
@@ -50,16 +47,15 @@ body_class: "geonode-features dev-features"
           <h2>Open Source Geospatial</h2>
           <h4>Open from top to bottom</h4>
           <div>
-           <p>GeoNode is built upon a platform of proven open source components including Django, GeoServer, pycsw, OpenLayers and GeoExt. GeoNode implements many Open Geospatial Consortium (OGC) standards, including Web Map Service (WMS), Web Feature Service (WFS), Web Coverage Service (WCS), KML, and Catalogue Service for Web (CSW). GeoNode development also contributes to the underlying open source projects and software libraries.</p>
+           <p>GeoNode is built upon a platform of proven open source components including Django, GeoServer, PostGIS and PyCSW. GeoNode implements many Open Geospatial Consortium (OGC) standards, including Web Map Service (WMS), Web Feature Service (WFS), Web Coverage Service (WCS), KML, and Catalogue Service for Web (CSW). GeoNode development also contributes to the underlying open source projects and software libraries.</p>
            <p>Features include: 
            </p>
          </div>
          <ul class="unstyled">
           <li>PostGIS Spatial Databases</li>
           <li>GeoServer OGC Services</li>
-          <li>pycsw CSW Metadata Catalogue</li>
+          <li>PyCSW CSW Metadata Catalogue</li>
           <li>Geospatial Python libraries</li>
-          <li>OpenLayers and GeoExt Web Mapping Libraries</li>
         </ul>
         <a href="{{ site.extbase.docs }}start/index.html#geospatial-data-storage" class="hide btn btn-success">Learn about GeoNode's open source geospatial foundation</a>
       </div>
@@ -108,17 +104,18 @@ body_class: "geonode-features dev-features"
         </div>
         <div class="col-12 col-md-8 number three">
           <div class="highlighted-box">
-            <h2>React and Bootstrap</h2>
-            <h4>Modern and flexible front-end</h4>
-            <p>GeoNode's front-end is based on the popular and flexible React and Bootstrap frameworks.React is used along with Redux and Rxjs to drive the user interface, and Bootstrap CSS is used to style the pages. Both of these frameworks make it easy to theme and customize your own GeoNode implementation if desired.</p>
-            <p>Features include:</p>
+            <h2>GeoNode Client</h2>
+            <h4>A modern React front-end powered by MapStore</h4>
+            <p>The GeoNode Client is built on <a href="https://github.com/geosolutions-it/mapstore2" target="_blank">MapStore</a>, the open source WebGIS framework by GeoSolutions. It is a React application that integrates with Django templates and the GeoNode backend APIs, and it inherits all of MapStore's mapping and data visualization capabilities.</p>
+            <p>Features inherited from MapStore include:</p>
             <ul class="unstyled">
-              <li>Bootstrap CSS framework</li>
-              <li>React, Redux, Rxjs</li>
-              <li>Django templating system</li>
-              <li>Customizable themes using LESS and Bootswatch</li>
+              <li>Create, manage and securely share maps and mashups</li>
+              <li>Interactive dashboards and narrative GeoStories</li>
+              <li>Connect to OGC services (WMS, WFS, WMTS, TMS, CSW) and remote sources</li>
+              <li>Spatial analysis with chart widgets and timelines</li>
+              <li>OpenLayers, Leaflet and Cesium 3D mapping engines</li>
             </ul>
-            <a href="{{ site.extbase.docs }}contribute/frontend-development/index.html" class="hide btn btn-success">Learn about GeoNode's Front End</a>
+            <a href="https://github.com/geosolutions-it/mapstore2" target="_blank" class="hide btn btn-success">Learn about MapStore</a>
           </div>
         </div>
       </div>
@@ -168,8 +165,6 @@ body_class: "geonode-features dev-features"
        <ul class="unstyled">
         <li>Connects with other GeoNode deployments</li>
         <li>Interacts with OGC-compliant SDIs</li>
-        <li>Integrates with other social networking platforms (Twitter, Facebook, Google+, LinkedIn, Jive, Telligent)</li>
-        <li>Integrates with other content management systems (WordPress, Drupal)</li>
       </ul>
       <a href="interoperability.html" class="hide btn btn-success">Learn more about interoperability with external systems</a>
     </div>

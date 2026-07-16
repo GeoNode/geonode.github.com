@@ -21,12 +21,8 @@ defaults:
     layout: 'base.html'
 
 gems:
-#- jekyll-feed
 - jekyll-mentions
 - jekyll-sitemap
-
-#feed:
-#  path: blog/feed.xml
 
 exclude: [README.md, vendor, LICENSE.txt, CNAME]
 
@@ -45,7 +41,7 @@ extbase:
 
 dns_prefetch: ['//www.google-analytics.com', '//fonts.googleapis.com']
 
-fonts: ['Lato:300,400,700', 'Inconsolata']
+# Fonts are loaded directly in _layouts/base.html (Google Fonts css2 API).
 
 keywords:
   - GeoNode
