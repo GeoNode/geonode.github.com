@@ -265,7 +265,7 @@ a { transition: color .15s ease, background-color .15s ease; }
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .06em;
-  font-size: 3.8rem;
+  font-size: 3.0rem;
   margin-bottom: .5rem;
 }
 
@@ -283,7 +283,7 @@ a { transition: color .15s ease, background-color .15s ease; }
 /* Capability / feature cards */
 .gn-card {
   background: #fff;
-  border: 1px solid rgba(22, 55, 79, .08);
+  border: 1.5px solid rgba(22, 55, 79, .16);
   border-radius: var(--gn-radius);
   padding: 1.75rem;
   height: 100%;
@@ -319,6 +319,36 @@ a { transition: color .15s ease, background-color .15s ease; }
 .gn-card p { color: var(--gn-muted); margin-bottom: 0; font-size: .96rem; }
 
 .gn-card a.stretched-link::after { border-radius: var(--gn-radius); }
+
+/* Scrolling standards / openness marquee */
+.gn-marquee-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gn-marquee-pill {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+  background: #fff;
+  border: 1.5px solid rgba(22, 55, 79, .16);
+  border-radius: 999px;
+  padding: .75rem 1.4rem;
+  font-weight: 700;
+  color: var(--gn-ink);
+  font-size: .95rem;
+}
+
+.gn-marquee-pill i { color: var(--gn-blue); font-size: 1.05rem; }
+
+.gn-marquee-pill span.gn-marquee-sub {
+  font-weight: 400;
+  color: var(--gn-muted);
+  font-size: .85rem;
+}
 
 /* Resource / link cards (docs, channels, gallery, faq, etc.) */
 .gn-resource-grid {
