@@ -1,0 +1,594 @@
+/* ==========================================================================
+   GeoNode modern theme layer — sits on top of bootstrap + site.css
+   ========================================================================== */
+
+:root {
+  --gn-blue: #397aab;
+  --gn-blue-dark: #1f4f73;
+  --gn-blue-darker: #16374f;
+  --gn-accent: #f2a900;
+  --gn-ink: #16232c;
+  --gn-muted: #5b6b76;
+  --gn-bg: #f6f8fa;
+  --gn-radius: 14px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--gn-ink);
+  background: #fff;
+}
+
+a { transition: color .15s ease, background-color .15s ease; }
+
+/* ---------------------------------------------------------------------- */
+/* Navbar                                                                  */
+/* ---------------------------------------------------------------------- */
+.gn-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, .92);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid rgba(22, 55, 79, .08);
+  padding: .6rem 0;
+}
+
+.gn-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-weight: 700;
+  color: var(--gn-ink);
+}
+
+.gn-navbar .navbar-brand img {
+  height: 34px;
+  width: auto;
+}
+
+.gn-navbar .nav-link {
+  font-weight: 600;
+  color: var(--gn-muted);
+  padding: .5rem .9rem !important;
+}
+
+.gn-navbar .nav-link:hover,
+.gn-navbar .nav-link:focus {
+  color: var(--gn-blue-dark);
+}
+
+.gn-navbar .btn-gn-primary {
+  background: var(--gn-blue);
+  border: 1px solid var(--gn-blue);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .45rem 1.2rem;
+}
+
+.gn-navbar .btn-gn-primary:hover {
+  background: var(--gn-blue-dark);
+  border-color: var(--gn-blue-dark);
+  color: #fff;
+}
+
+/* Legacy site.css ships a Bootstrap-2-era `.collapse{height:0}` rule that
+   collides with Bootstrap 5's `.navbar-collapse` (toggled via `.show`, not
+   `.in`) and hides the whole nav permanently. Force BS5 behaviour back. */
+.gn-navbar .collapse.show {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+@media (min-width: 992px) {
+  .gn-navbar .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* Hero                                                                    */
+/* ---------------------------------------------------------------------- */
+.gn-hero {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(1200px 600px at 85% -10%, #4e93c4 0%, var(--gn-blue-dark) 55%, var(--gn-blue-darker) 100%);
+  color: #fff;
+  padding: 5.5rem 0 4rem;
+}
+
+.gn-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, .09) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: .5;
+  pointer-events: none;
+}
+
+.gn-hero .container { position: relative; }
+
+.gn-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .22);
+  color: #eaf3fb;
+  font-weight: 700;
+  font-size: .78rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: .35rem .9rem;
+  margin-bottom: 1.1rem;
+}
+
+.gn-hero h1 {
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 1.1rem;
+}
+
+.gn-hero p.lead {
+  color: #dbeaf5;
+  font-weight: 400;
+  font-size: 1.15rem;
+  max-width: 46rem;
+}
+
+.gn-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.6rem;
+}
+
+.btn-gn-hero-primary {
+  background: var(--gn-accent);
+  border: 1px solid var(--gn-accent);
+  color: #1a1400;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .7rem 1.6rem;
+}
+
+.btn-gn-hero-primary:hover {
+  background: #ffbb1f;
+  border-color: #ffbb1f;
+  color: #1a1400;
+}
+
+.btn-gn-hero-secondary {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .35);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .7rem 1.6rem;
+}
+
+.btn-gn-hero-secondary:hover {
+  background: rgba(255, 255, 255, .18);
+  color: #fff;
+}
+
+.gn-version-pills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.gn-version-pill {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: var(--gn-radius);
+  padding: .9rem 1.25rem;
+  min-width: 160px;
+}
+
+.gn-version-pill .gn-version-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .12);
+}
+
+.gn-version-pill.stable .gn-version-dot { background: #042aff; }
+.gn-version-pill.maint .gn-version-dot { background: #3ddc84; }
+.gn-version-pill.dev .gn-version-dot { background: var(--gn-accent); }
+
+.gn-version-pill .label {
+  display: block;
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #eaf3fb;
+  font-weight: 800;
+  background: none;
+  text-shadow: none;
+}
+
+.gn-version-pill a.value {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.gn-version-pill a.value:hover { color: var(--gn-accent); text-decoration: underline; }
+
+.gn-hero-osgeo {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  opacity: .85;
+}
+
+.gn-hero-osgeo img { height: 40px; background: #fff; border-radius: 6px; padding: 3px; }
+
+.gn-hero-img-wrap {
+  position: relative;
+}
+
+.gn-hero-img-wrap img {
+  border-radius: var(--gn-radius);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .45);
+  border: 1px solid rgba(255, 255, 255, .15);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Sections                                                                */
+/* ---------------------------------------------------------------------- */
+.gn-section { padding: 4.5rem 0; }
+.gn-section-alt { background: var(--gn-bg); }
+
+.gn-section-head { max-width: 42rem; margin: 0 auto 2.75rem; text-align: center; }
+
+.gn-kicker {
+  display: block;
+  color: var(--gn-blue);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: 3.8rem;
+  margin-bottom: .5rem;
+}
+
+.gn-section-head h2 {
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--gn-ink);
+}
+
+.gn-section-head p {
+  color: var(--gn-muted);
+  font-size: 1.05rem;
+}
+
+/* Capability / feature cards */
+.gn-card {
+  background: #fff;
+  border: 1px solid rgba(22, 55, 79, .08);
+  border-radius: var(--gn-radius);
+  padding: 1.75rem;
+  height: 100%;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.gn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -24px rgba(22, 55, 79, .35);
+  border-color: rgba(57, 122, 171, .35);
+}
+
+.gn-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(57, 122, 171, .1);
+  color: var(--gn-blue);
+  font-size: 1.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.gn-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  color: var(--gn-ink);
+}
+
+.gn-card p { color: var(--gn-muted); margin-bottom: 0; font-size: .96rem; }
+
+.gn-card a.stretched-link::after { border-radius: var(--gn-radius); }
+
+/* Resource / link cards (docs, channels, gallery, faq, etc.) */
+.gn-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.gn-resource-card {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid rgba(22, 55, 79, .08);
+  border-radius: var(--gn-radius);
+  padding: 1.4rem;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.gn-resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -26px rgba(22, 55, 79, .35);
+  border-color: rgba(57, 122, 171, .35);
+}
+
+.gn-resource-card i {
+  font-size: 1.6rem;
+  color: var(--gn-blue);
+  width: 44px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.gn-resource-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gn-ink);
+  margin-bottom: .25rem;
+}
+
+.gn-resource-card p {
+  color: var(--gn-muted);
+  font-size: .9rem;
+  margin-bottom: 0;
+}
+
+/* CTA band */
+.gn-cta {
+  background: linear-gradient(135deg, var(--gn-blue) 0%, var(--gn-blue-dark) 100%);
+  border-radius: 20px;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+}
+
+.gn-cta h2 { font-weight: 800; margin-bottom: .75rem; }
+.gn-cta p { color: #dbeaf5; margin-bottom: 1.5rem; }
+
+/* ---------------------------------------------------------------------- */
+/* Footer                                                                  */
+/* ---------------------------------------------------------------------- */
+.gn-footer {
+  background: var(--gn-ink);
+  color: #b7c3cb;
+  padding: 3rem 0 1.5rem;
+  margin-top: 3rem;
+}
+
+.gn-footer a { color: #d7e2e8; text-decoration: none; }
+.gn-footer a:hover { color: #fff; }
+
+.gn-footer .gn-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+  font-size: .88rem;
+  color: #8ea0aa;
+}
+
+.gn-footer .gn-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .06);
+  margin-left: .5rem;
+}
+
+.gn-footer .gn-social a:hover { background: var(--gn-blue); color: #fff; }
+
+/* ---------------------------------------------------------------------- */
+/* Inner pages (user/dev/admin features, code sprint, contributors)       */
+/* reuse the legacy markup/classes, restyled to match the new theme       */
+/* ---------------------------------------------------------------------- */
+section.banner {
+  background: radial-gradient(1200px 600px at 85% -10%, #4e93c4 0%, var(--gn-blue-dark) 55%, var(--gn-blue-darker) 100%);
+  color: #fff;
+  padding: 4rem 0 3rem;
+}
+
+section.banner h1 { font-weight: 800; color: #fff; }
+section.banner h1 strong { color: #fff; }
+section.banner span { color: #dbeaf5; font-weight: 400; }
+
+section.banner .btn-success {
+  background: var(--gn-accent);
+  border-color: var(--gn-accent);
+  color: #1a1400;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: .6rem 1.4rem;
+}
+
+section.banner .btn-success:hover { background: #ffbb1f; border-color: #ffbb1f; color: #1a1400; }
+
+section.banner img.hero-img {
+  border-radius: var(--gn-radius);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .45);
+  border: 1px solid rgba(255, 255, 255, .15);
+}
+
+body.geonode-features section.body {
+  background: var(--gn-bg) !important;
+  padding: 2rem 0 !important;
+}
+
+body.geonode-features section.body nav.subnav {
+  background: #fff;
+  border: 1px solid rgba(22, 55, 79, .08);
+  border-radius: var(--gn-radius);
+  padding: 1.25rem 1.5rem;
+  overflow: visible !important;
+}
+
+body.geonode-features section.body nav.subnav h5 {
+  float: none !important;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: .8rem !important;
+  color: var(--gn-blue);
+  margin: 0 0 .75rem !important;
+}
+
+body.geonode-features section.body nav.subnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  margin: 0 !important;
+  padding: 0;
+}
+
+body.geonode-features section.body nav.subnav ul li {
+  display: block !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
+body.geonode-features section.body nav.subnav ul li a {
+  color: var(--gn-ink) !important;
+  font-weight: 600;
+  font-size: .95rem !important;
+  text-decoration: none;
+}
+
+body.geonode-features section.body nav.subnav ul li a:hover { color: var(--gn-blue-dark) !important; }
+
+body.geonode-features section.feature-details {
+  padding: 3.5rem 0 !important;
+  background: #fff !important;
+  background-image: none !important;
+  filter: none !important;
+  border-bottom: 1px solid rgba(22, 55, 79, .08) !important;
+}
+
+body.geonode-features section.feature-details:nth-of-type(even) { background: var(--gn-bg) !important; }
+
+body.geonode-features section.feature-details .feature-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+body.geonode-features section.feature-details .highlighted-box,
+body.geonode-features section.feature-details .number {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  background: none !important;
+}
+
+body.geonode-features section.feature-details .highlighted-box h2,
+body.geonode-features section.feature-details .highlighted-box h2 strong {
+  font-weight: 800 !important;
+  color: var(--gn-ink) !important;
+  font-size: 1.9rem !important;
+  margin-bottom: .5rem !important;
+}
+
+body.geonode-features section.feature-details .highlighted-box h4 {
+  color: var(--gn-blue) !important;
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 1rem !important;
+}
+
+body.geonode-features section.feature-details .highlighted-box p { color: var(--gn-muted); }
+
+body.geonode-features section.feature-details .highlighted-box ul.unstyled {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 0 1.25rem !important;
+}
+
+body.geonode-features section.feature-details .highlighted-box ul.unstyled li {
+  position: relative;
+  padding-left: 1.5rem !important;
+  margin: 0 0 .5rem !important;
+  background: none !important;
+  color: var(--gn-ink);
+  font-weight: 600;
+}
+
+body.geonode-features section.feature-details .highlighted-box ul.unstyled li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--gn-blue);
+  font-weight: 800;
+}
+
+body.geonode-features section.feature-details .highlighted-box .btn-success,
+body.geonode-features section.feature-details .btn-success {
+  background: var(--gn-blue) !important;
+  border-color: var(--gn-blue) !important;
+  border-radius: 999px;
+  font-weight: 700;
+  margin-left: 0 !important;
+  padding: .55rem 1.4rem !important;
+}
+
+body.geonode-features section.feature-details .btn-success:hover { background: var(--gn-blue-dark) !important; border-color: var(--gn-blue-dark) !important; }
+
+body.geonode-features section.feature-details .hide { display: none !important; }
+
+section.feature-detail {
+  padding: 4rem 0;
+}
+
+section.feature-detail h1 { font-weight: 800; color: var(--gn-ink); }
+section.feature-detail p { color: var(--gn-muted); font-size: 1.05rem; }
+section.feature-detail a { color: var(--gn-blue); font-weight: 600; }
+
+@media (max-width: 767px) {
+  .gn-hero { padding: 3.5rem 0 3rem; text-align: center; }
+  .gn-hero p.lead { margin-left: auto; margin-right: auto; }
+  .gn-hero-actions { justify-content: center; }
+  .gn-version-pills { justify-content: center; }
+  .gn-hero-osgeo { justify-content: center; }
+  .gn-hero-img-wrap { margin-top: 2.5rem; }
+  .gn-cta { padding: 2rem 1.25rem; }
+}

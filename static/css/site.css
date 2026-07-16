@@ -6012,7 +6012,7 @@ strong {
 
   section.banner img.hero-img {
       width: auto; /* 560px */
-      height: 325px;
+      height: 200px;
   }
 }
 
@@ -6488,7 +6488,7 @@ body.geonode-features section.banner h1 strong {
 }
 
 body.geonode-features section.banner h1 span {
-    color: #03424c
+    color: #FFF
 }
 
 body.geonode-features section.body {

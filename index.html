@@ -2,45 +2,120 @@
 layout: base
 title: GeoNode
 ---
-<!-- This banner can be reused when needed for special events or announcements
-<div class="row">
-  <div class="col-xs-12 alert-warning" style="text-align:center;"><a href="http://summit.geonode.org"><h3>GeoNode Summit 2016 in Rome, Italy - Nov. 28 to Dec. 2</h3></a></div>
-</div>
--->
-<section class="banner">
+<section class="gn-hero">
   <div class="container">
-    <div class="row">
-        <div class="col-md-6 text-center">
-          <h1 class="fw-bold">Open Source Geospatial Content Management System</h1>
-          <p class="fs-4">
-            GeoNode is a web-based application and platform
-            for developing geospatial information systems (GIS)
-            and for deploying spatial data infrastructures (SDI).
-          </p>
-          
-          
-          <div class="row justify-content-center">
-			  <div class="promo-links">
-				<a title="OSGeo Project" href="http://osgeo.org"><img style="background-color:white;" alt="OSGeo Project" src="static/img/osgeo-logo.png"/></a>
-			  </div>
-        <div class="row demo-container">
-          <div class="col-md-6">
-          <h4 class="demo-btn maint"><a href="https://github.com/GeoNode/geonode/releases/tag/5.1.0" target="_blank">Stable version</a></h4>
-          <span><a href="https://github.com/GeoNode/geonode/releases/tag/5.1.0" target="_blank">5.1.0</a></span>
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <span class="gn-eyebrow"><i class="fa fa-globe"></i> Open Source &middot; OSGeo Project</span>
+        <h1>The open source platform for geospatial content management</h1>
+        <p class="lead">
+          GeoNode is a web-based application and platform for building geospatial
+          information systems (GIS) and deploying spatial data infrastructures (SDI) &mdash;
+          publish, search, and share maps and data with your team or the world.
+        </p>
+
+        <div class="gn-hero-actions">
+          <a target="_blank" href="http://demo.geonode.org" class="btn btn-gn-hero-primary">Try the Live Demo</a>
+          <a href="https://docs.geonode.org" target="_blank" class="btn btn-gn-hero-secondary">Read the Docs</a>
         </div>
-        <div class="col-md-6">
-          <h4 class="demo-btn dev"><a href="https://github.com/GeoNode/geonode/tree/master" target="_blank">Development</a></h4>
-          <span><a href="https://github.com/GeoNode/geonode/tree/master" target="_blank">master</a></span>
-        </div>
-        </div>
+
+        <div class="gn-version-pills">
+          <div class="gn-version-pill stable">
+            <span class="gn-version-dot"></span>
+            <span class="label">Maintenance<br><a class="value" href="https://github.com/GeoNode/geonode/releases/tag/5.0.3" target="_blank">5.0.3</a></span>
+          </div>
+          <div class="gn-version-pill maint">
+            <span class="gn-version-dot"></span>
+            <span class="label">Stable<br><a class="value" href="https://github.com/GeoNode/geonode/releases/tag/5.1.0" target="_blank">5.1.0</a></span>
+          </div>
+          <div class="gn-version-pill dev">
+            <span class="gn-version-dot"></span>
+            <span class="label">Development<br><a class="value" href="https://github.com/GeoNode/geonode/tree/master" target="_blank">master</a></span>
           </div>
         </div>
-        <div class="col-md-6 text-end">
-          <img src="static/img/hero_img.png" alt="" class="hero-img" style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;"/>
+
+        <div class="gn-hero-osgeo">
+          <a title="OSGeo Project" href="http://osgeo.org" target="_blank">
+            <img alt="OSGeo Project" src="{{ site.baseurl }}/static/img/osgeo-logo.png"/>
+          </a>
+          <span>An official OSGeo Community Project</span>
         </div>
       </div>
+
+      <div class="col-lg-6">
+        <div class="gn-hero-img-wrap">
+          <img src="{{ site.baseurl }}/static/img/hero_img.png" alt="GeoNode platform preview" class="img-fluid"/>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-{% assign important_links = 'true' %}
+<section class="gn-section">
+  <div class="container">
+    <div class="gn-section-head">
+      <span class="gn-kicker">Why GeoNode</span>
+      <h2>Everything you need to run a spatial data infrastructure</h2>
+      <p>A complete content management system for geospatial data, built on trusted open source components and designed for users, developers, and administrators alike.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="gn-card position-relative">
+          <div class="gn-card-icon"><i class="fa fa-map-o"></i></div>
+          <h3>Publish &amp; Explore</h3>
+          <p>Upload vector and raster data, style layers, and build interactive maps in minutes.</p>
+          <a href="{{ site.baseurl }}/user_features/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="gn-card position-relative">
+          <div class="gn-card-icon"><i class="fa fa-users"></i></div>
+          <h3>Collaborate</h3>
+          <p>Share resources across teams with fine-grained permissions, groups, and social features.</p>
+          <a href="{{ site.baseurl }}/user_features/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="gn-card position-relative">
+          <div class="gn-card-icon"><i class="fa fa-code"></i></div>
+          <h3>Extend &amp; Integrate</h3>
+          <p>A Django-based platform with REST APIs, ready to be customized and integrated into your stack.</p>
+          <a href="{{ site.baseurl }}/dev_features/" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="gn-card position-relative">
+          <div class="gn-card-icon"><i class="fa fa-cogs"></i></div>
+          <h3>Administer</h3>
+          <p>Manage users, monitor resources, and configure your infrastructure from a dedicated admin panel.</p>
+          <a href="{{ site.baseurl }}/admin_features/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gn-section gn-section-alt">
+  <div class="container">
+    <div class="gn-section-head">
+      <span class="gn-kicker">Get Involved</span>
+      <h2>Resources to help you get started</h2>
+      <p>Documentation, community channels, and ways to contribute to the project.</p>
+    </div>
+
+    {% include important_links.html %}
+  </div>
+</section>
+
+<section class="gn-section">
+  <div class="container">
+    <div class="gn-cta">
+      <h2>Ready to explore your data?</h2>
+      <p>Spin up the live demo, no installation required, and see GeoNode in action.</p>
+      <a target="_blank" href="http://demo.geonode.org" class="btn btn-gn-hero-primary">Try the Live Demo</a>
+    </div>
+  </div>
+</section>
+
 {% include footer.html %}
